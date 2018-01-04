@@ -1,0 +1,95 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1712                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v1712
+Arch   : "LSB;label=32;scalar=64"
+Exec   : mergeMeshes . ../floatingBody -overwrite
+Date   : Jan 04 2018
+Time   : 21:58:20
+Host   : "inabower-PC"
+PID    : 2829
+I/O    : uncollated
+Case   : /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/overInterDyMFoam/floatingBody/background
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Master:      "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/overInterDyMFoam/floatingBody/background"  region region0
+mesh to add: "../floatingBody"  region region0
+
+Create Times
+Reading master mesh for time = 0
+Create mesh
+
+Reading mesh to add for time = 0
+Create mesh
+
+Writing combined mesh to 0
+patch names: 
+5
+(
+oversetPatch
+stationaryWalls
+atmosphere
+sides
+floatingObject
+)
+
+patch dicts: 
+5
+(
+
+{
+    type            overset;
+    inGroups        1 ( overset );
+    nFaces          0;
+    startFace       124950;
+}
+
+
+{
+    type            wall;
+    inGroups        1 ( wall );
+    nFaces          6125;
+    startFace       124950;
+}
+
+
+{
+    type            patch;
+    nFaces          1225;
+    startFace       131075;
+}
+
+
+{
+    type            overset;
+    inGroups        1 ( overset );
+    nFaces          3200;
+    startFace       26504;
+}
+
+
+{
+    type            wall;
+    inGroups        1 ( wall );
+    nFaces          1104;
+    startFace       29704;
+}
+
+)
+
+point zone names: 0()
+face zone names: 0()
+cell zone names: 0()
+Copying old patches
+Adding new patches. 
+Reordering processor patches last
+End
+

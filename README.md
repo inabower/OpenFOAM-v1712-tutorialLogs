@@ -1,1 +1,11 @@
 # OpenFOAM-v1712-tutorialLogs
+
+trying tutorials of OpenFOAM-v1712
+
+
+heatTransfer/chtMultiRegionSimpleFoam/externalCoupledHeater
+multiphase/compressibleInterFoam/laminar/depthCharge2D
+multiphase/reactingMultiphaseEulerFoam/laminar/bubbleColumn
+multiphase/reactingTwoPhaseEulerFoam/RAS/wallBoiling
+multiphase/reactingTwoPhaseEulerFoam/RAS/wallBoilingIATE
+multiphase/overInterDyMFoam/floatingBody
