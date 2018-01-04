@@ -1,0 +1,758 @@
+Executing dummy external solver
+External: init - creating comms/heater_topAir/coupleGroup/T.in
+External: init - adding 8 data elements with refValue 500
+External: init - adding 40 data elements with refValue 300
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 1
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 2
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 3
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 4
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 5
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 6
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 7
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 8
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 9
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 10
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 11
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 12
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 13
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 14
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 15
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 16
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 17
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 18
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 19
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 20
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 21
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 22
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 23
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 24
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 25
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 26
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 27
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 28
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 29
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 30
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 31
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 32
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 33
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 34
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 35
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 36
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 37
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 38
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 39
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 40
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 41
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 42
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 43
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 44
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 45
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 46
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 47
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 48
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 49
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 50
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 51
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 52
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 53
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 54
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 55
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 56
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 57
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 58
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 59
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 60
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 61
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 62
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 63
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 64
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 65
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 66
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 67
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 68
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 69
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 70
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 71
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 72
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 73
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 74
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 75
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 76
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 77
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 78
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 79
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 80
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 81
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 82
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 83
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 84
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 85
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 86
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 87
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 88
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 89
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 90
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 91
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 92
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 93
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 94
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 95
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 96
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 97
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 98
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 99
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 100
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 101
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 102
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 103
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 104
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 105
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 106
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 107
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 108
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 109
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 110
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 111
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 112
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 113
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 114
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 115
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 116
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 117
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 118
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 119
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 120
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 121
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 122
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 123
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 124
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: step 125
+External: lock not present - taking control
+External: sleeping for 5 secs to simulate external process
+External: updating comms/heater_topAir/coupleGroup/T.in from comms/heater_topAir/coupleGroup/T.out
+External: creating lock file 'comms/OpenFOAM.lock'
+External: found lock file 'comms/OpenFOAM.lock' containing '' - waiting
+External: found lock file 'comms/OpenFOAM.lock' with 'status=done' - finished
+External: done

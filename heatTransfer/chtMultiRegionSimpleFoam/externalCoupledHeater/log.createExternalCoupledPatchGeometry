@@ -1,0 +1,36 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1712                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v1712
+Arch   : "LSB;label=32;scalar=64"
+Exec   : createExternalCoupledPatchGeometry -regions (topAir heater) coupleGroup
+Date   : Jan 04 2018
+Time   : 20:46:32
+Host   : "inabower-PC"
+PID    : 30550
+I/O    : uncollated
+Case   : /home/inabower/OpenFOAM/tutorials-v1712/heatTransfer/chtMultiRegionSimpleFoam/externalCoupledHeater
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh heater for time = 0
+
+Create mesh topAir for time = 0
+
+externalCoupled: writing geometry to "/home/inabower/OpenFOAM/tutorials-v1712/heatTransfer/chtMultiRegionSimpleFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup"
+externalCoupled: mesh heater, patch minY: writing 15 points to "/home/inabower/OpenFOAM/tutorials-v1712/heatTransfer/chtMultiRegionSimpleFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/patchPoints"
+externalCoupled: mesh heater, patch minY: writing 8 faces to "/home/inabower/OpenFOAM/tutorials-v1712/heatTransfer/chtMultiRegionSimpleFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/patchFaces"
+externalCoupled: mesh topAir, patch minX: writing 55 points to "/home/inabower/OpenFOAM/tutorials-v1712/heatTransfer/chtMultiRegionSimpleFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/patchPoints"
+externalCoupled: mesh topAir, patch minX: writing 40 faces to "/home/inabower/OpenFOAM/tutorials-v1712/heatTransfer/chtMultiRegionSimpleFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/patchFaces"
+
+End
+
