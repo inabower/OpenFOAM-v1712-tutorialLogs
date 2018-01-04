@@ -1,0 +1,786 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1712                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v1712
+Arch   : "LSB;label=32;scalar=64"
+Exec   : financialFoam
+Date   : Jan 04 2018
+Time   : 23:17:06
+Host   : "inabower-PC"
+PID    : 9681
+I/O    : uncollated
+Case   : /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/financial/financialFoam/europeanCall
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+Reading financial properties
+
+
+Reading field V
+
+Calculating value(price of comodities)
+Starting time loop
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00518228, Final residual = 6.8445e-18, No Iterations 1
+ExecutionTime = 0.01 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00520831, Final residual = 9.34993e-18, No Iterations 1
+ExecutionTime = 0.01 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00519875, Final residual = 1.37888e-17, No Iterations 1
+ExecutionTime = 0.01 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00517739, Final residual = 9.07552e-18, No Iterations 1
+ExecutionTime = 0.01 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00515017, Final residual = 1.23167e-17, No Iterations 1
+ExecutionTime = 0.01 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00511944, Final residual = 7.9851e-18, No Iterations 1
+ExecutionTime = 0.01 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.0050864, Final residual = 7.73032e-18, No Iterations 1
+ExecutionTime = 0.02 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00505175, Final residual = 8.31369e-18, No Iterations 1
+ExecutionTime = 0.02 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00501593, Final residual = 9.15471e-18, No Iterations 1
+ExecutionTime = 0.02 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.0049793, Final residual = 5.73265e-18, No Iterations 1
+ExecutionTime = 0.02 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00494209, Final residual = 8.30314e-18, No Iterations 1
+ExecutionTime = 0.02 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00490446, Final residual = 7.5096e-18, No Iterations 1
+ExecutionTime = 0.02 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00486653, Final residual = 8.27052e-18, No Iterations 1
+ExecutionTime = 0.02 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00482844, Final residual = 8.04927e-18, No Iterations 1
+ExecutionTime = 0.02 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00479026, Final residual = 7.41516e-18, No Iterations 1
+ExecutionTime = 0.02 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00475206, Final residual = 7.36009e-18, No Iterations 1
+ExecutionTime = 0.02 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00471388, Final residual = 7.95681e-18, No Iterations 1
+ExecutionTime = 0.02 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.0046758, Final residual = 8.76689e-18, No Iterations 1
+ExecutionTime = 0.02 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00463786, Final residual = 5.96692e-18, No Iterations 1
+ExecutionTime = 0.02 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00460004, Final residual = 6.65655e-18, No Iterations 1
+ExecutionTime = 0.02 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00456242, Final residual = 6.46639e-18, No Iterations 1
+ExecutionTime = 0.02 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00452502, Final residual = 7.87504e-18, No Iterations 1
+ExecutionTime = 0.02 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00448784, Final residual = 6.56904e-18, No Iterations 1
+ExecutionTime = 0.02 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00445089, Final residual = 7.93003e-18, No Iterations 1
+ExecutionTime = 0.02 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00441422, Final residual = 6.21098e-18, No Iterations 1
+ExecutionTime = 0.02 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00437782, Final residual = 7.30991e-18, No Iterations 1
+ExecutionTime = 0.02 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00434169, Final residual = 7.58256e-18, No Iterations 1
+ExecutionTime = 0.02 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00430585, Final residual = 7.34332e-18, No Iterations 1
+ExecutionTime = 0.02 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00427033, Final residual = 8.31681e-18, No Iterations 1
+ExecutionTime = 0.03 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00423508, Final residual = 5.70012e-18, No Iterations 1
+ExecutionTime = 0.03 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00420016, Final residual = 6.36894e-18, No Iterations 1
+ExecutionTime = 0.03 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00416556, Final residual = 7.22819e-18, No Iterations 1
+ExecutionTime = 0.03 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00413126, Final residual = 6.01774e-18, No Iterations 1
+ExecutionTime = 0.03 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00409727, Final residual = 7.11385e-18, No Iterations 1
+ExecutionTime = 0.03 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00406362, Final residual = 5.09452e-18, No Iterations 1
+ExecutionTime = 0.03 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00403028, Final residual = 6.44861e-18, No Iterations 1
+ExecutionTime = 0.03 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00399726, Final residual = 6.0075e-18, No Iterations 1
+ExecutionTime = 0.03 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00396458, Final residual = 5.95436e-18, No Iterations 1
+ExecutionTime = 0.03 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.0039322, Final residual = 6.19475e-18, No Iterations 1
+ExecutionTime = 0.03 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00390015, Final residual = 6.44991e-18, No Iterations 1
+ExecutionTime = 0.03 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00386842, Final residual = 6.84845e-18, No Iterations 1
+ExecutionTime = 0.03 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00383701, Final residual = 5.30304e-18, No Iterations 1
+ExecutionTime = 0.03 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00380592, Final residual = 5.2448e-18, No Iterations 1
+ExecutionTime = 0.03 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00377514, Final residual = 5.41206e-18, No Iterations 1
+ExecutionTime = 0.03 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00374468, Final residual = 5.68195e-18, No Iterations 1
+ExecutionTime = 0.03 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00371453, Final residual = 6.26154e-18, No Iterations 1
+ExecutionTime = 0.03 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.0036847, Final residual = 5.10262e-18, No Iterations 1
+ExecutionTime = 0.03 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00365517, Final residual = 5.74273e-18, No Iterations 1
+ExecutionTime = 0.03 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00362594, Final residual = 5.86182e-18, No Iterations 1
+ExecutionTime = 0.03 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00359703, Final residual = 5.91804e-18, No Iterations 1
+ExecutionTime = 0.04 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.0035684, Final residual = 5.32622e-18, No Iterations 1
+ExecutionTime = 0.04 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00354008, Final residual = 5.64012e-18, No Iterations 1
+ExecutionTime = 0.04 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00351206, Final residual = 5.85343e-18, No Iterations 1
+ExecutionTime = 0.04 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00348433, Final residual = 5.52899e-18, No Iterations 1
+ExecutionTime = 0.04 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00345689, Final residual = 4.49571e-18, No Iterations 1
+ExecutionTime = 0.04 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00342974, Final residual = 6.18536e-18, No Iterations 1
+ExecutionTime = 0.04 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00340287, Final residual = 4.79628e-18, No Iterations 1
+ExecutionTime = 0.04 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00337628, Final residual = 4.41279e-18, No Iterations 1
+ExecutionTime = 0.04 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00334998, Final residual = 5.16759e-18, No Iterations 1
+ExecutionTime = 0.04 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00332394, Final residual = 5.308e-18, No Iterations 1
+ExecutionTime = 0.04 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00329819, Final residual = 4.62508e-18, No Iterations 1
+ExecutionTime = 0.04 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.0032727, Final residual = 4.02763e-18, No Iterations 1
+ExecutionTime = 0.04 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00324747, Final residual = 4.34298e-18, No Iterations 1
+ExecutionTime = 0.04 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00322252, Final residual = 4.79299e-18, No Iterations 1
+ExecutionTime = 0.04 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00319782, Final residual = 5.13563e-18, No Iterations 1
+ExecutionTime = 0.04 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00317339, Final residual = 4.32111e-18, No Iterations 1
+ExecutionTime = 0.05 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00314921, Final residual = 4.13578e-18, No Iterations 1
+ExecutionTime = 0.05 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00312528, Final residual = 4.68562e-18, No Iterations 1
+ExecutionTime = 0.05 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.0031016, Final residual = 4.35885e-18, No Iterations 1
+ExecutionTime = 0.05 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00307817, Final residual = 4.61561e-18, No Iterations 1
+ExecutionTime = 0.05 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00305498, Final residual = 5.34933e-18, No Iterations 1
+ExecutionTime = 0.05 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00303204, Final residual = 4.08328e-18, No Iterations 1
+ExecutionTime = 0.05 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00300932, Final residual = 5.09933e-18, No Iterations 1
+ExecutionTime = 0.05 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00298685, Final residual = 4.98075e-18, No Iterations 1
+ExecutionTime = 0.05 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00296462, Final residual = 5.37288e-18, No Iterations 1
+ExecutionTime = 0.05 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.0029426, Final residual = 4.647e-18, No Iterations 1
+ExecutionTime = 0.05 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00292082, Final residual = 4.87973e-18, No Iterations 1
+ExecutionTime = 0.05 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00289927, Final residual = 4.13896e-18, No Iterations 1
+ExecutionTime = 0.05 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00287793, Final residual = 4.32519e-18, No Iterations 1
+ExecutionTime = 0.05 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00285683, Final residual = 4.86233e-18, No Iterations 1
+ExecutionTime = 0.05 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00283593, Final residual = 4.75797e-18, No Iterations 1
+ExecutionTime = 0.05 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00281525, Final residual = 4.15875e-18, No Iterations 1
+ExecutionTime = 0.05 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.0027948, Final residual = 4.39305e-18, No Iterations 1
+ExecutionTime = 0.05 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00277455, Final residual = 3.45366e-18, No Iterations 1
+ExecutionTime = 0.05 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00275451, Final residual = 3.94033e-18, No Iterations 1
+ExecutionTime = 0.05 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00273469, Final residual = 3.59016e-18, No Iterations 1
+ExecutionTime = 0.05 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00271508, Final residual = 4.0337e-18, No Iterations 1
+ExecutionTime = 0.05 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00269567, Final residual = 4.45578e-18, No Iterations 1
+ExecutionTime = 0.05 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00267647, Final residual = 3.52311e-18, No Iterations 1
+ExecutionTime = 0.05 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00265748, Final residual = 4.27279e-18, No Iterations 1
+ExecutionTime = 0.05 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.0026387, Final residual = 3.63641e-18, No Iterations 1
+ExecutionTime = 0.05 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00262013, Final residual = 3.85981e-18, No Iterations 1
+ExecutionTime = 0.05 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00260176, Final residual = 4.012e-18, No Iterations 1
+ExecutionTime = 0.05 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.0025836, Final residual = 3.27461e-18, No Iterations 1
+ExecutionTime = 0.05 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00256564, Final residual = 3.70799e-18, No Iterations 1
+ExecutionTime = 0.05 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00254789, Final residual = 3.13468e-18, No Iterations 1
+ExecutionTime = 0.05 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00253035, Final residual = 3.73874e-18, No Iterations 1
+ExecutionTime = 0.05 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00251302, Final residual = 3.03184e-18, No Iterations 1
+ExecutionTime = 0.05 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00249588, Final residual = 4.0594e-18, No Iterations 1
+ExecutionTime = 0.05 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00247896, Final residual = 3.87702e-18, No Iterations 1
+ExecutionTime = 0.07 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00246224, Final residual = 3.93e-18, No Iterations 1
+ExecutionTime = 0.07 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00244572, Final residual = 3.4565e-18, No Iterations 1
+ExecutionTime = 0.07 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.0024294, Final residual = 3.31622e-18, No Iterations 1
+ExecutionTime = 0.07 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00241329, Final residual = 3.28474e-18, No Iterations 1
+ExecutionTime = 0.07 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00239737, Final residual = 3.57649e-18, No Iterations 1
+ExecutionTime = 0.07 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00238165, Final residual = 3.84811e-18, No Iterations 1
+ExecutionTime = 0.07 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00236613, Final residual = 3.65909e-18, No Iterations 1
+ExecutionTime = 0.07 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.0023508, Final residual = 2.9854e-18, No Iterations 1
+ExecutionTime = 0.07 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00233566, Final residual = 3.50806e-18, No Iterations 1
+ExecutionTime = 0.07 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00232072, Final residual = 3.01143e-18, No Iterations 1
+ExecutionTime = 0.07 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00230596, Final residual = 3.15159e-18, No Iterations 1
+ExecutionTime = 0.07 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00229139, Final residual = 3.4641e-18, No Iterations 1
+ExecutionTime = 0.07 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.002277, Final residual = 3.60145e-18, No Iterations 1
+ExecutionTime = 0.07 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00226278, Final residual = 3.80349e-18, No Iterations 1
+ExecutionTime = 0.07 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00224875, Final residual = 3.40142e-18, No Iterations 1
+ExecutionTime = 0.07 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.0022349, Final residual = 3.06644e-18, No Iterations 1
+ExecutionTime = 0.07 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00222122, Final residual = 3.073e-18, No Iterations 1
+ExecutionTime = 0.07 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.0022077, Final residual = 3.40077e-18, No Iterations 1
+ExecutionTime = 0.07 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00219436, Final residual = 2.95688e-18, No Iterations 1
+ExecutionTime = 0.07 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00218118, Final residual = 3.48414e-18, No Iterations 1
+ExecutionTime = 0.07 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00216817, Final residual = 2.99492e-18, No Iterations 1
+ExecutionTime = 0.07 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00215531, Final residual = 2.57336e-18, No Iterations 1
+ExecutionTime = 0.07 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00214262, Final residual = 3.41889e-18, No Iterations 1
+ExecutionTime = 0.07 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00213007, Final residual = 3.0028e-18, No Iterations 1
+ExecutionTime = 0.07 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00211769, Final residual = 3.1772e-18, No Iterations 1
+ExecutionTime = 0.08 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00210545, Final residual = 3.10132e-18, No Iterations 1
+ExecutionTime = 0.08 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00209337, Final residual = 3.16312e-18, No Iterations 1
+ExecutionTime = 0.08 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00208142, Final residual = 2.98031e-18, No Iterations 1
+ExecutionTime = 0.08 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00206963, Final residual = 2.87052e-18, No Iterations 1
+ExecutionTime = 0.08 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00205797, Final residual = 3.09141e-18, No Iterations 1
+ExecutionTime = 0.08 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00204645, Final residual = 3.24849e-18, No Iterations 1
+ExecutionTime = 0.08 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00203507, Final residual = 2.89002e-18, No Iterations 1
+ExecutionTime = 0.08 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00202382, Final residual = 3.1322e-18, No Iterations 1
+ExecutionTime = 0.08 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00201271, Final residual = 3.14127e-18, No Iterations 1
+ExecutionTime = 0.08 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00200172, Final residual = 2.87143e-18, No Iterations 1
+ExecutionTime = 0.08 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00199087, Final residual = 2.98851e-18, No Iterations 1
+ExecutionTime = 0.08 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00198014, Final residual = 3.04208e-18, No Iterations 1
+ExecutionTime = 0.08 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00196953, Final residual = 3.10147e-18, No Iterations 1
+ExecutionTime = 0.08 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00195905, Final residual = 3.00473e-18, No Iterations 1
+ExecutionTime = 0.08 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00194868, Final residual = 2.67148e-18, No Iterations 1
+ExecutionTime = 0.08 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00193844, Final residual = 2.94677e-18, No Iterations 1
+ExecutionTime = 0.08 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00192831, Final residual = 2.71914e-18, No Iterations 1
+ExecutionTime = 0.08 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00191829, Final residual = 2.51265e-18, No Iterations 1
+ExecutionTime = 0.08 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00190839, Final residual = 2.8054e-18, No Iterations 1
+ExecutionTime = 0.08 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.0018986, Final residual = 2.50291e-18, No Iterations 1
+ExecutionTime = 0.08 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00188891, Final residual = 3.12391e-18, No Iterations 1
+ExecutionTime = 0.08 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00187933, Final residual = 3.2044e-18, No Iterations 1
+ExecutionTime = 0.08 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00186986, Final residual = 2.43868e-18, No Iterations 1
+ExecutionTime = 0.09 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00186049, Final residual = 2.70135e-18, No Iterations 1
+ExecutionTime = 0.09 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00185123, Final residual = 2.60651e-18, No Iterations 1
+ExecutionTime = 0.1 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00184206, Final residual = 2.71198e-18, No Iterations 1
+ExecutionTime = 0.1 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00183299, Final residual = 2.52124e-18, No Iterations 1
+ExecutionTime = 0.1 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00182402, Final residual = 2.1155e-18, No Iterations 1
+ExecutionTime = 0.1 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00181515, Final residual = 2.47024e-18, No Iterations 1
+ExecutionTime = 0.1 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00180637, Final residual = 2.55655e-18, No Iterations 1
+ExecutionTime = 0.1 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00179768, Final residual = 1.99368e-18, No Iterations 1
+ExecutionTime = 0.1 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00178908, Final residual = 2.15589e-18, No Iterations 1
+ExecutionTime = 0.1 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00178057, Final residual = 2.48265e-18, No Iterations 1
+ExecutionTime = 0.1 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00177215, Final residual = 2.73165e-18, No Iterations 1
+ExecutionTime = 0.1 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00176382, Final residual = 2.46652e-18, No Iterations 1
+ExecutionTime = 0.1 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00175558, Final residual = 2.13597e-18, No Iterations 1
+ExecutionTime = 0.1 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00174742, Final residual = 2.35291e-18, No Iterations 1
+ExecutionTime = 0.1 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00173934, Final residual = 2.02901e-18, No Iterations 1
+ExecutionTime = 0.1 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00173134, Final residual = 2.19697e-18, No Iterations 1
+ExecutionTime = 0.1 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00172343, Final residual = 2.72478e-18, No Iterations 1
+ExecutionTime = 0.1 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.0017156, Final residual = 2.12535e-18, No Iterations 1
+ExecutionTime = 0.1 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00170784, Final residual = 2.30765e-18, No Iterations 1
+ExecutionTime = 0.1 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00170016, Final residual = 2.48475e-18, No Iterations 1
+ExecutionTime = 0.1 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00169255, Final residual = 2.46633e-18, No Iterations 1
+ExecutionTime = 0.1 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00168502, Final residual = 2.26412e-18, No Iterations 1
+ExecutionTime = 0.1 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00167757, Final residual = 2.31286e-18, No Iterations 1
+ExecutionTime = 0.1 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00167018, Final residual = 2.48842e-18, No Iterations 1
+ExecutionTime = 0.1 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00166287, Final residual = 2.56925e-18, No Iterations 1
+ExecutionTime = 0.11 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00165562, Final residual = 2.23263e-18, No Iterations 1
+ExecutionTime = 0.11 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00164845, Final residual = 2.16512e-18, No Iterations 1
+ExecutionTime = 0.11 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00164135, Final residual = 2.11669e-18, No Iterations 1
+ExecutionTime = 0.11 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00163431, Final residual = 2.53929e-18, No Iterations 1
+ExecutionTime = 0.11 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00162734, Final residual = 2.3857e-18, No Iterations 1
+ExecutionTime = 0.11 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00162044, Final residual = 2.06551e-18, No Iterations 1
+ExecutionTime = 0.11 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.0016136, Final residual = 2.66784e-18, No Iterations 1
+ExecutionTime = 0.11 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00160683, Final residual = 1.83096e-18, No Iterations 1
+ExecutionTime = 0.11 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00160012, Final residual = 2.36213e-18, No Iterations 1
+ExecutionTime = 0.11 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00159347, Final residual = 2.17811e-18, No Iterations 1
+ExecutionTime = 0.11 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00158688, Final residual = 2.20105e-18, No Iterations 1
+ExecutionTime = 0.11 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00158035, Final residual = 2.25361e-18, No Iterations 1
+ExecutionTime = 0.11 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00157388, Final residual = 2.32016e-18, No Iterations 1
+ExecutionTime = 0.11 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00156747, Final residual = 2.13877e-18, No Iterations 1
+ExecutionTime = 0.11 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00156111, Final residual = 1.99729e-18, No Iterations 1
+ExecutionTime = 0.11 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00155481, Final residual = 2.07152e-18, No Iterations 1
+ExecutionTime = 0.11 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00154857, Final residual = 2.2439e-18, No Iterations 1
+ExecutionTime = 0.11 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00154239, Final residual = 2.16217e-18, No Iterations 1
+ExecutionTime = 0.11 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00153626, Final residual = 2.23378e-18, No Iterations 1
+ExecutionTime = 0.11 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00153018, Final residual = 2.08325e-18, No Iterations 1
+ExecutionTime = 0.11 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00152416, Final residual = 1.63885e-18, No Iterations 1
+ExecutionTime = 0.11 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00151819, Final residual = 2.22063e-18, No Iterations 1
+ExecutionTime = 0.12 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00151228, Final residual = 2.39244e-18, No Iterations 1
+ExecutionTime = 0.12 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00150641, Final residual = 2.30423e-18, No Iterations 1
+ExecutionTime = 0.12 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00150059, Final residual = 2.21587e-18, No Iterations 1
+ExecutionTime = 0.12 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00149483, Final residual = 2.11385e-18, No Iterations 1
+ExecutionTime = 0.12 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00148911, Final residual = 1.92205e-18, No Iterations 1
+ExecutionTime = 0.13 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00148344, Final residual = 1.86183e-18, No Iterations 1
+ExecutionTime = 0.13 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00147782, Final residual = 1.93614e-18, No Iterations 1
+ExecutionTime = 0.13 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00147224, Final residual = 1.77555e-18, No Iterations 1
+ExecutionTime = 0.13 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00146672, Final residual = 2.02523e-18, No Iterations 1
+ExecutionTime = 0.13 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00146124, Final residual = 1.75492e-18, No Iterations 1
+ExecutionTime = 0.13 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.0014558, Final residual = 1.74298e-18, No Iterations 1
+ExecutionTime = 0.13 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00145041, Final residual = 1.98641e-18, No Iterations 1
+ExecutionTime = 0.13 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00144507, Final residual = 1.82742e-18, No Iterations 1
+ExecutionTime = 0.13 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00143977, Final residual = 1.80121e-18, No Iterations 1
+ExecutionTime = 0.13 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00143451, Final residual = 1.82612e-18, No Iterations 1
+ExecutionTime = 0.13 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.0014293, Final residual = 2.05618e-18, No Iterations 1
+ExecutionTime = 0.13 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00142412, Final residual = 2.14909e-18, No Iterations 1
+ExecutionTime = 0.13 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00141899, Final residual = 1.8245e-18, No Iterations 1
+ExecutionTime = 0.13 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.0014139, Final residual = 1.86114e-18, No Iterations 1
+ExecutionTime = 0.13 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00140885, Final residual = 1.64339e-18, No Iterations 1
+ExecutionTime = 0.13 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00140384, Final residual = 1.93414e-18, No Iterations 1
+ExecutionTime = 0.13 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00139887, Final residual = 1.91569e-18, No Iterations 1
+ExecutionTime = 0.13 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00139394, Final residual = 1.96637e-18, No Iterations 1
+ExecutionTime = 0.13 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00138905, Final residual = 1.94523e-18, No Iterations 1
+ExecutionTime = 0.14 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.0013842, Final residual = 1.87543e-18, No Iterations 1
+ExecutionTime = 0.14 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00137938, Final residual = 1.47909e-18, No Iterations 1
+ExecutionTime = 0.14 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.0013746, Final residual = 1.59949e-18, No Iterations 1
+ExecutionTime = 0.14 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00136986, Final residual = 1.80084e-18, No Iterations 1
+ExecutionTime = 0.14 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00136516, Final residual = 2.00535e-18, No Iterations 1
+ExecutionTime = 0.14 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00136049, Final residual = 1.92452e-18, No Iterations 1
+ExecutionTime = 0.14 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00135585, Final residual = 1.59927e-18, No Iterations 1
+ExecutionTime = 0.14 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00135125, Final residual = 1.96565e-18, No Iterations 1
+ExecutionTime = 0.14 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00134669, Final residual = 1.90646e-18, No Iterations 1
+ExecutionTime = 0.14 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00134216, Final residual = 1.70038e-18, No Iterations 1
+ExecutionTime = 0.14 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00133767, Final residual = 1.78603e-18, No Iterations 1
+ExecutionTime = 0.14 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00133321, Final residual = 1.57268e-18, No Iterations 1
+ExecutionTime = 0.14 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00132878, Final residual = 2.00406e-18, No Iterations 1
+ExecutionTime = 0.14 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00132439, Final residual = 1.72862e-18, No Iterations 1
+ExecutionTime = 0.14 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00132003, Final residual = 1.77052e-18, No Iterations 1
+ExecutionTime = 0.14 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00131569, Final residual = 1.94713e-18, No Iterations 1
+ExecutionTime = 0.14 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00131139, Final residual = 1.69046e-18, No Iterations 1
+ExecutionTime = 0.14 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00130713, Final residual = 1.58571e-18, No Iterations 1
+ExecutionTime = 0.14 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00130289, Final residual = 1.67065e-18, No Iterations 1
+ExecutionTime = 0.14 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00129868, Final residual = 1.84964e-18, No Iterations 1
+ExecutionTime = 0.14 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00129451, Final residual = 1.58093e-18, No Iterations 1
+ExecutionTime = 0.14 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00129037, Final residual = 1.53221e-18, No Iterations 1
+ExecutionTime = 0.14 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00128625, Final residual = 1.54665e-18, No Iterations 1
+ExecutionTime = 0.14 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00128217, Final residual = 1.89468e-18, No Iterations 1
+ExecutionTime = 0.14 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00127811, Final residual = 1.73643e-18, No Iterations 1
+ExecutionTime = 0.14 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00127408, Final residual = 1.91916e-18, No Iterations 1
+ExecutionTime = 0.14 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00127008, Final residual = 1.67743e-18, No Iterations 1
+ExecutionTime = 0.14 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00126611, Final residual = 2.09587e-18, No Iterations 1
+ExecutionTime = 0.14 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00126216, Final residual = 1.95004e-18, No Iterations 1
+ExecutionTime = 0.14 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00125825, Final residual = 1.62269e-18, No Iterations 1
+ExecutionTime = 0.14 s  ClockTime = 0 s
+
+DILUPBiCGStab:  Solving for V, Initial residual = 0.00125436, Final residual = 1.39777e-18, No Iterations 1
+ExecutionTime = 0.16 s  ClockTime = 0 s
+
+End
+

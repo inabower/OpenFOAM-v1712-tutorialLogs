@@ -1,0 +1,128 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1712                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v1712
+Arch   : "LSB;label=32;scalar=64"
+Exec   : blockMesh
+Date   : Jan 04 2018
+Time   : 23:19:27
+Host   : "inabower-PC"
+PID    : 10079
+I/O    : uncollated
+Case   : /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/finiteArea/liquidFilmFoam/cylinder
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Creating block mesh from
+    "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/finiteArea/liquidFilmFoam/cylinder/system/blockMeshDict"
+Creating block edges
+No non-planar block faces defined
+Creating topology blocks
+Creating topology patches
+
+Reading patches section
+
+Creating block mesh topology
+
+Reading physicalType from existing boundary file
+
+Default patch type set to empty
+
+Check topology
+
+	Basic statistics
+		Number of internal faces : 12
+		Number of boundary faces : 36
+		Number of defined boundary faces : 36
+		Number of undefined boundary faces : 0
+	Checking patch -> block consistency
+
+Creating block offsets
+Creating merge list .
+
+Creating polyMesh from blockMesh
+Creating patches
+Creating cells
+Creating points with scale 0.016
+    Block 0 cell size :
+        i : 0.000800001 .. 0.000800001
+        j : 0.000628157 .. 0.000628157
+        k : 0.008 .. 0.008
+
+    Block 1 cell size :
+        i : 0.0008 .. 0.0008
+        j : 0.000628157 .. 0.000628157
+        k : 0.008 .. 0.008
+
+    Block 2 cell size :
+        i : 0.0008 .. 0.0008
+        j : 0.00125631 .. 0.00125631
+        k : 0.008 .. 0.008
+
+    Block 3 cell size :
+        i : 0.00103431 .. 0.00103431
+        j : 0.00103431 .. 0.00103431
+        k : 0.008 .. 0.008
+
+    Block 4 cell size :
+        i : 0.00125631 .. 0.00125631
+        j : 0.0008 .. 0.0008
+        k : 0.008 .. 0.008
+
+    Block 5 cell size :
+        i : 0.000800001 .. 0.000800001
+        j : 0.00125631 .. 0.00125631
+        k : 0.008 .. 0.008
+
+    Block 6 cell size :
+        i : 0.0008 .. 0.0008
+        j : 0.00125631 .. 0.00125631
+        k : 0.008 .. 0.008
+
+    Block 7 cell size :
+        i : 0.0008 .. 0.0008
+        j : 0.00113137 .. 0.00113137
+        k : 0.008 .. 0.008
+
+    Block 8 cell size :
+        i : 0.00103431 .. 0.00103431
+        j : 0.00103431 .. 0.00103431
+        k : 0.008 .. 0.008
+
+    Block 9 cell size :
+        i : 0.00125631 .. 0.00125631
+        j : 0.00103431 .. 0.00103431
+        k : 0.008 .. 0.008
+
+
+Writing polyMesh with 0 cellZones
+----------------
+Mesh Information
+----------------
+  boundingBox: (-0.032 0 0) (0.032 0.032 0.008)
+  nPoints: 4222
+  nCells: 2000
+  nFaces: 8110
+  nInternalFaces: 3890
+----------------
+Patches
+----------------
+  patch 0 (start: 3890 size: 60) name: symmetry
+  patch 1 (start: 3950 size: 30) name: outlet
+  patch 2 (start: 3980 size: 60) name: side
+  patch 3 (start: 4040 size: 30) name: inlet
+  patch 4 (start: 4070 size: 40) name: cylinder
+  patch 5 (start: 4110 size: 2000) name: film
+  patch 6 (start: 6110 size: 2000) name: top
+
+End
+
