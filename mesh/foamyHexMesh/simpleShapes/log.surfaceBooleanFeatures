@@ -1,0 +1,73 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1712                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v1712
+Arch   : "LSB;label=32;scalar=64"
+Exec   : surfaceBooleanFeatures intersection cone_orient.stl sphere_orient.stl
+Date   : Jan 05 2018
+Time   : 06:57:02
+Host   : "inabower-PC"
+PID    : 29805
+I/O    : uncollated
+Case   : /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/simpleShapes
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Reading surface cone_orient.stl
+cone_orient.stl statistics:
+Triangles    : 118 in 1 region(s)
+Vertices     : 61
+Bounding Box : (-0.5 -0.5 -0.5) (0.5 0.5 0.5)
+
+Reading surface sphere_orient.stl
+sphere_orient.stl statistics:
+Triangles    : 720 in 1 region(s)
+Vertices     : 362
+Bounding Box : (0.1017080024 -0.1982920021 -0.5) (1.098289967 0.7982919812 0.5)
+
+Surface triangles 118 number of zones (orientation or non-manifold):1
+Surface triangles 720 number of zones (orientation or non-manifold):1
+Constructing CGAL surface ...
+Constructing CGAL tree ...
+Constructing CGAL surface ...
+Constructing CGAL tree ...
+points      : 80
+edges       : 80
+boundingBox : (0.1190553377 -0.09867200091 -0.1429249214) (0.3026559982 0.1904723311 0.1429249379)
+point classification :
+    convex feature points          :        0
+    concave feature points         :        0
+    mixed feature points           :        0
+    other (non-feature) points     :       80
+edge classification :
+    external (convex angle) edges  :       80
+    internal (concave angle) edges :        0
+    flat region edges              :        0
+    open edges                     :        0
+    multiply connected edges       :        0
+
+Writing extendedEdgeMesh components to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/simpleShapes/constant/extendedFeatureEdgeMesh/cone_orient_sphere_orient_intersection"
+Writing 0 convex feature points to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/simpleShapes/constant/extendedFeatureEdgeMesh/cone_orient_sphere_orient_intersection_convexFeaturePts.obj"
+Writing 0 concave feature points to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/simpleShapes/constant/extendedFeatureEdgeMesh/cone_orient_sphere_orient_intersection_concaveFeaturePts.obj"
+Writing 0 mixed feature points to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/simpleShapes/constant/extendedFeatureEdgeMesh/cone_orient_sphere_orient_intersection_mixedFeaturePts.obj"
+Writing 0 mixed feature point structure to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/simpleShapes/constant/extendedFeatureEdgeMesh/cone_orient_sphere_orient_intersection_mixedFeaturePtsStructure.obj"
+Writing 80 external edges to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/simpleShapes/constant/extendedFeatureEdgeMesh/cone_orient_sphere_orient_intersection_externalEdges.obj"
+Writing 0 internal edges to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/simpleShapes/constant/extendedFeatureEdgeMesh/cone_orient_sphere_orient_intersection_internalEdges.obj"
+Writing 0 flat edges to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/simpleShapes/constant/extendedFeatureEdgeMesh/cone_orient_sphere_orient_intersection_flatEdges.obj"
+Writing 0 open edges to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/simpleShapes/constant/extendedFeatureEdgeMesh/cone_orient_sphere_orient_intersection_openEdges.obj"
+Writing 0 multiple edges to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/simpleShapes/constant/extendedFeatureEdgeMesh/cone_orient_sphere_orient_intersection_multipleEdges.obj"
+Writing 0 region edges to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/simpleShapes/constant/extendedFeatureEdgeMesh/cone_orient_sphere_orient_intersection_regionEdges.obj"
+Writing 80 edge directions to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/simpleShapes/constant/extendedFeatureEdgeMesh/cone_orient_sphere_orient_intersection_edgeDirections.obj"
+
+Writing featureEdgeMesh to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/simpleShapes/constant/triSurface/cone_orient_sphere_orient_intersection.eMesh"
+End
+

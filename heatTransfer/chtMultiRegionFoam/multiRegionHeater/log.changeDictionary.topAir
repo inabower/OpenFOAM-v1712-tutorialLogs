@@ -1,0 +1,174 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1712                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v1712
+Arch   : "LSB;label=32;scalar=64"
+Exec   : changeDictionary -region topAir
+Date   : Jan 05 2018
+Time   : 06:48:50
+Host   : "inabower-PC"
+PID    : 29391
+I/O    : uncollated
+Case   : /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/multiRegionHeater
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh topAir for time = 0
+
+Read dictionary changeDictionaryDict with replacements for dictionaries 
+6
+(
+U
+T
+epsilon
+k
+p_rgh
+p
+)
+
+Reading polyMesh/boundary file to extract patch names
+Loaded dictionary boundary with entries 
+8
+(
+maxY
+minX
+maxX
+minZ
+maxZ
+topAir_to_rightSolid
+topAir_to_heater
+topAir_to_leftSolid
+)
+
+Extracted patch groups:
+    group wall with patches 
+6
+(
+maxY
+minZ
+maxZ
+topAir_to_rightSolid
+topAir_to_heater
+topAir_to_leftSolid
+)
+
+Replacing entries in dictionary U
+Loading dictionary U
+Loaded dictionary U with entries 
+3
+(
+dimensions
+internalField
+boundaryField
+)
+
+Merging entries from 
+2
+(
+internalField
+boundaryField
+)
+
+Writing modified fieldDict U
+Replacing entries in dictionary T
+Loading dictionary T
+Loaded dictionary T with entries 
+3
+(
+dimensions
+internalField
+boundaryField
+)
+
+Merging entries from 
+2
+(
+internalField
+boundaryField
+)
+
+Writing modified fieldDict T
+Replacing entries in dictionary epsilon
+Loading dictionary epsilon
+Loaded dictionary epsilon with entries 
+3
+(
+dimensions
+internalField
+boundaryField
+)
+
+Merging entries from 
+2
+(
+internalField
+boundaryField
+)
+
+Writing modified fieldDict epsilon
+Replacing entries in dictionary k
+Loading dictionary k
+Loaded dictionary k with entries 
+3
+(
+dimensions
+internalField
+boundaryField
+)
+
+Merging entries from 
+2
+(
+internalField
+boundaryField
+)
+
+Writing modified fieldDict k
+Replacing entries in dictionary p_rgh
+Loading dictionary p_rgh
+Loaded dictionary p_rgh with entries 
+3
+(
+dimensions
+internalField
+boundaryField
+)
+
+Merging entries from 
+2
+(
+internalField
+boundaryField
+)
+
+Writing modified fieldDict p_rgh
+Replacing entries in dictionary p
+Loading dictionary p
+Loaded dictionary p with entries 
+3
+(
+dimensions
+internalField
+boundaryField
+)
+
+Merging entries from 
+2
+(
+internalField
+boundaryField
+)
+
+Writing modified fieldDict p
+
+End
+

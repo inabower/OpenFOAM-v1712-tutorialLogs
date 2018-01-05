@@ -1,0 +1,152 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1712                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v1712
+Arch   : "LSB;label=32;scalar=64"
+Exec   : surfaceBooleanFeatures intersection stirrer_baffles.stl stirrer.stl -surf1Baffle -perturb
+Date   : Jan 05 2018
+Time   : 07:05:34
+Host   : "inabower-PC"
+PID    : 29879
+I/O    : uncollated
+Case   : /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Reading surface stirrer_baffles.stl
+stirrer_baffles.stl statistics:
+Triangles    : 116 in 1 region(s)
+Vertices     : 127
+Bounding Box : (-0.174999997 -0.174999997 0.05000000075) (0.174999997 0.174999997 0.7565159798)
+
+Reading surface stirrer.stl
+stirrer.stl statistics:
+Triangles    : 1080 in 1 region(s)
+Vertices     : 546
+Bounding Box : (-0.03999999911 -0.03999999911 0.05999999866) (0.03999999911 0.03999999911 0.7599999905)
+
+Surface triangles 116 number of zones (orientation or non-manifold):11
+Surface triangles 1080 number of zones (orientation or non-manifold):3
+Duplicating 0 points out of 37
+Duplicating 0 points out of 182
+Determining intersections of 72 edges with surface of 360 triangles
+Determined intersections:
+    edges               : 72
+    non-degenerate cuts : 72
+    degenerate cuts     : 0
+
+Determining intersections of 540 edges with surface of 36 triangles
+Determined intersections:
+    edges               : 540
+    non-degenerate cuts : 144
+    degenerate cuts     : 72
+
+Shuffling conflicting points
+Determining intersections of 540 edges with surface of 36 triangles
+Determined intersections:
+    edges               : 540
+    non-degenerate cuts : 86
+    degenerate cuts     : 0
+
+Duplicating 0 points out of 9
+Duplicating 0 points out of 9
+Duplicating 0 points out of 9
+Duplicating 0 points out of 9
+Duplicating 0 points out of 9
+Duplicating 0 points out of 9
+Duplicating 0 points out of 9
+Duplicating 0 points out of 182
+Determining intersections of 16 edges with surface of 360 triangles
+Determined intersections:
+    edges               : 16
+    non-degenerate cuts : 6
+    degenerate cuts     : 0
+
+Determining intersections of 540 edges with surface of 8 triangles
+Determined intersections:
+    edges               : 540
+    non-degenerate cuts : 24
+    degenerate cuts     : 0
+
+Duplicating 0 points out of 9
+Duplicating 0 points out of 182
+Determining intersections of 16 edges with surface of 360 triangles
+Determined intersections:
+    edges               : 16
+    non-degenerate cuts : 6
+    degenerate cuts     : 0
+
+Determining intersections of 540 edges with surface of 8 triangles
+Determined intersections:
+    edges               : 540
+    non-degenerate cuts : 24
+    degenerate cuts     : 0
+
+Duplicating 0 points out of 9
+Duplicating 0 points out of 182
+Determining intersections of 16 edges with surface of 360 triangles
+Determined intersections:
+    edges               : 16
+    non-degenerate cuts : 6
+    degenerate cuts     : 0
+
+Determining intersections of 540 edges with surface of 8 triangles
+Determined intersections:
+    edges               : 540
+    non-degenerate cuts : 24
+    degenerate cuts     : 0
+
+Duplicating 0 points out of 9
+Duplicating 0 points out of 182
+Determining intersections of 16 edges with surface of 360 triangles
+Determined intersections:
+    edges               : 16
+    non-degenerate cuts : 6
+    degenerate cuts     : 0
+
+Determining intersections of 540 edges with surface of 8 triangles
+Determined intersections:
+    edges               : 540
+    non-degenerate cuts : 24
+    degenerate cuts     : 0
+
+points      : 278
+edges       : 218
+boundingBox : (-0.03999999911 -0.03999999917 0.07999999821) (0.03999999914 0.03999999911 0.7565159798)
+point classification :
+    convex feature points          :        0
+    concave feature points         :        0
+    mixed feature points           :        0
+    other (non-feature) points     :      278
+edge classification :
+    external (convex angle) edges  :        0
+    internal (concave angle) edges :        0
+    flat region edges              :        0
+    open edges                     :        0
+    multiply connected edges       :      218
+
+Writing extendedEdgeMesh components to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/stirrer_baffles_stirrer_intersection"
+Writing 0 convex feature points to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/stirrer_baffles_stirrer_intersection_convexFeaturePts.obj"
+Writing 0 concave feature points to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/stirrer_baffles_stirrer_intersection_concaveFeaturePts.obj"
+Writing 0 mixed feature points to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/stirrer_baffles_stirrer_intersection_mixedFeaturePts.obj"
+Writing 0 mixed feature point structure to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/stirrer_baffles_stirrer_intersection_mixedFeaturePtsStructure.obj"
+Writing 0 external edges to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/stirrer_baffles_stirrer_intersection_externalEdges.obj"
+Writing 0 internal edges to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/stirrer_baffles_stirrer_intersection_internalEdges.obj"
+Writing 0 flat edges to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/stirrer_baffles_stirrer_intersection_flatEdges.obj"
+Writing 0 open edges to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/stirrer_baffles_stirrer_intersection_openEdges.obj"
+Writing 218 multiple edges to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/stirrer_baffles_stirrer_intersection_multipleEdges.obj"
+Writing 0 region edges to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/stirrer_baffles_stirrer_intersection_regionEdges.obj"
+Writing 218 edge directions to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/stirrer_baffles_stirrer_intersection_edgeDirections.obj"
+
+Writing featureEdgeMesh to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/triSurface/stirrer_baffles_stirrer_intersection.eMesh"
+End
+

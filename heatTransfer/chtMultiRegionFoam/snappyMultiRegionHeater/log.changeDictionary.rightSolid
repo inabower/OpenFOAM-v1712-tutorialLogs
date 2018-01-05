@@ -1,0 +1,164 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1712                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v1712
+Arch   : "LSB;label=32;scalar=64"
+Exec   : changeDictionary -parallel -decomposeParDict system/decomposeParDict.6 -region rightSolid
+Date   : Jan 05 2018
+Time   : 17:42:50
+Host   : "inabower-PC"
+PID    : 10635
+I/O    : uncollated
+Case   : /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/snappyMultiRegionHeater
+nProcs : 6
+Hosts  :
+(
+    (inabower-PC 6)
+)
+Pstream initialized with:
+    floatTransfer      : 0
+    nProcsSimpleSum    : 0
+    commsType          : nonBlocking
+    polling iterations : 0
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh rightSolid for time = 0
+
+Read dictionary changeDictionaryDict with replacements for dictionaries 
+2
+(
+boundary
+T
+)
+
+Reading polyMesh/boundary file to extract patch names
+Loaded dictionary boundary with entries 
+7
+(
+maxX
+minZ
+maxZ
+rightSolid_to_bottomAir
+rightSolid_to_topAir
+rightSolid_to_heater
+procBoundary0to1
+)
+
+Extracted patch groups:
+    group processor with patches 1(procBoundary0to1)
+    group wall with patches 
+5
+(
+minZ
+maxZ
+rightSolid_to_bottomAir
+rightSolid_to_topAir
+rightSolid_to_heater
+)
+
+Replacing entries in dictionary boundary
+Special handling of boundary as polyMesh/boundary file.
+Merging entries from 
+2
+(
+minZ
+maxZ
+)
+
+fieldDict:
+{
+    maxX
+    {
+        type            patch;
+        nFaces          40;
+        startFace       1016;
+    }
+    minZ
+    {
+        type            patch;
+        inGroups        1 ( wall );
+        nFaces          16;
+        startFace       1056;
+    }
+    maxZ
+    {
+        type            patch;
+        inGroups        1 ( wall );
+        nFaces          24;
+        startFace       1072;
+    }
+    rightSolid_to_bottomAir
+    {
+        type            mappedWall;
+        inGroups        1 ( wall );
+        nFaces          216;
+        startFace       1096;
+        sampleMode      nearestPatchFace;
+        sampleRegion    bottomAir;
+        samplePatch     bottomAir_to_rightSolid;
+    }
+    rightSolid_to_topAir
+    {
+        type            mappedWall;
+        inGroups        1 ( wall );
+        nFaces          216;
+        startFace       1312;
+        sampleMode      nearestPatchFace;
+        sampleRegion    topAir;
+        samplePatch     topAir_to_rightSolid;
+    }
+    rightSolid_to_heater
+    {
+        type            mappedWall;
+        inGroups        1 ( wall );
+        nFaces          0;
+        startFace       1528;
+        sampleMode      nearestPatchFace;
+        sampleRegion    heater;
+        samplePatch     heater_to_rightSolid;
+    }
+    procBoundary0to1
+    {
+        type            processor;
+        inGroups        1 ( processor );
+        nFaces          48;
+        startFace       1528;
+        matchTolerance  0.0001;
+        transform       unknown;
+        myProcNo        0;
+        neighbProcNo    1;
+    }
+}
+
+Writing modified boundary
+Replacing entries in dictionary T
+Loading dictionary T
+Loaded dictionary T with entries 
+3
+(
+dimensions
+internalField
+boundaryField
+)
+
+Merging entries from 
+2
+(
+internalField
+boundaryField
+)
+
+Writing modified fieldDict T
+
+End
+
+Finalising parallel run

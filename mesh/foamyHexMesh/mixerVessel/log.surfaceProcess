@@ -1,0 +1,561 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1712                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v1712
+Arch   : "LSB;label=32;scalar=64"
+Exec   : surfaceAdd outlet.stl vessel.stl vessel.stl
+Date   : Jan 05 2018
+Time   : 07:05:33
+Host   : "inabower-PC"
+PID    : 29852
+I/O    : uncollated
+Case   : /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/triSurface
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Reading two surfaces; merging points and writing the surface to another file
+
+Regions from the two files will not get merged
+Regions from "vessel.stl" will get offset so as not to overlap with the regions in "outlet.stl"
+
+Surface1 : "outlet.stl"
+Surface2 : "vessel.stl"
+Writing  : "vessel.stl"
+
+Surface1:
+Triangles    : 34 in 1 region(s)
+Vertices     : 36
+Bounding Box : (-0.13 -0.13 1.3) (-0.07 -0.07 1.3)
+
+Surface2:
+Triangles    : 3594 in 1 region(s)
+Vertices     : 1816
+Bounding Box : (-0.265 -0.265 -0.101753) (0.265 0.265 1.3)
+
+Surface "outlet.stl" has 1 regions
+All region numbers in "vessel.stl" will be offset by this amount
+
+New patches:
+    0	outlet
+    1	vessel
+
+Foam::mergePoints : Merging points 1816 and 1 with coordinates:(-0.0807164 -0.0770187 1.3) and (-0.0807164 -0.0770187 1.3)
+Foam::mergePoints : Merging points 1817 and 0 with coordinates:(-0.0770187 -0.0807164 1.3) and (-0.0770187 -0.0807164 1.3)
+Foam::mergePoints : Merging points 1818 and 3 with coordinates:(-0.085 -0.0740192 1.3) and (-0.085 -0.0740192 1.3)
+Foam::mergePoints : Merging points 1819 and 2 with coordinates:(-0.0740192 -0.085 1.3) and (-0.0740192 -0.085 1.3)
+Foam::mergePoints : Merging points 1820 and 5 with coordinates:(-0.0897394 -0.0718092 1.3) and (-0.0897394 -0.0718092 1.3)
+Foam::mergePoints : Merging points 1821 and 4 with coordinates:(-0.0718092 -0.0897394 1.3) and (-0.0718092 -0.0897394 1.3)
+Foam::mergePoints : Merging points 1822 and 7 with coordinates:(-0.0947905 -0.0704558 1.3) and (-0.0947905 -0.0704558 1.3)
+Foam::mergePoints : Merging points 1823 and 6 with coordinates:(-0.0704558 -0.0947905 1.3) and (-0.0704558 -0.0947905 1.3)
+Foam::mergePoints : Merging points 1824 and 9 with coordinates:(-0.1 -0.07 1.3) and (-0.1 -0.07 1.3)
+Foam::mergePoints : Merging points 1825 and 8 with coordinates:(-0.07 -0.1 1.3) and (-0.07 -0.1 1.3)
+Foam::mergePoints : Merging points 1826 and 11 with coordinates:(-0.105209 -0.0704558 1.3) and (-0.105209 -0.0704558 1.3)
+Foam::mergePoints : Merging points 1827 and 10 with coordinates:(-0.0704558 -0.105209 1.3) and (-0.0704558 -0.105209 1.3)
+Foam::mergePoints : Merging points 1828 and 13 with coordinates:(-0.110261 -0.0718092 1.3) and (-0.110261 -0.0718092 1.3)
+Foam::mergePoints : Merging points 1829 and 12 with coordinates:(-0.0718092 -0.110261 1.3) and (-0.0718092 -0.110261 1.3)
+Foam::mergePoints : Merging points 1830 and 15 with coordinates:(-0.115 -0.0740192 1.3) and (-0.115 -0.0740192 1.3)
+Foam::mergePoints : Merging points 1831 and 14 with coordinates:(-0.0740192 -0.115 1.3) and (-0.0740192 -0.115 1.3)
+Foam::mergePoints : Merging points 1832 and 17 with coordinates:(-0.119284 -0.0770187 1.3) and (-0.119284 -0.0770187 1.3)
+Foam::mergePoints : Merging points 1833 and 16 with coordinates:(-0.0770187 -0.119284 1.3) and (-0.0770187 -0.119284 1.3)
+Foam::mergePoints : Merging points 1834 and 19 with coordinates:(-0.122981 -0.0807164 1.3) and (-0.122981 -0.0807164 1.3)
+Foam::mergePoints : Merging points 1835 and 18 with coordinates:(-0.0807164 -0.122981 1.3) and (-0.0807164 -0.122981 1.3)
+Foam::mergePoints : Merging points 1836 and 21 with coordinates:(-0.125981 -0.085 1.3) and (-0.125981 -0.085 1.3)
+Foam::mergePoints : Merging points 1837 and 20 with coordinates:(-0.085 -0.125981 1.3) and (-0.085 -0.125981 1.3)
+Foam::mergePoints : Merging points 1838 and 23 with coordinates:(-0.128191 -0.0897394 1.3) and (-0.128191 -0.0897394 1.3)
+Foam::mergePoints : Merging points 1839 and 22 with coordinates:(-0.0897394 -0.128191 1.3) and (-0.0897394 -0.128191 1.3)
+Foam::mergePoints : Merging points 1840 and 24 with coordinates:(-0.129544 -0.0947905 1.3) and (-0.129544 -0.0947905 1.3)
+Foam::mergePoints : Merging points 1841 and 25 with coordinates:(-0.0947905 -0.129544 1.3) and (-0.0947905 -0.129544 1.3)
+Foam::mergePoints : Merging points 1842 and 26 with coordinates:(-0.13 -0.1 1.3) and (-0.13 -0.1 1.3)
+Foam::mergePoints : Merging points 1843 and 27 with coordinates:(-0.1 -0.13 1.3) and (-0.1 -0.13 1.3)
+Foam::mergePoints : Merging points 1844 and 28 with coordinates:(-0.129544 -0.105209 1.3) and (-0.129544 -0.105209 1.3)
+Foam::mergePoints : Merging points 1845 and 29 with coordinates:(-0.105209 -0.129544 1.3) and (-0.105209 -0.129544 1.3)
+Foam::mergePoints : Merging points 1846 and 30 with coordinates:(-0.128191 -0.110261 1.3) and (-0.128191 -0.110261 1.3)
+Foam::mergePoints : Merging points 1847 and 31 with coordinates:(-0.110261 -0.128191 1.3) and (-0.110261 -0.128191 1.3)
+Foam::mergePoints : Merging points 1848 and 32 with coordinates:(-0.125981 -0.115 1.3) and (-0.125981 -0.115 1.3)
+Foam::mergePoints : Merging points 1849 and 33 with coordinates:(-0.115 -0.125981 1.3) and (-0.115 -0.125981 1.3)
+Foam::mergePoints : Merging points 1850 and 34 with coordinates:(-0.122981 -0.119284 1.3) and (-0.122981 -0.119284 1.3)
+Foam::mergePoints : Merging points 1851 and 35 with coordinates:(-0.119284 -0.122981 1.3) and (-0.119284 -0.122981 1.3)
+stitchTriangles : Merged from 1852 points down to 1816
+Merged surface:
+Triangles    : 3628 in 2 region(s)
+Vertices     : 1816
+Bounding Box : (-0.265 -0.265 -0.101753) (0.265 0.265 1.3)
+
+Writing : "vessel.stl"
+End
+
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1712                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v1712
+Arch   : "LSB;label=32;scalar=64"
+Exec   : surfaceCheck sparger.stl
+Date   : Jan 05 2018
+Time   : 07:05:33
+Host   : "inabower-PC"
+PID    : 29853
+I/O    : uncollated
+Case   : /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/triSurface
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Reading surface from "sparger.stl" ...
+
+Statistics:
+Triangles    : 972 in 1 region(s)
+Vertices     : 541
+Bounding Box : (-0.1 -0.1 -0.2) (0.1 0.1 0)
+
+Region	Size
+------	----
+sparger	972
+
+
+Surface has no illegal triangles.
+
+Triangle quality (equilateral=1, collapsed=0):
+    0 .. 0.05  : 0
+    0.05 .. 0.1  : 0
+    0.1 .. 0.15  : 0
+    0.15 .. 0.2  : 0
+    0.2 .. 0.25  : 0
+    0.25 .. 0.3  : 0.777778
+    0.3 .. 0.35  : 0
+    0.35 .. 0.4  : 0
+    0.4 .. 0.45  : 0
+    0.45 .. 0.5  : 0
+    0.5 .. 0.55  : 0
+    0.55 .. 0.6  : 0
+    0.6 .. 0.65  : 0
+    0.65 .. 0.7  : 0.222222
+    0.7 .. 0.75  : 0
+    0.75 .. 0.8  : 0
+    0.8 .. 0.85  : 0
+    0.85 .. 0.9  : 0
+    0.9 .. 0.95  : 0
+    0.95 .. 1  : 0
+
+    min 0.265316 for triangle 220
+    max 0.66454 for triangle 24
+
+Edges:
+    min 0.00348618 for edge 487 points (0.0153209 -0.0128558 -0.181)(0.0128558 -0.0153209 -0.181)
+    max 0.1 for edge 326 points (0.0939693 0.034202 -0.03)(0 0 -0.03)
+
+Checking for points less than 1e-6 of bounding box ((0.2 0.2 0.2) metre) apart.
+Found 0 nearby points.
+
+Surface is not closed since not all edges (1512) connected to two faces:
+    connected to one face : 108
+    connected to >2 faces : 0
+Conflicting face labels:108
+Dumping conflicting face labels to "problemFaces"
+Paste this into the input for surfaceSubset
+
+Number of unconnected parts : 2
+Splitting surface into parts ...
+
+Writing zoning to "./zone_sparger.vtk"...
+
+writing part 0 size 252 to "./sparger_0.obj"
+writing part 1 size 720 to "./sparger_1.obj"
+
+Number of zones (connected area with consistent normal) : 3
+More than one normal orientation.
+Writing zoning to "./normal_sparger.vtk"...
+
+writing part 0 size 216 to "./sparger_normal_0.obj"
+writing part 1 size 36 to "./sparger_normal_1.obj"
+writing part 2 size 720 to "./sparger_normal_2.obj"
+
+
+End
+
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1712                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v1712
+Arch   : "LSB;label=32;scalar=64"
+Exec   : surfaceAdd gasInlet.stl sparger_0.obj spargerInlet.stl
+Date   : Jan 05 2018
+Time   : 07:05:33
+Host   : "inabower-PC"
+PID    : 29854
+I/O    : uncollated
+Case   : /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/triSurface
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Reading two surfaces; merging points and writing the surface to another file
+
+Regions from the two files will not get merged
+Regions from "sparger_0.obj" will get offset so as not to overlap with the regions in "gasInlet.stl"
+
+Surface1 : "gasInlet.stl"
+Surface2 : "sparger_0.obj"
+Writing  : "spargerInlet.stl"
+
+Surface1:
+Triangles    : 36 in 1 region(s)
+Vertices     : 37
+Bounding Box : (-0.1 -0.1 0) (0.1 0.1 0)
+
+Surface2:
+Triangles    : 252 in 1 region(s)
+Vertices     : 145
+Bounding Box : (-0.1 -0.1 -0.03) (0.1 0.1 0)
+
+Surface "gasInlet.stl" has 1 regions
+All region numbers in "sparger_0.obj" will be offset by this amount
+
+New patches:
+    0	gasInlet
+    1	sparger
+
+Merged surface:
+Triangles    : 288 in 2 region(s)
+Vertices     : 182
+Bounding Box : (-0.1 -0.1 -0.03) (0.1 0.1 0)
+
+Writing : "spargerInlet.stl"
+End
+
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1712                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v1712
+Arch   : "LSB;label=32;scalar=64"
+Exec   : surfaceConvert sparger_1.obj spargerShaft.stl
+Date   : Jan 05 2018
+Time   : 07:05:33
+Host   : "inabower-PC"
+PID    : 29855
+I/O    : uncollated
+Case   : /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/triSurface
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Reading : "sparger_1.obj"
+Read surface:
+Triangles    : 720 in 1 region(s)
+Vertices     : 396
+Bounding Box : (-0.02 -0.02 -0.2) (0.02 0.02 -0.01)
+
+Maintaining face ordering
+writing "spargerShaft.stl"
+
+End
+
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1712                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v1712
+Arch   : "LSB;label=32;scalar=64"
+Exec   : surfaceOrient -inside spargerInlet.stl (0 0.1 1) spargerInlet.stl
+Date   : Jan 05 2018
+Time   : 07:05:33
+Host   : "inabower-PC"
+PID    : 29856
+I/O    : uncollated
+Case   : /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/triSurface
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Reading surface from "spargerInlet.stl"
+Orienting surface such that visiblePoint (0 0.1 1) is inside
+Flipped orientation of (part of) surface.
+Writing new surface to "spargerInlet.stl"
+End
+
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1712                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v1712
+Arch   : "LSB;label=32;scalar=64"
+Exec   : surfaceOrient -inside spargerShaft.stl (0 0.1 -0.1) spargerShaft.stl
+Date   : Jan 05 2018
+Time   : 07:05:33
+Host   : "inabower-PC"
+PID    : 29857
+I/O    : uncollated
+Case   : /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/triSurface
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Reading surface from "spargerShaft.stl"
+Orienting surface such that visiblePoint (0 0.1 -0.1) is inside
+Flipped orientation of (part of) surface.
+Writing new surface to "spargerShaft.stl"
+End
+
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1712                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v1712
+Arch   : "LSB;label=32;scalar=64"
+Exec   : surfaceOrient -inside shaftRotating.stl (0 0.1 1) shaftRotating.stl
+Date   : Jan 05 2018
+Time   : 07:05:33
+Host   : "inabower-PC"
+PID    : 29858
+I/O    : uncollated
+Case   : /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/triSurface
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Reading surface from "shaftRotating.stl"
+Orienting surface such that visiblePoint (0 0.1 1) is inside
+Flipped orientation of (part of) surface.
+Writing new surface to "shaftRotating.stl"
+End
+
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1712                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v1712
+Arch   : "LSB;label=32;scalar=64"
+Exec   : surfaceOrient -inside shaft.stl (0 0.1 1) shaft.stl
+Date   : Jan 05 2018
+Time   : 07:05:33
+Host   : "inabower-PC"
+PID    : 29859
+I/O    : uncollated
+Case   : /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/triSurface
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Reading surface from "shaft.stl"
+Orienting surface such that visiblePoint (0 0.1 1) is inside
+Flipped orientation of (part of) surface.
+Writing new surface to "shaft.stl"
+End
+
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1712                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v1712
+Arch   : "LSB;label=32;scalar=64"
+Exec   : surfaceSplitByTopology stirrer.stl stirrer.stl
+Date   : Jan 05 2018
+Time   : 07:05:33
+Host   : "inabower-PC"
+PID    : 29860
+I/O    : uncollated
+Case   : /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/triSurface
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Reading surface from "stirrer.stl"
+Splitting off baffle parts 
+    Iteration 0
+    Writing baffle part to "stirrer_bafflePart_0.stl"
+    Iteration 1
+Writing new surface to "stirrer.stl"
+Splitting remaining multiply connected parts
+    Writing mulitple part 0 to "stirrer_multiplePart_0.stl"
+    Writing mulitple part 1 to "stirrer_multiplePart_1.stl"
+    Writing mulitple part 2 to "stirrer_multiplePart_2.stl"
+End
+
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1712                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v1712
+Arch   : "LSB;label=32;scalar=64"
+Exec   : surfaceOrient -inside stirrer.stl (0 0.1 1) stirrer.stl
+Date   : Jan 05 2018
+Time   : 07:05:33
+Host   : "inabower-PC"
+PID    : 29861
+I/O    : uncollated
+Case   : /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/triSurface
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Reading surface from "stirrer.stl"
+Orienting surface such that visiblePoint (0 0.1 1) is inside
+Flipped orientation of (part of) surface.
+Writing new surface to "stirrer.stl"
+End
+
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1712                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v1712
+Arch   : "LSB;label=32;scalar=64"
+Exec   : surfaceCheck stirrer_baffles.stl
+Date   : Jan 05 2018
+Time   : 07:05:33
+Host   : "inabower-PC"
+PID    : 29863
+I/O    : uncollated
+Case   : /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/triSurface
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Reading surface from "stirrer_baffles.stl" ...
+
+Statistics:
+Triangles    : 116 in 1 region(s)
+Vertices     : 127
+Bounding Box : (-0.175 -0.175 0.05) (0.175 0.175 0.756516)
+
+Region	Size
+------	----
+stirrer	116
+
+
+Surface has no illegal triangles.
+
+Triangle quality (equilateral=1, collapsed=0):
+    0 .. 0.05  : 0
+    0.05 .. 0.1  : 0
+    0.1 .. 0.15  : 0
+    0.15 .. 0.2  : 0
+    0.2 .. 0.25  : 0
+    0.25 .. 0.3  : 0.310345
+    0.3 .. 0.35  : 0
+    0.35 .. 0.4  : 0
+    0.4 .. 0.45  : 0
+    0.45 .. 0.5  : 0
+    0.5 .. 0.55  : 0
+    0.55 .. 0.6  : 0
+    0.6 .. 0.65  : 0.275862
+    0.65 .. 0.7  : 0.413793
+    0.7 .. 0.75  : 0
+    0.75 .. 0.8  : 0
+    0.8 .. 0.85  : 0
+    0.85 .. 0.9  : 0
+    0.9 .. 0.95  : 0
+    0.95 .. 1  : 0
+
+    min 0.265316 for triangle 4
+    max 0.679237 for triangle 56
+
+Edges:
+    min 0.017431 for edge 120 points (0.0766044 0.0642788 0.08)(0.0642788 0.0766044 0.08)
+    max 0.1 for edge 2 points (0.0939693 0.034202 0.08)(0 0 0.08)
+
+Checking for points less than 1e-6 of bounding box ((0.35 0.35 0.706516) metre) apart.
+Found 0 nearby points.
+
+Surface is not closed since not all edges (232) connected to two faces:
+    connected to one face : 116
+    connected to >2 faces : 0
+Conflicting face labels:116
+Dumping conflicting face labels to "problemFaces"
+Paste this into the input for surfaceSubset
+
+Number of unconnected parts : 11
+Splitting surface into parts ...
+
+Writing zoning to "./zone_stirrer_baffles.vtk"...
+
+Limiting number of files to 10
+writing part 0 size 36 to "./stirrer_baffles_0.obj"
+writing part 1 size 8 to "./stirrer_baffles_1.obj"
+writing part 2 size 8 to "./stirrer_baffles_2.obj"
+writing part 3 size 8 to "./stirrer_baffles_3.obj"
+writing part 4 size 8 to "./stirrer_baffles_4.obj"
+writing part 5 size 8 to "./stirrer_baffles_5.obj"
+writing part 6 size 8 to "./stirrer_baffles_6.obj"
+writing part 7 size 8 to "./stirrer_baffles_7.obj"
+writing part 8 size 8 to "./stirrer_baffles_8.obj"
+writing part 9 size 8 to "./stirrer_baffles_9.obj"
+
+Number of zones (connected area with consistent normal) : 11
+More than one normal orientation.
+Writing zoning to "./normal_stirrer_baffles.vtk"...
+
+Limiting number of files to 10
+writing part 0 size 36 to "./stirrer_baffles_normal_0.obj"
+writing part 1 size 8 to "./stirrer_baffles_normal_1.obj"
+writing part 2 size 8 to "./stirrer_baffles_normal_2.obj"
+writing part 3 size 8 to "./stirrer_baffles_normal_3.obj"
+writing part 4 size 8 to "./stirrer_baffles_normal_4.obj"
+writing part 5 size 8 to "./stirrer_baffles_normal_5.obj"
+writing part 6 size 8 to "./stirrer_baffles_normal_6.obj"
+writing part 7 size 8 to "./stirrer_baffles_normal_7.obj"
+writing part 8 size 8 to "./stirrer_baffles_normal_8.obj"
+writing part 9 size 8 to "./stirrer_baffles_normal_9.obj"
+
+
+End
+

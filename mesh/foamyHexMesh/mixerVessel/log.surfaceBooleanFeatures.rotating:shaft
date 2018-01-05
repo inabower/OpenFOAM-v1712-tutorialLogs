@@ -1,0 +1,88 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1712                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v1712
+Arch   : "LSB;label=32;scalar=64"
+Exec   : surfaceBooleanFeatures intersection rotating.stl shaft.stl -surf1Baffle -perturb
+Date   : Jan 05 2018
+Time   : 07:05:34
+Host   : "inabower-PC"
+PID    : 29882
+I/O    : uncollated
+Case   : /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Reading surface rotating.stl
+rotating.stl statistics:
+Triangles    : 38080 in 1 region(s)
+Vertices     : 19042
+Bounding Box : (-0.1852499992 -0.1852499992 0.02500000037) (0.1852499992 0.1852499992 0.8999999762)
+
+Reading surface shaft.stl
+shaft.stl statistics:
+Triangles    : 1080 in 1 region(s)
+Vertices     : 576
+Bounding Box : (-0.02500000037 -0.02500000037 0.8999999762) (0.02500000037 0.02500000037 1.299999952)
+
+Surface triangles 38080 number of zones (orientation or non-manifold):1
+Surface triangles 1080 number of zones (orientation or non-manifold):1
+Determining intersections of 57120 edges with surface of 1080 triangles
+Determined intersections:
+    edges               : 57120
+    non-degenerate cuts : 320
+    degenerate cuts     : 0
+
+Determining intersections of 1656 edges with surface of 38080 triangles
+Determined intersections:
+    edges               : 1656
+    non-degenerate cuts : 72
+    degenerate cuts     : 356
+
+Shuffling conflicting points
+Determining intersections of 1656 edges with surface of 38080 triangles
+Determined intersections:
+    edges               : 1656
+    non-degenerate cuts : 46
+    degenerate cuts     : 0
+
+points      : 366
+edges       : 323
+boundingBox : (-0.02500000038 -0.02500000037 0.8999999762) (0.02500000038 0.02500000037 0.8999999762)
+point classification :
+    convex feature points          :        0
+    concave feature points         :        0
+    mixed feature points           :        0
+    other (non-feature) points     :      366
+edge classification :
+    external (convex angle) edges  :        0
+    internal (concave angle) edges :        0
+    flat region edges              :        0
+    open edges                     :        0
+    multiply connected edges       :      323
+
+Writing extendedEdgeMesh components to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/rotating_shaft_intersection"
+Writing 0 convex feature points to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/rotating_shaft_intersection_convexFeaturePts.obj"
+Writing 0 concave feature points to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/rotating_shaft_intersection_concaveFeaturePts.obj"
+Writing 0 mixed feature points to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/rotating_shaft_intersection_mixedFeaturePts.obj"
+Writing 0 mixed feature point structure to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/rotating_shaft_intersection_mixedFeaturePtsStructure.obj"
+Writing 0 external edges to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/rotating_shaft_intersection_externalEdges.obj"
+Writing 0 internal edges to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/rotating_shaft_intersection_internalEdges.obj"
+Writing 0 flat edges to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/rotating_shaft_intersection_flatEdges.obj"
+Writing 0 open edges to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/rotating_shaft_intersection_openEdges.obj"
+Writing 323 multiple edges to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/rotating_shaft_intersection_multipleEdges.obj"
+Writing 0 region edges to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/rotating_shaft_intersection_regionEdges.obj"
+Writing 323 edge directions to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/rotating_shaft_intersection_edgeDirections.obj"
+
+Writing featureEdgeMesh to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/triSurface/rotating_shaft_intersection.eMesh"
+End
+

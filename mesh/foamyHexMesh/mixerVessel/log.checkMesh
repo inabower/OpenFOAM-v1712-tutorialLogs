@@ -1,0 +1,156 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1712                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v1712
+Arch   : "LSB;label=32;scalar=64"
+Exec   : checkMesh -parallel -allTopology -allGeometry -latestTime
+Date   : Jan 05 2018
+Time   : 08:42:47
+Host   : "inabower-PC"
+PID    : 30645
+I/O    : uncollated
+Case   : /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel
+nProcs : 8
+Hosts  :
+(
+    (inabower-PC 8)
+)
+Pstream initialized with:
+    floatTransfer      : 0
+    nProcsSimpleSum    : 0
+    commsType          : nonBlocking
+    polling iterations : 0
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 101
+
+Enabling all (cell, face, edge, point) topology checks.
+
+Enabling all geometry checks.
+
+Time = 101
+
+Mesh stats
+    points:           879716
+    faces:            2361298
+    internal faces:   2204887
+    cells:            722030
+    faces per cell:   6.324093182
+    boundary patches: 15
+    point zones:      5
+    face zones:       3
+    cell zones:       1
+
+Overall number of cells of each type:
+    hexahedra:     486583
+    prisms:        10102
+    wedges:        30109
+    pyramids:      290
+    tet wedges:    1559
+    tetrahedra:    83
+    polyhedra:     193304
+    Breakdown of polyhedra by number of faces:
+        faces   number of cells
+            4   51
+            5   1649
+            6   26116
+            7   109342
+            8   37822
+            9   12316
+           10   3880
+           11   1340
+           12   466
+           13   190
+           14   76
+           15   33
+           16   13
+           17   7
+           18   1
+           20   2
+
+Checking topology...
+    Boundary definition OK.
+    Cell to face addressing OK.
+    Point usage OK.
+    Upper triangular ordering OK.
+    Face vertices OK.
+    Topological cell zip-up check OK.
+  <<Number of duplicate (not baffle) faces found: 174. This might indicate a problem.
+  <<Number of faces with non-consecutive shared points: 460. This might indicate a problem.
+  <<Writing 1014 faces with non-standard edge connectivity to set edgeFaces
+  <<Writing 5 cells with two non-boundary faces to set twoInternalFacesCells
+    Number of regions: 1 (OK).
+
+Checking basic patch addressing...
+                   Patch    Faces   Points Bounding box
+                  outlet      263      352 (-0.1299994475 -0.1299984046 1.299999952) (-0.07000143257 -0.07000073024 1.299999952)
+                  vessel    42223    49703 (-0.2650615194 -0.2652876175 -0.1013487313) (0.2652946513 0.2652958505 1.299999952)
+                gasInlet     1884     2317 (-0.09999159585 -0.09994267572 -5.914322851e-17) (0.1000409583 0.1000954924 5.90890184e-18)
+                 sparger     3051     3647 (-0.09999989961 -0.09999976069 -0.02999999933) (0.1000409583 0.1001182716 3.469446952e-18)
+            spargerShaft      694      915 (-0.01999996086 -0.02005326864 -0.1013487313) (0.0199999046 0.01999999955 -0.02999999933)
+           shaftRotating     7965    10257 (-0.02513810383 -0.02510061929 0.05000000075) (0.02514585469 0.02514234642 0.8999999762)
+    shaftRotating_shaftRotatingCap2        0        0
+                   shaft     2232     2822 (-0.02510358527 -0.02509894652 0.8999999762) (0.02500000037 0.02514010489 1.101164581)
+         stirrer_baffles        2        8 (-0.02878345793 -0.02651650086 0.7022674708) (-0.0272530245 0.02651650086 0.7572113592)
+                 stirrer     5523     7121 (-0.04010321548 -0.04008019512 0.05999999866) (0.04001282514 0.03999999911 0.7599999905)
+
+Checking basic faceZone addressing...
+                FaceZone    Faces   Points Bounding box
+         stirrer_baffles     7593     9644 (-0.1752714035 -0.1758413259 0.04980250276) (0.174999997 0.1753162181 0.7571477534)
+                rotating    27886    30422 (-0.185340323 -0.1854218996 0.02500000037) (0.1853472015 0.1853716343 0.8999999762)
+                 baffles     2013     2554 (-0.1726779938 -0.1726779938 0.02471098691) (0.1726779938 0.1726779938 0.7749999762)
+
+Checking basic cellZone addressing...
+                CellZone    Cells   Points BoundingBox
+                rotating   302569   387734 (-0.185340323 -0.1854218996 0.02500000037) (0.1853472015 0.1853716343 0.8999999762)
+
+Checking geometry...
+    Overall domain bounding box (-0.2650615194 -0.2652876175 -0.1013487313) (0.2652946513 0.2652958505 1.299999952)
+    Mesh has 3 geometric (non-empty/wedge) directions (1 1 1)
+    Mesh has 3 solution (non-empty) directions (1 1 1)
+    Boundary openness (6.52156218e-16 1.962013702e-16 2.616056422e-18) OK.
+    Max cell openness = 3.062210887e-16 OK.
+    Max aspect ratio = 17.80142452 OK.
+    Minimum face area = 2.742961227e-12. Maximum face area = 0.0001580489484.  Face area magnitudes OK.
+    Min volume = 3.022348173e-10. Max volume = 9.463315549e-07.  Total volume = 0.2459506593.  Cell volumes OK.
+    Mesh non-orthogonality Max: 63.88162136 average: 8.991356597
+    Non-orthogonality check OK.
+    Face pyramids OK.
+ ***Max skewness = 4.219417781, 1 highly skew faces detected which may impair the quality of the results
+  <<Writing 1 skew faces to set skewFaces
+    Coupled point location match (average 5.405969401e-23) OK.
+ ***Error in face tets: 3 faces with low quality or negative volume decomposition tets.
+  <<Writing 2 faces with low quality or negative volume decomposition tets to set lowQualityTetFaces
+   *Edges too small, min/max edge length = 1.405878308e-06 0.02223050859, number too small: 2
+  <<Writing 2 points on short edges to set shortEdges
+   *There are 13017 faces with concave angles between consecutive edges. Max concave angle = 79.83271707 degrees.
+  <<Writing 13017 faces with concave angles to set concaveFaces
+    Face flatness (1 = flat, 0 = butterfly) : min = 0.6465682083  average = 0.9969493076
+   *There are 111 faces with ratio between projected and actual area < 0.8
+    Minimum ratio (minimum flatness, maximum warpage) = 0.6465682083
+  <<Writing 111 warped faces to set warpedFaces
+    Cell determinant (wellposedness) : minimum: 0 average: 1.3546788
+ ***Cells with small determinant (< 0.001) found, number of cells: 20
+  <<Writing 20 under-determined cells to set underdeterminedCells
+ ***Concave cells (using face planes) found, number of cells: 18666
+  <<Writing 18666 concave cells to set concaveCells
+    Face interpolation weight : minimum: 0.0227648241 average: 0.4659158236
+ ***Faces with small interpolation weight (< 0.05) found, number of faces: 7
+  <<Writing 7 faces with low interpolation weights to set lowWeightFaces
+    Face volume ratio : minimum: 0.02452384502 average: 0.8193535988
+    Face volume ratio check OK.
+
+Failed 5 mesh checks.
+
+End
+
+Finalising parallel run

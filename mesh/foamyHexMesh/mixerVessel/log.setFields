@@ -1,0 +1,44 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1712                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v1712
+Arch   : "LSB;label=32;scalar=64"
+Exec   : setFields
+Date   : Jan 05 2018
+Time   : 08:43:25
+Host   : "inabower-PC"
+PID    : 30675
+I/O    : uncollated
+Case   : /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+Reading setFieldsDict
+
+Setting field default values
+    Setting internal values of volScalarField alpha.phase1
+--> FOAM Warning : 
+    From function const Foam::HashTable<Foam::List<int> >& Foam::polyBoundaryMesh::groupPatchIDs() const
+    in file meshes/polyMesh/polyBoundaryMesh/polyBoundaryMesh.C at line 444
+    Removing patchGroup 'baffles' which clashes with patch 9 of the same name.
+AMI: Creating addressing and weights between 27883 source faces and 27883 target faces
+AMI: Patch source sum(weights) min/max/average = 1, 1.14742, 1.00004
+AMI: Patch target sum(weights) min/max/average = 1, 1.14742, 1.00004
+
+Setting field region values
+    Adding cells with center within boxes 1((-4 -4 -1) (4 4 0.74))
+    Setting internal values of volScalarField alpha.phase1
+
+End
+

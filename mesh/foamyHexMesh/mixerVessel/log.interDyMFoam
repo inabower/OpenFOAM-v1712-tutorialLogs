@@ -1,0 +1,152 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1712                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v1712
+Arch   : "LSB;label=32;scalar=64"
+Exec   : interDyMFoam -parallel
+Date   : Jan 05 2018
+Time   : 08:43:35
+Host   : "inabower-PC"
+PID    : 30683
+I/O    : uncollated
+Case   : /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel
+nProcs : 8
+Hosts  :
+(
+    (inabower-PC 8)
+)
+Pstream initialized with:
+    floatTransfer      : 0
+    nProcsSimpleSum    : 0
+    commsType          : nonBlocking
+    polling iterations : 0
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+Selecting dynamicFvMesh dynamicMotionSolverFvMesh
+Selecting motion solver: solidBody
+Selecting solid-body motion function rotatingMotion
+Applying solid body motion to cellZone rotating
+
+PIMPLE: Operating solver in PISO mode
+
+Reading field p_rgh
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+AMI: Creating addressing and weights between 27883 source faces and 27883 target faces
+AMI: Patch source sum(weights) min/max/average = 1, 1.14742, 1.00004
+AMI: Patch target sum(weights) min/max/average = 1, 1.14742, 1.00004
+Reading transportProperties
+
+Selecting incompressible transport model Newtonian
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kEpsilon
+
+Reading g
+
+Reading hRef
+Calculating field g.h
+
+No MRF models present
+
+No finite volume options present
+
+[3] #0  Foam::error::printStack(Foam::Ostream&)[2] #0  Foam::error::printStack(Foam::Ostream&) at ??:? at ??:?
+
+[2] #1  Foam::sigFpe::sigHandler(int)[3] #1  Foam::sigFpe::sigHandler(int) at ??:?
+[2] #2  ? at ??:?
+[3] #2  ? in "/lib/x86_64-linux-gnu/libc.so.6"
+[2] #3  Foam::DICPreconditioner::calcReciprocalD(Foam::Field<double>&, Foam::lduMatrix const&) in "/lib/x86_64-linux-gnu/libc.so.6"
+[3] #3  Foam::DICPreconditioner::calcReciprocalD(Foam::Field<double>&, Foam::lduMatrix const&) at ??:?
+[2] #4  Foam::DICPreconditioner::DICPreconditioner(Foam::lduMatrix::solver const&, Foam::dictionary const&) at ??:?
+[3] #4  Foam::DICPreconditioner::DICPreconditioner(Foam::lduMatrix::solver const&, Foam::dictionary const&) at ??:?
+[2] #5  Foam::lduMatrix::preconditioner::addsymMatrixConstructorToTable<Foam::DICPreconditioner>::New(Foam::lduMatrix::solver const&, Foam::dictionary const&) at ??:?
+[3] #5  Foam::lduMatrix::preconditioner::addsymMatrixConstructorToTable<Foam::DICPreconditioner>::New(Foam::lduMatrix::solver const&, Foam::dictionary const&) at ??:?
+[2] #6  Foam::lduMatrix::preconditioner::New(Foam::lduMatrix::solver const&, Foam::dictionary const&) at ??:?
+[3] #6  Foam::lduMatrix::preconditioner::New(Foam::lduMatrix::solver const&, Foam::dictionary const&) at ??:?
+[2] #7  Foam::PCG::solve(Foam::Field<double>&, Foam::Field<double> const&, unsigned char) const at ??:?
+[2] #8  Foam::GAMGSolver::solveCoarsestLevel(Foam::Field<double>&, Foam::Field<double> const&) const at ??:?
+[3] #7  Foam::PCG::solve(Foam::Field<double>&, Foam::Field<double> const&, unsigned char) const at ??:?
+[2] #9  Foam::GAMGSolver::Vcycle(Foam::PtrList<Foam::lduMatrix::smoother> const&, Foam::Field<double>&, Foam::Field<double> const&, Foam::Field<double>&, Foam::Field<double>&, Foam::Field<double>&, Foam::Field<double>&, Foam::Field<double>&, Foam::PtrList<Foam::Field<double> >&, Foam::PtrList<Foam::Field<double> >&, unsigned char) const at ??:?
+[3] #8  Foam::GAMGSolver::solveCoarsestLevel(Foam::Field<double>&, Foam::Field<double> const&) const at ??:?
+[3] #9  Foam::GAMGSolver::Vcycle(Foam::PtrList<Foam::lduMatrix::smoother> const&, Foam::Field<double>&, Foam::Field<double> const&, Foam::Field<double>&, Foam::Field<double>&, Foam::Field<double>&, Foam::Field<double>&, Foam::Field<double>&, Foam::PtrList<Foam::Field<double> >&, Foam::PtrList<Foam::Field<double> >&, unsigned char) const at ??:?
+[2] #10  Foam::GAMGSolver::solve(Foam::Field<double>&, Foam::Field<double> const&, unsigned char) const at ??:?
+[2] #11  Foam::fvMatrix<double>::solveSegregated(Foam::dictionary const&) at ??:?
+[3] #10  Foam::GAMGSolver::solve(Foam::Field<double>&, Foam::Field<double> const&, unsigned char) const at ??:?
+[3] #11  Foam::fvMatrix<double>::solveSegregated(Foam::dictionary const&) at ??:?
+[2] #12  Foam::fvMatrix<double>::solveSegregatedOrCoupled(Foam::dictionary const&) at ??:?
+[3] #12  Foam::fvMatrix<double>::solveSegregatedOrCoupled(Foam::dictionary const&) at ??:?
+[2] #13  Foam::fvMesh::solve(Foam::fvMatrix<double>&, Foam::dictionary const&) const at ??:?
+[3] #13  Foam::fvMesh::solve(Foam::fvMatrix<double>&, Foam::dictionary const&) const at ??:?
+[2] #14  ? at ??:?
+[3] #14   at ??:?
+[2] #15  ?? at ??:?
+[3] #15   at ??:?
+[2] #16  __libc_start_main? in "/lib/x86_64-linux-gnu/libc.so.6"
+[2] #17  ? at ??:?
+[3] #16  __libc_start_main at ??:?
+[inabower-PC:30685] *** Process received signal ***
+[inabower-PC:30685] Signal: Floating point exception (8)
+[inabower-PC:30685] Signal code:  (-6)
+[inabower-PC:30685] Failing at address: 0x3e8000077dd
+ in "/lib/x86_64-linux-gnu/libc.so.6"
+[3] #17  [inabower-PC:30685] [ 0] /lib/x86_64-linux-gnu/libc.so.6(+0x354b0)[0x7f07fd0ed4b0]
+[inabower-PC:30685] [ 1] /lib/x86_64-linux-gnu/libc.so.6(gsignal+0x38)[0x7f07fd0ed428]
+[inabower-PC:30685] [ 2] /lib/x86_64-linux-gnu/libc.so.6(+0x354b0)[0x7f07fd0ed4b0]
+[inabower-PC:30685] [ 3] /home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib/libOpenFOAM.so(_ZN4Foam17DICPreconditioner15calcReciprocalDERNS_5FieldIdEERKNS_9lduMatrixE+0x134)[0x7f07fe400fd4]
+[inabower-PC:30685] [ 4] /home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib/libOpenFOAM.so(_ZN4Foam17DICPreconditionerC1ERKNS_9lduMatrix6solverERKNS_10dictionaryE+0x4f)[0x7f07fe40107f]
+[inabower-PC:30685] [ 5] /home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib/libOpenFOAM.so(_ZN4Foam9lduMatrix14preconditioner30addsymMatrixConstructorToTableINS_17DICPreconditionerEE3NewERKNS0_6solverERKNS_10dictionaryE+0x2e)[0x7f07fe4012ae]
+[inabower-PC:30685] [ 6] /home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib/libOpenFOAM.so(_ZN4Foam9lduMatrix14preconditioner3NewERKNS0_6solverERKNS_10dictionaryE+0x258)[0x7f07fe3f2008]
+[inabower-PC:30685] [ 7] /home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib/libOpenFOAM.so(_ZNK4Foam3PCG5solveERNS_5FieldIdEERKS2_h+0x5c3)[0x7f07fe3f5943]
+[inabower-PC:30685] [ 8] /home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib/libOpenFOAM.so(_ZNK4Foam10GAMGSolver18solveCoarsestLevelERNS_5FieldIdEERKS2_+0x5c6)[0x7f07fe4171d6]
+[inabower-PC:30685] [ 9] /home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib/libOpenFOAM.so(_ZNK4Foam10GAMGSolver6VcycleERKNS_7PtrListINS_9lduMatrix8smootherEEERNS_5FieldIdEERKS8_S9_S9_S9_S9_S9_RNS1_IS8_EESD_h+0x4da)[0x7f07fe4183ba]
+[inabower-PC:30685] [10] /home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib/libOpenFOAM.so(_ZNK4Foam10GAMGSolver5solveERNS_5FieldIdEERKS2_h+0x55a)[0x7f07fe41ac8a]
+[inabower-PC:30685] [11] /home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib/libfiniteVolume.so(_ZN4Foam8fvMatrixIdE15solveSegregatedERKNS_10dictionaryE+0x15b)[0x7f080179890b]
+[inabower-PC:30685] [12] /home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib/libfiniteVolume.so(_ZN4Foam8fvMatrixIdE24solveSegregatedOrCoupledERKNS_10dictionaryE+0x3d3)[0x7f080142a873]
+[inabower-PC:30685] [13] /home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib/libfiniteVolume.so(_ZNK4Foam6fvMesh5solveERNS_8fvMatrixIdEERKNS_10dictionaryE+0x23)[0x7f08013d7b53]
+[inabower-PC:30685] [14] interDyMFoam[0x4ecccb]
+[inabower-PC:30685] [15] interDyMFoam[0x4420f0]
+[inabower-PC:30685] [16] /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0)[0x7f07fd0d8830]
+[inabower-PC:30685] [17] interDyMFoam[0x44eab9]
+[inabower-PC:30685] *** End of error message ***
+? at ??:?
+[inabower-PC:30686] *** Process received signal ***
+[inabower-PC:30686] Signal: Floating point exception (8)
+[inabower-PC:30686] Signal code:  (-6)
+[inabower-PC:30686] Failing at address: 0x3e8000077de
+[inabower-PC:30686] [ 0] /lib/x86_64-linux-gnu/libc.so.6(+0x354b0)[0x7f96051f64b0]
+[inabower-PC:30686] [ 1] /lib/x86_64-linux-gnu/libc.so.6(gsignal+0x38)[0x7f96051f6428]
+[inabower-PC:30686] [ 2] /lib/x86_64-linux-gnu/libc.so.6(+0x354b0)[0x7f96051f64b0]
+[inabower-PC:30686] [ 3] /home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib/libOpenFOAM.so(_ZN4Foam17DICPreconditioner15calcReciprocalDERNS_5FieldIdEERKNS_9lduMatrixE+0x134)[0x7f9606509fd4]
+[inabower-PC:30686] [ 4] /home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib/libOpenFOAM.so(_ZN4Foam17DICPreconditionerC1ERKNS_9lduMatrix6solverERKNS_10dictionaryE+0x4f)[0x7f960650a07f]
+[inabower-PC:30686] [ 5] /home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib/libOpenFOAM.so(_ZN4Foam9lduMatrix14preconditioner30addsymMatrixConstructorToTableINS_17DICPreconditionerEE3NewERKNS0_6solverERKNS_10dictionaryE+0x2e)[0x7f960650a2ae]
+[inabower-PC:30686] [ 6] /home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib/libOpenFOAM.so(_ZN4Foam9lduMatrix14preconditioner3NewERKNS0_6solverERKNS_10dictionaryE+0x258)[0x7f96064fb008]
+[inabower-PC:30686] [ 7] /home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib/libOpenFOAM.so(_ZNK4Foam3PCG5solveERNS_5FieldIdEERKS2_h+0x5c3)[0x7f96064fe943]
+[inabower-PC:30686] [ 8] /home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib/libOpenFOAM.so(_ZNK4Foam10GAMGSolver18solveCoarsestLevelERNS_5FieldIdEERKS2_+0x5c6)[0x7f96065201d6]
+[inabower-PC:30686] [ 9] /home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib/libOpenFOAM.so(_ZNK4Foam10GAMGSolver6VcycleERKNS_7PtrListINS_9lduMatrix8smootherEEERNS_5FieldIdEERKS8_S9_S9_S9_S9_S9_RNS1_IS8_EESD_h+0x4da)[0x7f96065213ba]
+[inabower-PC:30686] [10] /home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib/libOpenFOAM.so(_ZNK4Foam10GAMGSolver5solveERNS_5FieldIdEERKS2_h+0x55a)[0x7f9606523c8a]
+[inabower-PC:30686] [11] /home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib/libfiniteVolume.so(_ZN4Foam8fvMatrixIdE15solveSegregatedERKNS_10dictionaryE+0x15b)[0x7f96098a190b]
+[inabower-PC:30686] [12] /home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib/libfiniteVolume.so(_ZN4Foam8fvMatrixIdE24solveSegregatedOrCoupledERKNS_10dictionaryE+0x3d3)[0x7f9609533873]
+[inabower-PC:30686] [13] /home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib/libfiniteVolume.so(_ZNK4Foam6fvMesh5solveERNS_8fvMatrixIdEERKNS_10dictionaryE+0x23)[0x7f96094e0b53]
+[inabower-PC:30686] [14] interDyMFoam[0x4ecccb]
+[inabower-PC:30686] [15] interDyMFoam[0x4420f0]
+[inabower-PC:30686] [16] /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0)[0x7f96051e1830]
+[inabower-PC:30686] [17] interDyMFoam[0x44eab9]
+[inabower-PC:30686] *** End of error message ***
+--------------------------------------------------------------------------
+mpirun noticed that process rank 3 with PID 30686 on node inabower-PC exited on signal 8 (Floating point exception).
+--------------------------------------------------------------------------

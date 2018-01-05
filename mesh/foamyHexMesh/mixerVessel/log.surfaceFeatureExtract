@@ -1,0 +1,349 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1712                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v1712
+Arch   : "LSB;label=32;scalar=64"
+Exec   : surfaceFeatureExtract
+Date   : Jan 05 2018
+Time   : 07:05:35
+Host   : "inabower-PC"
+PID    : 29905
+I/O    : uncollated
+Case   : /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+
+Note: Feature line extraction only valid on closed manifold surfaces
+
+Reading surfaceFeatureExtractDict
+
+Surfaces     : shaftRotating.stl
+Output       : shaftRotating
+Load options : offset
+Write options: writeObj=yes writeVTK=off
+
+Statistics:
+Triangles    : 2952 in 2 region(s)
+Vertices     : 1478
+Bounding Box : (-0.02500000037 -0.02500000037 0.05000000075) (0.02500000037 0.02500000037 0.8999999762)
+
+Constructing feature set from included angle 100
+Selecting edges based purely on geometric tests: no
+Subset edges inside box (-0.1 -0.1 -0.1) (0.1 0.1 0.1)
+Dumping bounding box (-0.1 -0.1 -0.1) (0.1 0.1 0.1) as lines to obj file "subsetBox.obj"
+
+Initial Feature set:
+    points : 0
+    edges  : 36
+    of which
+        region edges   : 0
+        external edges : 0
+        internal edges : 36
+
+Final Feature set:
+    points : 36
+    of which
+        convex             : 0
+        concave            : 0
+        mixed              : 0
+        non-feature        : 36
+    edges  : 36
+    of which
+        external edges     : 0
+        internal edges     : 36
+        flat edges         : 0
+        open edges         : 0
+        multiply connected : 0
+
+Writing extendedFeatureEdgeMesh to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/shaftRotating.extendedFeatureEdgeMesh"
+
+Writing extendedEdgeMesh components to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/shaftRotating"
+Writing 0 convex feature points to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/shaftRotating_convexFeaturePts.obj"
+Writing 0 concave feature points to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/shaftRotating_concaveFeaturePts.obj"
+Writing 0 mixed feature points to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/shaftRotating_mixedFeaturePts.obj"
+Writing 0 mixed feature point structure to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/shaftRotating_mixedFeaturePtsStructure.obj"
+Writing 0 external edges to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/shaftRotating_externalEdges.obj"
+Writing 36 internal edges to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/shaftRotating_internalEdges.obj"
+Writing 0 flat edges to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/shaftRotating_flatEdges.obj"
+Writing 0 open edges to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/shaftRotating_openEdges.obj"
+Writing 0 multiple edges to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/shaftRotating_multipleEdges.obj"
+Writing 0 region edges to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/shaftRotating_regionEdges.obj"
+Writing 36 edge directions to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/shaftRotating_edgeDirections.obj"
+
+Writing featureEdgeMesh to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/triSurface/shaftRotating.eMesh"
+
+Surfaces     : vessel.stl
+Output       : vessel
+Load options : offset
+Write options: writeObj=no writeVTK=off
+
+Statistics:
+Triangles    : 3628 in 2 region(s)
+Vertices     : 1816
+Bounding Box : (-0.2649999857 -0.2649999857 -0.1017529964) (0.2649999857 0.2649999857 1.299999952)
+
+Constructing feature set from included angle 120
+Selecting edges based purely on geometric tests: no
+Removing all non-manifold edges (edges with > 2 connected faces) unless they cross multiple regions
+Removing all open edges (edges with 1 connected face)
+
+Initial Feature set:
+    points : 0
+    edges  : 94
+    of which
+        region edges   : 36
+        external edges : 0
+        internal edges : 58
+
+Final Feature set:
+    points : 94
+    of which
+        convex             : 0
+        concave            : 0
+        mixed              : 0
+        non-feature        : 94
+    edges  : 94
+    of which
+        external edges     : 36
+        internal edges     : 58
+        flat edges         : 0
+        open edges         : 0
+        multiply connected : 0
+
+Writing extendedFeatureEdgeMesh to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/vessel.extendedFeatureEdgeMesh"
+
+Writing featureEdgeMesh to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/triSurface/vessel.eMesh"
+
+Surfaces     : spargerInlet.stl
+Output       : spargerInlet
+Load options : offset
+Write options: writeObj=no writeVTK=off
+
+Statistics:
+Triangles    : 288 in 2 region(s)
+Vertices     : 146
+Bounding Box : (-0.1000000015 -0.1000000015 -0.02999999933) (0.1000000015 0.1000000015 0)
+
+Constructing feature set from included angle 120
+Selecting edges based purely on geometric tests: no
+
+Initial Feature set:
+    points : 0
+    edges  : 72
+    of which
+        region edges   : 36
+        external edges : 0
+        internal edges : 36
+
+Final Feature set:
+    points : 72
+    of which
+        convex             : 0
+        concave            : 0
+        mixed              : 0
+        non-feature        : 72
+    edges  : 72
+    of which
+        external edges     : 0
+        internal edges     : 72
+        flat edges         : 0
+        open edges         : 0
+        multiply connected : 0
+
+Writing extendedFeatureEdgeMesh to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/spargerInlet.extendedFeatureEdgeMesh"
+
+Writing featureEdgeMesh to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/triSurface/spargerInlet.eMesh"
+
+Surfaces     : stirrer.stl
+Output       : stirrer
+Load options : offset
+Write options: writeObj=no writeVTK=off
+
+Statistics:
+Triangles    : 1080 in 1 region(s)
+Vertices     : 546
+Bounding Box : (-0.03999999911 -0.03999999911 0.05999999866) (0.03999999911 0.03999999911 0.7599999905)
+
+Constructing feature set from included angle 120
+Selecting edges based purely on geometric tests: no
+
+Initial Feature set:
+    points : 0
+    edges  : 216
+    of which
+        region edges   : 0
+        external edges : 0
+        internal edges : 216
+
+Final Feature set:
+    points : 216
+    of which
+        convex             : 0
+        concave            : 0
+        mixed              : 0
+        non-feature        : 216
+    edges  : 216
+    of which
+        external edges     : 0
+        internal edges     : 216
+        flat edges         : 0
+        open edges         : 0
+        multiply connected : 0
+
+Writing extendedFeatureEdgeMesh to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/stirrer.extendedFeatureEdgeMesh"
+
+Writing featureEdgeMesh to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/triSurface/stirrer.eMesh"
+
+Surfaces     : stirrer_baffles.stl
+Output       : stirrer_baffles
+Load options : offset
+Write options: writeObj=no writeVTK=off
+
+Statistics:
+Triangles    : 116 in 1 region(s)
+Vertices     : 127
+Bounding Box : (-0.174999997 -0.174999997 0.05000000075) (0.174999997 0.174999997 0.7565159798)
+
+Constructing feature set from included angle 120
+Selecting edges based purely on geometric tests: no
+
+Initial Feature set:
+    points : 40
+    edges  : 116
+    of which
+        region edges   : 116
+        external edges : 0
+        internal edges : 0
+Adding 1 baffle regions: ( stirrer )
+
+
+Final Feature set:
+    points : 116
+    of which
+        convex             : 0
+        concave            : 0
+        mixed              : 40
+        non-feature        : 76
+    edges  : 116
+    of which
+        external edges     : 0
+        internal edges     : 0
+        flat edges         : 0
+        open edges         : 116
+        multiply connected : 0
+
+Writing extendedFeatureEdgeMesh to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/stirrer_baffles.extendedFeatureEdgeMesh"
+
+Writing featureEdgeMesh to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/triSurface/stirrer_baffles.eMesh"
+
+Surfaces     : rotating.stl
+Output       : rotating
+Load options : offset
+Write options: writeObj=yes writeVTK=off
+
+Statistics:
+Triangles    : 38080 in 1 region(s)
+Vertices     : 19042
+Bounding Box : (-0.1852499992 -0.1852499992 0.02500000037) (0.1852499992 0.1852499992 0.8999999762)
+
+Constructing feature set from included angle 120
+Selecting edges based purely on geometric tests: no
+
+Initial Feature set:
+    points : 0
+    edges  : 320
+    of which
+        region edges   : 0
+        external edges : 320
+        internal edges : 0
+Adding 1 baffle regions: ( MRF )
+
+
+Final Feature set:
+    points : 320
+    of which
+        convex             : 0
+        concave            : 0
+        mixed              : 0
+        non-feature        : 320
+    edges  : 320
+    of which
+        external edges     : 320
+        internal edges     : 0
+        flat edges         : 0
+        open edges         : 0
+        multiply connected : 0
+
+Writing extendedFeatureEdgeMesh to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/rotating.extendedFeatureEdgeMesh"
+
+Writing extendedEdgeMesh components to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/rotating"
+Writing 0 convex feature points to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/rotating_convexFeaturePts.obj"
+Writing 0 concave feature points to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/rotating_concaveFeaturePts.obj"
+Writing 0 mixed feature points to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/rotating_mixedFeaturePts.obj"
+Writing 0 mixed feature point structure to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/rotating_mixedFeaturePtsStructure.obj"
+Writing 320 external edges to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/rotating_externalEdges.obj"
+Writing 0 internal edges to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/rotating_internalEdges.obj"
+Writing 0 flat edges to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/rotating_flatEdges.obj"
+Writing 0 open edges to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/rotating_openEdges.obj"
+Writing 0 multiple edges to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/rotating_multipleEdges.obj"
+Writing 0 region edges to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/rotating_regionEdges.obj"
+Writing 320 edge directions to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/rotating_edgeDirections.obj"
+
+Writing featureEdgeMesh to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/triSurface/rotating.eMesh"
+
+Surfaces     : baffles.stl
+Output       : baffles
+Load options : offset
+Write options: writeObj=no writeVTK=off
+
+Statistics:
+Triangles    : 16 in 1 region(s)
+Vertices     : 18
+Bounding Box : (-0.1726779938 -0.1726779938 0.02500000037) (0.1726779938 0.1726779938 0.7749999762)
+
+Constructing feature set from included angle 120
+Selecting edges based purely on geometric tests: no
+
+Initial Feature set:
+    points : 8
+    edges  : 16
+    of which
+        region edges   : 16
+        external edges : 0
+        internal edges : 0
+Adding 1 baffle regions: ( baffles )
+
+
+Final Feature set:
+    points : 16
+    of which
+        convex             : 0
+        concave            : 0
+        mixed              : 8
+        non-feature        : 8
+    edges  : 16
+    of which
+        external edges     : 0
+        internal edges     : 0
+        flat edges         : 0
+        open edges         : 16
+        multiply connected : 0
+
+Writing extendedFeatureEdgeMesh to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/baffles.extendedFeatureEdgeMesh"
+
+Writing featureEdgeMesh to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/triSurface/baffles.eMesh"
+
+ExecutionTime = 0.24 s  ClockTime = 1 s
+
+End
+

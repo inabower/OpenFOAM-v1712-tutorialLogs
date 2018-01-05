@@ -1,0 +1,5387 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1712                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v1712
+Arch   : "LSB;label=32;scalar=64"
+Exec   : foamyHexMesh -parallel
+Date   : Jan 05 2018
+Time   : 07:05:36
+Host   : "inabower-PC"
+PID    : 29910
+I/O    : uncollated
+Case   : /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel
+nProcs : 8
+Hosts  :
+(
+    (inabower-PC 8)
+)
+Pstream initialized with:
+    floatTransfer      : 0
+    nProcsSimpleSum    : 0
+    commsType          : nonBlocking
+    polling iterations : 0
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+
+Reading geometryToConformTo
+
+    vessel
+    features: "vessel.extendedFeatureEdgeMesh"
+        region outlet
+        region vessel
+
+    spargerInlet
+    features: "spargerInlet.extendedFeatureEdgeMesh"
+        region gasInlet
+        region sparger
+
+    spargerShaft
+--> FOAM Warning : 
+    From function Foam::conformationSurfaces::conformationSurfaces(const Foam::Time&, Foam::Random&, const Foam::searchableSurfaces&, const Foam::dictionary&)
+    in file conformationSurfaces/conformationSurfaces.C at line 383
+    Non-baffle surface spargerShaft.stl does not allow inside/outside queries. This usually is an error.
+
+    shaftRotating
+    features: "shaftRotating.extendedFeatureEdgeMesh"
+
+    shaft
+--> FOAM Warning : 
+    From function Foam::conformationSurfaces::conformationSurfaces(const Foam::Time&, Foam::Random&, const Foam::searchableSurfaces&, const Foam::dictionary&)
+    in file conformationSurfaces/conformationSurfaces.C at line 383
+    Non-baffle surface shaft.stl does not allow inside/outside queries. This usually is an error.
+
+    stirrer_baffles
+    features: "stirrer_baffles.extendedFeatureEdgeMesh"
+
+    stirrer
+    features: "stirrer.extendedFeatureEdgeMesh"
+
+    rotating
+    features: "rotating.extendedFeatureEdgeMesh"
+
+    baffles
+    features: "baffles.extendedFeatureEdgeMesh"
+
+Reading additionalFeatures
+
+    spargerShaft_spargerInlet_intersection
+    features: "spargerShaft_spargerInlet_intersection.extendedFeatureEdgeMesh", id: 7
+
+    vessel_shaft_intersection
+    features: "vessel_shaft_intersection.extendedFeatureEdgeMesh", id: 8
+
+    vessel_spargerShaft_intersection
+    features: "vessel_spargerShaft_intersection.extendedFeatureEdgeMesh", id: 9
+
+    stirrer_shaftRotating_intersection
+    features: "stirrer_shaftRotating_intersection.extendedFeatureEdgeMesh", id: 10
+
+    rotating_shaft_intersection
+    features: "rotating_shaft_intersection.extendedFeatureEdgeMesh", id: 11
+
+    stirrer_baffles_stirrer_intersection
+    features: "stirrer_baffles_stirrer_intersection.extendedFeatureEdgeMesh", id: 12
+
+    stirrer_baffles_1_stirrer_baffles_plate_intersection
+    features: "stirrer_baffles_1_stirrer_baffles_plate_intersection.extendedFeatureEdgeMesh", id: 13
+
+    stirrer_baffles_2_stirrer_baffles_plate_intersection
+    features: "stirrer_baffles_2_stirrer_baffles_plate_intersection.extendedFeatureEdgeMesh", id: 14
+
+    stirrer_baffles_3_stirrer_baffles_plate_intersection
+    features: "stirrer_baffles_3_stirrer_baffles_plate_intersection.extendedFeatureEdgeMesh", id: 15
+
+    stirrer_baffles_4_stirrer_baffles_plate_intersection
+    features: "stirrer_baffles_4_stirrer_baffles_plate_intersection.extendedFeatureEdgeMesh", id: 16
+
+    stirrer_baffles_5_stirrer_baffles_plate_intersection
+    features: "stirrer_baffles_5_stirrer_baffles_plate_intersection.extendedFeatureEdgeMesh", id: 17
+
+    stirrer_baffles_6_stirrer_baffles_plate_intersection
+    features: "stirrer_baffles_6_stirrer_baffles_plate_intersection.extendedFeatureEdgeMesh", id: 18
+
+Testing for locationInMesh (0 0.1 1)
+    is inside surface vessel.stl
+    Checking vessel.stl
+        Index = 0
+        Offset = 0
+        has 0 baffles out of 3628 triangles
+    is inside surface spargerInlet.stl
+    Checking spargerInlet.stl
+        Index = 1
+        Offset = 2
+        has 0 baffles out of 288 triangles
+    Checking spargerShaft.stl
+        Index = 2
+        Offset = 4
+        has 0 baffles out of 720 triangles
+    is inside surface shaftRotating.stl
+    Checking shaftRotating.stl
+        Index = 3
+        Offset = 5
+        has 0 baffles out of 2952 triangles
+    Checking shaft.stl
+        Index = 4
+        Offset = 7
+        has 0 baffles out of 1080 triangles
+    Checking stirrer_baffles.stl
+        Index = 5
+        Offset = 8
+        has 116 baffles out of 116 triangles
+    is inside surface stirrer.stl
+    Checking stirrer.stl
+        Index = 6
+        Offset = 9
+        has 0 baffles out of 1080 triangles
+    Checking rotating.stl
+        Index = 7
+        Offset = 10
+        has 38080 baffles out of 38080 triangles
+    Checking baffles.stl
+        Index = 8
+        Offset = 11
+        has 16 baffles out of 16 triangles
+    Sum of all the surface normals (if near zero, surface is probably closed):
+    Note: Does not include baffle surfaces in calculation
+        Sum = (1.291530971e-20 -2.170212856e-22 2.204122432e-23)
+        mag(Sum) = 1.291715174e-20
+Selecting decompositionMethod hierarchical [8]
+
+Building initial background mesh decomposition
+    Background mesh refined from 60300 to 131175 cells.
+Reading cellShapeControlMesh from 0
+
+Cell Aspect Ratio Control
+    Ratio     : 1
+    Direction : (1 0 0)
+
+Shape Control : vessel
+    Selecting cellSizeAndAlignmentControl searchableSurfaceControl
+    Master settings:
+        Selecting cellSizeFunction uniform
+        Selecting surfaceCellSizeFunction uniformValue
+    Region outlet (ID = 0) settings:
+        Selecting cellSizeFunction uniformDistance
+        Selecting surfaceCellSizeFunction uniformValue
+    Region vessel (ID = 1) settings:
+        Selecting cellSizeFunction uniform
+        Selecting surfaceCellSizeFunction uniformValue
+
+    There are 2 region control functions
+
+Shape Control : shaftRotating
+    Selecting cellSizeAndAlignmentControl searchableSurfaceControl
+    Master settings:
+        Selecting cellSizeFunction linearDistance
+        Selecting surfaceCellSizeFunction uniformValue
+
+    There are 1 region control functions
+
+Shape Control : shaft
+    Selecting cellSizeAndAlignmentControl searchableSurfaceControl
+    Master settings:
+        Selecting cellSizeFunction linearDistance
+        Selecting surfaceCellSizeFunction uniformValue
+--> FOAM Warning : 
+    From function Foam::cellSizeFunction::cellSizeFunction(const Foam::word&, const Foam::dictionary&, const Foam::searchableSurface&, const scalar&, Foam::labelList)
+    in file cellSizeControlSurfaces/cellSizeFunction/cellSizeFunction/cellSizeFunction.C at line 95
+    surface does not support volumeType, defaulting mode to bothSides.
+
+    There are 1 region control functions
+
+Shape Control : stirrer
+    Selecting cellSizeAndAlignmentControl searchableSurfaceControl
+    Master settings:
+        Selecting cellSizeFunction linearDistance
+        Selecting surfaceCellSizeFunction uniformValue
+
+    There are 1 region control functions
+
+Shape Control : spargerInlet
+    Selecting cellSizeAndAlignmentControl searchableSurfaceControl
+    Master settings:
+        Selecting cellSizeFunction linearDistance
+        Selecting surfaceCellSizeFunction uniformValue
+
+    There are 1 region control functions
+
+Shape Control : spargerShaft
+    Selecting cellSizeAndAlignmentControl searchableSurfaceControl
+    Master settings:
+        Selecting cellSizeFunction linearDistance
+        Selecting surfaceCellSizeFunction uniformValue
+--> FOAM Warning : 
+    From function Foam::cellSizeFunction::cellSizeFunction(const Foam::word&, const Foam::dictionary&, const Foam::searchableSurface&, const scalar&, Foam::labelList)
+    in file cellSizeControlSurfaces/cellSizeFunction/cellSizeFunction/cellSizeFunction.C at line 95
+    surface does not support volumeType, defaulting mode to bothSides.
+
+    There are 1 region control functions
+
+Shape Control : stirrer_baffles
+    Selecting cellSizeAndAlignmentControl searchableSurfaceControl
+    Master settings:
+        Selecting cellSizeFunction linearDistance
+        Selecting surfaceCellSizeFunction uniformValue
+
+    There are 1 region control functions
+
+Shape Control : rotating
+    Selecting cellSizeAndAlignmentControl searchableSurfaceControl
+    Master settings:
+        Selecting cellSizeFunction uniform
+        Selecting surfaceCellSizeFunction uniformValue
+
+    There are 1 region control functions
+
+Shape Control : baffles
+    Selecting cellSizeAndAlignmentControl searchableSurfaceControl
+    Master settings:
+        Selecting cellSizeFunction uniform
+        Selecting surfaceCellSizeFunction uniformValue
+
+    There are 1 region control functions
+
+Conforming to feature points
+    Circulating edges is: off
+    Guarding feature points is: off
+    Snapping to feature points is: off
+    Specialising feature points is: on
+
+Selecting initialPointsMethod autoDensity
+
+Selecting relaxationModel adaptiveLinear
+
+Selecting faceAreaWeightModel piecewiseLinearRamp
+Inserting points from vessel (searchableSurfaceControl)
+    Force insertion is off
+    Got initial vertices list of size 1816
+    Clipped minimum size
+    Check sizes
+    Inserted 1816/1816
+Inserting points from shaftRotating (searchableSurfaceControl)
+    Force insertion is on
+    Got initial vertices list of size 1478
+    Clipped minimum size
+    Check sizes
+    Inserted 1478/1478
+Inserting points from shaft (searchableSurfaceControl)
+    Force insertion is on
+    Got initial vertices list of size 576
+    Clipped minimum size
+    Check sizes
+    Inserted 544/576
+Inserting points from stirrer (searchableSurfaceControl)
+    Force insertion is on
+    Got initial vertices list of size 546
+    Clipped minimum size
+    Check sizes
+    Inserted 546/546
+Inserting points from spargerInlet (searchableSurfaceControl)
+    Force insertion is on
+    Got initial vertices list of size 146
+    Clipped minimum size
+    Check sizes
+    Inserted 146/146
+Inserting points from spargerShaft (searchableSurfaceControl)
+    Force insertion is on
+    Got initial vertices list of size 396
+    Clipped minimum size
+    Check sizes
+    Inserted 396/396
+Inserting points from stirrer_baffles (searchableSurfaceControl)
+    Force insertion is on
+    Got initial vertices list of size 127
+    Clipped minimum size
+    Check sizes
+    Inserted 127/127
+Inserting points from rotating (searchableSurfaceControl)
+    Force insertion is on
+    Got initial vertices list of size 19042
+    Clipped minimum size
+    Check sizes
+    Inserted 19041/19042
+Inserting points from baffles (searchableSurfaceControl)
+    Force insertion is on
+    Got initial vertices list of size 18
+    Clipped minimum size
+    Check sizes
+    Inserted 18/18
+Inserting points from vessel (searchableSurfaceControl)
+    Force insertion is off
+    Inserted extra points 0/36
+Inserting points from shaftRotating (searchableSurfaceControl)
+    Force insertion is on
+    Inserted extra points 1477/1477
+Inserting points from shaft (searchableSurfaceControl)
+    Force insertion is on
+    Inserted extra points 324/324
+Inserting points from stirrer (searchableSurfaceControl)
+    Force insertion is on
+    Inserted extra points 541/541
+Inserting points from spargerInlet (searchableSurfaceControl)
+    Force insertion is on
+    Inserted extra points 145/145
+Inserting points from spargerShaft (searchableSurfaceControl)
+    Force insertion is on
+    Inserted extra points 108/108
+Inserting points from stirrer_baffles (searchableSurfaceControl)
+    Force insertion is on
+    Inserted extra points 244/244
+Inserting points from rotating (searchableSurfaceControl)
+    Force insertion is on
+    Inserted extra points 0/0
+Inserting points from baffles (searchableSurfaceControl)
+    Force insertion is on
+    Inserted extra points 0/0
+
+Redistributing points
+    Processor unbalance 0.1715335238
+Clearing triangulation
+Inserted 0 fixed points
+
+    Inserting distributed background tessellation...
+    Influences = 16003 / 142957 Inserted = 19489 / 21366
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 95007 / 261479 Inserted =  4591 / 15361
+    Iteration 2: Influences = 42399 / 288218 Inserted =    46 / 5263
+    Iteration 3: Influences =   730 / 288545 Inserted =     0 / 119
+    Total number of vertices after redistribution 51077
+Maximum number of refinement iterations : 1
+Iterate over 341532 cell size mesh edges
+0 edges, inserted 0 Time = 6.8
+10000 edges, inserted 895 Time = 10.42
+20000 edges, inserted 2600 Time = 16.31
+30000 edges, inserted 3779 Time = 22.71
+40000 edges, inserted 3884 Time = 23
+Clearing triangulation
+Inserted 0 fixed points
+
+    Inserting distributed background tessellation...
+    Influences = 15629 / 286904 Inserted = 19527 / 21213
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 114035 / 408185 Inserted =  8659 / 23168
+    Iteration 2: Influences = 82435 / 461851 Inserted =   503 / 8072
+    Iteration 3: Influences =  5723 / 464941 Inserted =     0 / 658
+    Total number of vertices after redistribution 78106
+    Iteration 0 Added = 22466 points
+
+Redistributing points
+    Processor unbalance 0.3236335674
+    Total number of vertices before redistribution 78106
+    Background mesh refined from 131175 to 131287 cells.
+    Background mesh refined from 131287 to 131294 cells.
+Selecting decompositionMethod hierarchical [8]
+    Redistributing background mesh cells
+Clearing triangulation
+Inserted 0 fixed points
+
+    Inserting distributed background tessellation...
+    Influences = 11829 / 287459 Inserted = 17219 / 18189
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 113614 / 392989 Inserted = 10152 / 27800
+    Iteration 2: Influences = 97337 / 455265 Inserted =   782 / 11682
+    Iteration 3: Influences =  8496 / 459949 Inserted =     0 / 1361
+    Total number of vertices after redistribution 77570
+Clearing triangulation
+Inserted 0 fixed points
+
+    Inserting distributed tessellation
+    Total number of vertices after redistribution 0
+    Processor unbalance 0.009733492523
+
+Smoothing alignments
+Iteration 0, Residual = 0
+Iteration 1, Residual = 0.1047335159
+Iteration 2, Residual = 0.0956101887
+Iteration 3, Residual = 0.04264624805
+Iteration 4, Residual = 0.02233347665
+Iteration 5, Residual = 0.01393187097
+Iteration 6, Residual = 0.009941314791
+Iteration 7, Residual = 0.00758054957
+Iteration 8, Residual = 0.006894152532
+Iteration 9, Residual = 0.004833428185
+Iteration 10, Residual = 0.004492328305
+Iteration 11, Residual = 0.004406634164
+Iteration 12, Residual = 0.004056798773
+Iteration 13, Residual = 0.00367040141
+Iteration 14, Residual = 0.003561567865
+Iteration 15, Residual = 0.003593409234
+Iteration 16, Residual = 0.003457662903
+Iteration 17, Residual = 0.003430453513
+Iteration 18, Residual = 0.003273086606
+Iteration 19, Residual = 0.003146519158
+Iteration 20, Residual = 0.003110159997
+Iteration 21, Residual = 0.003019729051
+Iteration 22, Residual = 0.00316695488
+Iteration 23, Residual = 0.002768047498
+Iteration 24, Residual = 0.002559388844
+Iteration 25, Residual = 0.002284353524
+Iteration 26, Residual = 0.002513854636
+Iteration 27, Residual = 0.002736742684
+Iteration 28, Residual = 0.002764079231
+Iteration 29, Residual = 0.002682406195
+Iteration 30, Residual = 0.002781803579
+Iteration 31, Residual = 0.002716336732
+Iteration 32, Residual = 0.002607586431
+Iteration 33, Residual = 0.002324186906
+Iteration 34, Residual = 0.002740624425
+Iteration 35, Residual = 0.002726378241
+Iteration 36, Residual = 0.002651546431
+Iteration 37, Residual = 0.002694980569
+Iteration 38, Residual = 0.002702949095
+Iteration 39, Residual = 0.002542135981
+Iteration 40, Residual = 0.00270195881
+Iteration 41, Residual = 0.002538813731
+Iteration 42, Residual = 0.002335007483
+Iteration 43, Residual = 0.002582653976
+Iteration 44, Residual = 0.002690007211
+Iteration 45, Residual = 0.002342083187
+Iteration 46, Residual = 0.002445537533
+Iteration 47, Residual = 0.002136240896
+Iteration 48, Residual = 0.002347631038
+Iteration 49, Residual = 0.002121424695
+Iteration 50, Residual = 0.002556384063
+Iteration 51, Residual = 0.00225572829
+Iteration 52, Residual = 0.002301246719
+Iteration 53, Residual = 0.002270321434
+Iteration 54, Residual = 0.002388159152
+Iteration 55, Residual = 0.002421939766
+Iteration 56, Residual = 0.00233435882
+Iteration 57, Residual = 0.002081111068
+Iteration 58, Residual = 0.002290462662
+Iteration 59, Residual = 0.002055258539
+Iteration 60, Residual = 0.002362844476
+Iteration 61, Residual = 0.002469207105
+Iteration 62, Residual = 0.002443984836
+Iteration 63, Residual = 0.002194267215
+Iteration 64, Residual = 0.00264024459
+Iteration 65, Residual = 0.002263479094
+Iteration 66, Residual = 0.002724329051
+Iteration 67, Residual = 0.002203721897
+Iteration 68, Residual = 0.002095521165
+Iteration 69, Residual = 0.001973623478
+Iteration 70, Residual = 0.002176259352
+Iteration 71, Residual = 0.002307983287
+Iteration 72, Residual = 0.002457740296
+Iteration 73, Residual = 0.002723435647
+Iteration 74, Residual = 0.002475432216
+Iteration 75, Residual = 0.001960177191
+Iteration 76, Residual = 0.002337832591
+Iteration 77, Residual = 0.002277506411
+Iteration 78, Residual = 0.002382900568
+Iteration 79, Residual = 0.002149144462
+Iteration 80, Residual = 0.002102855524
+Iteration 81, Residual = 0.002478156334
+Iteration 82, Residual = 0.002217548447
+Iteration 83, Residual = 0.00213984814
+Iteration 84, Residual = 0.002065932895
+Iteration 85, Residual = 0.001919997995
+Iteration 86, Residual = 0.001858814532
+Iteration 87, Residual = 0.00211398416
+Iteration 88, Residual = 0.002088838397
+Iteration 89, Residual = 0.002388875914
+Iteration 90, Residual = 0.00212015048
+Iteration 91, Residual = 0.002217190373
+Iteration 92, Residual = 0.002260572579
+Iteration 93, Residual = 0.002320706638
+Iteration 94, Residual = 0.001918082661
+Iteration 95, Residual = 0.001987993985
+Iteration 96, Residual = 0.00201288431
+Iteration 97, Residual = 0.002080714306
+Iteration 98, Residual = 0.002155272362
+Iteration 99, Residual = 0.001873205145
+Background cell size and alignment mesh:
+     
+    	# Mesh Statistics
+         # Proc	     0	     1	     2	     3	     4	     5	     6	     7	   Sum	Average
+         Cells	 57801	 57925	 60412	 59141	 55136	 58245	 55648	 55641	459949	 57493
+         Edges	 67709	 67839	 70728	 69290	 64682	 68512	 65347	 65389	539496	 67437
+         Faces	115854	116108	121074	118539	110509	116734	111542	111523	921883	115235
+         Points	  9657	  9657	 10067	  9893	  9310	 10024	  9454	  9508	 77570	  9696
+Size (Min/Max) = 0.003 0.006
+Triangulation is valid
+Writing cellShapeControlMesh
+
+Sorting faces, owner and neighbour into upper triangular order
+Creating patches
+Creating mesh
+Adding patches
+Mesh created
+
+Inserting initial points
+
+    autoDensity
+        1149260 points placed
+        4308149 locations queried
+        0.2667642182 success rate
+        4 levels of recursion (maximum)
+    1149260 points to insert...
+    1149260 points inserted, failed to insert 0 (0 %)
+
+Inserting feature points
+    Inserted 320 feature vertices
+
+Calculating target cell alignment and size
+Triangulation is fully contained in the cell size mesh
+
+Redistributing points
+    Processor unbalance 0.3956110889
+    Total number of vertices before redistribution 1149580
+    Background mesh refined from 131294 to 131308 cells.
+Selecting decompositionMethod hierarchical [8]
+    Redistributing background mesh cells
+Clearing triangulation
+Inserted 0 fixed points
+
+    Inserting distributed background tessellation...
+    Influences = 16249 / 286970 Inserted = 20560 / 22020
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 125635 / 415919 Inserted =  9284 / 26136
+    Iteration 2: Influences = 86945 / 472866 Inserted =   315 / 8725
+    Iteration 3: Influences =  3772 / 474773 Inserted =     0 / 353
+    Total number of vertices after redistribution 79576
+Clearing triangulation
+Inserted 0 fixed points
+
+    Inserting distributed tessellation
+    Total number of vertices after redistribution 1149580
+    Processor unbalance 0.001103318657
+
+Rebuilding surface conformation for more iterations
+    Vertices marked as being near a boundary: 163897 (estimated)
+    Vertices marked as being near a boundary: 110186 (after dual surface intersection)
+
+Initial conformation
+    Number of vertices 1149580
+    Number of surface hits 91402
+    Number of edge hits 5665
+    Surface tree synchronisation
+        Not inserting total of 413 locations
+    Edge tree synchronisation
+        Not inserting total of 36 locations
+    Reinserted 202703 vertices out of 202703
+    Influences =   34739 / 9035383 Inserted =  107797 / 107916
+    Iteratively referring referred vertices...
+    Iteration 1: Influences =  633019 / 9703886 Inserted =   99025 / 143789
+    Iteration 2: Influences = 1142356 / 10401700 Inserted =   41267 / 105762
+    Iteration 3: Influences =  439838 / 10688151 Inserted =     313 / 10682
+    Iteration 4: Influences =    4466 / 10690318 Inserted =       0 / 43
+
+Stopping iterations when: 
+    total number of hits drops below 0.0001 of initial hits (9)
+ or 
+    maximum number of iterations (15) is reached
+
+Conformation iteration 0
+    Number of vertices 1600685
+    Number of surface hits 7768
+    Number of edge hits 79
+    Surface tree synchronisation
+        Not inserting total of 6 locations
+    Edge tree synchronisation
+        Not inserting total of 2 locations
+    Reinserted 15769 vertices out of 15769
+    Influences =   75359 / 10793513 Inserted =   14091 / 31760
+    Iteratively referring referred vertices...
+    Iteration 1: Influences =  121025 / 10893375 Inserted =     255 / 14287
+    Iteration 2: Influences =    2330 / 10895151 Inserted =       0 / 1034
+
+Conformation iteration 1
+    Number of vertices 1630800
+    Number of surface hits 2149
+    Number of edge hits 13
+    Surface tree synchronisation
+        Not inserting total of 0 locations
+    Edge tree synchronisation
+        Not inserting total of 2 locations
+    Reinserted 4324 vertices out of 4324
+    Influences =   23511 / 10925071 Inserted =    4457 / 12009
+    Iteratively referring referred vertices...
+    Iteration 1: Influences =   39570 / 10958651 Inserted =     100 / 6682
+    Iteration 2: Influences =     534 / 10959530 Inserted =       0 / 376
+
+Conformation iteration 2
+    Number of vertices 1639681
+    Number of surface hits 234
+    Number of edge hits 6
+    Surface tree synchronisation
+        Not inserting total of 0 locations
+    Edge tree synchronisation
+        Not inserting total of 1 locations
+    Reinserted 479 vertices out of 479
+    Influences =    2495 / 10962794 Inserted =     522 / 1245
+    Iteratively referring referred vertices...
+    Iteration 1: Influences =    4796 / 10966554 Inserted =      14 / 629
+    Iteration 2: Influences =      57 / 10966674 Inserted =       0 / 16
+
+Conformation iteration 3
+    Number of vertices 1640696
+    Number of surface hits 32
+    Number of edge hits 1
+    Surface tree synchronisation
+        Not inserting total of 0 locations
+    Edge tree synchronisation
+        Not inserting total of 0 locations
+    Reinserted 68 vertices out of 68
+    Influences =     384 / 10967139 Inserted =      86 / 160
+    Iteratively referring referred vertices...
+    Iteration 1: Influences =     639 / 10967687 Inserted =       3 / 50
+    Iteration 2: Influences =      11 / 10967717 Inserted =       0 / 3
+
+Conformation iteration 4
+    Number of vertices 1640853
+    Number of surface hits 7
+    Number of edge hits 0
+    Surface tree synchronisation
+        Not inserting total of 0 locations
+    Edge tree synchronisation
+        Not inserting total of 0 locations
+    Reinserted 14 vertices out of 14
+    Influences =     116 / 10967810 Inserted =       9 / 30
+    Iteratively referring referred vertices...
+    Iteration 1: Influences =     119 / 10967878 Inserted =       0 / 19
+
+Total hits (7) less than limit (9), stopping iterations
+
+Redistributing points
+    Processor unbalance 0.04186965483
+    Influences =       0 / 10967878 Inserted = 0
+    Iteratively referring referred vertices...
+    Iteration 1: Influences =       0 / 10967878 Inserted = 0
+
+Storing surface conformation
+    Stored 223357 vertices
+
+Triangulation is fully contained in the cell size mesh
+
+Time = 1
+
+Relaxation = 1
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    891746 points to insert...
+    891746 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 223357 vertices out of 223357
+    Influences =  35110 / 7390783 Inserted =  112126 / 112248
+    Iteratively referring referred vertices...
+    Iteration 1: Influences =  584173 / 8078127 Inserted =   88719 / 132606
+    Iteration 2: Influences =  977063 / 8715265 Inserted =   35658 / 96274
+    Iteration 3: Influences =  371082 / 8966325 Inserted =     244 / 11300
+    Iteration 4: Influences =    3023 / 8968018 Inserted =       0 / 58
+
+Total displacement = (1.159127648 0.32010897 0.2138521586)
+Total distance = 2001.645831
+
+
+ExecutionTime = 160.8 s  ClockTime = 329 s
+
+
+Time = 2
+
+Relaxation = 0.99
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    900286 points to insert...
+    900286 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 223357 vertices out of 223357
+    Influences =  34920 / 7444592 Inserted =  112810 / 112916
+    Iteratively referring referred vertices...
+    Iteration 1: Influences =  596028 / 8138014 Inserted =   90583 / 134856
+    Iteration 2: Influences =  994748 / 8785795 Inserted =   35048 / 96549
+    Iteration 3: Influences =  365080 / 9033450 Inserted =     209 / 10897
+    Iteration 4: Influences =    2935 / 9034871 Inserted =       0 / 71
+
+Total displacement = (0.7424576007 0.3140812054 0.3415455617)
+Total distance = 2000.150054
+
+
+ExecutionTime = 178.86 s  ClockTime = 367 s
+
+
+Time = 3
+
+Relaxation = 0.98
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    868814 points to insert...
+    868814 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 223357 vertices out of 223357
+    Influences =  35089 / 7218351 Inserted =  112894 / 113016
+    Iteratively referring referred vertices...
+    Iteration 1: Influences =  591191 / 7911639 Inserted =   89367 / 133409
+    Iteration 2: Influences =  970252 / 8551336 Inserted =   33212 / 93173
+    Iteration 3: Influences =  348565 / 8784917 Inserted =     238 / 10773
+    Iteration 4: Influences =    3013 / 8786526 Inserted =       0 / 59
+
+Total displacement = (0.3202337299 0.1081633143 0.1134109883)
+Total distance = 1948.287661
+
+
+ExecutionTime = 197.18 s  ClockTime = 403 s
+
+
+Time = 4
+
+Relaxation = 0.97
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    850452 points to insert...
+    850452 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 223357 vertices out of 223357
+    Influences =  36668 / 7093702 Inserted = 114903 / 115043
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 607542 / 7801645 Inserted =   90032 / 134798
+    Iteration 2: Influences =  965943 / 8445605 Inserted =   30535 / 88853
+    Iteration 3: Influences =  323311 / 8661073 Inserted =     203 / 9676
+    Iteration 4: Influences =    2438 / 8662431 Inserted =       0 / 28
+
+Total displacement = (0.6225753179 0.2098910879 0.1473292658)
+Total distance = 1917.316202
+
+
+ExecutionTime = 215.45 s  ClockTime = 440 s
+
+
+Time = 5
+
+Relaxation = 0.96
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    833507 points to insert...
+    833507 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 223357 vertices out of 223357
+    Influences =  36020 / 6979901 Inserted = 114503 / 114636
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 600535 / 7684693 Inserted =   89069 / 133551
+    Iteration 2: Influences =  955700 / 8321771 Inserted =   30434 / 88543
+    Iteration 3: Influences =  317253 / 8536779 Inserted =     128 / 9958
+    Iteration 4: Influences =    1748 / 8537637 Inserted =       0 / 49
+
+Total displacement = (0.4694111315 0.2138092803 0.03294072081)
+Total distance = 1913.859208
+
+
+ExecutionTime = 233 s  ClockTime = 474 s
+
+
+Time = 6
+
+Relaxation = 0.95
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    820277 points to insert...
+    820277 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 223357 vertices out of 223357
+    Influences =  35791 / 6892596 Inserted = 113657 / 113785
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 597105 / 7591470 Inserted =   89371 / 134025
+    Iteration 2: Influences =  949060 / 8232134 Inserted =   29235 / 86999
+    Iteration 3: Influences =  310134 / 8437802 Inserted =     113 / 10052
+    Iteration 4: Influences =    1493 / 8438552 Inserted =       0 / 56
+
+Total displacement = (0.6499410956 0.335768094 0.2425966127)
+Total distance = 1915.432541
+
+
+ExecutionTime = 250.02 s  ClockTime = 508 s
+
+
+Time = 7
+
+Relaxation = 0.94
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    809986 points to insert...
+    809986 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 223357 vertices out of 223357
+    Influences =  34211 / 6825715 Inserted = 111637 / 111754
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 573832 / 7510136 Inserted =   85947 / 129044
+    Iteration 2: Influences =  935201 / 8126355 Inserted =   32589 / 91592
+    Iteration 3: Influences =  340262 / 8355782 Inserted =     302 / 10972
+    Iteration 4: Influences =    3626 / 8357812 Inserted =       0 / 46
+
+Total displacement = (0.7031391285 0.4323657917 0.1502948226)
+Total distance = 1923.291015
+
+
+ExecutionTime = 266.78 s  ClockTime = 542 s
+
+
+Time = 8
+
+Relaxation = 0.93
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    802116 points to insert...
+    802116 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 223357 vertices out of 223357
+    Influences =  34512 / 6770774 Inserted = 112365 / 112471
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 585993 / 7460757 Inserted =   88262 / 131928
+    Iteration 2: Influences =  943047 / 8092286 Inserted =   29872 / 87736
+    Iteration 3: Influences =  313732 / 8303579 Inserted =     284 / 10150
+    Iteration 4: Influences =    3296 / 8305495 Inserted =       0 / 55
+
+Total displacement = (0.5642630072 0.341443435 0.451317865)
+Total distance = 1928.378088
+
+
+ExecutionTime = 283.75 s  ClockTime = 576 s
+
+
+Time = 9
+
+Relaxation = 0.92
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    795969 points to insert...
+    795969 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 223357 vertices out of 223357
+    Influences =  35538 / 6731838 Inserted = 113429 / 113591
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 587224 / 7428511 Inserted =   86574 / 129766
+    Iteration 2: Influences =  931601 / 8049425 Inserted =   29893 / 88049
+    Iteration 3: Influences =  314268 / 8260996 Inserted =     217 / 10499
+    Iteration 4: Influences =    2572 / 8262447 Inserted =       0 / 60
+
+Total displacement = (0.6811017973 0.346112154 0.2274738175)
+Total distance = 1928.336546
+
+
+ExecutionTime = 300.71 s  ClockTime = 610 s
+
+
+Time = 10
+
+Relaxation = 0.91
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    790239 points to insert...
+    790239 points inserted, failed to insert 0 (0 %)
+
+Rebuilding surface conformation for more iterations
+    Vertices marked as being near a boundary: 144304 (estimated)
+    Vertices marked as being near a boundary: 98171 (after dual surface intersection)
+
+Initial conformation
+    Number of vertices 790559
+    Number of surface hits 89766
+    Number of edge hits 5516
+    Surface tree synchronisation
+        Not inserting total of 321 locations
+    Edge tree synchronisation
+        Not inserting total of 30 locations
+    Reinserted 199031 vertices out of 199031
+    Influences =  33398 / 6515362 Inserted = 103892 / 103998
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 561976 / 7152537 Inserted =  81669 / 122352
+    Iteration 2: Influences = 892257 / 7727241 Inserted =   27131 / 80190
+    Iteration 3: Influences =  292274 / 7916361 Inserted =     129 / 9073
+    Iteration 4: Influences =    1780 / 7917193 Inserted =       0 / 31
+
+Stopping iterations when: 
+    total number of hits drops below 0.0001 of initial hits (9)
+ or 
+    maximum number of iterations (15) is reached
+
+Conformation iteration 0
+    Number of vertices 1202411
+    Number of surface hits 5966
+    Number of edge hits 85
+    Surface tree synchronisation
+        Not inserting total of 5 locations
+    Edge tree synchronisation
+        Not inserting total of 6 locations
+    Reinserted 12185 vertices out of 12185
+    Influences =   62106 / 7999279 Inserted =   12174 / 27155
+    Iteratively referring referred vertices...
+    Iteration 1: Influences =   98975 / 8087513 Inserted =     201 / 12323
+    Iteration 2: Influences =    2096 / 8088994 Inserted =       0 / 940
+
+Conformation iteration 1
+    Number of vertices 1226971
+    Number of surface hits 1681
+    Number of edge hits 17
+    Surface tree synchronisation
+        Not inserting total of 1 locations
+    Edge tree synchronisation
+        Not inserting total of 3 locations
+    Reinserted 3405 vertices out of 3405
+    Influences =   16519 / 8111730 Inserted =    3396 / 9164
+    Iteratively referring referred vertices...
+    Iteration 1: Influences =   29722 / 8135750 Inserted =      80 / 5096
+    Iteration 2: Influences =     514 / 8136404 Inserted =       0 / 399
+
+Conformation iteration 2
+    Number of vertices 1233852
+    Number of surface hits 237
+    Number of edge hits 10
+    Surface tree synchronisation
+        Not inserting total of 0 locations
+    Edge tree synchronisation
+        Not inserting total of 2 locations
+    Reinserted 502 vertices out of 502
+    Influences =    2038 / 8139659 Inserted =     404 / 1104
+    Iteratively referring referred vertices...
+    Iteration 1: Influences =    3685 / 8142436 Inserted =      11 / 607
+    Iteration 2: Influences =      42 / 8142533 Inserted =       0 / 42
+
+Conformation iteration 3
+    Number of vertices 1234769
+    Number of surface hits 35
+    Number of edge hits 4
+    Surface tree synchronisation
+        Not inserting total of 0 locations
+    Edge tree synchronisation
+        Not inserting total of 1 locations
+    Reinserted 82 vertices out of 82
+    Influences =     186 / 8143028 Inserted =      33 / 109
+    Iteratively referring referred vertices...
+    Iteration 1: Influences =     315 / 8143218 Inserted =       0 / 68
+
+Conformation iteration 4
+    Number of vertices 1234884
+    Number of surface hits 7
+    Number of edge hits 1
+    Surface tree synchronisation
+        Not inserting total of 0 locations
+    Edge tree synchronisation
+        Not inserting total of 1 locations
+    Reinserted 14 vertices out of 14
+    Influences =      48 / 8143307 Inserted =       2 / 50
+    Iteratively referring referred vertices...
+    Iteration 1: Influences =      51 / 8143319 Inserted =       3 / 58
+    Iteration 2: Influences =      25 / 8143337 Inserted =       0 / 30
+
+Total hits (8) less than limit (9), stopping iterations
+
+Redistributing points
+    Processor unbalance 0.06920428302
+
+Storing surface conformation
+    Stored 215219 vertices
+
+
+Total displacement = (0.7644737949 0.5410091963 0.3796049274)
+Total distance = 1927.590726
+
+
+ExecutionTime = 366.02 s  ClockTime = 740 s
+
+
+Time = 11
+
+Relaxation = 0.9
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    778667 points to insert...
+    778667 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 215219 vertices out of 215219
+    Influences =  35285 / 6569528 Inserted = 111987 / 112133
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 588635 / 7257808 Inserted =  85726 / 128304
+    Iteration 2: Influences = 915133 / 7872645 Inserted =   27804 / 83471
+    Iteration 3: Influences =  294073 / 8069140 Inserted =     145 / 10026
+    Iteration 4: Influences =    1624 / 8070118 Inserted =       0 / 83
+
+Total displacement = (1.229189811 0.07394859405 0.8381999073)
+Total distance = 1936.566968
+
+
+ExecutionTime = 382.18 s  ClockTime = 772 s
+
+
+Time = 12
+
+Relaxation = 0.89
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    773713 points to insert...
+    773713 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 215219 vertices out of 215219
+    Influences =  34371 / 6533751 Inserted = 110469 / 110591
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 566714 / 7210428 Inserted =  83565 / 124883
+    Iteration 2: Influences = 904442 / 7809209 Inserted =   30137 / 86094
+    Iteration 3: Influences =  315861 / 8021960 Inserted =     121 / 10279
+    Iteration 4: Influences =    1674 / 8022787 Inserted =       0 / 65
+
+Total displacement = (0.7048533315 0.07114233302 0.3251504925)
+Total distance = 1933.455513
+
+
+ExecutionTime = 398.52 s  ClockTime = 805 s
+
+
+Time = 13
+
+Relaxation = 0.88
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    770031 points to insert...
+    770031 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 215219 vertices out of 215219
+    Influences =  33558 / 6506542 Inserted = 109465 / 109587
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 568614 / 7176879 Inserted =  84270 / 126062
+    Iteration 2: Influences = 905800 / 7779587 Inserted =   29302 / 84758
+    Iteration 3: Influences =  307543 / 7986492 Inserted =     193 / 10707
+    Iteration 4: Influences =    2370 / 7987826 Inserted =       0 / 74
+
+Total displacement = (0.823868537 0.1387904395 0.5772695882)
+Total distance = 1926.690243
+
+
+ExecutionTime = 414.54 s  ClockTime = 837 s
+
+
+Time = 14
+
+Relaxation = 0.87
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    766104 points to insert...
+    766104 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 215219 vertices out of 215219
+    Influences =  33641 / 6478417 Inserted = 109885 / 110029
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 568800 / 7151191 Inserted =  84498 / 126782
+    Iteration 2: Influences = 903973 / 7757099 Inserted =   28958 / 84572
+    Iteration 3: Influences =  306788 / 7960364 Inserted =     205 / 10393
+    Iteration 4: Influences =    2630 / 7961739 Inserted =       0 / 59
+
+Total displacement = (0.6957883526 0.0674025387 0.614187297)
+Total distance = 1919.775608
+
+
+ExecutionTime = 430.74 s  ClockTime = 869 s
+
+
+Time = 15
+
+Relaxation = 0.86
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    761180 points to insert...
+    761180 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 215219 vertices out of 215219
+    Influences =  34539 / 6444597 Inserted = 110858 / 110990
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 569868 / 7124771 Inserted =  83626 / 125375
+    Iteration 2: Influences = 898443 / 7724719 Inserted =   28608 / 83722
+    Iteration 3: Influences =  302454 / 7925972 Inserted =     238 / 10088
+    Iteration 4: Influences =    3076 / 7927565 Inserted =       0 / 58
+
+Total displacement = (0.513974732 0.02779450007 0.3615541287)
+Total distance = 1914.053891
+
+
+ExecutionTime = 447.04 s  ClockTime = 901 s
+
+
+Time = 16
+
+Relaxation = 0.85
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    756257 points to insert...
+    756257 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 215219 vertices out of 215219
+    Influences =  33816 / 6411740 Inserted = 110234 / 110352
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 571121 / 7086315 Inserted =  84136 / 126339
+    Iteration 2: Influences = 895718 / 7689165 Inserted =  28039 / 82593
+    Iteration 3: Influences = 297429 / 7886794 Inserted =    226 / 10919
+    Iteration 4: Influences =   2776 / 7888296 Inserted =      0 / 91
+
+Total displacement = (0.6766736652 -0.1406396996 0.2994824209)
+Total distance = 1907.056535
+
+
+ExecutionTime = 462.74 s  ClockTime = 932 s
+
+
+Time = 17
+
+Relaxation = 0.84
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    751039 points to insert...
+    751039 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 215219 vertices out of 215219
+    Influences =  34352 / 6375846 Inserted = 109841 / 110017
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 562691 / 7047705 Inserted =  82197 / 123656
+    Iteration 2: Influences = 887213 / 7636298 Inserted =  29395 / 84780
+    Iteration 3: Influences = 309705 / 7844037 Inserted =    181 / 10496
+    Iteration 4: Influences =   2177 / 7845267 Inserted =      0 / 81
+
+Total displacement = (0.6188964618 0.3380590174 0.4987034844)
+Total distance = 1904.972824
+
+
+ExecutionTime = 478.57 s  ClockTime = 964 s
+
+
+Time = 18
+
+Relaxation = 0.83
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    746357 points to insert...
+    746357 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 215219 vertices out of 215219
+    Influences =  33898 / 6345542 Inserted = 110075 / 110207
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 565514 / 7019081 Inserted =  82733 / 124443
+    Iteration 2: Influences = 885945 / 7611600 Inserted =  28624 / 83589
+    Iteration 3: Influences = 301831 / 7813767 Inserted =    122 / 10602
+    Iteration 4: Influences =   1788 / 7814600 Inserted =      0 / 59
+
+Total displacement = (0.9255140817 0.2378239754 0.1486335072)
+Total distance = 1901.578498
+
+
+ExecutionTime = 495.46 s  ClockTime = 997 s
+
+
+Time = 19
+
+Relaxation = 0.82
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    740470 points to insert...
+    740470 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 215219 vertices out of 215219
+    Influences =  34125 / 6306340 Inserted = 110386 / 110551
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 564240 / 6981198 Inserted =  82608 / 123600
+    Iteration 2: Influences = 885034 / 7574722 Inserted =  28051 / 83076
+    Iteration 3: Influences = 295864 / 7771711 Inserted =    145 / 10451
+    Iteration 4: Influences =   1878 / 7772680 Inserted =      0 / 50
+
+Total displacement = (0.8806062614 0.4516224637 0.2826101072)
+Total distance = 1897.191554
+
+
+ExecutionTime = 511.7 s  ClockTime = 1029 s
+
+
+Time = 20
+
+Relaxation = 0.81
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    735714 points to insert...
+    735714 points inserted, failed to insert 0 (0 %)
+
+Rebuilding surface conformation for more iterations
+    Vertices marked as being near a boundary: 151491 (estimated)
+    Vertices marked as being near a boundary: 106588 (after dual surface intersection)
+
+Initial conformation
+    Number of vertices 736034
+    Number of surface hits 95622
+    Number of edge hits 5543
+    Surface tree synchronisation
+        Not inserting total of 311 locations
+    Edge tree synchronisation
+        Not inserting total of 33 locations
+    Reinserted 210887 vertices out of 210887
+    Influences =  34196 / 6219625 Inserted = 107362 / 107520
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 563725 / 6874034 Inserted =  79941 / 120435
+    Iteration 2: Influences = 861866 / 7439240 Inserted =  24967 / 76891
+    Iteration 3: Influences = 273496 / 7611385 Inserted =    115 / 8676
+    Iteration 4: Influences =   1415 / 7612158 Inserted =      0 / 32
+
+Stopping iterations when: 
+    total number of hits drops below 0.0001 of initial hits (10)
+ or 
+    maximum number of iterations (15) is reached
+
+Conformation iteration 0
+    Number of vertices 1159306
+    Number of surface hits 5416
+    Number of edge hits 69
+    Surface tree synchronisation
+        Not inserting total of 3 locations
+    Edge tree synchronisation
+        Not inserting total of 7 locations
+    Reinserted 11012 vertices out of 11012
+    Influences =  55569 / 7686685 Inserted =  11121 / 25346
+    Iteratively referring referred vertices...
+    Iteration 1: Influences =  89109 / 7767266 Inserted =    204 / 12002
+    Iteration 2: Influences =   1608 / 7768873 Inserted =      0 / 1002
+
+Conformation iteration 1
+    Number of vertices 1181643
+    Number of surface hits 1399
+    Number of edge hits 14
+    Surface tree synchronisation
+        Not inserting total of 0 locations
+    Edge tree synchronisation
+        Not inserting total of 1 locations
+    Reinserted 2843 vertices out of 2843
+    Influences =  12929 / 7787743 Inserted =   2930 / 8084
+    Iteratively referring referred vertices...
+    Iteration 1: Influences =  24359 / 7807904 Inserted =     57 / 4496
+    Iteration 2: Influences =    365 / 7808359 Inserted =      0 / 136
+
+Conformation iteration 2
+    Number of vertices 1187473
+    Number of surface hits 151
+    Number of edge hits 3
+    Surface tree synchronisation
+        Not inserting total of 0 locations
+    Edge tree synchronisation
+        Not inserting total of 0 locations
+    Reinserted 313 vertices out of 313
+    Influences =   1136 / 7810397 Inserted =    363 / 779
+    Iteratively referring referred vertices...
+    Iteration 1: Influences =   3076 / 7812664 Inserted =      7 / 378
+    Iteration 2: Influences =     32 / 7812723 Inserted =      0 / 16
+
+Conformation iteration 3
+    Number of vertices 1188156
+    Number of surface hits 16
+    Number of edge hits 0
+    Surface tree synchronisation
+        Not inserting total of 0 locations
+    Edge tree synchronisation
+        Not inserting total of 0 locations
+    Reinserted 32 vertices out of 32
+    Influences =     79 / 7812911 Inserted =     22 / 49
+    Iteratively referring referred vertices...
+    Iteration 1: Influences =    165 / 7813043 Inserted =      0 / 12
+
+Conformation iteration 4
+    Number of vertices 1188210
+    Number of surface hits 1
+    Number of edge hits 0
+    Surface tree synchronisation
+        Not inserting total of 0 locations
+    Edge tree synchronisation
+        Not inserting total of 0 locations
+    Reinserted 2 vertices out of 2
+    Influences =      0 / 7813055 Inserted = 0
+    Iteratively referring referred vertices...
+    Iteration 1: Influences =      0 / 7813055 Inserted = 0
+
+Total hits (1) less than limit (10), stopping iterations
+
+Redistributing points
+    Processor unbalance 0.07470938371
+
+Storing surface conformation
+    Stored 225089 vertices
+
+
+Total displacement = (0.7202749356 0.3094496466 0.5388990686)
+Total distance = 1895.256408
+
+
+ExecutionTime = 578.38 s  ClockTime = 1163 s
+
+
+Time = 21
+
+Relaxation = 0.8
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    727799 points to insert...
+    727799 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 225089 vertices out of 225089
+    Influences =  36169 / 6296623 Inserted = 115553 / 115701
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 592928 / 7001698 Inserted =  84027 / 126755
+    Iteration 2: Influences = 885158 / 7604926 Inserted =  24973 / 78652
+    Iteration 3: Influences = 265324 / 7783211 Inserted =    123 / 9311
+    Iteration 4: Influences =   1470 / 7784017 Inserted =      0 / 35
+
+Total displacement = (1.22171765 -0.07837511183 1.157671963)
+Total distance = 1894.583
+
+
+ExecutionTime = 594.44 s  ClockTime = 1195 s
+
+
+Time = 22
+
+Relaxation = 0.79
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    722377 points to insert...
+    722377 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 225089 vertices out of 225089
+    Influences =  36363 / 6255018 Inserted = 116142 / 116286
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 593707 / 6963079 Inserted =  83370 / 126351
+    Iteration 2: Influences = 877652 / 7561909 Inserted =  24771 / 77905
+    Iteration 3: Influences = 263958 / 7736832 Inserted =    103 / 9077
+    Iteration 4: Influences =   1410 / 7737547 Inserted =      0 / 50
+
+Total displacement = (1.106441844 0.3890810277 0.5459841507)
+Total distance = 1904.470487
+
+
+ExecutionTime = 610.23 s  ClockTime = 1226 s
+
+
+Time = 23
+
+Relaxation = 0.78
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    718953 points to insert...
+    718953 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 225089 vertices out of 225089
+    Influences =  35461 / 6233264 Inserted = 114367 / 114510
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 581614 / 6929349 Inserted =  82087 / 124652
+    Iteration 2: Influences = 872349 / 7519340 Inserted =  25966 / 79886
+    Iteration 3: Influences = 280294 / 7703096 Inserted =    146 / 9815
+    Iteration 4: Influences =   1774 / 7704086 Inserted =      0 / 74
+
+Total displacement = (1.031676922 0.1875903735 0.6912160911)
+Total distance = 1902.300718
+
+
+ExecutionTime = 625.81 s  ClockTime = 1257 s
+
+
+Time = 24
+
+Relaxation = 0.77
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    713377 points to insert...
+    713377 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 225089 vertices out of 225089
+    Influences =  34550 / 6194667 Inserted = 113852 / 114035
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 576654 / 6886981 Inserted =  82256 / 124503
+    Iteration 2: Influences = 873867 / 7477904 Inserted =  26267 / 80394
+    Iteration 3: Influences = 277721 / 7664004 Inserted =    129 / 9567
+    Iteration 4: Influences =   1532 / 7664882 Inserted =      0 / 43
+
+Total displacement = (0.9540748976 0.118853128 0.6674021675)
+Total distance = 1900.048921
+
+
+ExecutionTime = 642.15 s  ClockTime = 1291 s
+
+
+Time = 25
+
+Relaxation = 0.76
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    708576 points to insert...
+    708576 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 225089 vertices out of 225089
+    Influences =  35708 / 6164017 Inserted = 114675 / 114846
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 577636 / 6862117 Inserted =  81186 / 123180
+    Iteration 2: Influences = 866443 / 7445480 Inserted =  26413 / 79565
+    Iteration 3: Influences = 279792 / 7632852 Inserted =    216 / 9808
+    Iteration 4: Influences =   2388 / 7634307 Inserted =      0 / 82
+
+Total displacement = (1.019115897 0.1579203751 0.8247872266)
+Total distance = 1890.110143
+
+
+ExecutionTime = 661.01 s  ClockTime = 1327 s
+
+
+Time = 26
+
+Relaxation = 0.75
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    703298 points to insert...
+    703298 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 225089 vertices out of 225089
+    Influences =  35221 / 6129572 Inserted = 113921 / 114094
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 576071 / 6823162 Inserted =  82474 / 125010
+    Iteration 2: Influences = 868600 / 7415896 Inserted =  25591 / 78691
+    Iteration 3: Influences = 273802 / 7597216 Inserted =     91 / 9685
+    Iteration 4: Influences =   1206 / 7597836 Inserted =      0 / 53
+
+Total displacement = (0.9250958053 0.1508886418 0.6752744004)
+Total distance = 1885.589794
+
+
+ExecutionTime = 678.02 s  ClockTime = 1360 s
+
+
+Time = 27
+
+Relaxation = 0.74
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    697798 points to insert...
+    697798 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 225089 vertices out of 225089
+    Influences =  36136 / 6097165 Inserted = 114798 / 114929
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 581105 / 6795022 Inserted =  81437 / 123292
+    Iteration 2: Influences = 858862 / 7379979 Inserted =  25360 / 78023
+    Iteration 3: Influences = 267649 / 7560578 Inserted =    127 / 9983
+    Iteration 4: Influences =   1655 / 7561452 Inserted =      0 / 46
+
+Total displacement = (0.8518503632 0.2920888873 0.6447171581)
+Total distance = 1881.171443
+
+
+ExecutionTime = 695.2 s  ClockTime = 1394 s
+
+
+Time = 28
+
+Relaxation = 0.73
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    693303 points to insert...
+    693303 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 225089 vertices out of 225089
+    Influences =  34343 / 6068696 Inserted = 113397 / 113527
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 567143 / 6756884 Inserted =  81051 / 122103
+    Iteration 2: Influences = 859022 / 7339230 Inserted =  25888 / 79265
+    Iteration 3: Influences = 276802 / 7523225 Inserted =    227 / 10054
+    Iteration 4: Influences =   2675 / 7524719 Inserted =      0 / 45
+
+Total displacement = (0.8294768346 0.2749859911 0.522878169)
+Total distance = 1884.153656
+
+
+ExecutionTime = 713.28 s  ClockTime = 1429 s
+
+
+Time = 29
+
+Relaxation = 0.72
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    688192 points to insert...
+    688192 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 225089 vertices out of 225089
+    Influences =  34668 / 6038382 Inserted = 113698 / 113865
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 571236 / 6729134 Inserted =  81111 / 123125
+    Iteration 2: Influences = 856939 / 7311291 Inserted =  25252 / 78042
+    Iteration 3: Influences = 267113 / 7491683 Inserted =    216 / 9733
+    Iteration 4: Influences =   2568 / 7493154 Inserted =      0 / 79
+
+Total displacement = (0.852238696 0.1269168261 0.4352988303)
+Total distance = 1882.789632
+
+
+ExecutionTime = 730.33 s  ClockTime = 1462 s
+
+
+Time = 30
+
+Relaxation = 0.71
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    683480 points to insert...
+    683480 points inserted, failed to insert 0 (0 %)
+
+Rebuilding surface conformation for more iterations
+    Vertices marked as being near a boundary: 151200 (estimated)
+    Vertices marked as being near a boundary: 107701 (after dual surface intersection)
+
+Initial conformation
+    Number of vertices 683800
+    Number of surface hits 96211
+    Number of edge hits 5485
+    Surface tree synchronisation
+        Not inserting total of 308 locations
+    Edge tree synchronisation
+        Not inserting total of 30 locations
+    Reinserted 211861 vertices out of 211861
+    Influences =  34450 / 5895621 Inserted = 107280 / 107425
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 558674 / 6551655 Inserted =  78345 / 119867
+    Iteration 2: Influences = 829185 / 7107037 Inserted =  22408 / 72668
+    Iteration 3: Influences = 245718 / 7262837 Inserted =    150 / 8687
+    Iteration 4: Influences =   1977 / 7263809 Inserted =      0 / 19
+
+Stopping iterations when: 
+    total number of hits drops below 0.0001 of initial hits (10)
+ or 
+    maximum number of iterations (15) is reached
+
+Conformation iteration 0
+    Number of vertices 1103844
+    Number of surface hits 4958
+    Number of edge hits 59
+    Surface tree synchronisation
+        Not inserting total of 5 locations
+    Edge tree synchronisation
+        Not inserting total of 3 locations
+    Reinserted 10089 vertices out of 10089
+    Influences =  50266 / 7331902 Inserted =  10673 / 24318
+    Iteratively referring referred vertices...
+    Iteration 1: Influences =  83308 / 7408423 Inserted =    159 / 11566
+    Iteration 2: Influences =   1392 / 7409589 Inserted =      0 / 898
+
+Conformation iteration 1
+    Number of vertices 1124765
+    Number of surface hits 1322
+    Number of edge hits 12
+    Surface tree synchronisation
+        Not inserting total of 1 locations
+    Edge tree synchronisation
+        Not inserting total of 1 locations
+    Reinserted 2669 vertices out of 2669
+    Influences =  11618 / 7427112 Inserted =   2862 / 7581
+    Iteratively referring referred vertices...
+    Iteration 1: Influences =  22594 / 7446241 Inserted =     59 / 4259
+    Iteration 2: Influences =    305 / 7446742 Inserted =      0 / 264
+
+Conformation iteration 2
+    Number of vertices 1130355
+    Number of surface hits 113
+    Number of edge hits 5
+    Surface tree synchronisation
+        Not inserting total of 0 locations
+    Edge tree synchronisation
+        Not inserting total of 1 locations
+    Reinserted 238 vertices out of 238
+    Influences =    975 / 7448281 Inserted =    291 / 795
+    Iteratively referring referred vertices...
+    Iteration 1: Influences =   2475 / 7450256 Inserted =      5 / 475
+    Iteration 2: Influences =     38 / 7450291 Inserted =      0 / 1
+
+Conformation iteration 3
+    Number of vertices 1130889
+    Number of surface hits 11
+    Number of edge hits 1
+    Surface tree synchronisation
+        Not inserting total of 0 locations
+    Edge tree synchronisation
+        Not inserting total of 0 locations
+    Reinserted 26 vertices out of 26
+    Influences =     17 / 7450439 Inserted =     22 / 30
+    Iteratively referring referred vertices...
+    Iteration 1: Influences =    108 / 7450574 Inserted =      0 / 8
+
+Conformation iteration 4
+    Number of vertices 1130937
+    Number of surface hits 2
+    Number of edge hits 0
+    Surface tree synchronisation
+        Not inserting total of 0 locations
+    Edge tree synchronisation
+        Not inserting total of 0 locations
+    Reinserted 4 vertices out of 4
+    Influences =      5 / 7450595 Inserted =      1 / 7
+    Iteratively referring referred vertices...
+    Iteration 1: Influences =      5 / 7450600 Inserted =      0 / 6
+
+Total hits (2) less than limit (10), stopping iterations
+
+Redistributing points
+    Processor unbalance 0.07670137731
+
+Storing surface conformation
+    Stored 224887 vertices
+
+
+Total displacement = (0.8685078385 -0.06247390661 0.5110669961)
+Total distance = 1882.217031
+
+
+ExecutionTime = 803.66 s  ClockTime = 1608 s
+
+
+Time = 31
+
+Relaxation = 0.7
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    677515 points to insert...
+    677515 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 224887 vertices out of 224887
+    Influences =  34871 / 5986861 Inserted = 113060 / 113172
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 569546 / 6674488 Inserted =  81503 / 123557
+    Iteration 2: Influences = 856697 / 7262607 Inserted =  24134 / 77604
+    Iteration 3: Influences = 259689 / 7434451 Inserted =    135 / 9442
+    Iteration 4: Influences =   1792 / 7435318 Inserted =      0 / 22
+
+Total displacement = (1.651283027 0.1508589133 1.2149223)
+Total distance = 1885.009225
+
+
+ExecutionTime = 820.96 s  ClockTime = 1642 s
+
+
+Time = 32
+
+Relaxation = 0.69
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    672925 points to insert...
+    672925 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 224887 vertices out of 224887
+    Influences =  35551 / 5948256 Inserted = 113737 / 113853
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 578274 / 6639543 Inserted =  81318 / 124566
+    Iteration 2: Influences = 850134 / 7224723 Inserted =  23368 / 75853
+    Iteration 3: Influences = 247792 / 7392977 Inserted =     80 / 9092
+    Iteration 4: Influences =   1044 / 7393529 Inserted =      0 / 44
+
+Total displacement = (1.142104117 0.135377042 0.9653744395)
+Total distance = 1899.787954
+
+
+ExecutionTime = 839.04 s  ClockTime = 1678 s
+
+
+Time = 33
+
+Relaxation = 0.68
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    669446 points to insert...
+    669446 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 224887 vertices out of 224887
+    Influences =  34991 / 5930145 Inserted = 113579 / 113738
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 571356 / 6621470 Inserted =  81624 / 124564
+    Iteration 2: Influences = 852811 / 7212148 Inserted =  22731 / 75789
+    Iteration 3: Influences = 249452 / 7373012 Inserted =    149 / 9118
+    Iteration 4: Influences =   1909 / 7374042 Inserted =      0 / 15
+
+Total displacement = (1.129694873 -0.1368676064 0.7341342778)
+Total distance = 1899.547326
+
+
+ExecutionTime = 856.98 s  ClockTime = 1712 s
+
+
+Time = 34
+
+Relaxation = 0.67
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    664753 points to insert...
+    664753 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 224887 vertices out of 224887
+    Influences =  36174 / 5897143 Inserted = 114210 / 114380
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 571978 / 6591743 Inserted =  80545 / 123079
+    Iteration 2: Influences = 844778 / 7171328 Inserted =  23625 / 75928
+    Iteration 3: Influences = 250286 / 7341859 Inserted =    117 / 9063
+    Iteration 4: Influences =   1579 / 7342663 Inserted =      0 / 39
+
+Total displacement = (0.9166392991 0.05070734572 0.5117455723)
+Total distance = 1896.194864
+
+
+ExecutionTime = 874.67 s  ClockTime = 1747 s
+
+
+Time = 35
+
+Relaxation = 0.66
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    659948 points to insert...
+    659948 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 224887 vertices out of 224887
+    Influences =  34537 / 5872287 Inserted = 111870 / 112004
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 556292 / 6551550 Inserted =  79576 / 121621
+    Iteration 2: Influences = 842048 / 7126449 Inserted =  24687 / 78278
+    Iteration 3: Influences = 262102 / 7302244 Inserted =    120 / 9758
+    Iteration 4: Influences =   1521 / 7303084 Inserted =      0 / 29
+
+Total displacement = (0.7509515943 0.04380525174 0.6462446902)
+Total distance = 1888.030647
+
+
+ExecutionTime = 893.14 s  ClockTime = 1782 s
+
+
+Time = 36
+
+Relaxation = 0.65
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    655448 points to insert...
+    655448 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 224887 vertices out of 224887
+    Influences =  35186 / 5844023 Inserted = 113152 / 113291
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 564754 / 6532620 Inserted =  79741 / 121783
+    Iteration 2: Influences = 839353 / 7109637 Inserted =  23786 / 76732
+    Iteration 3: Influences = 255678 / 7279599 Inserted =     80 / 9320
+    Iteration 4: Influences =    982 / 7280126 Inserted =      0 / 29
+
+Total displacement = (0.7208837086 -0.004793063128 0.6798916727)
+Total distance = 1886.542773
+
+
+ExecutionTime = 910.41 s  ClockTime = 1816 s
+
+
+Time = 37
+
+Relaxation = 0.64
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    650991 points to insert...
+    650991 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 224887 vertices out of 224887
+    Influences =  33652 / 5820751 Inserted = 111297 / 111419
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 543019 / 6494739 Inserted =  78457 / 119428
+    Iteration 2: Influences = 837185 / 7063075 Inserted =  25278 / 79115
+    Iteration 3: Influences = 272747 / 7242992 Inserted =    155 / 9978
+    Iteration 4: Influences =   1899 / 7244045 Inserted =      0 / 33
+
+Total displacement = (0.7735527083 0.1172331436 0.6584646778)
+Total distance = 1885.887934
+
+
+ExecutionTime = 927.76 s  ClockTime = 1851 s
+
+
+Time = 38
+
+Relaxation = 0.63
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    646375 points to insert...
+    646375 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 224887 vertices out of 224887
+    Influences =  35696 / 5793648 Inserted = 113907 / 114049
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 569510 / 6486639 Inserted =  79778 / 121694
+    Iteration 2: Influences = 834808 / 7065422 Inserted =  22835 / 75126
+    Iteration 3: Influences = 246955 / 7227587 Inserted =     35 / 8711
+    Iteration 4: Influences =    520 / 7227822 Inserted =      0 / 17
+
+Total displacement = (0.7285352466 0.02163148591 0.7429059133)
+Total distance = 1887.052678
+
+
+ExecutionTime = 945.04 s  ClockTime = 1884 s
+
+
+Time = 39
+
+Relaxation = 0.62
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    641944 points to insert...
+    641944 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 224887 vertices out of 224887
+    Influences =  35423 / 5773484 Inserted = 113203 / 113345
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 564390 / 6462687 Inserted =  79172 / 120605
+    Iteration 2: Influences = 833358 / 7034539 Inserted =  23029 / 75341
+    Iteration 3: Influences = 244802 / 7201401 Inserted =     70 / 9357
+    Iteration 4: Influences =    872 / 7201864 Inserted =      0 / 76
+
+Total displacement = (0.767263418 0.1019338615 0.5167593808)
+Total distance = 1893.510015
+
+
+ExecutionTime = 962.53 s  ClockTime = 1919 s
+
+
+Time = 40
+
+Relaxation = 0.61
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    638028 points to insert...
+    638028 points inserted, failed to insert 0 (0 %)
+
+Rebuilding surface conformation for more iterations
+    Vertices marked as being near a boundary: 146639 (estimated)
+    Vertices marked as being near a boundary: 105352 (after dual surface intersection)
+
+Initial conformation
+    Number of vertices 638348
+    Number of surface hits 94202
+    Number of edge hits 5370
+    Surface tree synchronisation
+        Not inserting total of 368 locations
+    Edge tree synchronisation
+        Not inserting total of 28 locations
+    Reinserted 207299 vertices out of 207299
+    Influences =  32680 / 5607425 Inserted = 104428 / 104532
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 540912 / 6243003 Inserted =  74998 / 114602
+    Iteration 2: Influences = 801837 / 6777282 Inserted =  22209 / 71019
+    Iteration 3: Influences = 239594 / 6933807 Inserted =     64 / 8656
+    Iteration 4: Influences =    849 / 6934247 Inserted =      0 / 52
+
+Stopping iterations when: 
+    total number of hits drops below 0.0001 of initial hits (9)
+ or 
+    maximum number of iterations (15) is reached
+
+Conformation iteration 0
+    Number of vertices 1047346
+    Number of surface hits 4798
+    Number of edge hits 86
+    Surface tree synchronisation
+        Not inserting total of 1 locations
+    Edge tree synchronisation
+        Not inserting total of 4 locations
+    Reinserted 9875 vertices out of 9875
+    Influences =  48959 / 7000793 Inserted =  10526 / 23584
+    Iteratively referring referred vertices...
+    Iteration 1: Influences =  81198 / 7076088 Inserted =    166 / 10843
+    Iteration 2: Influences =   1200 / 7077305 Inserted =      0 / 834
+
+Conformation iteration 1
+    Number of vertices 1067913
+    Number of surface hits 1391
+    Number of edge hits 18
+    Surface tree synchronisation
+        Not inserting total of 1 locations
+    Edge tree synchronisation
+        Not inserting total of 1 locations
+    Reinserted 2833 vertices out of 2833
+    Influences =  11797 / 7095534 Inserted =   2830 / 7345
+    Iteratively referring referred vertices...
+    Iteration 1: Influences =  23166 / 7114624 Inserted =     55 / 3826
+    Iteration 2: Influences =    298 / 7115115 Inserted =      0 / 289
+
+Conformation iteration 2
+    Number of vertices 1073631
+    Number of surface hits 101
+    Number of edge hits 2
+    Surface tree synchronisation
+        Not inserting total of 1 locations
+    Edge tree synchronisation
+        Not inserting total of 0 locations
+    Reinserted 208 vertices out of 208
+    Influences =    858 / 7116474 Inserted =    298 / 525
+    Iteratively referring referred vertices...
+    Iteration 1: Influences =   2340 / 7118308 Inserted =      2 / 194
+    Iteration 2: Influences =     10 / 7118325 Inserted =      0 / 1
+
+Conformation iteration 3
+    Number of vertices 1074139
+    Number of surface hits 14
+    Number of edge hits 1
+    Surface tree synchronisation
+        Not inserting total of 1 locations
+    Edge tree synchronisation
+        Not inserting total of 0 locations
+    Reinserted 26 vertices out of 26
+    Influences =    152 / 7118486 Inserted =     58 / 83
+    Iteratively referring referred vertices...
+    Iteration 1: Influences =    517 / 7118792 Inserted =      0 / 22
+
+Conformation iteration 4
+    Number of vertices 1074223
+    Number of surface hits 1
+    Number of edge hits 0
+    Surface tree synchronisation
+        Not inserting total of 1 locations
+    Edge tree synchronisation
+        Not inserting total of 0 locations
+    Reinserted 0 vertices out of 0
+    Influences =      0 / 7118792 Inserted = 0
+    Iteratively referring referred vertices...
+    Iteration 1: Influences =      0 / 7118792 Inserted = 0
+
+Total hits (1) less than number of failed insertions (1), stopping iterations
+
+Redistributing points
+    Processor unbalance 0.08037922842
+
+Storing surface conformation
+    Stored 220241 vertices
+
+
+Total displacement = (0.9036193358 0.2540740478 0.5856525936)
+Total distance = 1898.905291
+
+
+ExecutionTime = 1033.4 s  ClockTime = 2059 s
+
+
+Time = 41
+
+Relaxation = 0.6
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    634271 points to insert...
+    634271 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 220241 vertices out of 220241
+    Influences =  33292 / 5724275 Inserted = 110371 / 110464
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 548487 / 6394875 Inserted =  77874 / 117817
+    Iteration 2: Influences = 825414 / 6959922 Inserted =  23289 / 74351
+    Iteration 3: Influences = 252226 / 7127139 Inserted =     99 / 9497
+    Iteration 4: Influences =   1168 / 7127866 Inserted =      0 / 71
+
+Total displacement = (1.356889009 0.1638280212 0.9673480047)
+Total distance = 1901.55101
+
+
+ExecutionTime = 1050.09 s  ClockTime = 2093 s
+
+
+Time = 42
+
+Relaxation = 0.59
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    629945 points to insert...
+    629945 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 220241 vertices out of 220241
+    Influences =  33040 / 5683951 Inserted = 109832 / 109928
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 542085 / 6351552 Inserted =  77389 / 116669
+    Iteration 2: Influences = 820561 / 6911704 Inserted =  24008 / 74999
+    Iteration 3: Influences = 257613 / 7084418 Inserted =    119 / 9968
+    Iteration 4: Influences =   1433 / 7085245 Inserted =      0 / 76
+
+Total displacement = (1.388225156 0.1715904167 0.9604707388)
+Total distance = 1921.081811
+
+
+ExecutionTime = 1067.21 s  ClockTime = 2128 s
+
+
+Time = 43
+
+Relaxation = 0.58
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    627494 points to insert...
+    627494 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 220241 vertices out of 220241
+    Influences =  34140 / 5686612 Inserted = 111602 / 111713
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 555184 / 6365832 Inserted =  78261 / 118497
+    Iteration 2: Influences = 821875 / 6934436 Inserted =  22509 / 72658
+    Iteration 3: Influences = 242669 / 7097032 Inserted =     46 / 9503
+    Iteration 4: Influences =    540 / 7097354 Inserted =      0 / 64
+
+Total displacement = (1.074052783 0.04275732031 0.8954002785)
+Total distance = 1925.403746
+
+
+ExecutionTime = 1083.74 s  ClockTime = 2161 s
+
+
+Time = 44
+
+Relaxation = 0.57
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    622464 points to insert...
+    622464 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 220241 vertices out of 220241
+    Influences =  34511 / 5645992 Inserted = 111535 / 111659
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 555145 / 6325014 Inserted =  77071 / 117262
+    Iteration 2: Influences = 813881 / 6884483 Inserted =  22588 / 73246
+    Iteration 3: Influences = 242380 / 7047815 Inserted =     92 / 9541
+    Iteration 4: Influences =   1051 / 7048440 Inserted =      0 / 58
+
+Total displacement = (1.01990154 0.2084980707 0.8007444228)
+Total distance = 1930.022611
+
+
+ExecutionTime = 1100.66 s  ClockTime = 2196 s
+
+
+Time = 45
+
+Relaxation = 0.56
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    618936 points to insert...
+    618936 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 220241 vertices out of 220241
+    Influences =  33547 / 5638159 Inserted = 111173 / 111295
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 551841 / 6314211 Inserted =  77224 / 117078
+    Iteration 2: Influences = 813331 / 6877034 Inserted =  22607 / 73045
+    Iteration 3: Influences = 243903 / 7040192 Inserted =     95 / 9425
+    Iteration 4: Influences =   1130 / 7040868 Inserted =      0 / 45
+
+Total displacement = (0.8675424801 0.1575983042 0.7534354894)
+Total distance = 1922.719693
+
+
+ExecutionTime = 1118.2 s  ClockTime = 2231 s
+
+
+Time = 46
+
+Relaxation = 0.55
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    615188 points to insert...
+    615188 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 220241 vertices out of 220241
+    Influences =  34392 / 5615395 Inserted = 111250 / 111376
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 553520 / 6291592 Inserted =  76378 / 116793
+    Iteration 2: Influences = 806669 / 6848918 Inserted =  22661 / 72698
+    Iteration 3: Influences = 244141 / 7012708 Inserted =     74 / 9307
+    Iteration 4: Influences =    954 / 7013242 Inserted =      0 / 55
+
+Total displacement = (0.9262964106 0.1216688165 0.9153679044)
+Total distance = 1925.519518
+
+
+ExecutionTime = 1134.79 s  ClockTime = 2264 s
+
+
+Time = 47
+
+Relaxation = 0.54
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    611950 points to insert...
+    611950 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 220241 vertices out of 220241
+    Influences =  32561 / 5611978 Inserted = 109492 / 109584
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 538382 / 6276929 Inserted =  76671 / 116223
+    Iteration 2: Influences = 815838 / 6836369 Inserted =  23440 / 74276
+    Iteration 3: Influences = 250537 / 7006985 Inserted =    119 / 10023
+    Iteration 4: Influences =   1330 / 7007804 Inserted =      0 / 67
+
+Total displacement = (0.9828518617 0.1974001859 0.8252142944)
+Total distance = 1931.237729
+
+
+ExecutionTime = 1151.29 s  ClockTime = 2297 s
+
+
+Time = 48
+
+Relaxation = 0.53
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    608119 points to insert...
+    608119 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 220241 vertices out of 220241
+    Influences =  34248 / 5592308 Inserted = 111014 / 111129
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 560052 / 6268032 Inserted =  78688 / 119793
+    Iteration 2: Influences = 818158 / 6841912 Inserted =  20524 / 69488
+    Iteration 3: Influences = 223817 / 6992638 Inserted =     44 / 9456
+    Iteration 4: Influences =    548 / 6992954 Inserted =      0 / 61
+
+Total displacement = (1.042034485 0.163285704 0.5779631409)
+Total distance = 1940.230441
+
+
+ExecutionTime = 1167.24 s  ClockTime = 2328 s
+
+
+Time = 49
+
+Relaxation = 0.52
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    605300 points to insert...
+    605300 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 220241 vertices out of 220241
+    Influences =  33763 / 5591514 Inserted = 111063 / 111161
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 559747 / 6267527 Inserted =  78185 / 118967
+    Iteration 2: Influences = 813268 / 6839339 Inserted =  20914 / 69681
+    Iteration 3: Influences = 225301 / 6993654 Inserted =    172 / 9242
+    Iteration 4: Influences =   1785 / 6994852 Inserted =      0 / 121
+
+Total displacement = (0.8238238923 0.1164165311 0.4622467835)
+Total distance = 1950.587857
+
+
+ExecutionTime = 1183.22 s  ClockTime = 2359 s
+
+
+Time = 50
+
+Relaxation = 0.51
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    601847 points to insert...
+    601847 points inserted, failed to insert 0 (0 %)
+
+Rebuilding surface conformation for more iterations
+    Vertices marked as being near a boundary: 140594 (estimated)
+    Vertices marked as being near a boundary: 103232 (after dual surface intersection)
+
+Initial conformation
+    Number of vertices 602167
+    Number of surface hits 91538
+    Number of edge hits 5186
+    Surface tree synchronisation
+        Not inserting total of 342 locations
+    Edge tree synchronisation
+        Not inserting total of 29 locations
+    Reinserted 201344 vertices out of 201344
+    Influences =  31979 / 5421065 Inserted = 103180 / 103312
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 528229 / 6054047 Inserted =  72742 / 111192
+    Iteration 2: Influences = 782607 / 6580425 Inserted =  20958 / 68850
+    Iteration 3: Influences = 229420 / 6731252 Inserted =    129 / 8565
+    Iteration 4: Influences =   1785 / 6732164 Inserted =      0 / 21
+
+Stopping iterations when: 
+    total number of hits drops below 0.0001 of initial hits (9)
+ or 
+    maximum number of iterations (15) is reached
+
+Conformation iteration 0
+    Number of vertices 1000520
+    Number of surface hits 4514
+    Number of edge hits 106
+    Surface tree synchronisation
+        Not inserting total of 4 locations
+    Edge tree synchronisation
+        Not inserting total of 1 locations
+    Reinserted 9377 vertices out of 9377
+    Influences =  44697 / 6795264 Inserted =  10231 / 22238
+    Iteratively referring referred vertices...
+    Iteration 1: Influences =  77896 / 6867111 Inserted =    193 / 10319
+    Iteration 2: Influences =   1488 / 6868534 Inserted =      0 / 878
+
+Conformation iteration 1
+    Number of vertices 1020321
+    Number of surface hits 1591
+    Number of edge hits 17
+    Surface tree synchronisation
+        Not inserting total of 0 locations
+    Edge tree synchronisation
+        Not inserting total of 1 locations
+    Reinserted 3233 vertices out of 3233
+    Influences =  12956 / 6889346 Inserted =   3183 / 8769
+    Iteratively referring referred vertices...
+    Iteration 1: Influences =  25944 / 6910962 Inserted =     65 / 4774
+    Iteration 2: Influences =    389 / 6911519 Inserted =      0 / 294
+
+Conformation iteration 2
+    Number of vertices 1026802
+    Number of surface hits 100
+    Number of edge hits 5
+    Surface tree synchronisation
+        Not inserting total of 0 locations
+    Edge tree synchronisation
+        Not inserting total of 0 locations
+    Reinserted 210 vertices out of 210
+    Influences =    872 / 6912867 Inserted =    247 / 512
+    Iteratively referring referred vertices...
+    Iteration 1: Influences =   2117 / 6914458 Inserted =      8 / 223
+    Iteration 2: Influences =     70 / 6914497 Inserted =      0 / 23
+
+Conformation iteration 3
+    Number of vertices 1027267
+    Number of surface hits 6
+    Number of edge hits 1
+    Surface tree synchronisation
+        Not inserting total of 0 locations
+    Edge tree synchronisation
+        Not inserting total of 0 locations
+    Reinserted 15 vertices out of 15
+    Influences =     95 / 6914598 Inserted =     32 / 84
+    Iteratively referring referred vertices...
+    Iteration 1: Influences =    288 / 6914783 Inserted =      0 / 47
+
+Total hits (7) less than limit (9), stopping iterations
+
+Redistributing points
+    Processor unbalance 0.08269099269
+
+Storing surface conformation
+    Stored 214179 vertices
+
+
+Total displacement = (1.00300626 0.1762629508 0.5470853786)
+Total distance = 1967.439316
+
+
+ExecutionTime = 1243.26 s  ClockTime = 2478 s
+
+
+Time = 51
+
+Relaxation = 0.5
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    599180 points to insert...
+    599180 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 214179 vertices out of 214179
+    Influences =  33931 / 5563993 Inserted = 110725 / 110844
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 553084 / 6241245 Inserted =  76871 / 117056
+    Iteration 2: Influences = 808527 / 6811085 Inserted =  20752 / 69680
+    Iteration 3: Influences = 228495 / 6963313 Inserted =    166 / 8775
+    Iteration 4: Influences =   1817 / 6964496 Inserted =      0 / 29
+
+Total displacement = (1.216307307 -0.2323894457 0.9767593389)
+Total distance = 1983.580315
+
+
+ExecutionTime = 1259.13 s  ClockTime = 2507 s
+
+
+Time = 52
+
+Relaxation = 0.49
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    596261 points to insert...
+    596261 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 214179 vertices out of 214179
+    Influences =  34110 / 5527639 Inserted = 111340 / 111453
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 550658 / 6209369 Inserted =  76087 / 116225
+    Iteration 2: Influences = 803890 / 6771641 Inserted =  20931 / 69950
+    Iteration 3: Influences = 226429 / 6924954 Inserted =    123 / 8470
+    Iteration 4: Influences =   1521 / 6925806 Inserted =      1 / 62
+    Iteration 5: Influences =     19 / 6925811 Inserted = 0
+
+Total displacement = (1.223207191 -0.06835898771 0.8571228925)
+Total distance = 2017.811446
+
+
+ExecutionTime = 1274.94 s  ClockTime = 2538 s
+
+
+Time = 53
+
+Relaxation = 0.48
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    594616 points to insert...
+    594616 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 214179 vertices out of 214179
+    Influences =  34026 / 5561639 Inserted = 110923 / 111003
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 554870 / 6241287 Inserted =  76442 / 116501
+    Iteration 2: Influences = 806734 / 6808341 Inserted =  21072 / 69233
+    Iteration 3: Influences = 225246 / 6964644 Inserted =    221 / 9062
+    Iteration 4: Influences =   2709 / 6966215 Inserted =      0 / 93
+
+Total displacement = (1.037819138 0.05218443855 0.8524596912)
+Total distance = 2038.249988
+
+
+ExecutionTime = 1291.26 s  ClockTime = 2570 s
+
+
+Time = 54
+
+Relaxation = 0.47
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    591034 points to insert...
+    591034 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 214179 vertices out of 214179
+    Influences =  33207 / 5531016 Inserted = 110190 / 110273
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 546409 / 6204718 Inserted =  75875 / 115545
+    Iteration 2: Influences = 804002 / 6767545 Inserted =  21496 / 70438
+    Iteration 3: Influences = 234771 / 6926174 Inserted =    110 / 8720
+    Iteration 4: Influences =   1465 / 6926917 Inserted =      0 / 47
+
+Total displacement = (1.114564848 0.156354183 0.7087532776)
+Total distance = 2057.441846
+
+
+ExecutionTime = 1307.53 s  ClockTime = 2601 s
+
+
+Time = 55
+
+Relaxation = 0.46
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    589565 points to insert...
+    589565 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 214179 vertices out of 214179
+    Influences =  34107 / 5562561 Inserted = 111537 / 111649
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 559016 / 6246802 Inserted =  76466 / 116551
+    Iteration 2: Influences = 807270 / 6817191 Inserted =  19971 / 68159
+    Iteration 3: Influences = 217425 / 6965453 Inserted =     93 / 8811
+    Iteration 4: Influences =   1221 / 6966108 Inserted =      0 / 56
+
+Total displacement = (1.065735499 0.08002851757 0.673308061)
+Total distance = 2067.622373
+
+
+ExecutionTime = 1323.81 s  ClockTime = 2634 s
+
+
+Time = 56
+
+Relaxation = 0.45
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    587052 points to insert...
+    587052 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 214179 vertices out of 214179
+    Influences =  33730 / 5546368 Inserted = 110282 / 110407
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 552242 / 6221892 Inserted =  76610 / 116923
+    Iteration 2: Influences = 806958 / 6793428 Inserted =  20086 / 68365
+    Iteration 3: Influences = 222137 / 6942082 Inserted =     75 / 8543
+    Iteration 4: Influences =    986 / 6942593 Inserted =      0 / 31
+
+Total displacement = (1.140634066 0.01651897583 0.6422477685)
+Total distance = 2086.322082
+
+
+ExecutionTime = 1339.89 s  ClockTime = 2665 s
+
+
+Time = 57
+
+Relaxation = 0.44
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    585570 points to insert...
+    585570 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 214179 vertices out of 214179
+    Influences =  35154 / 5581972 Inserted = 112287 / 112410
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 572080 / 6272482 Inserted =  78119 / 119108
+    Iteration 2: Influences = 812177 / 6858963 Inserted =  18057 / 65086
+    Iteration 3: Influences = 199729 / 6994210 Inserted =     68 / 8079
+    Iteration 4: Influences =    926 / 6994698 Inserted =      0 / 47
+
+Total displacement = (0.9937217781 -0.01754965089 0.5312040025)
+Total distance = 2102.205971
+
+
+ExecutionTime = 1357.36 s  ClockTime = 2700 s
+
+
+Time = 58
+
+Relaxation = 0.43
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    584097 points to insert...
+    584097 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 214179 vertices out of 214179
+    Influences =  34367 / 5577466 Inserted = 110514 / 110620
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 547628 / 6253339 Inserted =  75077 / 114696
+    Iteration 2: Influences = 800590 / 6817056 Inserted =  21273 / 68588
+    Iteration 3: Influences = 232857 / 6976477 Inserted =     62 / 8629
+    Iteration 4: Influences =    826 / 6976922 Inserted =      0 / 44
+
+Total displacement = (1.015248579 -0.09616266977 0.539634189)
+Total distance = 2122.673208
+
+
+ExecutionTime = 1373.17 s  ClockTime = 2731 s
+
+
+Time = 59
+
+Relaxation = 0.42
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    582857 points to insert...
+    582857 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 214179 vertices out of 214179
+    Influences =  33524 / 5613551 Inserted = 110627 / 110721
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 553462 / 6291390 Inserted =  76174 / 116135
+    Iteration 2: Influences = 808810 / 6865899 Inserted =  20463 / 67981
+    Iteration 3: Influences = 225163 / 7020544 Inserted =     72 / 8521
+    Iteration 4: Influences =    891 / 7021061 Inserted =      0 / 45
+
+Total displacement = (0.8545192487 -0.08479569392 0.5659357567)
+Total distance = 2138.914258
+
+
+ExecutionTime = 1389.66 s  ClockTime = 2761 s
+
+
+Time = 60
+
+Relaxation = 0.41
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    582024 points to insert...
+    582024 points inserted, failed to insert 0 (0 %)
+
+Rebuilding surface conformation for more iterations
+    Vertices marked as being near a boundary: 136501 (estimated)
+    Vertices marked as being near a boundary: 102843 (after dual surface intersection)
+
+Initial conformation
+    Number of vertices 582344
+    Number of surface hits 89326
+    Number of edge hits 5015
+    Surface tree synchronisation
+        Not inserting total of 313 locations
+    Edge tree synchronisation
+        Not inserting total of 32 locations
+    Reinserted 196331 vertices out of 196331
+    Influences =  31900 / 5457793 Inserted = 103066 / 103145
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 534949 / 6093280 Inserted =  73756 / 112369
+    Iteration 2: Influences = 789253 / 6642677 Inserted =  18032 / 62708
+    Iteration 3: Influences = 202671 / 6777036 Inserted =     63 / 7915
+    Iteration 4: Influences =    746 / 6777490 Inserted =      0 / 33
+
+Stopping iterations when: 
+    total number of hits drops below 0.0001 of initial hits (9)
+ or 
+    maximum number of iterations (15) is reached
+
+Conformation iteration 0
+    Number of vertices 973592
+    Number of surface hits 4280
+    Number of edge hits 122
+    Surface tree synchronisation
+        Not inserting total of 1 locations
+    Edge tree synchronisation
+        Not inserting total of 5 locations
+    Reinserted 8975 vertices out of 8975
+    Influences =  41210 / 6837888 Inserted =   9798 / 21447
+    Iteratively referring referred vertices...
+    Iteration 1: Influences =  73934 / 6906955 Inserted =    213 / 10443
+    Iteration 2: Influences =   1494 / 6908661 Inserted =      0 / 1099
+
+Conformation iteration 1
+    Number of vertices 992578
+    Number of surface hits 1745
+    Number of edge hits 14
+    Surface tree synchronisation
+        Not inserting total of 0 locations
+    Edge tree synchronisation
+        Not inserting total of 4 locations
+    Reinserted 3520 vertices out of 3520
+    Influences =  12695 / 6930704 Inserted =   3213 / 8680
+    Iteratively referring referred vertices...
+    Iteration 1: Influences =  26049 / 6951542 Inserted =     70 / 4698
+    Iteration 2: Influences =    440 / 6952079 Inserted =      0 / 298
+
+Conformation iteration 2
+    Number of vertices 999381
+    Number of surface hits 105
+    Number of edge hits 6
+    Surface tree synchronisation
+        Not inserting total of 0 locations
+    Edge tree synchronisation
+        Not inserting total of 0 locations
+    Reinserted 229 vertices out of 229
+    Influences =    622 / 6953482 Inserted =    254 / 496
+    Iteratively referring referred vertices...
+    Iteration 1: Influences =   1893 / 6955008 Inserted =      1 / 197
+    Iteration 2: Influences =     22 / 6955017 Inserted = 0
+
+Conformation iteration 3
+    Number of vertices 999865
+    Number of surface hits 8
+    Number of edge hits 1
+    Surface tree synchronisation
+        Not inserting total of 0 locations
+    Edge tree synchronisation
+        Not inserting total of 0 locations
+    Reinserted 20 vertices out of 20
+    Influences =     15 / 6955151 Inserted =     38 / 46
+    Iteratively referring referred vertices...
+    Iteration 1: Influences =    260 / 6955367 Inserted =      0 / 1
+
+Conformation iteration 4
+    Number of vertices 999923
+    Number of surface hits 0
+    Number of edge hits 0
+
+Total hits (0) less than number of failed insertions (0), stopping iterations
+
+Redistributing points
+    Processor unbalance 0.08626606784
+
+Storing surface conformation
+    Stored 209075 vertices
+
+
+Total displacement = (0.8866626815 -0.09603093275 0.4523429509)
+Total distance = 2149.664009
+
+
+ExecutionTime = 1457.94 s  ClockTime = 2893 s
+
+
+Time = 61
+
+Relaxation = 0.4
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    581084 points to insert...
+    581084 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 209075 vertices out of 209075
+    Influences =  33203 / 5632345 Inserted = 109934 / 110021
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 545630 / 6306534 Inserted =  75273 / 114306
+    Iteration 2: Influences = 802513 / 6878738 Inserted =  20168 / 66763
+    Iteration 3: Influences = 225236 / 7031847 Inserted =     82 / 8907
+    Iteration 4: Influences =   1093 / 7032434 Inserted =      0 / 63
+
+Total displacement = (1.387875708 -0.3722023828 0.9907709637)
+Total distance = 2150.797092
+
+
+ExecutionTime = 1473.06 s  ClockTime = 2923 s
+
+
+Time = 62
+
+Relaxation = 0.39
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    580458 points to insert...
+    580458 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 209075 vertices out of 209075
+    Influences =  34427 / 5590549 Inserted = 111318 / 111455
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 555519 / 6275374 Inserted =  75639 / 115370
+    Iteration 2: Influences = 801593 / 6847987 Inserted =  19036 / 65185
+    Iteration 3: Influences = 212868 / 6992611 Inserted =     48 / 8541
+    Iteration 4: Influences =    549 / 6992956 Inserted =      0 / 32
+
+Total displacement = (1.232947665 -0.1849446778 0.8188096524)
+Total distance = 2138.998331
+
+
+ExecutionTime = 1489.54 s  ClockTime = 2956 s
+
+
+Time = 63
+
+Relaxation = 0.38
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    580058 points to insert...
+    580058 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 209075 vertices out of 209075
+    Influences =  34168 / 5657965 Inserted = 111339 / 111424
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 561010 / 6341986 Inserted =  76469 / 116469
+    Iteration 2: Influences = 808856 / 6924723 Inserted =  18071 / 63918
+    Iteration 3: Influences = 203949 / 7063849 Inserted =     44 / 8132
+    Iteration 4: Influences =    360 / 7064138 Inserted =      0 / 71
+
+Total displacement = (1.154941954 -0.2943305406 0.7422031843)
+Total distance = 2110.978728
+
+
+ExecutionTime = 1505.62 s  ClockTime = 2989 s
+
+
+Time = 64
+
+Relaxation = 0.37
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    579751 points to insert...
+    579751 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 209075 vertices out of 209075
+    Influences =  34636 / 5616218 Inserted = 111965 / 112077
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 561657 / 6304652 Inserted =  76305 / 116581
+    Iteration 2: Influences = 802989 / 6884261 Inserted =  18087 / 63787
+    Iteration 3: Influences = 203535 / 7021487 Inserted =     23 / 8070
+    Iteration 4: Influences =    317 / 7021666 Inserted =      0 / 16
+
+Total displacement = (1.120419734 -0.1596829322 0.6886866233)
+Total distance = 2059.725395
+
+
+ExecutionTime = 1521.51 s  ClockTime = 3020 s
+
+
+Time = 65
+
+Relaxation = 0.36
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    579653 points to insert...
+    579653 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 209075 vertices out of 209075
+    Influences =  33936 / 5665672 Inserted = 110556 / 110670
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 553167 / 6343912 Inserted =  74631 / 114413
+    Iteration 2: Influences = 799749 / 6911992 Inserted =  20129 / 65878
+    Iteration 3: Influences = 217822 / 7067154 Inserted =     79 / 8993
+    Iteration 4: Influences =    908 / 7067729 Inserted =      0 / 75
+
+Total displacement = (1.041833938 -0.3122311849 0.6364006574)
+Total distance = 1980.536317
+
+
+ExecutionTime = 1537.42 s  ClockTime = 3052 s
+
+
+Time = 66
+
+Relaxation = 0.35
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    579625 points to insert...
+    579625 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 209075 vertices out of 209075
+    Influences =  33873 / 5624650 Inserted = 110819 / 110905
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 566826 / 6305655 Inserted =  77406 / 118776
+    Iteration 2: Influences = 808372 / 6892770 Inserted =  17463 / 63210
+    Iteration 3: Influences = 196091 / 7025713 Inserted =     31 / 8657
+    Iteration 4: Influences =    383 / 7025923 Inserted =      0 / 16
+
+Total displacement = (1.009245592 -0.2114053577 0.5921873879)
+Total distance = 1870.075838
+
+
+ExecutionTime = 1552.67 s  ClockTime = 3082 s
+
+
+Time = 67
+
+Relaxation = 0.34
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    579582 points to insert...
+    579582 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 209075 vertices out of 209075
+    Influences =  34576 / 5645757 Inserted = 111686 / 111776
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 563048 / 6331971 Inserted =  76647 / 117035
+    Iteration 2: Influences = 804088 / 6916108 Inserted =  17663 / 63494
+    Iteration 3: Influences = 198901 / 7049240 Inserted =     44 / 8405
+    Iteration 4: Influences =    535 / 7049544 Inserted =      0 / 10
+
+Total displacement = (0.9361154944 -0.3559759919 0.5746572632)
+Total distance = 1724.37974
+
+
+ExecutionTime = 1568.27 s  ClockTime = 3113 s
+
+
+Time = 68
+
+Relaxation = 0.33
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    579650 points to insert...
+    579650 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 209075 vertices out of 209075
+    Influences =  33941 / 5601515 Inserted = 111434 / 111550
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 564223 / 6285774 Inserted =  76919 / 118172
+    Iteration 2: Influences = 802652 / 6866757 Inserted =  17559 / 64005
+    Iteration 3: Influences = 195015 / 6999495 Inserted =     73 / 8310
+    Iteration 4: Influences =    994 / 7000010 Inserted =      0 / 43
+
+Total displacement = (0.8847122455 -0.285198799 0.5605879647)
+Total distance = 1538.816444
+
+
+ExecutionTime = 1584.04 s  ClockTime = 3145 s
+
+
+Time = 69
+
+Relaxation = 0.32
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    579704 points to insert...
+    579704 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 209075 vertices out of 209075
+    Influences =  34170 / 5580951 Inserted = 110765 / 110878
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 554285 / 6259343 Inserted =  76005 / 116753
+    Iteration 2: Influences = 800104 / 6831199 Inserted =  18395 / 65155
+    Iteration 3: Influences = 203280 / 6969574 Inserted =     47 / 8487
+    Iteration 4: Influences =    397 / 6969899 Inserted =      0 / 80
+
+Total displacement = (0.8410545175 -0.3779629204 0.5194596037)
+Total distance = 1315.156268
+
+
+ExecutionTime = 1600.56 s  ClockTime = 3178 s
+
+
+Time = 70
+
+Relaxation = 0.31
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    579715 points to insert...
+    579715 points inserted, failed to insert 0 (0 %)
+
+Rebuilding surface conformation for more iterations
+    Vertices marked as being near a boundary: 143874 (estimated)
+    Vertices marked as being near a boundary: 105289 (after dual surface intersection)
+
+Initial conformation
+    Number of vertices 580035
+    Number of surface hits 88352
+    Number of edge hits 4833
+    Surface tree synchronisation
+        Not inserting total of 402 locations
+    Edge tree synchronisation
+        Not inserting total of 24 locations
+    Reinserted 193552 vertices out of 193552
+    Influences =  32305 / 5359621 Inserted = 103583 / 103684
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 544069 / 5996491 Inserted =  73758 / 115143
+    Iteration 2: Influences = 776686 / 6537933 Inserted =  17238 / 62476
+    Iteration 3: Influences = 191308 / 6665437 Inserted =     28 / 7967
+    Iteration 4: Influences =    310 / 6665657 Inserted =      0 / 52
+
+Stopping iterations when: 
+    total number of hits drops below 0.0001 of initial hits (9)
+ or 
+    maximum number of iterations (15) is reached
+
+Conformation iteration 0
+    Number of vertices 968194
+    Number of surface hits 3895
+    Number of edge hits 96
+    Surface tree synchronisation
+        Not inserting total of 0 locations
+    Edge tree synchronisation
+        Not inserting total of 1 locations
+    Reinserted 8114 vertices out of 8114
+    Influences =  34129 / 6720330 Inserted =   8712 / 19346
+    Iteratively referring referred vertices...
+    Iteration 1: Influences =  64719 / 6780011 Inserted =    172 / 9432
+    Iteration 2: Influences =    986 / 6781403 Inserted =      0 / 745
+
+Conformation iteration 1
+    Number of vertices 985192
+    Number of surface hits 1805
+    Number of edge hits 11
+    Surface tree synchronisation
+        Not inserting total of 0 locations
+    Edge tree synchronisation
+        Not inserting total of 0 locations
+    Reinserted 3638 vertices out of 3638
+    Influences =  12792 / 6804002 Inserted =   3551 / 9282
+    Iteratively referring referred vertices...
+    Iteration 1: Influences =  28299 / 6826689 Inserted =     73 / 4835
+    Iteration 2: Influences =    469 / 6827325 Inserted =      0 / 380
+
+Conformation iteration 2
+    Number of vertices 992454
+    Number of surface hits 77
+    Number of edge hits 1
+    Surface tree synchronisation
+        Not inserting total of 0 locations
+    Edge tree synchronisation
+        Not inserting total of 0 locations
+    Reinserted 154 vertices out of 154
+    Influences =    417 / 6828274 Inserted =    264 / 391
+    Iteratively referring referred vertices...
+    Iteration 1: Influences =   2060 / 6829870 Inserted =      2 / 96
+    Iteration 2: Influences =     21 / 6829880 Inserted =      0 / 6
+
+Conformation iteration 3
+    Number of vertices 992874
+    Number of surface hits 9
+    Number of edge hits 1
+    Surface tree synchronisation
+        Not inserting total of 0 locations
+    Edge tree synchronisation
+        Not inserting total of 0 locations
+    Reinserted 22 vertices out of 22
+    Influences =     81 / 6830022 Inserted =     43 / 61
+    Iteratively referring referred vertices...
+    Iteration 1: Influences =    301 / 6830208 Inserted =      0 / 14
+
+Conformation iteration 4
+    Number of vertices 992939
+    Number of surface hits 5
+    Number of edge hits 0
+    Surface tree synchronisation
+        Not inserting total of 0 locations
+    Edge tree synchronisation
+        Not inserting total of 0 locations
+    Reinserted 10 vertices out of 10
+    Influences =     16 / 6830265 Inserted = 34
+    Iteratively referring referred vertices...
+    Iteration 1: Influences =    230 / 6830429 Inserted = 0
+
+Total hits (5) less than limit (9), stopping iterations
+
+Redistributing points
+    Processor unbalance 0.08591259607
+
+Storing surface conformation
+    Stored 205490 vertices
+
+
+Total displacement = (0.7700350414 -0.2993660558 0.5181072031)
+Total distance = 1065.460299
+
+
+ExecutionTime = 1667.75 s  ClockTime = 3310 s
+
+
+Time = 71
+
+Relaxation = 0.3
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    579678 points to insert...
+    579678 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 205490 vertices out of 205490
+    Influences =  33274 / 5422297 Inserted = 110652 / 110751
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 562584 / 6100097 Inserted =  76589 / 120073
+    Iteration 2: Influences = 791572 / 6663921 Inserted =  17532 / 64733
+    Iteration 3: Influences = 189678 / 6793686 Inserted =     50 / 8477
+    Iteration 4: Influences =    571 / 6794061 Inserted =      0 / 64
+
+Total displacement = (1.309316502 -0.2879815582 1.048139769)
+Total distance = 834.38492
+
+
+ExecutionTime = 1683.16 s  ClockTime = 3341 s
+
+
+Time = 72
+
+Relaxation = 0.29
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    579657 points to insert...
+    579657 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 205490 vertices out of 205490
+    Influences =  34266 / 5324390 Inserted = 111634 / 111755
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 569040 / 6007951 Inserted =  76464 / 120995
+    Iteration 2: Influences = 779993 / 6565208 Inserted =  17062 / 63460
+    Iteration 3: Influences = 184891 / 6689472 Inserted =     28 / 8014
+    Iteration 4: Influences =    336 / 6689690 Inserted =      0 / 40
+
+Total displacement = (1.234421844 -0.2497151151 0.9907046478)
+Total distance = 591.3318964
+
+
+ExecutionTime = 1698.85 s  ClockTime = 3371 s
+
+
+Time = 73
+
+Relaxation = 0.28
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    579667 points to insert...
+    579667 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 205490 vertices out of 205490
+    Influences =  34371 / 5255594 Inserted = 112148 / 112264
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 580537 / 5941923 Inserted =  78211 / 123901
+    Iteration 2: Influences = 783924 / 6506350 Inserted =  15058 / 61596
+    Iteration 3: Influences = 165856 / 6616535 Inserted =     10 / 7830
+    Iteration 4: Influences =     60 / 6616622 Inserted =      0 / 34
+
+Total displacement = (1.148496114 -0.257886231 0.9181149051)
+Total distance = 394.497288
+
+
+ExecutionTime = 1714.36 s  ClockTime = 3402 s
+
+
+Time = 74
+
+Relaxation = 0.27
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    579695 points to insert...
+    579695 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 205490 vertices out of 205490
+    Influences =  35098 / 5195199 Inserted = 113200 / 113322
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 579673 / 5889032 Inserted =  77349 / 121792
+    Iteration 2: Influences = 780751 / 6444030 Inserted =  15353 / 62959
+    Iteration 3: Influences = 165480 / 6555056 Inserted =     26 / 7715
+    Iteration 4: Influences =    285 / 6555242 Inserted =      0 / 17
+
+Total displacement = (1.08455346 -0.2588957509 0.9082627312)
+Total distance = 247.2659029
+
+
+ExecutionTime = 1730.13 s  ClockTime = 3432 s
+
+
+Time = 75
+
+Relaxation = 0.26
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    579747 points to insert...
+    579747 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 205490 vertices out of 205490
+    Influences =  33722 / 5162448 Inserted = 111428 / 111526
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 567292 / 5843567 Inserted =  77262 / 122556
+    Iteration 2: Influences = 779868 / 6395680 Inserted =  16166 / 64376
+    Iteration 3: Influences = 173939 / 6511381 Inserted =     35 / 8092
+    Iteration 4: Influences =    344 / 6511651 Inserted =      0 / 36
+
+Total displacement = (1.03326547 -0.2733335978 0.8355804654)
+Total distance = 148.4043709
+
+
+ExecutionTime = 1745.51 s  ClockTime = 3463 s
+
+
+Time = 76
+
+Relaxation = 0.25
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    579739 points to insert...
+    579739 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 205490 vertices out of 205490
+    Influences =  34370 / 5149739 Inserted = 112591 / 112723
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 573779 / 5839958 Inserted =  76650 / 121166
+    Iteration 2: Influences = 773023 / 6386851 Inserted =  16145 / 63763
+    Iteration 3: Influences = 173872 / 6502135 Inserted =     39 / 7687
+    Iteration 4: Influences =    536 / 6502424 Inserted =      0 / 23
+
+Total displacement = (0.9892557456 -0.2636819469 0.810853813)
+Total distance = 89.99588841
+
+
+ExecutionTime = 1760.33 s  ClockTime = 3493 s
+
+
+Time = 77
+
+Relaxation = 0.24
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    579756 points to insert...
+    579756 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 205490 vertices out of 205490
+    Influences =  35293 / 5144716 Inserted = 113290 / 113415
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 581338 / 5839261 Inserted =  77901 / 123307
+    Iteration 2: Influences = 777592 / 6394406 Inserted =  14770 / 62350
+    Iteration 3: Influences = 159029 / 6500368 Inserted =     37 / 7551
+    Iteration 4: Influences =    431 / 6500631 Inserted =      0 / 31
+
+Total displacement = (0.9783407398 -0.2707937855 0.7813780809)
+Total distance = 60.57908605
+
+
+ExecutionTime = 1776.43 s  ClockTime = 3524 s
+
+
+Time = 78
+
+Relaxation = 0.23
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    579794 points to insert...
+    579794 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 205490 vertices out of 205490
+    Influences =  33608 / 5143524 Inserted = 110910 / 111021
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 565565 / 5821557 Inserted =  77256 / 122368
+    Iteration 2: Influences = 779728 / 6370928 Inserted =  16555 / 64869
+    Iteration 3: Influences = 176176 / 6490408 Inserted =     25 / 7951
+    Iteration 4: Influences =    243 / 6490606 Inserted =      0 / 46
+
+Total displacement = (0.9541143041 -0.2741499881 0.7659680619)
+Total distance = 48.89864745
+
+
+ExecutionTime = 1791.64 s  ClockTime = 3553 s
+
+
+Time = 79
+
+Relaxation = 0.22
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    579814 points to insert...
+    579814 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 205490 vertices out of 205490
+    Influences =  35125 / 5142465 Inserted = 112849 / 112955
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 571237 / 5833852 Inserted =  76517 / 121229
+    Iteration 2: Influences = 772141 / 6379230 Inserted =  16241 / 64657
+    Iteration 3: Influences = 174686 / 6495434 Inserted =     31 / 8150
+    Iteration 4: Influences =    374 / 6495668 Inserted =      0 / 30
+
+Total displacement = (0.9305640815 -0.2730662831 0.7339378133)
+Total distance = 45.16368191
+
+
+ExecutionTime = 1807.35 s  ClockTime = 3585 s
+
+
+Time = 80
+
+Relaxation = 0.21
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    579827 points to insert...
+    579827 points inserted, failed to insert 0 (0 %)
+
+Rebuilding surface conformation for more iterations
+    Vertices marked as being near a boundary: 151387 (estimated)
+    Vertices marked as being near a boundary: 105086 (after dual surface intersection)
+
+Initial conformation
+    Number of vertices 580147
+    Number of surface hits 87797
+    Number of edge hits 4802
+    Surface tree synchronisation
+        Not inserting total of 411 locations
+    Edge tree synchronisation
+        Not inserting total of 23 locations
+    Reinserted 192323 vertices out of 192323
+    Influences =  33649 / 5013667 Inserted = 103859 / 104004
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 557012 / 5654348 Inserted =  74996 / 119590
+    Iteration 2: Influences = 760633 / 6181387 Inserted =  15137 / 61412
+    Iteration 3: Influences = 164592 / 6289352 Inserted =     25 / 7347
+    Iteration 4: Influences =    234 / 6289515 Inserted =      0 / 44
+
+Stopping iterations when: 
+    total number of hits drops below 0.0001 of initial hits (9)
+ or 
+    maximum number of iterations (15) is reached
+
+Conformation iteration 0
+    Number of vertices 966487
+    Number of surface hits 3938
+    Number of edge hits 92
+    Surface tree synchronisation
+        Not inserting total of 1 locations
+    Edge tree synchronisation
+        Not inserting total of 3 locations
+    Reinserted 8168 vertices out of 8168
+    Influences =  34849 / 6344229 Inserted =   9081 / 20241
+    Iteratively referring referred vertices...
+    Iteration 1: Influences =  65743 / 6404405 Inserted =    213 / 10158
+    Iteration 2: Influences =   1318 / 6406196 Inserted =      0 / 1089
+
+Conformation iteration 1
+    Number of vertices 983949
+    Number of surface hits 1812
+    Number of edge hits 18
+    Surface tree synchronisation
+        Not inserting total of 0 locations
+    Edge tree synchronisation
+        Not inserting total of 2 locations
+    Reinserted 3673 vertices out of 3673
+    Influences =  12918 / 6428880 Inserted =   3644 / 9510
+    Iteratively referring referred vertices...
+    Iteration 1: Influences =  28961 / 6452028 Inserted =     59 / 4906
+    Iteration 2: Influences =    336 / 6452493 Inserted =      0 / 227
+
+Conformation iteration 2
+    Number of vertices 991325
+    Number of surface hits 97
+    Number of edge hits 2
+    Surface tree synchronisation
+        Not inserting total of 0 locations
+    Edge tree synchronisation
+        Not inserting total of 0 locations
+    Reinserted 201 vertices out of 201
+    Influences =    452 / 6453713 Inserted =    306 / 464
+    Iteratively referring referred vertices...
+    Iteration 1: Influences =   2288 / 6455449 Inserted =      1 / 138
+    Iteration 2: Influences =      4 / 6455453 Inserted = 0
+
+Conformation iteration 3
+    Number of vertices 991833
+    Number of surface hits 7
+    Number of edge hits 0
+    Surface tree synchronisation
+        Not inserting total of 0 locations
+    Edge tree synchronisation
+        Not inserting total of 0 locations
+    Reinserted 14 vertices out of 14
+    Influences =     38 / 6455538 Inserted =     30 / 33
+    Iteratively referring referred vertices...
+    Iteration 1: Influences =    203 / 6455702 Inserted = 0
+
+Total hits (7) less than limit (9), stopping iterations
+
+Redistributing points
+    Processor unbalance 0.08436813796
+
+Storing surface conformation
+    Stored 204379 vertices
+
+
+Total displacement = (0.9109548485 -0.2782570747 0.7130784177)
+Total distance = 43.3304538
+
+
+ExecutionTime = 1867.26 s  ClockTime = 3702 s
+
+
+Time = 81
+
+Relaxation = 0.2
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    579780 points to insert...
+    579780 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 204379 vertices out of 204379
+    Influences =  34357 / 5107656 Inserted = 111782 / 111908
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 570549 / 5793650 Inserted =  76675 / 122379
+    Iteration 2: Influences = 772993 / 6335694 Inserted =  16581 / 64594
+    Iteration 3: Influences = 175344 / 6455499 Inserted =     51 / 7986
+    Iteration 4: Influences =    533 / 6455876 Inserted =      0 / 61
+
+Total displacement = (1.236166785 -0.2530251495 1.080262172)
+Total distance = 65.57864934
+
+
+ExecutionTime = 1882.28 s  ClockTime = 3732 s
+
+
+Time = 82
+
+Relaxation = 0.19
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    579796 points to insert...
+    579796 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 204379 vertices out of 204379
+    Influences =  33876 / 5109457 Inserted = 111158 / 111281
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 565650 / 5790480 Inserted =  76769 / 122248
+    Iteration 2: Influences = 775839 / 6333765 Inserted =  16658 / 64777
+    Iteration 3: Influences = 178115 / 6453592 Inserted =     70 / 7606
+    Iteration 4: Influences =    725 / 6454099 Inserted =      0 / 102
+
+Total displacement = (1.22104858 -0.2309541818 1.011982387)
+Total distance = 54.64564005
+
+
+ExecutionTime = 1898.3 s  ClockTime = 3763 s
+
+
+Time = 83
+
+Relaxation = 0.18
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    579807 points to insert...
+    579807 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 204379 vertices out of 204379
+    Influences =  36108 / 5110185 Inserted = 113404 / 113531
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 576842 / 5806089 Inserted =  76648 / 121742
+    Iteration 2: Influences = 770553 / 6350377 Inserted =  15794 / 63238
+    Iteration 3: Influences = 170506 / 6463842 Inserted =     64 / 7622
+    Iteration 4: Influences =    901 / 6464256 Inserted =      0 / 34
+
+Total displacement = (1.169637892 -0.2505343149 0.9516777346)
+Total distance = 50.26739453
+
+
+ExecutionTime = 1913.56 s  ClockTime = 3793 s
+
+
+Time = 84
+
+Relaxation = 0.17
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    579843 points to insert...
+    579843 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 204379 vertices out of 204379
+    Influences =  35022 / 5110845 Inserted = 112831 / 112921
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 584625 / 5802960 Inserted =  77557 / 123800
+    Iteration 2: Influences = 775026 / 6352197 Inserted =  15498 / 62211
+    Iteration 3: Influences = 166246 / 6464636 Inserted =     47 / 7776
+    Iteration 4: Influences =    495 / 6464988 Inserted =      0 / 49
+
+Total displacement = (1.134490656 -0.2696732729 0.9424574719)
+Total distance = 47.3946721
+
+
+ExecutionTime = 1928.84 s  ClockTime = 3824 s
+
+
+Time = 85
+
+Relaxation = 0.16
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    579873 points to insert...
+    579873 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 204379 vertices out of 204379
+    Influences =  34034 / 5110741 Inserted = 111493 / 111606
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 566717 / 5794527 Inserted =  76446 / 121629
+    Iteration 2: Influences = 773395 / 6335544 Inserted =  16979 / 64940
+    Iteration 3: Influences = 179252 / 6457979 Inserted =     44 / 8394
+    Iteration 4: Influences =    440 / 6458312 Inserted =      0 / 75
+
+Total displacement = (1.117658072 -0.2488213957 0.9289253453)
+Total distance = 45.25452176
+
+
+ExecutionTime = 1944.01 s  ClockTime = 3854 s
+
+
+Time = 86
+
+Relaxation = 0.15
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    579903 points to insert...
+    579903 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 204379 vertices out of 204379
+    Influences =  34237 / 5111045 Inserted = 111051 / 111150
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 569119 / 5790873 Inserted =  76902 / 122382
+    Iteration 2: Influences = 776276 / 6335310 Inserted =  16310 / 64742
+    Iteration 3: Influences = 173688 / 6453269 Inserted =     49 / 8198
+    Iteration 4: Influences =    626 / 6453610 Inserted =      0 / 45
+
+Total displacement = (1.079202575 -0.2494513821 0.9285032029)
+Total distance = 43.64475415
+
+
+ExecutionTime = 1959.4 s  ClockTime = 3884 s
+
+
+Time = 87
+
+Relaxation = 0.14
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    579941 points to insert...
+    579941 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 204379 vertices out of 204379
+    Influences =  34009 / 5110910 Inserted = 111562 / 111658
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 565777 / 5794354 Inserted =  76156 / 120667
+    Iteration 2: Influences = 771792 / 6334352 Inserted =  17222 / 65214
+    Iteration 3: Influences = 180686 / 6457794 Inserted =     71 / 8151
+    Iteration 4: Influences =    791 / 6458318 Inserted =      0 / 55
+
+Total displacement = (1.049032818 -0.2511606524 0.8985759877)
+Total distance = 42.20414087
+
+
+ExecutionTime = 1975.86 s  ClockTime = 3917 s
+
+
+Time = 88
+
+Relaxation = 0.13
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    579968 points to insert...
+    579968 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 204379 vertices out of 204379
+    Influences =  34277 / 5110635 Inserted = 111779 / 111872
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 562856 / 5795274 Inserted =  75865 / 120108
+    Iteration 2: Influences = 773343 / 6331955 Inserted =  17435 / 65875
+    Iteration 3: Influences = 183657 / 6457711 Inserted =     45 / 8335
+    Iteration 4: Influences =    543 / 6458049 Inserted =      0 / 56
+
+Total displacement = (1.055584931 -0.2520601508 0.8948859838)
+Total distance = 41.2470817
+
+
+ExecutionTime = 1991.07 s  ClockTime = 3947 s
+
+
+Time = 89
+
+Relaxation = 0.12
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    579986 points to insert...
+    579986 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 204379 vertices out of 204379
+    Influences =  34487 / 5110435 Inserted = 111659 / 111785
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 565976 / 5794312 Inserted =  76793 / 121981
+    Iteration 2: Influences = 775355 / 6339678 Inserted =  16045 / 64767
+    Iteration 3: Influences = 174757 / 6454330 Inserted =     52 / 7943
+    Iteration 4: Influences =    583 / 6454678 Inserted =      0 / 43
+
+Total displacement = (1.026938081 -0.25561718 0.8928604645)
+Total distance = 40.23697342
+
+
+ExecutionTime = 2006.59 s  ClockTime = 3977 s
+
+
+Time = 90
+
+Relaxation = 0.11
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    580010 points to insert...
+    580010 points inserted, failed to insert 0 (0 %)
+
+Rebuilding surface conformation for more iterations
+    Vertices marked as being near a boundary: 151390 (estimated)
+    Vertices marked as being near a boundary: 105148 (after dual surface intersection)
+
+Initial conformation
+    Number of vertices 580330
+    Number of surface hits 87783
+    Number of edge hits 4770
+    Surface tree synchronisation
+        Not inserting total of 426 locations
+    Edge tree synchronisation
+        Not inserting total of 20 locations
+    Reinserted 192147 vertices out of 192147
+    Influences =  32660 / 5012819 Inserted = 103744 / 103873
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 553077 / 5649132 Inserted =  74875 / 119276
+    Iteration 2: Influences = 765329 / 6176062 Inserted =  16037 / 63794
+    Iteration 3: Influences = 172486 / 6291345 Inserted =     43 / 7964
+    Iteration 4: Influences =    471 / 6291659 Inserted =      0 / 52
+
+Stopping iterations when: 
+    total number of hits drops below 0.0001 of initial hits (9)
+ or 
+    maximum number of iterations (15) is reached
+
+Conformation iteration 0
+    Number of vertices 967176
+    Number of surface hits 3826
+    Number of edge hits 114
+    Surface tree synchronisation
+        Not inserting total of 4 locations
+    Edge tree synchronisation
+        Not inserting total of 2 locations
+    Reinserted 8015 vertices out of 8015
+    Influences =  34064 / 6345192 Inserted =   8531 / 19909
+    Iteratively referring referred vertices...
+    Iteration 1: Influences =  64304 / 6401808 Inserted =    187 / 10223
+    Iteration 2: Influences =   1223 / 6403237 Inserted =      0 / 857
+
+Conformation iteration 1
+    Number of vertices 983909
+    Number of surface hits 1788
+    Number of edge hits 16
+    Surface tree synchronisation
+        Not inserting total of 1 locations
+    Edge tree synchronisation
+        Not inserting total of 3 locations
+    Reinserted 3615 vertices out of 3615
+    Influences =  13603 / 6425671 Inserted =   3570 / 9792
+    Iteratively referring referred vertices...
+    Iteration 1: Influences =  29115 / 6448399 Inserted =     88 / 5287
+    Iteration 2: Influences =    487 / 6449162 Inserted =      0 / 510
+
+Conformation iteration 2
+    Number of vertices 991182
+    Number of surface hits 95
+    Number of edge hits 1
+    Surface tree synchronisation
+        Not inserting total of 1 locations
+    Edge tree synchronisation
+        Not inserting total of 0 locations
+    Reinserted 191 vertices out of 191
+    Influences =    692 / 6450347 Inserted =    321 / 521
+    Iteratively referring referred vertices...
+    Iteration 1: Influences =   2505 / 6452386 Inserted =      5 / 170
+    Iteration 2: Influences =     27 / 6452435 Inserted =      0 / 8
+
+Conformation iteration 3
+    Number of vertices 991699
+    Number of surface hits 7
+    Number of edge hits 1
+    Surface tree synchronisation
+        Not inserting total of 1 locations
+    Edge tree synchronisation
+        Not inserting total of 0 locations
+    Reinserted 15 vertices out of 15
+    Influences =     45 / 6452518 Inserted =     31 / 37
+    Iteratively referring referred vertices...
+    Iteration 1: Influences =    215 / 6452613 Inserted =      0 / 3
+
+Total hits (8) less than limit (9), stopping iterations
+
+Redistributing points
+    Processor unbalance 0.08668317192
+
+Storing surface conformation
+    Stored 203983 vertices
+
+
+Total displacement = (1.005511963 -0.2536917912 0.8959664546)
+Total distance = 39.39641755
+
+
+ExecutionTime = 2065.56 s  ClockTime = 4094 s
+
+
+Time = 91
+
+Relaxation = 0.1
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    579947 points to insert...
+    579947 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 203983 vertices out of 203983
+    Influences =  33893 / 5093344 Inserted = 111379 / 111469
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 565015 / 5772811 Inserted =  76360 / 121543
+    Iteration 2: Influences = 775339 / 6313536 Inserted =  17517 / 67058
+    Iteration 3: Influences = 182758 / 6439843 Inserted =     76 / 8152
+    Iteration 4: Influences =    835 / 6440396 Inserted =      0 / 79
+
+Total displacement = (1.287823956 -0.1910553037 1.094743287)
+Total distance = 55.46877037
+
+
+ExecutionTime = 2080.65 s  ClockTime = 4125 s
+
+
+Time = 92
+
+Relaxation = 0.09
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    579953 points to insert...
+    579953 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 203983 vertices out of 203983
+    Influences =  34011 / 5096055 Inserted = 111540 / 111654
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 570026 / 5776556 Inserted =  77257 / 123577
+    Iteration 2: Influences = 779073 / 6324604 Inserted =  15977 / 65244
+    Iteration 3: Influences = 169669 / 6439317 Inserted =     38 / 7946
+    Iteration 4: Influences =    417 / 6439612 Inserted =      0 / 64
+
+Total displacement = (1.259538555 -0.1778705197 1.069924803)
+Total distance = 50.84314977
+
+
+ExecutionTime = 2095.82 s  ClockTime = 4156 s
+
+
+Time = 93
+
+Relaxation = 0.08
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    579963 points to insert...
+    579963 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 203983 vertices out of 203983
+    Influences =  34315 / 5098088 Inserted = 112266 / 112376
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 563762 / 5783338 Inserted =  75643 / 120567
+    Iteration 2: Influences = 773799 / 6319804 Inserted =  17630 / 67209
+    Iteration 3: Influences = 185132 / 6446632 Inserted =     41 / 8170
+    Iteration 4: Influences =    444 / 6446934 Inserted =      0 / 59
+
+Total displacement = (1.250645925 -0.1851547343 1.048988837)
+Total distance = 48.26408871
+
+
+ExecutionTime = 2111.38 s  ClockTime = 4187 s
+
+
+Time = 94
+
+Relaxation = 0.07
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    579967 points to insert...
+    579967 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 203983 vertices out of 203983
+    Influences =  35529 / 5099237 Inserted = 112921 / 113041
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 573530 / 5789510 Inserted =  76898 / 122673
+    Iteration 2: Influences = 775956 / 6334216 Inserted =  16030 / 65041
+    Iteration 3: Influences = 171309 / 6450292 Inserted =     20 / 7718
+    Iteration 4: Influences =    125 / 6450446 Inserted =      0 / 74
+
+Total displacement = (1.225740405 -0.1796126672 1.043048107)
+Total distance = 46.40523148
+
+
+ExecutionTime = 2128.22 s  ClockTime = 4217 s
+
+
+Time = 95
+
+Relaxation = 0.06
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    579970 points to insert...
+    579970 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 203983 vertices out of 203983
+    Influences =  36424 / 5100061 Inserted = 114101 / 114239
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 577812 / 5797894 Inserted =  76385 / 121915
+    Iteration 2: Influences = 770254 / 6340148 Inserted =  16149 / 64789
+    Iteration 3: Influences = 170465 / 6456944 Inserted =     37 / 7719
+    Iteration 4: Influences =    433 / 6457236 Inserted =      0 / 62
+
+Total displacement = (1.220706961 -0.1789094795 1.029236255)
+Total distance = 45.04924454
+
+
+ExecutionTime = 2143.19 s  ClockTime = 4247 s
+
+
+Time = 96
+
+Relaxation = 0.05
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    579976 points to insert...
+    579976 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 203983 vertices out of 203983
+    Influences =  33717 / 5100549 Inserted = 111095 / 111184
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 562376 / 5776673 Inserted =  76970 / 122626
+    Iteration 2: Influences = 778954 / 6323180 Inserted =  16935 / 66425
+    Iteration 3: Influences = 180341 / 6444675 Inserted =     20 / 7965
+    Iteration 4: Influences =    179 / 6444833 Inserted =      0 / 43
+
+Total displacement = (1.204670753 -0.1866091242 1.01648077)
+Total distance = 43.96875392
+
+
+ExecutionTime = 2158.13 s  ClockTime = 4276 s
+
+
+Time = 97
+
+Relaxation = 0.04
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    579978 points to insert...
+    579978 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 203983 vertices out of 203983
+    Influences =  34693 / 5101116 Inserted = 111955 / 112059
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 569370 / 5783781 Inserted =  76746 / 122706
+    Iteration 2: Influences = 776342 / 6328346 Inserted =  16610 / 65897
+    Iteration 3: Influences = 175640 / 6447615 Inserted =     47 / 8229
+    Iteration 4: Influences =    575 / 6447959 Inserted =      0 / 49
+
+Total displacement = (1.185388834 -0.185306828 0.9952603251)
+Total distance = 43.20177432
+
+
+ExecutionTime = 2173.22 s  ClockTime = 4306 s
+
+
+Time = 98
+
+Relaxation = 0.03
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    579980 points to insert...
+    579980 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 203983 vertices out of 203983
+    Influences =  34977 / 5101400 Inserted = 112886 / 112977
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 576714 / 5791640 Inserted =  77437 / 123747
+    Iteration 2: Influences = 778131 / 6341709 Inserted =  15859 / 64734
+    Iteration 3: Influences = 169459 / 6455577 Inserted =     15 / 7895
+    Iteration 4: Influences =    138 / 6455695 Inserted =      0 / 24
+
+Total displacement = (1.187239388 -0.1849887314 0.9919168193)
+Total distance = 42.65197755
+
+
+ExecutionTime = 2189.74 s  ClockTime = 4337 s
+
+
+Time = 99
+
+Relaxation = 0.02
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    579983 points to insert...
+    579983 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 203983 vertices out of 203983
+    Influences =  34808 / 5101730 Inserted = 112382 / 112493
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 569246 / 5786824 Inserted =  76534 / 122138
+    Iteration 2: Influences = 774164 / 6329765 Inserted =  16747 / 65500
+    Iteration 3: Influences = 177887 / 6451188 Inserted =     29 / 7984
+    Iteration 4: Influences =    293 / 6451417 Inserted =      0 / 52
+
+Total displacement = (1.17102498 -0.1949140726 0.9850014664)
+Total distance = 42.23095183
+
+
+ExecutionTime = 2204.88 s  ClockTime = 4365 s
+
+
+Time = 100
+
+Relaxation = 0.01
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 320 feature vertices
+    579991 points to insert...
+    579991 points inserted, failed to insert 0 (0 %)
+
+Rebuilding surface conformation for more iterations
+    Vertices marked as being near a boundary: 151466 (estimated)
+    Vertices marked as being near a boundary: 105134 (after dual surface intersection)
+
+Initial conformation
+    Number of vertices 580311
+    Number of surface hits 87691
+    Number of edge hits 4768
+    Surface tree synchronisation
+        Not inserting total of 403 locations
+    Edge tree synchronisation
+        Not inserting total of 20 locations
+    Reinserted 192007 vertices out of 192007
+    Influences =  34017 / 5011443 Inserted = 105912 / 106023
+    Iteratively referring referred vertices...
+    Iteration 1: Influences = 566460 / 5663084 Inserted =  75395 / 120507
+    Iteration 2: Influences = 762666 / 6194887 Inserted =  14840 / 61134
+    Iteration 3: Influences = 160731 / 6300702 Inserted =     24 / 7210
+    Iteration 4: Influences =    229 / 6300861 Inserted =      0 / 28
+
+Stopping iterations when: 
+    total number of hits drops below 0.0001 of initial hits (9)
+ or 
+    maximum number of iterations (15) is reached
+
+Conformation iteration 0
+    Number of vertices 968489
+    Number of surface hits 3917
+    Number of edge hits 92
+    Surface tree synchronisation
+        Not inserting total of 1 locations
+    Edge tree synchronisation
+        Not inserting total of 1 locations
+    Reinserted 8141 vertices out of 8141
+    Influences =  34495 / 6355032 Inserted =   8539 / 19854
+    Iteratively referring referred vertices...
+    Iteration 1: Influences =  64765 / 6411938 Inserted =    233 / 10223
+    Iteration 2: Influences =   1489 / 6413829 Inserted =      0 / 1232
+
+Conformation iteration 1
+    Number of vertices 985402
+    Number of surface hits 1864
+    Number of edge hits 10
+    Surface tree synchronisation
+        Not inserting total of 0 locations
+    Edge tree synchronisation
+        Not inserting total of 1 locations
+    Reinserted 3750 vertices out of 3750
+    Influences =  13269 / 6437063 Inserted =   3734 / 10115
+    Iteratively referring referred vertices...
+    Iteration 1: Influences =  29580 / 6460037 Inserted =     42 / 5191
+    Iteration 2: Influences =    189 / 6460442 Inserted =      0 / 120
+
+Conformation iteration 2
+    Number of vertices 992928
+    Number of surface hits 111
+    Number of edge hits 1
+    Surface tree synchronisation
+        Not inserting total of 0 locations
+    Edge tree synchronisation
+        Not inserting total of 0 locations
+    Reinserted 226 vertices out of 226
+    Influences =    794 / 6461862 Inserted =    470 / 711
+    Iteratively referring referred vertices...
+    Iteration 1: Influences =   3356 / 6464855 Inserted =      4 / 180
+    Iteration 2: Influences =     17 / 6464888 Inserted = 0
+
+Conformation iteration 3
+    Number of vertices 993628
+    Number of surface hits 11
+    Number of edge hits 1
+    Surface tree synchronisation
+        Not inserting total of 0 locations
+    Edge tree synchronisation
+        Not inserting total of 0 locations
+    Reinserted 26 vertices out of 26
+    Influences =     85 / 6465066 Inserted =     70 / 76
+    Iteratively referring referred vertices...
+    Iteration 1: Influences =    536 / 6465569 Inserted =      0 / 6
+
+Conformation iteration 4
+    Number of vertices 993724
+    Number of surface hits 3
+    Number of edge hits 0
+    Surface tree synchronisation
+        Not inserting total of 0 locations
+    Edge tree synchronisation
+        Not inserting total of 0 locations
+    Reinserted 6 vertices out of 6
+    Influences =      1 / 6465607 Inserted = 7
+    Iteratively referring referred vertices...
+    Iteration 1: Influences =     43 / 6465657 Inserted = 0
+
+Total hits (3) less than limit (9), stopping iterations
+
+Redistributing points
+    Processor unbalance 0.08671460836
+
+Storing surface conformation
+    Stored 204156 vertices
+
+
+Writing internalDelaunayVertices to "100"
+
+Calculating target cell alignment and size
+
+Merging identical points
+mergeIdenticalDualVertices:
+    zero-length edges     : 125363
+
+mergeIdenticalDualVertices:
+    zero-length edges     : 21002
+
+mergeIdenticalDualVertices:
+    zero-length edges     : 948
+
+mergeIdenticalDualVertices:
+    zero-length edges     : 154
+
+mergeIdenticalDualVertices:
+    zero-length edges     : 10
+
+mergeIdenticalDualVertices:
+    zero-length edges     : 0
+
+    Merged 147477 points 
+
+Sorting faces, owner and neighbour into upper triangular order
+
+Removing unused cells
+    Removing 62437 unused cell labels
+
+Removing unused points
+    Removing 1450347 unused points
+
+Writing polyMesh to "100"
+    Reordering points into internal/external
+    Number of internal points: 546824
+    Number of external points: 646126
+    Reordering processor patches
+        All processor patches have matching numbers of faces
+            Face ordering initialised...
+                Faces matched.
+                0 faces have been reordered
+                146959 faces have been rotated
+    Constructing mesh
+    Adding patches to mesh
+    Adding zones to mesh
+        Surface : stirrer_baffles
+            faceZone : stirrer_baffles
+            cellZone : 
+        Surface : rotating
+            faceZone : rotating
+            cellZone : rotating
+        Surface : baffles
+            faceZone : baffles
+            cellZone : 
+    Add pointZones
+        Adding 573633 points of type internal
+        Adding 71356 points of type surface
+        Adding 1137 points of type featureEdge
+        Adding 0 points of type featurePoint
+        Adding 0 points of type constrained
+    Adding indirect patch faces set
+
+Filtering edges on polyMesh
+
+Merging:
+    edges with length less than 1e-06 metres
+    edges split by a point with edges in line to within 180 degrees
+    Minimum edge length reduction factor = 0.5
+
+Face collapsing is on
+    Initial face length factor = 1
+Control mesh quality = on
+    Minimum edge length reduction factor = 0.5
+    Minimum face area reduction factor = 0.5
+    Maximum number of collapse iterations = 10
+    Maximum number of edge/face reduction factor smoothing iterations = 1
+    Maximum number of times a point can contribute to bad faces across 
+    collapse iterations = 3
+Selectively disabling wanted collapses until resulting quality satisfies constraints in system/meshQualityDict
+
+
+Outer Iteration = 0
+
+    "Edge Filter Factor": min = 1e-06 av = 1e-06 max = 1e-06
+        9961761 / 9961761 elements used
+
+    Inner iteration = 0
+
+        Collapsing 218848 small edges
+        Collapsing 231 in line edges
+            Uncollapsed edges = 0 / 9961761
+
+        Collapsing 219079 edges after synchronisation and PointEdgeWave
+            Number of points : 5015310
+            Not visited      : 0
+            Not collapsed    : 4632406
+            Collapsed        : 382904
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 1
+
+        Collapsing 0 small edges
+        Collapsing 12332 in line edges
+            Uncollapsed edges = 0 / 9557338
+
+        Collapsing 12332 edges after synchronisation and PointEdgeWave
+            Number of points : 4797865
+            Not visited      : 0
+            Not collapsed    : 4774569
+            Collapsed        : 23296
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 2
+
+        Collapsing 1 small edges
+        Collapsing 0 in line edges
+            Uncollapsed edges = 0 / 9545006
+
+        Collapsing 1 edges after synchronisation and PointEdgeWave
+            Number of points : 4785533
+            Not visited      : 0
+            Not collapsed    : 4785531
+            Collapsed        : 2
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 3
+
+        Collapsing 0 small edges
+        Collapsing 0 in line edges
+
+Checking faces in error :
+    non-orthogonality >  60 degrees                        : 10
+    faces with face pyramid volume < 1e-20                 : 0
+    faces with face-decomposition tet quality < 1e-30      : 7
+    faces with concavity >  80 degrees                     : 0
+    faces with skewness >  10 (internal) or  50 (boundary) : 0
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 0
+    faces with face twist <     0                          : 0
+    faces on cells with determinant < 0.001                : 0
+
+    Number of bad faces     : 17
+    Number of marked points : 67
+
+Outer Iteration = 1
+
+    "Edge Filter Factor": min = 5e-07 av = 9.999836016e-07 max = 1e-06
+        9961761 / 9961761 elements used
+
+    Inner iteration = 0
+
+        Collapsing 218848 small edges
+        Collapsing 231 in line edges
+            Uncollapsed edges = 0 / 9961761
+
+        Collapsing 219079 edges after synchronisation and PointEdgeWave
+            Number of points : 5015310
+            Not visited      : 0
+            Not collapsed    : 4632406
+            Collapsed        : 382904
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 1
+
+        Collapsing 0 small edges
+        Collapsing 12332 in line edges
+            Uncollapsed edges = 0 / 9557338
+
+        Collapsing 12332 edges after synchronisation and PointEdgeWave
+            Number of points : 4797865
+            Not visited      : 0
+            Not collapsed    : 4774569
+            Collapsed        : 23296
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 2
+
+        Collapsing 1 small edges
+        Collapsing 0 in line edges
+            Uncollapsed edges = 0 / 9545006
+
+        Collapsing 1 edges after synchronisation and PointEdgeWave
+            Number of points : 4785533
+            Not visited      : 0
+            Not collapsed    : 4785531
+            Collapsed        : 2
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 3
+
+        Collapsing 0 small edges
+        Collapsing 0 in line edges
+
+Checking faces in error :
+    non-orthogonality >  60 degrees                        : 10
+    faces with face pyramid volume < 1e-20                 : 0
+    faces with face-decomposition tet quality < 1e-30      : 7
+    faces with concavity >  80 degrees                     : 0
+    faces with skewness >  10 (internal) or  50 (boundary) : 0
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 0
+    faces with face twist <     0                          : 0
+    faces on cells with determinant < 0.001                : 0
+
+    Number of bad faces     : 17
+    Number of marked points : 67
+
+Written filtered mesh to "100"
+
+Writing cellShapeControlMesh
+
+Sorting faces, owner and neighbour into upper triangular order
+Creating patches
+Creating mesh
+Adding patches
+Mesh created
+
+Writing backgroundMeshDecomposition
+
+Total displacement = (1.171609157 -0.1920253624 0.9894954259)
+Total distance = 42.0097606
+
+
+ExecutionTime = 2375.32 s  ClockTime = 4699 s
+
+
+End
+
+Finalising parallel run

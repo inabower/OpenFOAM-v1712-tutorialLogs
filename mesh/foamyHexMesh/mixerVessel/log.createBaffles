@@ -1,0 +1,60 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1712                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v1712
+Arch   : "LSB;label=32;scalar=64"
+Exec   : createBaffles -overwrite
+Date   : Jan 05 2018
+Time   : 08:43:10
+Host   : "inabower-PC"
+PID    : 30670
+I/O    : uncollated
+Case   : /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+Reading baffle criteria from createBafflesDict
+
+Not converting faces on non-coupled patches.
+
+Reading geometric fields
+
+Created zone baffles at index 2 with 2013 faces
+Created zone stirrer_baffles at index 0 with 7569 faces
+Created zone rotating at index 1 with 27883 faces
+Patch 'baffles' already exists.  Only moving patch faces - type will remain the same
+Patch 'stirrer_baffles' already exists.  Only moving patch faces - type will remain the same
+Patch 'stirrer_baffles' already exists.  Only moving patch faces - type will remain the same
+Converted 37465 faces into boundary faces in patches 
+4
+(
+AMI1
+AMI2
+baffles
+stirrer_baffles
+)
+
+
+--> FOAM Warning : 
+    From function int main(int, char**)
+    in file createBaffles.C at line 848
+    Setting field on boundary faces to zero.
+You might have to edit these fields.
+
+Removing zero-sized patches:
+    shaftRotating_shaftRotatingCap2 type wall at position 6
+
+Writing mesh to 0
+End
+

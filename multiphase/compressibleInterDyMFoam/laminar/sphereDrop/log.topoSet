@@ -1,0 +1,131 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1712                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v1712
+Arch   : "LSB;label=32;scalar=64"
+Exec   : topoSet
+Date   : Jan 05 2018
+Time   : 06:47:36
+Host   : "inabower-PC"
+PID    : 29306
+I/O    : uncollated
+Case   : /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create polyMesh for time = 0
+
+Reading topoSetDict
+
+Time = 0
+    mesh not changed.
+Created cellSet topBlockCells
+    Applying source zoneToCell
+    Adding all cells of cellZone topBlock ...
+    Found matching zone topBlock with 350 cells.
+    cellSet topBlockCells now size 350
+Created cellSet centralBlockCells
+    Applying source zoneToCell
+    Adding all cells of cellZone centralBlock ...
+    Found matching zone centralBlock with 1200 cells.
+    cellSet centralBlockCells now size 1200
+Created cellSet bottomBlockCells
+    Applying source zoneToCell
+    Adding all cells of cellZone bottomBlock ...
+    Found matching zone bottomBlock with 500 cells.
+    cellSet bottomBlockCells now size 500
+Created faceSet top
+    Applying source patchToFace
+    Adding all faces of patch top ...
+    Found matching patch top with 35 faces.
+    faceSet top now size 35
+Read set faceSet top with size 35
+    Applying source cellToFace
+    Adding faces according to cellSet topBlockCells ...
+    faceSet top now size 10
+Created faceZoneSet top
+    Applying source setAndNormalToFaceZone
+    Adding all faces from faceSet top ...
+    faceZoneSet top now size 10
+Created faceSet centralTopFaces
+    Applying source cellToFace
+    Adding faces according to cellSet topBlockCells ...
+    faceSet centralTopFaces now size 1410
+Read set faceSet centralTopFaces with size 1410
+    Applying source cellToFace
+    Adding faces according to cellSet centralBlockCells ...
+    faceSet centralTopFaces now size 10
+Created faceZoneSet centralTopFaces
+    Applying source setsToFaceZone
+    Adding all faces from faceSet centralTopFaces ...
+    faceZoneSet centralTopFaces now size 10
+Created faceSet centralBottomFaces
+    Applying source cellToFace
+    Adding faces according to cellSet bottomBlockCells ...
+    faceSet centralBottomFaces now size 2010
+Read set faceSet centralBottomFaces with size 2010
+    Applying source cellToFace
+    Adding faces according to cellSet centralBlockCells ...
+    faceSet centralBottomFaces now size 10
+Created faceZoneSet centralBottomFaces
+    Applying source setsToFaceZone
+    Adding all faces from faceSet centralBottomFaces ...
+    faceZoneSet centralBottomFaces now size 10
+Created faceSet bottom
+    Applying source patchToFace
+    Adding all faces of patch bottom ...
+    Found matching patch bottom with 35 faces.
+    faceSet bottom now size 35
+Read set faceSet bottom with size 35
+    Applying source cellToFace
+    Adding faces according to cellSet bottomBlockCells ...
+    faceSet bottom now size 10
+Created faceZoneSet bottom
+    Applying source setAndNormalToFaceZone
+    Adding all faces from faceSet bottom ...
+    faceZoneSet bottom now size 10
+Created cellSet LARTopCells
+    Applying source cellToCell
+    Adding all elements of cellSet topBlockCells ...
+    cellSet LARTopCells now size 350
+Read set cellSet LARTopCells with size 350
+    Applying source boxToCell
+    Adding cells with center within boxes 1((-100 0.95 -100) (100 100 100))
+    cellSet LARTopCells now size 20
+Created cellZoneSet LARTopCells
+    Applying source setToCellZone
+    Adding all cells from cellSet LARTopCells ...
+    cellZoneSet LARTopCells now size 20
+Read set cellSet topBlockCells with size 350
+    Applying source cellToCell
+    Removing all elements of cellSet LARTopCells ...
+    cellSet topBlockCells now size 330
+    Removing set
+Removing zone topBlock at index 2
+Created cellZoneSet topBlock
+    Applying source setToCellZone
+    Adding all cells from cellSet topBlockCells ...
+    cellZoneSet topBlock now size 330
+Created faceSet LARTopFaces
+    Applying source cellToFace
+    Adding faces according to cellSet LARTopCells ...
+    faceSet LARTopFaces now size 90
+Read set faceSet LARTopFaces with size 90
+    Applying source cellToFace
+    Adding faces according to cellSet topBlockCells ...
+    faceSet LARTopFaces now size 10
+Created faceZoneSet LARTopFaces
+    Applying source setsToFaceZone
+    Adding all faces from faceSet LARTopFaces ...
+    faceZoneSet LARTopFaces now size 10
+End
+

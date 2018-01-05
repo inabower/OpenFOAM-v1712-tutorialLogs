@@ -1,0 +1,610 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1712                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v1712
+Arch   : "LSB;label=32;scalar=64"
+Exec   : blockMesh
+Date   : Jan 05 2018
+Time   : 06:46:44
+Host   : "inabower-PC"
+PID    : 14916
+I/O    : uncollated
+Case   : /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Creating block mesh from
+    "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/system/blockMeshDict"
+Using #calc at line 35 in file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/system/blockMeshDict"
+Using #codeStream with "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_4595aa9b653a1c88666c40cad4d038588fc7705d.so"
+Creating new library in "dynamicCode/_4595aa9b653a1c88666c40cad4d038588fc7705d/platforms/linux64GccDPInt32Opt/lib/libcodeStream_4595aa9b653a1c88666c40cad4d038588fc7705d.so"
+Invoking wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_4595aa9b653a1c88666c40cad4d038588fc7705d
+wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_4595aa9b653a1c88666c40cad4d038588fc7705d
+wmakeLnInclude: linking include files to ./lnInclude
+Making dependency list for source file codeStreamTemplate.C
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -c codeStreamTemplate.C -o Make/linux64GccDPInt32Opt/codeStreamTemplate.o
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -shared -Xlinker --add-needed -Xlinker --no-as-needed Make/linux64GccDPInt32Opt/codeStreamTemplate.o -L/home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib \
+    -lOpenFOAM   -o /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_4595aa9b653a1c88666c40cad4d038588fc7705d/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_4595aa9b653a1c88666c40cad4d038588fc7705d.so
+Using #calc at line 38 in file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/system/blockMeshDict"
+Using #codeStream with "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_0ca8495c5b465e073633ed8a7731e021066d4fcf.so"
+Creating new library in "dynamicCode/_0ca8495c5b465e073633ed8a7731e021066d4fcf/platforms/linux64GccDPInt32Opt/lib/libcodeStream_0ca8495c5b465e073633ed8a7731e021066d4fcf.so"
+Invoking wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_0ca8495c5b465e073633ed8a7731e021066d4fcf
+wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_0ca8495c5b465e073633ed8a7731e021066d4fcf
+wmakeLnInclude: linking include files to ./lnInclude
+Making dependency list for source file codeStreamTemplate.C
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -c codeStreamTemplate.C -o Make/linux64GccDPInt32Opt/codeStreamTemplate.o
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -shared -Xlinker --add-needed -Xlinker --no-as-needed Make/linux64GccDPInt32Opt/codeStreamTemplate.o -L/home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib \
+    -lOpenFOAM   -o /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_0ca8495c5b465e073633ed8a7731e021066d4fcf/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_0ca8495c5b465e073633ed8a7731e021066d4fcf.so
+Using #calc at line 39 in file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/system/blockMeshDict"
+Using #codeStream with "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_84805bd5b1281fb83dc326272511dab315134b80.so"
+Creating new library in "dynamicCode/_84805bd5b1281fb83dc326272511dab315134b80/platforms/linux64GccDPInt32Opt/lib/libcodeStream_84805bd5b1281fb83dc326272511dab315134b80.so"
+Invoking wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_84805bd5b1281fb83dc326272511dab315134b80
+wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_84805bd5b1281fb83dc326272511dab315134b80
+wmakeLnInclude: linking include files to ./lnInclude
+Making dependency list for source file codeStreamTemplate.C
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -c codeStreamTemplate.C -o Make/linux64GccDPInt32Opt/codeStreamTemplate.o
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -shared -Xlinker --add-needed -Xlinker --no-as-needed Make/linux64GccDPInt32Opt/codeStreamTemplate.o -L/home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib \
+    -lOpenFOAM   -o /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_84805bd5b1281fb83dc326272511dab315134b80/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_84805bd5b1281fb83dc326272511dab315134b80.so
+Using #calc at line 42 in file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/system/blockMeshDict"
+Using #codeStream with "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_455e65fabb79e81a0becd2d492df6e532d185ea5.so"
+Creating new library in "dynamicCode/_455e65fabb79e81a0becd2d492df6e532d185ea5/platforms/linux64GccDPInt32Opt/lib/libcodeStream_455e65fabb79e81a0becd2d492df6e532d185ea5.so"
+Invoking wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_455e65fabb79e81a0becd2d492df6e532d185ea5
+wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_455e65fabb79e81a0becd2d492df6e532d185ea5
+wmakeLnInclude: linking include files to ./lnInclude
+Making dependency list for source file codeStreamTemplate.C
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -c codeStreamTemplate.C -o Make/linux64GccDPInt32Opt/codeStreamTemplate.o
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -shared -Xlinker --add-needed -Xlinker --no-as-needed Make/linux64GccDPInt32Opt/codeStreamTemplate.o -L/home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib \
+    -lOpenFOAM   -o /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_455e65fabb79e81a0becd2d492df6e532d185ea5/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_455e65fabb79e81a0becd2d492df6e532d185ea5.so
+Using #calc at line 43 in file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/system/blockMeshDict"
+Using #codeStream with "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_87d0faaea18439cdf72166389e6ff384a250eff9.so"
+Creating new library in "dynamicCode/_87d0faaea18439cdf72166389e6ff384a250eff9/platforms/linux64GccDPInt32Opt/lib/libcodeStream_87d0faaea18439cdf72166389e6ff384a250eff9.so"
+Invoking wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_87d0faaea18439cdf72166389e6ff384a250eff9
+wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_87d0faaea18439cdf72166389e6ff384a250eff9
+wmakeLnInclude: linking include files to ./lnInclude
+Making dependency list for source file codeStreamTemplate.C
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -c codeStreamTemplate.C -o Make/linux64GccDPInt32Opt/codeStreamTemplate.o
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -shared -Xlinker --add-needed -Xlinker --no-as-needed Make/linux64GccDPInt32Opt/codeStreamTemplate.o -L/home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib \
+    -lOpenFOAM   -o /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_87d0faaea18439cdf72166389e6ff384a250eff9/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_87d0faaea18439cdf72166389e6ff384a250eff9.so
+Using #calc at line 45 in file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/system/blockMeshDict"
+Using #codeStream with "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_a12025d72d1e50fe057b660c5ee56b0839140693.so"
+Creating new library in "dynamicCode/_a12025d72d1e50fe057b660c5ee56b0839140693/platforms/linux64GccDPInt32Opt/lib/libcodeStream_a12025d72d1e50fe057b660c5ee56b0839140693.so"
+Invoking wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_a12025d72d1e50fe057b660c5ee56b0839140693
+wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_a12025d72d1e50fe057b660c5ee56b0839140693
+wmakeLnInclude: linking include files to ./lnInclude
+Making dependency list for source file codeStreamTemplate.C
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -c codeStreamTemplate.C -o Make/linux64GccDPInt32Opt/codeStreamTemplate.o
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -shared -Xlinker --add-needed -Xlinker --no-as-needed Make/linux64GccDPInt32Opt/codeStreamTemplate.o -L/home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib \
+    -lOpenFOAM   -o /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_a12025d72d1e50fe057b660c5ee56b0839140693/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_a12025d72d1e50fe057b660c5ee56b0839140693.so
+Using #calc at line 46 in file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/system/blockMeshDict"
+Using #codeStream with "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_b94084d21b223d4707918a4958cb8cd29ee635f7.so"
+Creating new library in "dynamicCode/_b94084d21b223d4707918a4958cb8cd29ee635f7/platforms/linux64GccDPInt32Opt/lib/libcodeStream_b94084d21b223d4707918a4958cb8cd29ee635f7.so"
+Invoking wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_b94084d21b223d4707918a4958cb8cd29ee635f7
+wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_b94084d21b223d4707918a4958cb8cd29ee635f7
+wmakeLnInclude: linking include files to ./lnInclude
+Making dependency list for source file codeStreamTemplate.C
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -c codeStreamTemplate.C -o Make/linux64GccDPInt32Opt/codeStreamTemplate.o
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -shared -Xlinker --add-needed -Xlinker --no-as-needed Make/linux64GccDPInt32Opt/codeStreamTemplate.o -L/home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib \
+    -lOpenFOAM   -o /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_b94084d21b223d4707918a4958cb8cd29ee635f7/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_b94084d21b223d4707918a4958cb8cd29ee635f7.so
+Using #calc at line 47 in file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/system/blockMeshDict"
+Using #codeStream with "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_20deff8e85edbb193f09bf6d3bc2a4085f8219cf.so"
+Creating new library in "dynamicCode/_20deff8e85edbb193f09bf6d3bc2a4085f8219cf/platforms/linux64GccDPInt32Opt/lib/libcodeStream_20deff8e85edbb193f09bf6d3bc2a4085f8219cf.so"
+Invoking wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_20deff8e85edbb193f09bf6d3bc2a4085f8219cf
+wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_20deff8e85edbb193f09bf6d3bc2a4085f8219cf
+wmakeLnInclude: linking include files to ./lnInclude
+Making dependency list for source file codeStreamTemplate.C
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -c codeStreamTemplate.C -o Make/linux64GccDPInt32Opt/codeStreamTemplate.o
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -shared -Xlinker --add-needed -Xlinker --no-as-needed Make/linux64GccDPInt32Opt/codeStreamTemplate.o -L/home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib \
+    -lOpenFOAM   -o /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_20deff8e85edbb193f09bf6d3bc2a4085f8219cf/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_20deff8e85edbb193f09bf6d3bc2a4085f8219cf.so
+Using #calc at line 48 in file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/system/blockMeshDict"
+Using #codeStream with "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_f4733b740bc338f86663fdafcbda596379929cb6.so"
+Creating new library in "dynamicCode/_f4733b740bc338f86663fdafcbda596379929cb6/platforms/linux64GccDPInt32Opt/lib/libcodeStream_f4733b740bc338f86663fdafcbda596379929cb6.so"
+Invoking wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_f4733b740bc338f86663fdafcbda596379929cb6
+wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_f4733b740bc338f86663fdafcbda596379929cb6
+wmakeLnInclude: linking include files to ./lnInclude
+Making dependency list for source file codeStreamTemplate.C
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -c codeStreamTemplate.C -o Make/linux64GccDPInt32Opt/codeStreamTemplate.o
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -shared -Xlinker --add-needed -Xlinker --no-as-needed Make/linux64GccDPInt32Opt/codeStreamTemplate.o -L/home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib \
+    -lOpenFOAM   -o /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_f4733b740bc338f86663fdafcbda596379929cb6/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_f4733b740bc338f86663fdafcbda596379929cb6.so
+Using #calc at line 49 in file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/system/blockMeshDict"
+Using #codeStream with "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_1df1207cc890b859aa87e7a189ebb5df1918f451.so"
+Creating new library in "dynamicCode/_1df1207cc890b859aa87e7a189ebb5df1918f451/platforms/linux64GccDPInt32Opt/lib/libcodeStream_1df1207cc890b859aa87e7a189ebb5df1918f451.so"
+Invoking wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_1df1207cc890b859aa87e7a189ebb5df1918f451
+wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_1df1207cc890b859aa87e7a189ebb5df1918f451
+wmakeLnInclude: linking include files to ./lnInclude
+Making dependency list for source file codeStreamTemplate.C
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -c codeStreamTemplate.C -o Make/linux64GccDPInt32Opt/codeStreamTemplate.o
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -shared -Xlinker --add-needed -Xlinker --no-as-needed Make/linux64GccDPInt32Opt/codeStreamTemplate.o -L/home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib \
+    -lOpenFOAM   -o /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_1df1207cc890b859aa87e7a189ebb5df1918f451/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_1df1207cc890b859aa87e7a189ebb5df1918f451.so
+Using #calc at line 50 in file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/system/blockMeshDict"
+Using #codeStream with "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_935a400c4024959a9bccf8d7405dc9e6af02183c.so"
+Creating new library in "dynamicCode/_935a400c4024959a9bccf8d7405dc9e6af02183c/platforms/linux64GccDPInt32Opt/lib/libcodeStream_935a400c4024959a9bccf8d7405dc9e6af02183c.so"
+Invoking wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_935a400c4024959a9bccf8d7405dc9e6af02183c
+wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_935a400c4024959a9bccf8d7405dc9e6af02183c
+wmakeLnInclude: linking include files to ./lnInclude
+Making dependency list for source file codeStreamTemplate.C
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -c codeStreamTemplate.C -o Make/linux64GccDPInt32Opt/codeStreamTemplate.o
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -shared -Xlinker --add-needed -Xlinker --no-as-needed Make/linux64GccDPInt32Opt/codeStreamTemplate.o -L/home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib \
+    -lOpenFOAM   -o /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_935a400c4024959a9bccf8d7405dc9e6af02183c/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_935a400c4024959a9bccf8d7405dc9e6af02183c.so
+Using #calc at line 52 in file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/system/blockMeshDict"
+Using #codeStream with "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_514bcaa9029f97bbda2ea71bfad6659eb0218e1c.so"
+Creating new library in "dynamicCode/_514bcaa9029f97bbda2ea71bfad6659eb0218e1c/platforms/linux64GccDPInt32Opt/lib/libcodeStream_514bcaa9029f97bbda2ea71bfad6659eb0218e1c.so"
+Invoking wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_514bcaa9029f97bbda2ea71bfad6659eb0218e1c
+wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_514bcaa9029f97bbda2ea71bfad6659eb0218e1c
+wmakeLnInclude: linking include files to ./lnInclude
+Making dependency list for source file codeStreamTemplate.C
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -c codeStreamTemplate.C -o Make/linux64GccDPInt32Opt/codeStreamTemplate.o
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -shared -Xlinker --add-needed -Xlinker --no-as-needed Make/linux64GccDPInt32Opt/codeStreamTemplate.o -L/home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib \
+    -lOpenFOAM   -o /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_514bcaa9029f97bbda2ea71bfad6659eb0218e1c/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_514bcaa9029f97bbda2ea71bfad6659eb0218e1c.so
+Using #calc at line 53 in file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/system/blockMeshDict"
+Using #codeStream with "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_dae9fdddeac3d0fd2f084fda2344b330ce4efdd3.so"
+Creating new library in "dynamicCode/_dae9fdddeac3d0fd2f084fda2344b330ce4efdd3/platforms/linux64GccDPInt32Opt/lib/libcodeStream_dae9fdddeac3d0fd2f084fda2344b330ce4efdd3.so"
+Invoking wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_dae9fdddeac3d0fd2f084fda2344b330ce4efdd3
+wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_dae9fdddeac3d0fd2f084fda2344b330ce4efdd3
+wmakeLnInclude: linking include files to ./lnInclude
+Making dependency list for source file codeStreamTemplate.C
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -c codeStreamTemplate.C -o Make/linux64GccDPInt32Opt/codeStreamTemplate.o
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -shared -Xlinker --add-needed -Xlinker --no-as-needed Make/linux64GccDPInt32Opt/codeStreamTemplate.o -L/home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib \
+    -lOpenFOAM   -o /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_dae9fdddeac3d0fd2f084fda2344b330ce4efdd3/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_dae9fdddeac3d0fd2f084fda2344b330ce4efdd3.so
+Using #calc at line 55 in file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/system/blockMeshDict"
+Using #codeStream with "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_20a8bc68e13bf555360049ec0d49577e6043d41e.so"
+Creating new library in "dynamicCode/_20a8bc68e13bf555360049ec0d49577e6043d41e/platforms/linux64GccDPInt32Opt/lib/libcodeStream_20a8bc68e13bf555360049ec0d49577e6043d41e.so"
+Invoking wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_20a8bc68e13bf555360049ec0d49577e6043d41e
+wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_20a8bc68e13bf555360049ec0d49577e6043d41e
+wmakeLnInclude: linking include files to ./lnInclude
+Making dependency list for source file codeStreamTemplate.C
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -c codeStreamTemplate.C -o Make/linux64GccDPInt32Opt/codeStreamTemplate.o
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -shared -Xlinker --add-needed -Xlinker --no-as-needed Make/linux64GccDPInt32Opt/codeStreamTemplate.o -L/home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib \
+    -lOpenFOAM   -o /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_20a8bc68e13bf555360049ec0d49577e6043d41e/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_20a8bc68e13bf555360049ec0d49577e6043d41e.so
+Using #calc at line 56 in file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/system/blockMeshDict"
+Using #codeStream with "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_7781d6ad491dd6a28f5e75b9be0038d091ed6053.so"
+Creating new library in "dynamicCode/_7781d6ad491dd6a28f5e75b9be0038d091ed6053/platforms/linux64GccDPInt32Opt/lib/libcodeStream_7781d6ad491dd6a28f5e75b9be0038d091ed6053.so"
+Invoking wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_7781d6ad491dd6a28f5e75b9be0038d091ed6053
+wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_7781d6ad491dd6a28f5e75b9be0038d091ed6053
+wmakeLnInclude: linking include files to ./lnInclude
+Making dependency list for source file codeStreamTemplate.C
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -c codeStreamTemplate.C -o Make/linux64GccDPInt32Opt/codeStreamTemplate.o
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -shared -Xlinker --add-needed -Xlinker --no-as-needed Make/linux64GccDPInt32Opt/codeStreamTemplate.o -L/home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib \
+    -lOpenFOAM   -o /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_7781d6ad491dd6a28f5e75b9be0038d091ed6053/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_7781d6ad491dd6a28f5e75b9be0038d091ed6053.so
+Using #calc at line 57 in file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/system/blockMeshDict"
+Using #codeStream with "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_57f517b67855b243e185db77b6c58f30ce1cb71a.so"
+Creating new library in "dynamicCode/_57f517b67855b243e185db77b6c58f30ce1cb71a/platforms/linux64GccDPInt32Opt/lib/libcodeStream_57f517b67855b243e185db77b6c58f30ce1cb71a.so"
+Invoking wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_57f517b67855b243e185db77b6c58f30ce1cb71a
+wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_57f517b67855b243e185db77b6c58f30ce1cb71a
+wmakeLnInclude: linking include files to ./lnInclude
+Making dependency list for source file codeStreamTemplate.C
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -c codeStreamTemplate.C -o Make/linux64GccDPInt32Opt/codeStreamTemplate.o
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -shared -Xlinker --add-needed -Xlinker --no-as-needed Make/linux64GccDPInt32Opt/codeStreamTemplate.o -L/home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib \
+    -lOpenFOAM   -o /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_57f517b67855b243e185db77b6c58f30ce1cb71a/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_57f517b67855b243e185db77b6c58f30ce1cb71a.so
+Using #calc at line 58 in file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/system/blockMeshDict"
+Using #codeStream with "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_23c49e6f822da2be748f05c08ee6b5367b83f769.so"
+Creating new library in "dynamicCode/_23c49e6f822da2be748f05c08ee6b5367b83f769/platforms/linux64GccDPInt32Opt/lib/libcodeStream_23c49e6f822da2be748f05c08ee6b5367b83f769.so"
+Invoking wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_23c49e6f822da2be748f05c08ee6b5367b83f769
+wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_23c49e6f822da2be748f05c08ee6b5367b83f769
+wmakeLnInclude: linking include files to ./lnInclude
+Making dependency list for source file codeStreamTemplate.C
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -c codeStreamTemplate.C -o Make/linux64GccDPInt32Opt/codeStreamTemplate.o
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -shared -Xlinker --add-needed -Xlinker --no-as-needed Make/linux64GccDPInt32Opt/codeStreamTemplate.o -L/home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib \
+    -lOpenFOAM   -o /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_23c49e6f822da2be748f05c08ee6b5367b83f769/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_23c49e6f822da2be748f05c08ee6b5367b83f769.so
+Using #calc at line 61 in file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/system/blockMeshDict"
+Using #codeStream with "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_10a61630418a6fb5c0e60ad12a21921f4ed94ca8.so"
+Creating new library in "dynamicCode/_10a61630418a6fb5c0e60ad12a21921f4ed94ca8/platforms/linux64GccDPInt32Opt/lib/libcodeStream_10a61630418a6fb5c0e60ad12a21921f4ed94ca8.so"
+Invoking wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_10a61630418a6fb5c0e60ad12a21921f4ed94ca8
+wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_10a61630418a6fb5c0e60ad12a21921f4ed94ca8
+wmakeLnInclude: linking include files to ./lnInclude
+Making dependency list for source file codeStreamTemplate.C
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -c codeStreamTemplate.C -o Make/linux64GccDPInt32Opt/codeStreamTemplate.o
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -shared -Xlinker --add-needed -Xlinker --no-as-needed Make/linux64GccDPInt32Opt/codeStreamTemplate.o -L/home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib \
+    -lOpenFOAM   -o /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_10a61630418a6fb5c0e60ad12a21921f4ed94ca8/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_10a61630418a6fb5c0e60ad12a21921f4ed94ca8.so
+Using #calc at line 62 in file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/system/blockMeshDict"
+Using #codeStream with "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_c6100835cc873df031327d7b129cf2b74dafe114.so"
+Creating new library in "dynamicCode/_c6100835cc873df031327d7b129cf2b74dafe114/platforms/linux64GccDPInt32Opt/lib/libcodeStream_c6100835cc873df031327d7b129cf2b74dafe114.so"
+Invoking wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_c6100835cc873df031327d7b129cf2b74dafe114
+wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_c6100835cc873df031327d7b129cf2b74dafe114
+wmakeLnInclude: linking include files to ./lnInclude
+Making dependency list for source file codeStreamTemplate.C
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -c codeStreamTemplate.C -o Make/linux64GccDPInt32Opt/codeStreamTemplate.o
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -shared -Xlinker --add-needed -Xlinker --no-as-needed Make/linux64GccDPInt32Opt/codeStreamTemplate.o -L/home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib \
+    -lOpenFOAM   -o /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_c6100835cc873df031327d7b129cf2b74dafe114/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_c6100835cc873df031327d7b129cf2b74dafe114.so
+Using #calc at line 63 in file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/system/blockMeshDict"
+Using #codeStream with "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_e4fd81dfb526de7e9fc318fc7f9aea92742e6c6b.so"
+Creating new library in "dynamicCode/_e4fd81dfb526de7e9fc318fc7f9aea92742e6c6b/platforms/linux64GccDPInt32Opt/lib/libcodeStream_e4fd81dfb526de7e9fc318fc7f9aea92742e6c6b.so"
+Invoking wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_e4fd81dfb526de7e9fc318fc7f9aea92742e6c6b
+wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_e4fd81dfb526de7e9fc318fc7f9aea92742e6c6b
+wmakeLnInclude: linking include files to ./lnInclude
+Making dependency list for source file codeStreamTemplate.C
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -c codeStreamTemplate.C -o Make/linux64GccDPInt32Opt/codeStreamTemplate.o
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -shared -Xlinker --add-needed -Xlinker --no-as-needed Make/linux64GccDPInt32Opt/codeStreamTemplate.o -L/home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib \
+    -lOpenFOAM   -o /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_e4fd81dfb526de7e9fc318fc7f9aea92742e6c6b/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_e4fd81dfb526de7e9fc318fc7f9aea92742e6c6b.so
+Using #calc at line 64 in file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/system/blockMeshDict"
+Using #codeStream with "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_70d5fd635922720756d1bd1bc002dc8d5501927c.so"
+Creating new library in "dynamicCode/_70d5fd635922720756d1bd1bc002dc8d5501927c/platforms/linux64GccDPInt32Opt/lib/libcodeStream_70d5fd635922720756d1bd1bc002dc8d5501927c.so"
+Invoking wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_70d5fd635922720756d1bd1bc002dc8d5501927c
+wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_70d5fd635922720756d1bd1bc002dc8d5501927c
+wmakeLnInclude: linking include files to ./lnInclude
+Making dependency list for source file codeStreamTemplate.C
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -c codeStreamTemplate.C -o Make/linux64GccDPInt32Opt/codeStreamTemplate.o
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -shared -Xlinker --add-needed -Xlinker --no-as-needed Make/linux64GccDPInt32Opt/codeStreamTemplate.o -L/home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib \
+    -lOpenFOAM   -o /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_70d5fd635922720756d1bd1bc002dc8d5501927c/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_70d5fd635922720756d1bd1bc002dc8d5501927c.so
+Using #calc at line 66 in file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/system/blockMeshDict"
+Using #codeStream with "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_60e17a6fbd98fa998e2dc4df4fe3492006eccc3c.so"
+Creating new library in "dynamicCode/_60e17a6fbd98fa998e2dc4df4fe3492006eccc3c/platforms/linux64GccDPInt32Opt/lib/libcodeStream_60e17a6fbd98fa998e2dc4df4fe3492006eccc3c.so"
+Invoking wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_60e17a6fbd98fa998e2dc4df4fe3492006eccc3c
+wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_60e17a6fbd98fa998e2dc4df4fe3492006eccc3c
+wmakeLnInclude: linking include files to ./lnInclude
+Making dependency list for source file codeStreamTemplate.C
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -c codeStreamTemplate.C -o Make/linux64GccDPInt32Opt/codeStreamTemplate.o
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -shared -Xlinker --add-needed -Xlinker --no-as-needed Make/linux64GccDPInt32Opt/codeStreamTemplate.o -L/home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib \
+    -lOpenFOAM   -o /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_60e17a6fbd98fa998e2dc4df4fe3492006eccc3c/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_60e17a6fbd98fa998e2dc4df4fe3492006eccc3c.so
+Using #calc at line 67 in file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/system/blockMeshDict"
+Using #codeStream with "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_8572e0ad5c6c6afd48ad627830a6f9abb67dbe09.so"
+Creating new library in "dynamicCode/_8572e0ad5c6c6afd48ad627830a6f9abb67dbe09/platforms/linux64GccDPInt32Opt/lib/libcodeStream_8572e0ad5c6c6afd48ad627830a6f9abb67dbe09.so"
+Invoking wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_8572e0ad5c6c6afd48ad627830a6f9abb67dbe09
+wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_8572e0ad5c6c6afd48ad627830a6f9abb67dbe09
+wmakeLnInclude: linking include files to ./lnInclude
+Making dependency list for source file codeStreamTemplate.C
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -c codeStreamTemplate.C -o Make/linux64GccDPInt32Opt/codeStreamTemplate.o
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -shared -Xlinker --add-needed -Xlinker --no-as-needed Make/linux64GccDPInt32Opt/codeStreamTemplate.o -L/home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib \
+    -lOpenFOAM   -o /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_8572e0ad5c6c6afd48ad627830a6f9abb67dbe09/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_8572e0ad5c6c6afd48ad627830a6f9abb67dbe09.so
+Using #calc at line 68 in file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/system/blockMeshDict"
+Using #codeStream with "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_addebe6fe8a3debc2ad8ed20ef41b51404f16b50.so"
+Creating new library in "dynamicCode/_addebe6fe8a3debc2ad8ed20ef41b51404f16b50/platforms/linux64GccDPInt32Opt/lib/libcodeStream_addebe6fe8a3debc2ad8ed20ef41b51404f16b50.so"
+Invoking wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_addebe6fe8a3debc2ad8ed20ef41b51404f16b50
+wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_addebe6fe8a3debc2ad8ed20ef41b51404f16b50
+wmakeLnInclude: linking include files to ./lnInclude
+Making dependency list for source file codeStreamTemplate.C
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -c codeStreamTemplate.C -o Make/linux64GccDPInt32Opt/codeStreamTemplate.o
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -shared -Xlinker --add-needed -Xlinker --no-as-needed Make/linux64GccDPInt32Opt/codeStreamTemplate.o -L/home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib \
+    -lOpenFOAM   -o /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_addebe6fe8a3debc2ad8ed20ef41b51404f16b50/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_addebe6fe8a3debc2ad8ed20ef41b51404f16b50.so
+Using #calc at line 69 in file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/system/blockMeshDict"
+Using #codeStream with "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_9a8329b79f2164ae76e2a360ef2879013193a026.so"
+Creating new library in "dynamicCode/_9a8329b79f2164ae76e2a360ef2879013193a026/platforms/linux64GccDPInt32Opt/lib/libcodeStream_9a8329b79f2164ae76e2a360ef2879013193a026.so"
+Invoking wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_9a8329b79f2164ae76e2a360ef2879013193a026
+wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_9a8329b79f2164ae76e2a360ef2879013193a026
+wmakeLnInclude: linking include files to ./lnInclude
+Making dependency list for source file codeStreamTemplate.C
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -c codeStreamTemplate.C -o Make/linux64GccDPInt32Opt/codeStreamTemplate.o
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -shared -Xlinker --add-needed -Xlinker --no-as-needed Make/linux64GccDPInt32Opt/codeStreamTemplate.o -L/home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib \
+    -lOpenFOAM   -o /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_9a8329b79f2164ae76e2a360ef2879013193a026/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_9a8329b79f2164ae76e2a360ef2879013193a026.so
+Using #calc at line 71 in file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/system/blockMeshDict"
+Using #codeStream with "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_3c87da51eed44949254ea0bbc0a309241cc5d417.so"
+Creating new library in "dynamicCode/_3c87da51eed44949254ea0bbc0a309241cc5d417/platforms/linux64GccDPInt32Opt/lib/libcodeStream_3c87da51eed44949254ea0bbc0a309241cc5d417.so"
+Invoking wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_3c87da51eed44949254ea0bbc0a309241cc5d417
+wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_3c87da51eed44949254ea0bbc0a309241cc5d417
+wmakeLnInclude: linking include files to ./lnInclude
+Making dependency list for source file codeStreamTemplate.C
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -c codeStreamTemplate.C -o Make/linux64GccDPInt32Opt/codeStreamTemplate.o
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -shared -Xlinker --add-needed -Xlinker --no-as-needed Make/linux64GccDPInt32Opt/codeStreamTemplate.o -L/home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib \
+    -lOpenFOAM   -o /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_3c87da51eed44949254ea0bbc0a309241cc5d417/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_3c87da51eed44949254ea0bbc0a309241cc5d417.so
+Using #calc at line 72 in file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/system/blockMeshDict"
+Using #codeStream with "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_aae6c19135b3cdf982cc46a7b789bb88300db4bf.so"
+Creating new library in "dynamicCode/_aae6c19135b3cdf982cc46a7b789bb88300db4bf/platforms/linux64GccDPInt32Opt/lib/libcodeStream_aae6c19135b3cdf982cc46a7b789bb88300db4bf.so"
+Invoking wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_aae6c19135b3cdf982cc46a7b789bb88300db4bf
+wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_aae6c19135b3cdf982cc46a7b789bb88300db4bf
+wmakeLnInclude: linking include files to ./lnInclude
+Making dependency list for source file codeStreamTemplate.C
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -c codeStreamTemplate.C -o Make/linux64GccDPInt32Opt/codeStreamTemplate.o
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -shared -Xlinker --add-needed -Xlinker --no-as-needed Make/linux64GccDPInt32Opt/codeStreamTemplate.o -L/home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib \
+    -lOpenFOAM   -o /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_aae6c19135b3cdf982cc46a7b789bb88300db4bf/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_aae6c19135b3cdf982cc46a7b789bb88300db4bf.so
+Using #calc at line 73 in file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/system/blockMeshDict"
+Using #codeStream with "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_5f04c894583d831be282b66275354007f1fe1626.so"
+Creating new library in "dynamicCode/_5f04c894583d831be282b66275354007f1fe1626/platforms/linux64GccDPInt32Opt/lib/libcodeStream_5f04c894583d831be282b66275354007f1fe1626.so"
+Invoking wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_5f04c894583d831be282b66275354007f1fe1626
+wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_5f04c894583d831be282b66275354007f1fe1626
+wmakeLnInclude: linking include files to ./lnInclude
+Making dependency list for source file codeStreamTemplate.C
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -c codeStreamTemplate.C -o Make/linux64GccDPInt32Opt/codeStreamTemplate.o
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -shared -Xlinker --add-needed -Xlinker --no-as-needed Make/linux64GccDPInt32Opt/codeStreamTemplate.o -L/home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib \
+    -lOpenFOAM   -o /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_5f04c894583d831be282b66275354007f1fe1626/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_5f04c894583d831be282b66275354007f1fe1626.so
+Using #calc at line 74 in file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/system/blockMeshDict"
+Using #codeStream with "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_92e66acfeab69760a11ca05c6aafaedbe97a59b7.so"
+Creating new library in "dynamicCode/_92e66acfeab69760a11ca05c6aafaedbe97a59b7/platforms/linux64GccDPInt32Opt/lib/libcodeStream_92e66acfeab69760a11ca05c6aafaedbe97a59b7.so"
+Invoking wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_92e66acfeab69760a11ca05c6aafaedbe97a59b7
+wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_92e66acfeab69760a11ca05c6aafaedbe97a59b7
+wmakeLnInclude: linking include files to ./lnInclude
+Making dependency list for source file codeStreamTemplate.C
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -c codeStreamTemplate.C -o Make/linux64GccDPInt32Opt/codeStreamTemplate.o
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -shared -Xlinker --add-needed -Xlinker --no-as-needed Make/linux64GccDPInt32Opt/codeStreamTemplate.o -L/home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib \
+    -lOpenFOAM   -o /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_92e66acfeab69760a11ca05c6aafaedbe97a59b7/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_92e66acfeab69760a11ca05c6aafaedbe97a59b7.so
+Using #calc at line 76 in file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/system/blockMeshDict"
+Using #codeStream with "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_5a379d4f80d00a34cf87eda86ab906d4574efb21.so"
+Creating new library in "dynamicCode/_5a379d4f80d00a34cf87eda86ab906d4574efb21/platforms/linux64GccDPInt32Opt/lib/libcodeStream_5a379d4f80d00a34cf87eda86ab906d4574efb21.so"
+Invoking wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_5a379d4f80d00a34cf87eda86ab906d4574efb21
+wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_5a379d4f80d00a34cf87eda86ab906d4574efb21
+wmakeLnInclude: linking include files to ./lnInclude
+Making dependency list for source file codeStreamTemplate.C
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -c codeStreamTemplate.C -o Make/linux64GccDPInt32Opt/codeStreamTemplate.o
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -shared -Xlinker --add-needed -Xlinker --no-as-needed Make/linux64GccDPInt32Opt/codeStreamTemplate.o -L/home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib \
+    -lOpenFOAM   -o /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_5a379d4f80d00a34cf87eda86ab906d4574efb21/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_5a379d4f80d00a34cf87eda86ab906d4574efb21.so
+Using #calc at line 77 in file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/system/blockMeshDict"
+Using #codeStream with "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_681de773bdf1be6d203903b34162e1237a105b82.so"
+Creating new library in "dynamicCode/_681de773bdf1be6d203903b34162e1237a105b82/platforms/linux64GccDPInt32Opt/lib/libcodeStream_681de773bdf1be6d203903b34162e1237a105b82.so"
+Invoking wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_681de773bdf1be6d203903b34162e1237a105b82
+wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_681de773bdf1be6d203903b34162e1237a105b82
+wmakeLnInclude: linking include files to ./lnInclude
+Making dependency list for source file codeStreamTemplate.C
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -c codeStreamTemplate.C -o Make/linux64GccDPInt32Opt/codeStreamTemplate.o
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -shared -Xlinker --add-needed -Xlinker --no-as-needed Make/linux64GccDPInt32Opt/codeStreamTemplate.o -L/home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib \
+    -lOpenFOAM   -o /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_681de773bdf1be6d203903b34162e1237a105b82/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_681de773bdf1be6d203903b34162e1237a105b82.so
+Using #calc at line 78 in file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/system/blockMeshDict"
+Using #codeStream with "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_4f5cebd53a0f2ab231e3814ddcb8407af4ccfd83.so"
+Creating new library in "dynamicCode/_4f5cebd53a0f2ab231e3814ddcb8407af4ccfd83/platforms/linux64GccDPInt32Opt/lib/libcodeStream_4f5cebd53a0f2ab231e3814ddcb8407af4ccfd83.so"
+Invoking wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_4f5cebd53a0f2ab231e3814ddcb8407af4ccfd83
+wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_4f5cebd53a0f2ab231e3814ddcb8407af4ccfd83
+wmakeLnInclude: linking include files to ./lnInclude
+Making dependency list for source file codeStreamTemplate.C
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -c codeStreamTemplate.C -o Make/linux64GccDPInt32Opt/codeStreamTemplate.o
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -shared -Xlinker --add-needed -Xlinker --no-as-needed Make/linux64GccDPInt32Opt/codeStreamTemplate.o -L/home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib \
+    -lOpenFOAM   -o /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_4f5cebd53a0f2ab231e3814ddcb8407af4ccfd83/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_4f5cebd53a0f2ab231e3814ddcb8407af4ccfd83.so
+Using #calc at line 79 in file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/system/blockMeshDict"
+Using #codeStream with "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_569b0867e9c973a15819da7a076a911184446402.so"
+Creating new library in "dynamicCode/_569b0867e9c973a15819da7a076a911184446402/platforms/linux64GccDPInt32Opt/lib/libcodeStream_569b0867e9c973a15819da7a076a911184446402.so"
+Invoking wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_569b0867e9c973a15819da7a076a911184446402
+wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_569b0867e9c973a15819da7a076a911184446402
+wmakeLnInclude: linking include files to ./lnInclude
+Making dependency list for source file codeStreamTemplate.C
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -c codeStreamTemplate.C -o Make/linux64GccDPInt32Opt/codeStreamTemplate.o
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -shared -Xlinker --add-needed -Xlinker --no-as-needed Make/linux64GccDPInt32Opt/codeStreamTemplate.o -L/home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib \
+    -lOpenFOAM   -o /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_569b0867e9c973a15819da7a076a911184446402/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_569b0867e9c973a15819da7a076a911184446402.so
+Using #calc at line 82 in file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/system/blockMeshDict"
+Using #codeStream with "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_791fe88cde1e5d91880a7b6ea99fef519ef7db95.so"
+Creating new library in "dynamicCode/_791fe88cde1e5d91880a7b6ea99fef519ef7db95/platforms/linux64GccDPInt32Opt/lib/libcodeStream_791fe88cde1e5d91880a7b6ea99fef519ef7db95.so"
+Invoking wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_791fe88cde1e5d91880a7b6ea99fef519ef7db95
+wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_791fe88cde1e5d91880a7b6ea99fef519ef7db95
+wmakeLnInclude: linking include files to ./lnInclude
+Making dependency list for source file codeStreamTemplate.C
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -c codeStreamTemplate.C -o Make/linux64GccDPInt32Opt/codeStreamTemplate.o
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -shared -Xlinker --add-needed -Xlinker --no-as-needed Make/linux64GccDPInt32Opt/codeStreamTemplate.o -L/home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib \
+    -lOpenFOAM   -o /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_791fe88cde1e5d91880a7b6ea99fef519ef7db95/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_791fe88cde1e5d91880a7b6ea99fef519ef7db95.so
+Using #calc at line 83 in file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/system/blockMeshDict"
+Using #codeStream with "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_6ba79ba52443da464fdcbfd9d7495fc013293acc.so"
+Creating new library in "dynamicCode/_6ba79ba52443da464fdcbfd9d7495fc013293acc/platforms/linux64GccDPInt32Opt/lib/libcodeStream_6ba79ba52443da464fdcbfd9d7495fc013293acc.so"
+Invoking wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_6ba79ba52443da464fdcbfd9d7495fc013293acc
+wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_6ba79ba52443da464fdcbfd9d7495fc013293acc
+wmakeLnInclude: linking include files to ./lnInclude
+Making dependency list for source file codeStreamTemplate.C
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -c codeStreamTemplate.C -o Make/linux64GccDPInt32Opt/codeStreamTemplate.o
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -shared -Xlinker --add-needed -Xlinker --no-as-needed Make/linux64GccDPInt32Opt/codeStreamTemplate.o -L/home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib \
+    -lOpenFOAM   -o /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_6ba79ba52443da464fdcbfd9d7495fc013293acc/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_6ba79ba52443da464fdcbfd9d7495fc013293acc.so
+Using #calc at line 84 in file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/system/blockMeshDict"
+Using #calc at line 85 in file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/system/blockMeshDict"
+Using #calc at line 87 in file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/system/blockMeshDict"
+Using #codeStream with "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_30753253c70404e800d9c4d693a3fb9754e39a9e.so"
+Creating new library in "dynamicCode/_30753253c70404e800d9c4d693a3fb9754e39a9e/platforms/linux64GccDPInt32Opt/lib/libcodeStream_30753253c70404e800d9c4d693a3fb9754e39a9e.so"
+Invoking wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_30753253c70404e800d9c4d693a3fb9754e39a9e
+wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_30753253c70404e800d9c4d693a3fb9754e39a9e
+wmakeLnInclude: linking include files to ./lnInclude
+Making dependency list for source file codeStreamTemplate.C
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -c codeStreamTemplate.C -o Make/linux64GccDPInt32Opt/codeStreamTemplate.o
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -shared -Xlinker --add-needed -Xlinker --no-as-needed Make/linux64GccDPInt32Opt/codeStreamTemplate.o -L/home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib \
+    -lOpenFOAM   -o /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_30753253c70404e800d9c4d693a3fb9754e39a9e/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_30753253c70404e800d9c4d693a3fb9754e39a9e.so
+Using #calc at line 88 in file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/system/blockMeshDict"
+Using #codeStream with "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_9e42422b7a8e3c971472390e489763108c44d39b.so"
+Creating new library in "dynamicCode/_9e42422b7a8e3c971472390e489763108c44d39b/platforms/linux64GccDPInt32Opt/lib/libcodeStream_9e42422b7a8e3c971472390e489763108c44d39b.so"
+Invoking wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_9e42422b7a8e3c971472390e489763108c44d39b
+wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_9e42422b7a8e3c971472390e489763108c44d39b
+wmakeLnInclude: linking include files to ./lnInclude
+Making dependency list for source file codeStreamTemplate.C
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -c codeStreamTemplate.C -o Make/linux64GccDPInt32Opt/codeStreamTemplate.o
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -shared -Xlinker --add-needed -Xlinker --no-as-needed Make/linux64GccDPInt32Opt/codeStreamTemplate.o -L/home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib \
+    -lOpenFOAM   -o /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_9e42422b7a8e3c971472390e489763108c44d39b/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_9e42422b7a8e3c971472390e489763108c44d39b.so
+Using #calc at line 89 in file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/system/blockMeshDict"
+Using #calc at line 90 in file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/system/blockMeshDict"
+Using #calc at line 92 in file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/system/blockMeshDict"
+Using #codeStream with "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_d1ae0be7b76b9e5df4854eff2958d6f803e95bd2.so"
+Creating new library in "dynamicCode/_d1ae0be7b76b9e5df4854eff2958d6f803e95bd2/platforms/linux64GccDPInt32Opt/lib/libcodeStream_d1ae0be7b76b9e5df4854eff2958d6f803e95bd2.so"
+Invoking wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_d1ae0be7b76b9e5df4854eff2958d6f803e95bd2
+wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_d1ae0be7b76b9e5df4854eff2958d6f803e95bd2
+wmakeLnInclude: linking include files to ./lnInclude
+Making dependency list for source file codeStreamTemplate.C
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -c codeStreamTemplate.C -o Make/linux64GccDPInt32Opt/codeStreamTemplate.o
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -shared -Xlinker --add-needed -Xlinker --no-as-needed Make/linux64GccDPInt32Opt/codeStreamTemplate.o -L/home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib \
+    -lOpenFOAM   -o /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_d1ae0be7b76b9e5df4854eff2958d6f803e95bd2/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_d1ae0be7b76b9e5df4854eff2958d6f803e95bd2.so
+Using #calc at line 93 in file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/system/blockMeshDict"
+Using #codeStream with "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_5b7b5e58216b79479953f3a379ea0fd9be7d955f.so"
+Creating new library in "dynamicCode/_5b7b5e58216b79479953f3a379ea0fd9be7d955f/platforms/linux64GccDPInt32Opt/lib/libcodeStream_5b7b5e58216b79479953f3a379ea0fd9be7d955f.so"
+Invoking wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_5b7b5e58216b79479953f3a379ea0fd9be7d955f
+wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_5b7b5e58216b79479953f3a379ea0fd9be7d955f
+wmakeLnInclude: linking include files to ./lnInclude
+Making dependency list for source file codeStreamTemplate.C
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -c codeStreamTemplate.C -o Make/linux64GccDPInt32Opt/codeStreamTemplate.o
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -shared -Xlinker --add-needed -Xlinker --no-as-needed Make/linux64GccDPInt32Opt/codeStreamTemplate.o -L/home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib \
+    -lOpenFOAM   -o /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_5b7b5e58216b79479953f3a379ea0fd9be7d955f/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_5b7b5e58216b79479953f3a379ea0fd9be7d955f.so
+Using #calc at line 94 in file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/system/blockMeshDict"
+Using #calc at line 95 in file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/system/blockMeshDict"
+Using #calc at line 97 in file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/system/blockMeshDict"
+Using #codeStream with "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_2d41029d7bf4459b7613d7bf719c53e523865fe3.so"
+Creating new library in "dynamicCode/_2d41029d7bf4459b7613d7bf719c53e523865fe3/platforms/linux64GccDPInt32Opt/lib/libcodeStream_2d41029d7bf4459b7613d7bf719c53e523865fe3.so"
+Invoking wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_2d41029d7bf4459b7613d7bf719c53e523865fe3
+wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_2d41029d7bf4459b7613d7bf719c53e523865fe3
+wmakeLnInclude: linking include files to ./lnInclude
+Making dependency list for source file codeStreamTemplate.C
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -c codeStreamTemplate.C -o Make/linux64GccDPInt32Opt/codeStreamTemplate.o
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -shared -Xlinker --add-needed -Xlinker --no-as-needed Make/linux64GccDPInt32Opt/codeStreamTemplate.o -L/home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib \
+    -lOpenFOAM   -o /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_2d41029d7bf4459b7613d7bf719c53e523865fe3/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_2d41029d7bf4459b7613d7bf719c53e523865fe3.so
+Using #calc at line 98 in file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/system/blockMeshDict"
+Using #codeStream with "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_b9192bb453ca180f78aadf4298f3a5a809dbca41.so"
+Creating new library in "dynamicCode/_b9192bb453ca180f78aadf4298f3a5a809dbca41/platforms/linux64GccDPInt32Opt/lib/libcodeStream_b9192bb453ca180f78aadf4298f3a5a809dbca41.so"
+Invoking wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_b9192bb453ca180f78aadf4298f3a5a809dbca41
+wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_b9192bb453ca180f78aadf4298f3a5a809dbca41
+wmakeLnInclude: linking include files to ./lnInclude
+Making dependency list for source file codeStreamTemplate.C
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -c codeStreamTemplate.C -o Make/linux64GccDPInt32Opt/codeStreamTemplate.o
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -shared -Xlinker --add-needed -Xlinker --no-as-needed Make/linux64GccDPInt32Opt/codeStreamTemplate.o -L/home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib \
+    -lOpenFOAM   -o /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_b9192bb453ca180f78aadf4298f3a5a809dbca41/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_b9192bb453ca180f78aadf4298f3a5a809dbca41.so
+Using #calc at line 99 in file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/system/blockMeshDict"
+Using #calc at line 100 in file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/system/blockMeshDict"
+Using #calc at line 103 in file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/system/blockMeshDict"
+Using #codeStream with "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_1fc26974f692a5e5427f486e600696c7c8c6b098.so"
+Creating new library in "dynamicCode/_1fc26974f692a5e5427f486e600696c7c8c6b098/platforms/linux64GccDPInt32Opt/lib/libcodeStream_1fc26974f692a5e5427f486e600696c7c8c6b098.so"
+Invoking wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_1fc26974f692a5e5427f486e600696c7c8c6b098
+wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_1fc26974f692a5e5427f486e600696c7c8c6b098
+wmakeLnInclude: linking include files to ./lnInclude
+Making dependency list for source file codeStreamTemplate.C
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -c codeStreamTemplate.C -o Make/linux64GccDPInt32Opt/codeStreamTemplate.o
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -shared -Xlinker --add-needed -Xlinker --no-as-needed Make/linux64GccDPInt32Opt/codeStreamTemplate.o -L/home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib \
+    -lOpenFOAM   -o /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_1fc26974f692a5e5427f486e600696c7c8c6b098/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_1fc26974f692a5e5427f486e600696c7c8c6b098.so
+Using #calc at line 104 in file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/system/blockMeshDict"
+Using #codeStream with "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_1e7a24ed6ec06d01b4152f06f2a1691b6592daa5.so"
+Creating new library in "dynamicCode/_1e7a24ed6ec06d01b4152f06f2a1691b6592daa5/platforms/linux64GccDPInt32Opt/lib/libcodeStream_1e7a24ed6ec06d01b4152f06f2a1691b6592daa5.so"
+Invoking wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_1e7a24ed6ec06d01b4152f06f2a1691b6592daa5
+wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_1e7a24ed6ec06d01b4152f06f2a1691b6592daa5
+wmakeLnInclude: linking include files to ./lnInclude
+Making dependency list for source file codeStreamTemplate.C
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -c codeStreamTemplate.C -o Make/linux64GccDPInt32Opt/codeStreamTemplate.o
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -shared -Xlinker --add-needed -Xlinker --no-as-needed Make/linux64GccDPInt32Opt/codeStreamTemplate.o -L/home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib \
+    -lOpenFOAM   -o /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_1e7a24ed6ec06d01b4152f06f2a1691b6592daa5/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_1e7a24ed6ec06d01b4152f06f2a1691b6592daa5.so
+Using #calc at line 105 in file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/system/blockMeshDict"
+Using #codeStream with "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_44baf0fbaaeff9c243df06ba6992565411987901.so"
+Creating new library in "dynamicCode/_44baf0fbaaeff9c243df06ba6992565411987901/platforms/linux64GccDPInt32Opt/lib/libcodeStream_44baf0fbaaeff9c243df06ba6992565411987901.so"
+Invoking wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_44baf0fbaaeff9c243df06ba6992565411987901
+wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_44baf0fbaaeff9c243df06ba6992565411987901
+wmakeLnInclude: linking include files to ./lnInclude
+Making dependency list for source file codeStreamTemplate.C
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -c codeStreamTemplate.C -o Make/linux64GccDPInt32Opt/codeStreamTemplate.o
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -shared -Xlinker --add-needed -Xlinker --no-as-needed Make/linux64GccDPInt32Opt/codeStreamTemplate.o -L/home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib \
+    -lOpenFOAM   -o /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_44baf0fbaaeff9c243df06ba6992565411987901/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_44baf0fbaaeff9c243df06ba6992565411987901.so
+Using #calc at line 106 in file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/system/blockMeshDict"
+Using #codeStream with "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_372cbf853040aef59b39f23c45b23fdf08316bd9.so"
+Creating new library in "dynamicCode/_372cbf853040aef59b39f23c45b23fdf08316bd9/platforms/linux64GccDPInt32Opt/lib/libcodeStream_372cbf853040aef59b39f23c45b23fdf08316bd9.so"
+Invoking wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_372cbf853040aef59b39f23c45b23fdf08316bd9
+wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_372cbf853040aef59b39f23c45b23fdf08316bd9
+wmakeLnInclude: linking include files to ./lnInclude
+Making dependency list for source file codeStreamTemplate.C
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -c codeStreamTemplate.C -o Make/linux64GccDPInt32Opt/codeStreamTemplate.o
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -shared -Xlinker --add-needed -Xlinker --no-as-needed Make/linux64GccDPInt32Opt/codeStreamTemplate.o -L/home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib \
+    -lOpenFOAM   -o /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_372cbf853040aef59b39f23c45b23fdf08316bd9/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_372cbf853040aef59b39f23c45b23fdf08316bd9.so
+Using #calc at line 108 in file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/system/blockMeshDict"
+Using #calc at line 109 in file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/system/blockMeshDict"
+Using #calc at line 110 in file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/system/blockMeshDict"
+Using #calc at line 162 in file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/system/blockMeshDict"
+Using #codeStream with "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_c409d3f751be3dd3f13aa00985934f1c0ce92746.so"
+Creating new library in "dynamicCode/_c409d3f751be3dd3f13aa00985934f1c0ce92746/platforms/linux64GccDPInt32Opt/lib/libcodeStream_c409d3f751be3dd3f13aa00985934f1c0ce92746.so"
+Invoking wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_c409d3f751be3dd3f13aa00985934f1c0ce92746
+wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_c409d3f751be3dd3f13aa00985934f1c0ce92746
+wmakeLnInclude: linking include files to ./lnInclude
+Making dependency list for source file codeStreamTemplate.C
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -c codeStreamTemplate.C -o Make/linux64GccDPInt32Opt/codeStreamTemplate.o
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -shared -Xlinker --add-needed -Xlinker --no-as-needed Make/linux64GccDPInt32Opt/codeStreamTemplate.o -L/home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib \
+    -lOpenFOAM   -o /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_c409d3f751be3dd3f13aa00985934f1c0ce92746/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_c409d3f751be3dd3f13aa00985934f1c0ce92746.so
+Using #calc at line 164 in file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/system/blockMeshDict"
+Using #codeStream with "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_13059c21378d168d6a420f455a342163353616ab.so"
+Creating new library in "dynamicCode/_13059c21378d168d6a420f455a342163353616ab/platforms/linux64GccDPInt32Opt/lib/libcodeStream_13059c21378d168d6a420f455a342163353616ab.so"
+Invoking wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_13059c21378d168d6a420f455a342163353616ab
+wmake libso /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_13059c21378d168d6a420f455a342163353616ab
+wmakeLnInclude: linking include files to ./lnInclude
+Making dependency list for source file codeStreamTemplate.C
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -c codeStreamTemplate.C -o Make/linux64GccDPInt32Opt/codeStreamTemplate.o
+g++ -std=c++11 -m64 -DOPENFOAM_PLUS=1712 -Dlinux64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3  -DNoRepository -ftemplate-depth-100 -g  -IlnInclude -I. -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OpenFOAM/lnInclude -I/home/inabower/OpenFOAM/OpenFOAM-v1712/src/OSspecific/POSIX/lnInclude   -fPIC -shared -Xlinker --add-needed -Xlinker --no-as-needed Make/linux64GccDPInt32Opt/codeStreamTemplate.o -L/home/inabower/OpenFOAM/OpenFOAM-v1712/platforms/linux64GccDPInt32Opt/lib \
+    -lOpenFOAM   -o /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/compressibleInterDyMFoam/laminar/sphereDrop/dynamicCode/_13059c21378d168d6a420f455a342163353616ab/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_13059c21378d168d6a420f455a342163353616ab.so
+Creating block edges
+No non-planar block faces defined
+Creating topology blocks
+Creating topology patches
+
+Creating block mesh topology
+--> FOAM Warning : 
+    From function Foam::polyMesh::polyMesh(const Foam::IOobject&, const Foam::Xfer<Foam::Field<Foam::Vector<double> > >&, const cellShapeList&, const faceListList&, const wordList&, const Foam::PtrList<Foam::dictionary>&, const Foam::word&, const Foam::word&, bool)
+    in file meshes/polyMesh/polyMeshFromShapeMesh.C at line 863
+    Found 6 undefined faces in mesh; adding to default patch.
+
+Check topology
+
+	Basic statistics
+		Number of internal faces : 9
+		Number of boundary faces : 36
+		Number of defined boundary faces : 36
+		Number of undefined boundary faces : 0
+	Checking patch -> block consistency
+
+Creating block offsets
+Creating merge list .
+
+Creating polyMesh from blockMesh
+Creating patches
+Creating cells
+Creating points with scale 1
+    Block 0 cell size :
+        i : 0.0172964624 .. 0.0172964624
+        j : 0.02 .. 0.02
+        k : 0.04994811864 .. 0.04994811864
+
+    Block 1 cell size :
+        i : 0.01401333759 .. 0.01401333759
+        j : 0.02014 .. 0.02014
+        k : 0.01222506401 .. 0.01222506401
+
+    Block 2 cell size :
+        i : 0.01401333759 .. 0.01401333759
+        j : 0.02037142857 .. 0.02037142857
+        k : 0.01222506401 .. 0.01222506401
+
+    Block 3 cell size :
+        i : 0.006600790125 .. 0.006600790125
+        j : 0.003875368691 .. 0.001937684345
+        k : 0.005186655398 .. 0.005186655398
+
+    Block 4 cell size :
+        i : 0.003875368691 .. 0.001937684345
+        j : 0.006596860692 .. 0.006596860692
+        k : 0.005186655398 .. 0.005186655398
+
+    Block 5 cell size :
+        i : 0.002200263373 .. 0.002200263373
+        j : 0.001937684346 .. 0.003875368691
+        k : 0.001728885167 .. 0.001728885167
+
+    Block 6 cell size :
+        i : 0.01401333759 .. 0.01401333759
+        j : 0.01936077495 .. 0.005808232486
+        k : 0.01222506401 .. 0.01222506401
+
+    Block 7 cell size :
+        i : 0.01936077495 .. 0.005808232486
+        j : 0.014 .. 0.014
+        k : 0.01222506401 .. 0.01222506401
+
+    Block 8 cell size :
+        i : 0.006600790126 .. 0.006600790126
+        j : 0.005808232485 .. 0.01936077495
+        k : 0.005186655398 .. 0.005186655398
+
+
+Adding cell zones
+    0	farField
+    1	bottomBlock
+    2	topBlock
+    3	centralBlock
+
+Writing polyMesh with 4 cellZones
+----------------
+Mesh Information
+----------------
+  boundingBox: (-0.572 -1 -0.0249740593) (0 1 0.02497405934)
+  nPoints: 9517
+  nCells: 4550
+  nFaces: 18335
+  nInternalFaces: 8820
+----------------
+Patches
+----------------
+  patch 0 (start: 8820 size: 4550) name: front
+  patch 1 (start: 13370 size: 4550) name: back
+  patch 2 (start: 17920 size: 105) name: innerAMI
+  patch 3 (start: 18025 size: 100) name: outerAMI
+  patch 4 (start: 18125 size: 35) name: top
+  patch 5 (start: 18160 size: 35) name: bottom
+  patch 6 (start: 18195 size: 100) name: farFieldWall
+  patch 7 (start: 18295 size: 40) name: sphere
+  patch 8 (start: 18335 size: 0) name: defaultFaces
+
+End
+

@@ -1,0 +1,76 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1712                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v1712
+Arch   : "LSB;label=32;scalar=64"
+Exec   : blockMesh
+Date   : Jan 05 2018
+Time   : 17:46:34
+Host   : "inabower-PC"
+PID    : 11124
+I/O    : uncollated
+Case   : /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalSolarLoad
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Creating block mesh from
+    "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalSolarLoad/system/blockMeshDict"
+Creating block edges
+No non-planar block faces defined
+Creating topology blocks
+Creating topology patches
+
+Creating block mesh topology
+
+Check topology
+
+	Basic statistics
+		Number of internal faces : 0
+		Number of boundary faces : 6
+		Number of defined boundary faces : 6
+		Number of undefined boundary faces : 0
+	Checking patch -> block consistency
+
+Creating block offsets
+Creating merge list .
+
+Creating polyMesh from blockMesh
+Creating patches
+Creating cells
+Creating points with scale 1
+    Block 0 cell size :
+        i : 1.333333 .. 1.333333
+        j : 1.333333 .. 1.333333
+        k : 1.355556 .. 1.355556
+
+
+Writing polyMesh with 0 cellZones
+----------------
+Mesh Information
+----------------
+  boundingBox: (0 0 -1) (40 40 60)
+  nPoints: 44206
+  nCells: 40500
+  nFaces: 125100
+  nInternalFaces: 117900
+----------------
+Patches
+----------------
+  patch 0 (start: 117900 size: 1350) name: maxY
+  patch 1 (start: 119250 size: 1350) name: minX
+  patch 2 (start: 120600 size: 1350) name: maxX
+  patch 3 (start: 121950 size: 1350) name: minY
+  patch 4 (start: 123300 size: 900) name: minZ
+  patch 5 (start: 124200 size: 900) name: maxZ
+
+End
+

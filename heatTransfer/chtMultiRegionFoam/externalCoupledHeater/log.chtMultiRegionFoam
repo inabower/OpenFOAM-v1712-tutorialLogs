@@ -1,0 +1,2469 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1712                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v1712
+Arch   : "LSB;label=32;scalar=64"
+Exec   : chtMultiRegionFoam -parallel
+Date   : Jan 05 2018
+Time   : 06:42:57
+Host   : "inabower-PC"
+PID    : 14333
+I/O    : uncollated
+Case   : /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater
+nProcs : 4
+Hosts  :
+(
+    (inabower-PC 4)
+)
+Pstream initialized with:
+    floatTransfer      : 0
+    nProcsSimpleSum    : 0
+    commsType          : nonBlocking
+    polling iterations : 0
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create fluid mesh for region bottomWater for time = 0
+
+Create fluid mesh for region topAir for time = 0
+
+Create solid mesh for region heater for time = 0
+
+Create solid mesh for region leftSolid for time = 0
+
+Create solid mesh for region rightSolid for time = 0
+
+*** Reading fluid mesh thermophysical properties for region bottomWater
+
+    Adding to thermoFluid
+
+Selecting thermodynamics package 
+{
+    type            heRhoThermo;
+    mixture         pureMixture;
+    transport       const;
+    thermo          hConst;
+    equationOfState rhoConst;
+    specie          specie;
+    energy          sensibleEnthalpy;
+}
+
+    Adding to rhoFluid
+
+    Adding to UFluid
+
+    Adding to phiFluid
+
+    Adding to gFluid
+
+    Adding to hRefFluid
+
+    Adding to ghFluid
+
+    Adding to ghfFluid
+
+    Adding to turbulence
+
+Selecting turbulence model type laminar
+Selecting laminar stress model Stokes
+Selecting radiationModel none
+    Adding to KFluid
+
+    Adding to dpdtFluid
+
+    Adding MRF
+
+No MRF models present
+
+    Adding fvOptions
+
+No finite volume options present
+
+*** Reading fluid mesh thermophysical properties for region topAir
+
+    Adding to thermoFluid
+
+Selecting thermodynamics package 
+{
+    type            heRhoThermo;
+    mixture         pureMixture;
+    transport       const;
+    thermo          hConst;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleEnthalpy;
+}
+
+    Adding to rhoFluid
+
+    Adding to UFluid
+
+    Adding to phiFluid
+
+    Adding to gFluid
+
+    Adding to hRefFluid
+
+    Adding to ghFluid
+
+    Adding to ghfFluid
+
+    Adding to turbulence
+
+Selecting turbulence model type laminar
+Selecting laminar stress model Stokes
+Selecting radiationModel none
+    Adding to KFluid
+
+    Adding to dpdtFluid
+
+    Adding MRF
+
+No MRF models present
+
+    Adding fvOptions
+
+No finite volume options present
+
+*** Reading solid mesh thermophysical properties for region heater
+
+    Adding to thermos
+
+Selecting thermodynamics package 
+{
+    type            heSolidThermo;
+    mixture         pureMixture;
+    transport       constIso;
+    thermo          hConst;
+    equationOfState rhoConst;
+    specie          specie;
+    energy          sensibleEnthalpy;
+}
+
+    Adding to radiations
+
+Selecting radiationModel none
+    Adding fvOptions
+
+No finite volume options present
+
+*** Reading solid mesh thermophysical properties for region leftSolid
+
+    Adding to thermos
+
+Selecting thermodynamics package 
+{
+    type            heSolidThermo;
+    mixture         pureMixture;
+    transport       constIso;
+    thermo          hConst;
+    equationOfState rhoConst;
+    specie          specie;
+    energy          sensibleEnthalpy;
+}
+
+    Adding to radiations
+
+Selecting radiationModel none
+    Adding fvOptions
+
+No finite volume options present
+
+*** Reading solid mesh thermophysical properties for region rightSolid
+
+    Adding to thermos
+
+Selecting thermodynamics package 
+{
+    type            heSolidThermo;
+    mixture         pureMixture;
+    transport       constIso;
+    thermo          hConst;
+    equationOfState rhoConst;
+    specie          specie;
+    energy          sensibleEnthalpy;
+}
+
+    Adding to radiations
+
+Selecting radiationModel none
+    Adding fvOptions
+
+No finite volume options present
+
+Region: bottomWater Courant Number mean: 0.00017208904 max: 0.00082499996
+Region: topAir Courant Number mean: 0.015 max: 0.015000002
+Region: heater Diffusion Number mean: 0.00036484246 max: 0.0020000002
+Region: leftSolid Diffusion Number mean: 0.00036373166 max: 0.0019999998
+Region: rightSolid Diffusion Number mean: 0.00036373166 max: 0.0019999998
+externalCoupled: initialize
+    directory: "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms"
+    slave-first: true
+externalCoupled: Communicating with regions:
+Region: heater_topAir
+    patchGroup: coupleGroup	
+        Reading fields: 1(T)
+        Writing fields: 1(T)
+
+deltaT = 0.001
+Region: bottomWater Courant Number mean: 0.00017208904 max: 0.00082499996
+Region: topAir Courant Number mean: 0.015 max: 0.015000002
+Region: heater Diffusion Number mean: 0.00036484246 max: 0.0020000002
+Region: leftSolid Diffusion Number mean: 0.00036373166 max: 0.0019999998
+Region: rightSolid Diffusion Number mean: 0.00036373166 max: 0.0019999998
+deltaT = 0.0012048193
+Time = 0.00120482
+
+
+Solving for fluid region bottomWater
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 1, Final residual = 1.2362462e-09, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 1, Final residual = 6.1715522e-10, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 1, Final residual = 2.4528245e-10, No Iterations 1
+DILUPBiCGStab:  Solving for h, Initial residual = 0.99999986, Final residual = 2.7702303e-10, No Iterations 1
+Min/max T:300 300
+GAMG:  Solving for p_rgh, Initial residual = 0.82697572, Final residual = 0.0020760215, No Iterations 3
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 2.8314246e-06, global = -7.9984366e-07, cumulative = -7.9984366e-07
+GAMG:  Solving for p_rgh, Initial residual = 0.050319172, Final residual = 6.7938493e-08, No Iterations 17
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 3.709803e-12, global = -6.7622093e-13, cumulative = -7.9984433e-07
+
+Solving for fluid region topAir
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 1, Final residual = 2.0942681e-08, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 1, Final residual = 2.9899752e-08, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.99517555, Final residual = 1.0037204e-08, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.99999967, Final residual = 5.2986811e-08, No Iterations 2
+Min/max T:300 300
+GAMG:  Solving for p_rgh, Initial residual = 0.87372882, Final residual = 0.0066414992, No Iterations 2
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 1.0964378e-05, global = -3.330592e-07, cumulative = -3.330592e-07
+GAMG:  Solving for p_rgh, Initial residual = 0.21586614, Final residual = 6.0232214e-08, No Iterations 17
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 1.5975343e-07, global = 1.5975067e-07, cumulative = -1.7330853e-07
+
+Solving for solid region heater
+DICPCG:  Solving for h, Initial residual = 1, Final residual = 3.9176527e-07, No Iterations 1
+Min/max T:300 500
+
+Solving for solid region leftSolid
+DICPCG:  Solving for h, Initial residual = 0.71291866, Final residual = 1.7584963e-08, No Iterations 2
+Min/max T:300 300
+
+Solving for solid region rightSolid
+DICPCG:  Solving for h, Initial residual = 0.67026194, Final residual = 1.8856902e-08, No Iterations 2
+Min/max T:300 300
+ExecutionTime = 0.09 s  ClockTime = 0 s
+
+externalCoupled: removing lock file
+externalCoupled: waiting for lock file to appear "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: wait time = 1
+externalCoupled: found lock file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: reading data from "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.in"
+externalCoupled: writing data to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.out"
+externalCoupled: removing lock file
+externalCoupled: waiting for lock file to appear "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: wait time = 1
+externalCoupled: wait time = 2
+externalCoupled: wait time = 3
+externalCoupled: wait time = 4
+externalCoupled: wait time = 5
+externalCoupled: wait time = 6
+externalCoupled: wait time = 7
+externalCoupled: wait time = 8
+externalCoupled: wait time = 9
+externalCoupled: wait time = 10
+externalCoupled: found lock file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: removing data files written by master
+externalCoupled: reading data from "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.in"
+Region: bottomWater Courant Number mean: 0.00019114419 max: 0.00028704035
+Region: topAir Courant Number mean: 0.018108942 max: 0.018152016
+Region: heater Diffusion Number mean: 0.00043956923 max: 0.0024096388
+Region: leftSolid Diffusion Number mean: 0.00043823091 max: 0.0024096383
+Region: rightSolid Diffusion Number mean: 0.00043823091 max: 0.0024096383
+deltaT = 0.0014528703
+Time = 0.00265769
+
+
+Solving for fluid region bottomWater
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.36267914, Final residual = 5.1326173e-10, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.83701123, Final residual = 1.7738519e-09, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.37613656, Final residual = 7.2591728e-10, No Iterations 1
+DILUPBiCGStab:  Solving for h, Initial residual = 0.99486076, Final residual = 5.7885998e-10, No Iterations 1
+Min/max T:300 300.16587
+GAMG:  Solving for p_rgh, Initial residual = 0.10249931, Final residual = 0.00072637728, No Iterations 6
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 2.7510834e-08, global = -3.2121844e-09, cumulative = -8.0305652e-07
+GAMG:  Solving for p_rgh, Initial residual = 0.0081263754, Final residual = 7.9403356e-08, No Iterations 15
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 2.7323308e-13, global = -4.315132e-14, cumulative = -8.0305656e-07
+
+Solving for fluid region topAir
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.60517423, Final residual = 3.1466563e-08, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.64228461, Final residual = 3.5071193e-08, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.43072884, Final residual = 7.7981632e-09, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.99995483, Final residual = 5.1977827e-08, No Iterations 1
+Min/max T:300 301
+GAMG:  Solving for p_rgh, Initial residual = 0.038826276, Final residual = 0.0002384888, No Iterations 7
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 4.3138819e-07, global = -4.2857577e-07, cumulative = -6.0188431e-07
+GAMG:  Solving for p_rgh, Initial residual = 0.0016096472, Final residual = 8.5598981e-08, No Iterations 13
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 6.62507e-09, global = 6.62507e-09, cumulative = -5.9525924e-07
+
+Solving for solid region heater
+DICPCG:  Solving for h, Initial residual = 0.2517859, Final residual = 1.6973283e-07, No Iterations 1
+Min/max T:300 501
+
+Solving for solid region leftSolid
+DICPCG:  Solving for h, Initial residual = 0.99994774, Final residual = 1.1314881e-09, No Iterations 2
+Min/max T:300 300.00001
+
+Solving for solid region rightSolid
+DICPCG:  Solving for h, Initial residual = 1, Final residual = 3.7888477e-08, No Iterations 2
+Min/max T:300 300
+ExecutionTime = 0.11 s  ClockTime = 11 s
+
+externalCoupled: writing data to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.out"
+externalCoupled: removing lock file
+externalCoupled: waiting for lock file to appear "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: wait time = 1
+externalCoupled: wait time = 2
+externalCoupled: wait time = 3
+externalCoupled: wait time = 4
+externalCoupled: wait time = 5
+externalCoupled: wait time = 6
+externalCoupled: wait time = 7
+externalCoupled: wait time = 8
+externalCoupled: wait time = 9
+externalCoupled: wait time = 10
+externalCoupled: found lock file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: removing data files written by master
+externalCoupled: reading data from "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.in"
+Region: bottomWater Courant Number mean: 0.00023052352 max: 0.0003458816
+Region: topAir Courant Number mean: 0.021805786 max: 0.021830267
+Region: heater Diffusion Number mean: 0.00053006878 max: 0.0029057409
+Region: leftSolid Diffusion Number mean: 0.00052845492 max: 0.0029057403
+Region: rightSolid Diffusion Number mean: 0.00052845492 max: 0.0029057403
+deltaT = 0.0017382555
+Time = 0.00439595
+
+
+Solving for fluid region bottomWater
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.022847993, Final residual = 3.1257375e-11, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.33865378, Final residual = 3.3852334e-10, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.038002884, Final residual = 1.0129116e-10, No Iterations 1
+DILUPBiCGStab:  Solving for h, Initial residual = 0.6592355, Final residual = 3.7921065e-10, No Iterations 1
+Min/max T:299.99999 300.36659
+GAMG:  Solving for p_rgh, Initial residual = 0.20693275, Final residual = 0.0010992155, No Iterations 3
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 3.8658485e-09, global = -3.8633442e-10, cumulative = -8.0344289e-07
+GAMG:  Solving for p_rgh, Initial residual = 0.0015519917, Final residual = 6.0472392e-08, No Iterations 13
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 1.5177746e-13, global = -2.3455853e-14, cumulative = -8.0344292e-07
+
+Solving for fluid region topAir
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.67926954, Final residual = 5.8826844e-08, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.76266115, Final residual = 6.7980078e-08, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.24405737, Final residual = 3.9133656e-09, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.38749938, Final residual = 3.1576065e-08, No Iterations 1
+Min/max T:299.99996 302
+GAMG:  Solving for p_rgh, Initial residual = 0.031161433, Final residual = 0.00018181127, No Iterations 7
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 1.2769698e-07, global = 1.2539314e-07, cumulative = -4.6986609e-07
+GAMG:  Solving for p_rgh, Initial residual = 0.013221416, Final residual = 3.612622e-07, No Iterations 1000
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 2.3436607e-09, global = -2.3436607e-09, cumulative = -4.7220975e-07
+
+Solving for solid region heater
+DICPCG:  Solving for h, Initial residual = 0.15459893, Final residual = 1.685666e-07, No Iterations 1
+Min/max T:300 502
+
+Solving for solid region leftSolid
+DICPCG:  Solving for h, Initial residual = 0.54032601, Final residual = 1.6050924e-09, No Iterations 2
+Min/max T:300 300.00002
+
+Solving for solid region rightSolid
+DICPCG:  Solving for h, Initial residual = 0.83746419, Final residual = 3.926103e-08, No Iterations 2
+Min/max T:300 300
+ExecutionTime = 0.23 s  ClockTime = 21 s
+
+externalCoupled: writing data to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.out"
+externalCoupled: removing lock file
+externalCoupled: waiting for lock file to appear "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: wait time = 1
+externalCoupled: wait time = 2
+externalCoupled: wait time = 3
+externalCoupled: wait time = 4
+externalCoupled: wait time = 5
+externalCoupled: wait time = 6
+externalCoupled: wait time = 7
+externalCoupled: wait time = 8
+externalCoupled: wait time = 9
+externalCoupled: wait time = 10
+externalCoupled: found lock file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: removing data files written by master
+externalCoupled: reading data from "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.in"
+Region: bottomWater Courant Number mean: 0.0002758311 max: 0.00041420179
+Region: topAir Courant Number mean: 0.026078591 max: 0.026123285
+Region: heater Diffusion Number mean: 0.00063418943 max: 0.0034765115
+Region: leftSolid Diffusion Number mean: 0.00063225857 max: 0.0034765107
+Region: rightSolid Diffusion Number mean: 0.00063225857 max: 0.0034765107
+deltaT = 0.002078349
+Time = 0.00647429
+
+
+Solving for fluid region bottomWater
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.014603328, Final residual = 2.8892866e-11, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.20020425, Final residual = 1.5491886e-10, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.024231936, Final residual = 9.2749794e-11, No Iterations 1
+DILUPBiCGStab:  Solving for h, Initial residual = 0.016468988, Final residual = 6.0991937e-12, No Iterations 1
+Min/max T:299.99999 300.60749
+GAMG:  Solving for p_rgh, Initial residual = 0.18481421, Final residual = 0.00079787637, No Iterations 3
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 2.3699895e-09, global = -2.2772833e-10, cumulative = -8.0367065e-07
+GAMG:  Solving for p_rgh, Initial residual = 0.0010486398, Final residual = 8.098678e-08, No Iterations 12
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 1.841311e-13, global = -2.8246819e-14, cumulative = -8.0367067e-07
+
+Solving for fluid region topAir
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.23311891, Final residual = 3.3771279e-08, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.21104838, Final residual = 7.2322923e-09, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.18499446, Final residual = 5.2606943e-09, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.2501908, Final residual = 7.0086885e-09, No Iterations 1
+Min/max T:299.99998 303
+GAMG:  Solving for p_rgh, Initial residual = 0.47786823, Final residual = 0.0031159543, No Iterations 7
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 6.7118453e-08, global = 6.4521403e-08, cumulative = -4.0768835e-07
+GAMG:  Solving for p_rgh, Initial residual = 0.00062723031, Final residual = 6.4563857e-08, No Iterations 13
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 1.5342632e-09, global = -1.5342632e-09, cumulative = -4.0922261e-07
+
+Solving for solid region heater
+DICPCG:  Solving for h, Initial residual = 0.11693224, Final residual = 1.9971576e-07, No Iterations 1
+Min/max T:300 503
+
+Solving for solid region leftSolid
+DICPCG:  Solving for h, Initial residual = 0.38519797, Final residual = 7.3779127e-10, No Iterations 2
+Min/max T:300 300.00005
+
+Solving for solid region rightSolid
+DICPCG:  Solving for h, Initial residual = 0.51375528, Final residual = 3.3600171e-08, No Iterations 2
+Min/max T:300 300
+ExecutionTime = 0.24 s  ClockTime = 31 s
+
+externalCoupled: writing data to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.out"
+externalCoupled: removing lock file
+externalCoupled: waiting for lock file to appear "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: wait time = 1
+externalCoupled: wait time = 2
+externalCoupled: wait time = 3
+externalCoupled: wait time = 4
+externalCoupled: wait time = 5
+externalCoupled: wait time = 6
+externalCoupled: wait time = 7
+externalCoupled: wait time = 8
+externalCoupled: wait time = 9
+externalCoupled: wait time = 10
+externalCoupled: found lock file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: removing data files written by master
+externalCoupled: reading data from "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.in"
+Region: bottomWater Courant Number mean: 0.00032982467 max: 0.0004955661
+Region: topAir Courant Number mean: 0.031191424 max: 0.031263577
+Region: heater Diffusion Number mean: 0.00075826997 max: 0.0041566985
+Region: leftSolid Diffusion Number mean: 0.00075596133 max: 0.0041566976
+Region: rightSolid Diffusion Number mean: 0.00075596133 max: 0.0041566976
+deltaT = 0.0024612028
+Time = 0.0089355
+
+
+Solving for fluid region bottomWater
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.010427741, Final residual = 2.9765638e-11, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.16514985, Final residual = 1.6039803e-10, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.017243004, Final residual = 9.2035308e-11, No Iterations 1
+DILUPBiCGStab:  Solving for h, Initial residual = 0.022585704, Final residual = 1.1296804e-11, No Iterations 1
+Min/max T:299.99999 300.89633
+GAMG:  Solving for p_rgh, Initial residual = 0.15682115, Final residual = 0.00063388586, No Iterations 3
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 1.7243132e-09, global = -1.6366556e-10, cumulative = -8.0383434e-07
+GAMG:  Solving for p_rgh, Initial residual = 0.00079478411, Final residual = 5.9460064e-08, No Iterations 12
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 1.2983668e-13, global = -1.9804948e-14, cumulative = -8.0383436e-07
+
+Solving for fluid region topAir
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.16902452, Final residual = 4.0797915e-08, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.16282326, Final residual = 4.0825507e-08, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.15221365, Final residual = 7.2656811e-09, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.18867952, Final residual = 2.5493286e-09, No Iterations 1
+Min/max T:299.99999 304
+GAMG:  Solving for p_rgh, Initial residual = 0.014691112, Final residual = 9.3808261e-05, No Iterations 6
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 1.9431784e-08, global = -1.6419748e-08, cumulative = -4.2564236e-07
+GAMG:  Solving for p_rgh, Initial residual = 0.00035648663, Final residual = 8.5929985e-08, No Iterations 11
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 3.4044465e-10, global = 3.4042165e-10, cumulative = -4.2530194e-07
+
+Solving for solid region heater
+DICPCG:  Solving for h, Initial residual = 0.096354884, Final residual = 2.4841767e-07, No Iterations 1
+Min/max T:300 504
+
+Solving for solid region leftSolid
+DICPCG:  Solving for h, Initial residual = 0.30637228, Final residual = 6.032109e-10, No Iterations 2
+Min/max T:300 300.0001
+
+Solving for solid region rightSolid
+DICPCG:  Solving for h, Initial residual = 0.37606443, Final residual = 3.4504145e-08, No Iterations 2
+Min/max T:300 300
+ExecutionTime = 0.26 s  ClockTime = 41 s
+
+externalCoupled: writing data to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.out"
+externalCoupled: removing lock file
+externalCoupled: waiting for lock file to appear "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: wait time = 1
+externalCoupled: wait time = 2
+externalCoupled: wait time = 3
+externalCoupled: wait time = 4
+externalCoupled: wait time = 5
+externalCoupled: wait time = 6
+externalCoupled: wait time = 7
+externalCoupled: wait time = 8
+externalCoupled: wait time = 9
+externalCoupled: wait time = 10
+externalCoupled: found lock file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: removing data files written by master
+externalCoupled: reading data from "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.in"
+Region: bottomWater Courant Number mean: 0.00039060954 max: 0.00058705468
+Region: topAir Courant Number mean: 0.036944084 max: 0.037060784
+Region: heater Diffusion Number mean: 0.00089795128 max: 0.0049224061
+Region: leftSolid Diffusion Number mean: 0.00089521737 max: 0.0049224051
+Region: rightSolid Diffusion Number mean: 0.00089521737 max: 0.0049224051
+deltaT = 0.0029375646
+Time = 0.0118731
+
+
+Solving for fluid region bottomWater
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0081310918, Final residual = 3.4473737e-11, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.14519604, Final residual = 1.90875e-10, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.013311343, Final residual = 1.0038984e-10, No Iterations 1
+DILUPBiCGStab:  Solving for h, Initial residual = 0.033661224, Final residual = 2.3699399e-11, No Iterations 1
+Min/max T:299.99999 301.2392
+GAMG:  Solving for p_rgh, Initial residual = 0.14503398, Final residual = 0.00054073795, No Iterations 3
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 1.45495e-09, global = -1.3822283e-10, cumulative = -8.0397258e-07
+GAMG:  Solving for p_rgh, Initial residual = 0.00066556874, Final residual = 4.9116757e-08, No Iterations 12
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 1.0832471e-13, global = -1.6575853e-14, cumulative = -8.039726e-07
+
+Solving for fluid region topAir
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.14117327, Final residual = 5.6746829e-08, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.1630374, Final residual = 4.3277643e-08, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.13854786, Final residual = 1.1111615e-08, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.15599516, Final residual = 9.7385146e-10, No Iterations 1
+Min/max T:299.99998 305
+GAMG:  Solving for p_rgh, Initial residual = 0.01953453, Final residual = 0.0001011406, No Iterations 5
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 1.389156e-08, global = -8.6034489e-09, cumulative = -4.3390539e-07
+GAMG:  Solving for p_rgh, Initial residual = 0.00052292993, Final residual = 6.9374451e-08, No Iterations 10
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 8.836708e-11, global = 8.7987523e-11, cumulative = -4.338174e-07
+
+Solving for solid region heater
+DICPCG:  Solving for h, Initial residual = 0.084524997, Final residual = 3.2785268e-07, No Iterations 1
+Min/max T:300 505
+
+Solving for solid region leftSolid
+DICPCG:  Solving for h, Initial residual = 0.26299981, Final residual = 7.6415107e-10, No Iterations 2
+Min/max T:300 300.00017
+
+Solving for solid region rightSolid
+DICPCG:  Solving for h, Initial residual = 0.32825357, Final residual = 4.3222808e-08, No Iterations 2
+Min/max T:300 300
+ExecutionTime = 0.27 s  ClockTime = 51 s
+
+externalCoupled: writing data to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.out"
+externalCoupled: removing lock file
+externalCoupled: waiting for lock file to appear "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: wait time = 1
+externalCoupled: wait time = 2
+externalCoupled: wait time = 3
+externalCoupled: wait time = 4
+externalCoupled: wait time = 5
+externalCoupled: wait time = 6
+externalCoupled: wait time = 7
+externalCoupled: wait time = 8
+externalCoupled: wait time = 9
+externalCoupled: wait time = 10
+externalCoupled: found lock file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: removing data files written by master
+externalCoupled: reading data from "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.in"
+Region: bottomWater Courant Number mean: 0.00046624082 max: 0.00070076634
+Region: topAir Courant Number mean: 0.044100227 max: 0.044286031
+Region: heater Diffusion Number mean: 0.0010717483 max: 0.0058751299
+Region: leftSolid Diffusion Number mean: 0.0010684852 max: 0.0058751286
+Region: rightSolid Diffusion Number mean: 0.0010684852 max: 0.0058751286
+deltaT = 0.0035250775
+Time = 0.0153981
+
+
+Solving for fluid region bottomWater
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0065839116, Final residual = 4.2021054e-11, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.13221947, Final residual = 2.3961611e-10, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.010687878, Final residual = 1.1502138e-10, No Iterations 1
+DILUPBiCGStab:  Solving for h, Initial residual = 0.048729835, Final residual = 4.9077331e-11, No Iterations 1
+Min/max T:299.99999 301.64919
+GAMG:  Solving for p_rgh, Initial residual = 0.13578203, Final residual = 0.0004753799, No Iterations 3
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 1.3189118e-09, global = -1.2383529e-10, cumulative = -8.0409643e-07
+GAMG:  Solving for p_rgh, Initial residual = 0.00058029725, Final residual = 9.0629793e-08, No Iterations 11
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 2.0928376e-13, global = -3.148596e-14, cumulative = -8.0409647e-07
+
+Solving for fluid region topAir
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.13055759, Final residual = 8.8009821e-08, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.17518858, Final residual = 8.8850779e-08, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.13344363, Final residual = 1.7911703e-08, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.13603493, Final residual = 1.188635e-09, No Iterations 1
+Min/max T:299.99998 306
+GAMG:  Solving for p_rgh, Initial residual = 0.025837168, Final residual = 0.00012189389, No Iterations 4
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 1.7475656e-08, global = -5.4765922e-09, cumulative = -4.3929399e-07
+GAMG:  Solving for p_rgh, Initial residual = 0.00082536787, Final residual = 6.6748388e-08, No Iterations 10
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 6.6409423e-11, global = -6.4513484e-11, cumulative = -4.3935851e-07
+
+Solving for solid region heater
+DICPCG:  Solving for h, Initial residual = 0.077036314, Final residual = 4.4820172e-07, No Iterations 1
+Min/max T:300 506
+
+Solving for solid region leftSolid
+DICPCG:  Solving for h, Initial residual = 0.23621458, Final residual = 1.2588355e-09, No Iterations 2
+Min/max T:300 300.00026
+
+Solving for solid region rightSolid
+DICPCG:  Solving for h, Initial residual = 0.2952406, Final residual = 5.5930102e-08, No Iterations 2
+Min/max T:300 300
+ExecutionTime = 0.28 s  ClockTime = 61 s
+
+externalCoupled: writing data to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.out"
+externalCoupled: removing lock file
+externalCoupled: waiting for lock file to appear "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: wait time = 1
+externalCoupled: wait time = 2
+externalCoupled: wait time = 3
+externalCoupled: wait time = 4
+externalCoupled: wait time = 5
+externalCoupled: wait time = 6
+externalCoupled: wait time = 7
+externalCoupled: wait time = 8
+externalCoupled: wait time = 9
+externalCoupled: wait time = 10
+externalCoupled: found lock file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: removing data files written by master
+externalCoupled: reading data from "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.in"
+Region: bottomWater Courant Number mean: 0.0005595204 max: 0.00084090809
+Region: topAir Courant Number mean: 0.052927237 max: 0.0532173
+Region: heater Diffusion Number mean: 0.001286098 max: 0.0070501559
+Region: leftSolid Diffusion Number mean: 0.0012821823 max: 0.0070501544
+Region: rightSolid Diffusion Number mean: 0.0012821823 max: 0.0070501544
+deltaT = 0.004230093
+Time = 0.0196282
+
+
+Solving for fluid region bottomWater
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0054724454, Final residual = 5.212477e-11, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.12293308, Final residual = 3.1756712e-10, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.008779773, Final residual = 1.3483808e-10, No Iterations 1
+DILUPBiCGStab:  Solving for h, Initial residual = 0.06688313, Final residual = 9.6535087e-11, No Iterations 1
+Min/max T:299.99999 302.1418
+GAMG:  Solving for p_rgh, Initial residual = 0.12607238, Final residual = 0.00043100767, No Iterations 3
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 1.2644739e-09, global = -1.1565903e-10, cumulative = -8.0421213e-07
+GAMG:  Solving for p_rgh, Initial residual = 0.00052191978, Final residual = 7.9689495e-08, No Iterations 11
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 1.9745613e-13, global = -2.9603586e-14, cumulative = -8.0421215e-07
+
+Solving for fluid region topAir
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.12354133, Final residual = 1.6033987e-09, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.1875424, Final residual = 1.3023604e-08, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.13362453, Final residual = 2.9543636e-08, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.12214509, Final residual = 2.0348253e-09, No Iterations 1
+Min/max T:299.99998 307
+GAMG:  Solving for p_rgh, Initial residual = 0.030646672, Final residual = 0.00015106536, No Iterations 4
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 3.1693833e-08, global = -1.1123684e-08, cumulative = -4.5048219e-07
+GAMG:  Solving for p_rgh, Initial residual = 0.0013405317, Final residual = 7.8547754e-08, No Iterations 10
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 7.4376533e-11, global = -7.0626276e-11, cumulative = -4.5055282e-07
+
+Solving for solid region heater
+DICPCG:  Solving for h, Initial residual = 0.071741258, Final residual = 6.2082888e-07, No Iterations 1
+Min/max T:300 507
+
+Solving for solid region leftSolid
+DICPCG:  Solving for h, Initial residual = 0.21767994, Final residual = 2.2902609e-09, No Iterations 2
+Min/max T:300 300.00038
+
+Solving for solid region rightSolid
+DICPCG:  Solving for h, Initial residual = 0.27156824, Final residual = 7.3685064e-08, No Iterations 2
+Min/max T:300 300
+ExecutionTime = 0.3 s  ClockTime = 71 s
+
+externalCoupled: writing data to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.out"
+externalCoupled: removing lock file
+externalCoupled: waiting for lock file to appear "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: wait time = 1
+externalCoupled: wait time = 2
+externalCoupled: wait time = 3
+externalCoupled: wait time = 4
+externalCoupled: wait time = 5
+externalCoupled: wait time = 6
+externalCoupled: wait time = 7
+externalCoupled: wait time = 8
+externalCoupled: wait time = 9
+externalCoupled: wait time = 10
+externalCoupled: found lock file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: removing data files written by master
+externalCoupled: reading data from "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.in"
+Region: bottomWater Courant Number mean: 0.00067145794 max: 0.0010089879
+Region: topAir Courant Number mean: 0.063520181 max: 0.063967248
+Region: heater Diffusion Number mean: 0.0015433176 max: 0.008460187
+Region: leftSolid Diffusion Number mean: 0.0015386188 max: 0.0084601852
+Region: rightSolid Diffusion Number mean: 0.0015386188 max: 0.0084601852
+deltaT = 0.0050232355
+Time = 0.0246515
+
+
+Solving for fluid region bottomWater
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0047136342, Final residual = 6.4032774e-11, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.11501564, Final residual = 4.1359081e-10, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0072940151, Final residual = 1.5615897e-10, No Iterations 1
+DILUPBiCGStab:  Solving for h, Initial residual = 0.085607855, Final residual = 1.7362361e-10, No Iterations 1
+Min/max T:299.99999 302.73324
+GAMG:  Solving for p_rgh, Initial residual = 0.11414886, Final residual = 0.00039223883, No Iterations 3
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 1.223482e-09, global = -1.0739733e-10, cumulative = -8.0431955e-07
+GAMG:  Solving for p_rgh, Initial residual = 0.00046547497, Final residual = 6.9507165e-08, No Iterations 11
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 1.8639977e-13, global = -2.7860517e-14, cumulative = -8.0431958e-07
+
+Solving for fluid region topAir
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.11798592, Final residual = 3.0892576e-09, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.21907623, Final residual = 2.9240329e-08, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.13621109, Final residual = 4.7634611e-08, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.11067015, Final residual = 3.710003e-09, No Iterations 1
+Min/max T:299.99998 308
+GAMG:  Solving for p_rgh, Initial residual = 0.035059921, Final residual = 0.00016078237, No Iterations 4
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 4.8044773e-08, global = -1.5100818e-08, cumulative = -4.6565363e-07
+GAMG:  Solving for p_rgh, Initial residual = 0.0020045745, Final residual = 8.9915207e-08, No Iterations 10
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 8.7488995e-11, global = -8.0597686e-11, cumulative = -4.6573423e-07
+
+Solving for solid region heater
+DICPCG:  Solving for h, Initial residual = 0.067191314, Final residual = 8.4554683e-07, No Iterations 1
+Min/max T:300 508
+
+Solving for solid region leftSolid
+DICPCG:  Solving for h, Initial residual = 0.20086625, Final residual = 4.1710651e-09, No Iterations 2
+Min/max T:300 300.00054
+
+Solving for solid region rightSolid
+DICPCG:  Solving for h, Initial residual = 0.25206555, Final residual = 9.7492968e-08, No Iterations 2
+Min/max T:300 300
+ExecutionTime = 0.31 s  ClockTime = 81 s
+
+externalCoupled: writing data to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.out"
+externalCoupled: removing lock file
+externalCoupled: waiting for lock file to appear "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: wait time = 1
+externalCoupled: wait time = 2
+externalCoupled: wait time = 3
+externalCoupled: wait time = 4
+externalCoupled: wait time = 5
+externalCoupled: wait time = 6
+externalCoupled: wait time = 7
+externalCoupled: wait time = 8
+externalCoupled: wait time = 9
+externalCoupled: wait time = 10
+externalCoupled: found lock file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: removing data files written by master
+externalCoupled: reading data from "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.in"
+Region: bottomWater Courant Number mean: 0.00079739156 max: 0.0011979886
+Region: topAir Courant Number mean: 0.075438063 max: 0.076113392
+Region: heater Diffusion Number mean: 0.0018326896 max: 0.010046472
+Region: leftSolid Diffusion Number mean: 0.0018271098 max: 0.01004647
+Region: rightSolid Diffusion Number mean: 0.0018271098 max: 0.01004647
+deltaT = 0.005796041
+Time = 0.0304475
+
+
+Solving for fluid region bottomWater
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0040780321, Final residual = 7.4152077e-11, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.10658973, Final residual = 5.069646e-10, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0060502592, Final residual = 1.6986425e-10, No Iterations 1
+DILUPBiCGStab:  Solving for h, Initial residual = 0.10007323, Final residual = 2.6944004e-10, No Iterations 1
+Min/max T:299.99999 303.43536
+GAMG:  Solving for p_rgh, Initial residual = 0.096478844, Final residual = 0.00033472879, No Iterations 3
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 1.0854167e-09, global = -9.1977474e-11, cumulative = -8.0441156e-07
+GAMG:  Solving for p_rgh, Initial residual = 0.00038674439, Final residual = 5.6909546e-08, No Iterations 11
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 1.6276171e-13, global = -2.4165306e-14, cumulative = -8.0441158e-07
+
+Solving for fluid region topAir
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.11163012, Final residual = 5.4312952e-09, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.23187133, Final residual = 5.4655445e-08, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.13843594, Final residual = 6.9919824e-08, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.099675754, Final residual = 6.1076592e-09, No Iterations 1
+Min/max T:299.99998 309
+GAMG:  Solving for p_rgh, Initial residual = 0.037297459, Final residual = 0.00016560544, No Iterations 4
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 6.7695193e-08, global = -1.7270371e-08, cumulative = -4.830046e-07
+GAMG:  Solving for p_rgh, Initial residual = 0.0027485231, Final residual = 6.1927391e-08, No Iterations 11
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 8.719361e-11, global = -7.9120477e-11, cumulative = -4.8308372e-07
+
+Solving for solid region heater
+DICPCG:  Solving for h, Initial residual = 0.062086315, Final residual = 2.5870949e-09, No Iterations 2
+Min/max T:300 509
+
+Solving for solid region leftSolid
+DICPCG:  Solving for h, Initial residual = 0.18296468, Final residual = 7.0061438e-09, No Iterations 2
+Min/max T:300 300.00073
+
+Solving for solid region rightSolid
+DICPCG:  Solving for h, Initial residual = 0.23222131, Final residual = 1.1945043e-07, No Iterations 2
+Min/max T:300 300
+ExecutionTime = 0.33 s  ClockTime = 91 s
+
+externalCoupled: writing data to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.out"
+externalCoupled: removing lock file
+externalCoupled: waiting for lock file to appear "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: wait time = 1
+externalCoupled: wait time = 2
+externalCoupled: wait time = 3
+externalCoupled: wait time = 4
+externalCoupled: wait time = 5
+externalCoupled: wait time = 6
+externalCoupled: wait time = 7
+externalCoupled: wait time = 8
+externalCoupled: wait time = 9
+externalCoupled: wait time = 10
+externalCoupled: found lock file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: removing data files written by master
+externalCoupled: reading data from "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.in"
+Region: bottomWater Courant Number mean: 0.00092010336 max: 0.0013820417
+Region: topAir Courant Number mean: 0.087052218 max: 0.088031451
+Region: heater Diffusion Number mean: 0.0021146418 max: 0.011592083
+Region: leftSolid Diffusion Number mean: 0.0021082036 max: 0.011592081
+Region: rightSolid Diffusion Number mean: 0.0021082036 max: 0.011592081
+deltaT = 0.0069552491
+Time = 0.0374028
+
+
+Solving for fluid region bottomWater
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0038362771, Final residual = 1.0071811e-10, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.10407721, Final residual = 7.0932922e-10, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0054440864, Final residual = 2.159636e-10, No Iterations 1
+DILUPBiCGStab:  Solving for h, Initial residual = 0.11183962, Final residual = 4.32535e-10, No Iterations 1
+Min/max T:299.99999 304.24461
+GAMG:  Solving for p_rgh, Initial residual = 0.10527022, Final residual = 0.00037965573, No Iterations 3
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 1.4092926e-09, global = -1.1102746e-10, cumulative = -8.0452261e-07
+GAMG:  Solving for p_rgh, Initial residual = 0.00044200962, Final residual = 6.4046308e-08, No Iterations 11
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 2.0698269e-13, global = -3.0660173e-14, cumulative = -8.0452264e-07
+
+Solving for fluid region topAir
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.11169959, Final residual = 1.2464526e-08, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.24601863, Final residual = 1.6164775e-09, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.15223587, Final residual = 1.8287647e-09, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.095104424, Final residual = 1.265074e-08, No Iterations 1
+Min/max T:299.99998 310
+GAMG:  Solving for p_rgh, Initial residual = 0.03885688, Final residual = 0.0001923312, No Iterations 4
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 1.1751274e-07, global = -2.5980174e-08, cumulative = -5.090639e-07
+GAMG:  Solving for p_rgh, Initial residual = 0.0039962307, Final residual = 7.0167662e-08, No Iterations 11
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 1.0213676e-10, global = -8.0580111e-11, cumulative = -5.0914448e-07
+
+Solving for solid region heater
+DICPCG:  Solving for h, Initial residual = 0.060425308, Final residual = 4.4356484e-09, No Iterations 2
+Min/max T:300 510
+
+Solving for solid region leftSolid
+DICPCG:  Solving for h, Initial residual = 0.17768938, Final residual = 1.3702313e-08, No Iterations 2
+Min/max T:300 300.00098
+
+Solving for solid region rightSolid
+DICPCG:  Solving for h, Initial residual = 0.22453248, Final residual = 1.6699379e-07, No Iterations 2
+Min/max T:300 300
+ExecutionTime = 0.34 s  ClockTime = 101 s
+
+externalCoupled: writing data to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.out"
+externalCoupled: removing lock file
+externalCoupled: waiting for lock file to appear "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: wait time = 1
+externalCoupled: wait time = 2
+externalCoupled: wait time = 3
+externalCoupled: wait time = 4
+externalCoupled: wait time = 5
+externalCoupled: wait time = 6
+externalCoupled: wait time = 7
+externalCoupled: wait time = 8
+externalCoupled: wait time = 9
+externalCoupled: wait time = 10
+externalCoupled: found lock file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: removing data files written by master
+externalCoupled: reading data from "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.in"
+Region: bottomWater Courant Number mean: 0.0011041634 max: 0.0016581334
+Region: topAir Courant Number mean: 0.10447301 max: 0.10594774
+Region: heater Diffusion Number mean: 0.0025375702 max: 0.0139105
+Region: leftSolid Diffusion Number mean: 0.0025298443 max: 0.013910497
+Region: rightSolid Diffusion Number mean: 0.0025298443 max: 0.013910497
+deltaT = 0.0078246553
+Time = 0.0452274
+
+
+Solving for fluid region bottomWater
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0033258313, Final residual = 1.1093503e-10, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.095683052, Final residual = 8.257333e-10, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0044690831, Final residual = 2.1859054e-10, No Iterations 1
+DILUPBiCGStab:  Solving for h, Initial residual = 0.10756025, Final residual = 5.2536923e-10, No Iterations 1
+Min/max T:299.99999 305.21349
+GAMG:  Solving for p_rgh, Initial residual = 0.075982756, Final residual = 0.00027469749, No Iterations 3
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 1.0404479e-09, global = -8.0885947e-11, cumulative = -8.0460353e-07
+GAMG:  Solving for p_rgh, Initial residual = 0.00030737236, Final residual = 9.5784364e-08, No Iterations 10
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 3.2913585e-13, global = -4.7940339e-14, cumulative = -8.0460357e-07
+
+Solving for fluid region topAir
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.10630227, Final residual = 2.1808407e-08, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.23744182, Final residual = 2.8225382e-09, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.15678453, Final residual = 2.7963753e-09, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.086301795, Final residual = 2.0390173e-08, No Iterations 1
+Min/max T:299.99998 311
+GAMG:  Solving for p_rgh, Initial residual = 0.036625521, Final residual = 0.00021356992, No Iterations 4
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 1.724494e-07, global = -2.3560593e-08, cumulative = -5.3270507e-07
+GAMG:  Solving for p_rgh, Initial residual = 0.0049543709, Final residual = 7.4575608e-08, No Iterations 11
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 1.1189588e-10, global = -7.342781e-11, cumulative = -5.327785e-07
+
+Solving for solid region heater
+DICPCG:  Solving for h, Initial residual = 0.055613386, Final residual = 6.1890824e-09, No Iterations 2
+Min/max T:300 511
+
+Solving for solid region leftSolid
+DICPCG:  Solving for h, Initial residual = 0.16216634, Final residual = 2.1431987e-08, No Iterations 2
+Min/max T:300 300.00125
+
+Solving for solid region rightSolid
+DICPCG:  Solving for h, Initial residual = 0.2069302, Final residual = 1.9457396e-07, No Iterations 2
+Min/max T:300 300
+ExecutionTime = 0.35 s  ClockTime = 111 s
+
+externalCoupled: writing data to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.out"
+externalCoupled: removing lock file
+externalCoupled: waiting for lock file to appear "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: wait time = 1
+externalCoupled: wait time = 2
+externalCoupled: wait time = 3
+externalCoupled: wait time = 4
+externalCoupled: wait time = 5
+externalCoupled: wait time = 6
+externalCoupled: wait time = 7
+externalCoupled: wait time = 8
+externalCoupled: wait time = 9
+externalCoupled: wait time = 10
+externalCoupled: found lock file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: removing data files written by master
+externalCoupled: reading data from "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.in"
+Region: bottomWater Courant Number mean: 0.0012422245 max: 0.0018650529
+Region: topAir Courant Number mean: 0.11754528 max: 0.1196092
+Region: heater Diffusion Number mean: 0.0028547665 max: 0.015649312
+Region: leftSolid Diffusion Number mean: 0.0028460748 max: 0.015649309
+Region: rightSolid Diffusion Number mean: 0.0028460748 max: 0.015649309
+deltaT = 0.0091287645
+Time = 0.0543562
+
+
+Solving for fluid region bottomWater
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0032175071, Final residual = 1.4657497e-10, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.093077776, Final residual = 1.0869932e-09, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0041091897, Final residual = 2.6566048e-10, No Iterations 1
+DILUPBiCGStab:  Solving for h, Initial residual = 0.10354924, Final residual = 6.8708484e-10, No Iterations 1
+Min/max T:299.99999 306.30004
+GAMG:  Solving for p_rgh, Initial residual = 0.084636723, Final residual = 0.00032005707, No Iterations 3
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 1.3761432e-09, global = -9.8630103e-11, cumulative = -8.047022e-07
+GAMG:  Solving for p_rgh, Initial residual = 0.00036013802, Final residual = 5.139639e-08, No Iterations 11
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 1.9804146e-13, global = -2.9067155e-14, cumulative = -8.0470223e-07
+
+Solving for fluid region topAir
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.10672316, Final residual = 5.0638082e-08, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.24042786, Final residual = 5.7977484e-09, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.17375087, Final residual = 5.1944109e-09, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.082379341, Final residual = 4.1633216e-08, No Iterations 1
+Min/max T:299.99998 312
+GAMG:  Solving for p_rgh, Initial residual = 0.033638174, Final residual = 0.0002482836, No Iterations 4
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 2.8370605e-07, global = -3.1920055e-08, cumulative = -5.6469855e-07
+GAMG:  Solving for p_rgh, Initial residual = 0.0066077023, Final residual = 8.2672518e-08, No Iterations 11
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 1.5643311e-10, global = -7.2322599e-11, cumulative = -5.6477088e-07
+
+Solving for solid region heater
+DICPCG:  Solving for h, Initial residual = 0.053740158, Final residual = 9.741637e-09, No Iterations 2
+Min/max T:300 512
+
+Solving for solid region leftSolid
+DICPCG:  Solving for h, Initial residual = 0.157416, Final residual = 3.8246396e-08, No Iterations 2
+Min/max T:300 300.00157
+
+Solving for solid region rightSolid
+DICPCG:  Solving for h, Initial residual = 0.19982655, Final residual = 2.5614576e-07, No Iterations 2
+Min/max T:300 300
+ExecutionTime = 0.37 s  ClockTime = 121 s
+
+externalCoupled: writing data to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.out"
+externalCoupled: removing lock file
+externalCoupled: waiting for lock file to appear "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: wait time = 1
+externalCoupled: wait time = 2
+externalCoupled: wait time = 3
+externalCoupled: wait time = 4
+externalCoupled: wait time = 5
+externalCoupled: wait time = 6
+externalCoupled: wait time = 7
+externalCoupled: wait time = 8
+externalCoupled: wait time = 9
+externalCoupled: wait time = 10
+externalCoupled: found lock file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: removing data files written by master
+externalCoupled: reading data from "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.in"
+Region: bottomWater Courant Number mean: 0.0014493066 max: 0.0021755227
+Region: topAir Courant Number mean: 0.13715449 max: 0.14015569
+Region: heater Diffusion Number mean: 0.0033305609 max: 0.018257531
+Region: leftSolid Diffusion Number mean: 0.0033204206 max: 0.018257527
+Region: rightSolid Diffusion Number mean: 0.0033204206 max: 0.018257527
+deltaT = 0.011410956
+Time = 0.0657671
+
+
+Solving for fluid region bottomWater
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0032794148, Final residual = 2.3369044e-10, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.096121348, Final residual = 1.7479587e-09, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0039774986, Final residual = 3.81711e-10, No Iterations 1
+DILUPBiCGStab:  Solving for h, Initial residual = 0.10668907, Final residual = 1.1041081e-09, No Iterations 1
+Min/max T:299.99999 307.562
+GAMG:  Solving for p_rgh, Initial residual = 0.1040278, Final residual = 0.0004081001, No Iterations 3
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 2.2174664e-09, global = -1.4556378e-10, cumulative = -8.048478e-07
+GAMG:  Solving for p_rgh, Initial residual = 0.00046964628, Final residual = 6.5611223e-08, No Iterations 11
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 3.1111984e-13, global = -4.5256784e-14, cumulative = -8.0484784e-07
+
+Solving for fluid region topAir
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.11616339, Final residual = 1.4409911e-11, No Iterations 3
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.26407735, Final residual = 1.6680366e-08, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.2162951, Final residual = 1.3538245e-08, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.084328341, Final residual = 3.9449304e-09, No Iterations 2
+Min/max T:299.99998 313
+GAMG:  Solving for p_rgh, Initial residual = 0.030584005, Final residual = 0.0001186388, No Iterations 5
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 2.1625049e-07, global = -3.1681787e-08, cumulative = -5.9645266e-07
+GAMG:  Solving for p_rgh, Initial residual = 0.0098589532, Final residual = 9.6496925e-08, No Iterations 11
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 2.4826487e-10, global = 7.7771332e-11, cumulative = -5.9637489e-07
+
+Solving for solid region heater
+DICPCG:  Solving for h, Initial residual = 0.055709362, Final residual = 1.9135437e-08, No Iterations 2
+Min/max T:300 513
+
+Solving for solid region leftSolid
+DICPCG:  Solving for h, Initial residual = 0.16582579, Final residual = 8.6742119e-08, No Iterations 2
+Min/max T:300 300.00196
+
+Solving for solid region rightSolid
+DICPCG:  Solving for h, Initial residual = 0.20594091, Final residual = 4.138663e-07, No Iterations 2
+Min/max T:300 300
+ExecutionTime = 0.37 s  ClockTime = 131 s
+
+externalCoupled: writing data to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.out"
+externalCoupled: removing lock file
+externalCoupled: waiting for lock file to appear "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: wait time = 1
+externalCoupled: wait time = 2
+externalCoupled: wait time = 3
+externalCoupled: wait time = 4
+externalCoupled: wait time = 5
+externalCoupled: wait time = 6
+externalCoupled: wait time = 7
+externalCoupled: wait time = 8
+externalCoupled: wait time = 9
+externalCoupled: wait time = 10
+externalCoupled: found lock file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: removing data files written by master
+externalCoupled: reading data from "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.in"
+Region: bottomWater Courant Number mean: 0.0018116879 max: 0.0027190005
+Region: topAir Courant Number mean: 0.17147505 max: 0.17621373
+Region: heater Diffusion Number mean: 0.0041632011 max: 0.022821914
+Region: leftSolid Diffusion Number mean: 0.0041505258 max: 0.022821909
+Region: rightSolid Diffusion Number mean: 0.0041505258 max: 0.022821909
+deltaT = 0.011410956
+Time = 0.0771781
+
+
+Solving for fluid region bottomWater
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0025848081, Final residual = 1.8411387e-10, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.079887439, Final residual = 1.4601976e-09, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.002902034, Final residual = 2.5619318e-10, No Iterations 1
+DILUPBiCGStab:  Solving for h, Initial residual = 0.089564806, Final residual = 9.2560716e-10, No Iterations 1
+Min/max T:299.99999 309.12876
+GAMG:  Solving for p_rgh, Initial residual = 0.024478151, Final residual = 0.00024071548, No Iterations 2
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 1.1146395e-09, global = -7.183537e-11, cumulative = -8.0491968e-07
+GAMG:  Solving for p_rgh, Initial residual = 0.00024813347, Final residual = 5.9993828e-08, No Iterations 10
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 2.7088513e-13, global = -3.945128e-14, cumulative = -8.0491972e-07
+
+Solving for fluid region topAir
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.099193555, Final residual = 1.2997191e-11, No Iterations 3
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.21814939, Final residual = 1.7024738e-08, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.19301366, Final residual = 1.2623398e-08, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.069908989, Final residual = 6.951094e-09, No Iterations 2
+Min/max T:299.99999 314
+GAMG:  Solving for p_rgh, Initial residual = 0.025493329, Final residual = 0.0001265631, No Iterations 5
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 2.4016842e-07, global = -1.3601129e-08, cumulative = -6.0997602e-07
+GAMG:  Solving for p_rgh, Initial residual = 0.0096472815, Final residual = 5.4632758e-08, No Iterations 12
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 1.9054542e-10, global = 2.2632793e-11, cumulative = -6.0995339e-07
+
+Solving for solid region heater
+DICPCG:  Solving for h, Initial residual = 0.046476389, Final residual = 1.843477e-08, No Iterations 2
+Min/max T:300 514
+
+Solving for solid region leftSolid
+DICPCG:  Solving for h, Initial residual = 0.13613111, Final residual = 9.07337e-08, No Iterations 2
+Min/max T:300 300.00234
+
+Solving for solid region rightSolid
+DICPCG:  Solving for h, Initial residual = 0.17379015, Final residual = 3.5092131e-07, No Iterations 2
+Min/max T:300 300
+ExecutionTime = 0.39 s  ClockTime = 141 s
+
+externalCoupled: writing data to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.out"
+externalCoupled: removing lock file
+externalCoupled: waiting for lock file to appear "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: wait time = 1
+externalCoupled: wait time = 2
+externalCoupled: wait time = 3
+externalCoupled: wait time = 4
+externalCoupled: wait time = 5
+externalCoupled: wait time = 6
+externalCoupled: wait time = 7
+externalCoupled: wait time = 8
+externalCoupled: wait time = 9
+externalCoupled: wait time = 10
+externalCoupled: found lock file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: removing data files written by master
+externalCoupled: reading data from "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.in"
+Region: bottomWater Courant Number mean: 0.0018117391 max: 0.0027186457
+Region: topAir Courant Number mean: 0.17151157 max: 0.17729169
+Region: heater Diffusion Number mean: 0.0041632011 max: 0.022821914
+Region: leftSolid Diffusion Number mean: 0.0041505258 max: 0.022821909
+Region: rightSolid Diffusion Number mean: 0.0041505258 max: 0.022821909
+deltaT = 0.011410956
+Time = 0.088589
+
+
+Solving for fluid region bottomWater
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0024369315, Final residual = 1.739249e-10, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.070471141, Final residual = 1.2594673e-09, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0026572112, Final residual = 2.2759825e-10, No Iterations 1
+DILUPBiCGStab:  Solving for h, Initial residual = 0.076849489, Final residual = 7.9321789e-10, No Iterations 1
+Min/max T:299.99999 310.685
+GAMG:  Solving for p_rgh, Initial residual = 0.02265734, Final residual = 7.3724198e-05, No Iterations 3
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 3.2627236e-10, global = -2.7268988e-11, cumulative = -8.0494699e-07
+GAMG:  Solving for p_rgh, Initial residual = 8.0116028e-05, Final residual = 5.6859198e-08, No Iterations 9
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 2.4562649e-13, global = -3.5762921e-14, cumulative = -8.0494702e-07
+
+Solving for fluid region topAir
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.086518278, Final residual = 1.201716e-11, No Iterations 3
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.18632519, Final residual = 1.8108528e-08, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.17567319, Final residual = 1.1883929e-08, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.060130893, Final residual = 1.1361397e-08, No Iterations 2
+Min/max T:299.99999 315
+GAMG:  Solving for p_rgh, Initial residual = 0.022833923, Final residual = 0.00013052292, No Iterations 5
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 2.5546584e-07, global = -8.0863121e-09, cumulative = -6.180397e-07
+GAMG:  Solving for p_rgh, Initial residual = 0.0095789592, Final residual = 9.8285052e-08, No Iterations 11
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 2.7802765e-10, global = -6.2769142e-12, cumulative = -6.1804598e-07
+
+Solving for solid region heater
+DICPCG:  Solving for h, Initial residual = 0.039878159, Final residual = 1.7941971e-08, No Iterations 2
+Min/max T:300 515
+
+Solving for solid region leftSolid
+DICPCG:  Solving for h, Initial residual = 0.11647086, Final residual = 9.5326508e-08, No Iterations 2
+Min/max T:300 300.00272
+
+Solving for solid region rightSolid
+DICPCG:  Solving for h, Initial residual = 0.1502364, Final residual = 3.0626278e-07, No Iterations 2
+Min/max T:300 300
+ExecutionTime = 0.4 s  ClockTime = 151 s
+
+externalCoupled: writing data to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.out"
+externalCoupled: removing lock file
+externalCoupled: waiting for lock file to appear "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: wait time = 1
+externalCoupled: wait time = 2
+externalCoupled: wait time = 3
+externalCoupled: wait time = 4
+externalCoupled: wait time = 5
+externalCoupled: wait time = 6
+externalCoupled: wait time = 7
+externalCoupled: wait time = 8
+externalCoupled: wait time = 9
+externalCoupled: wait time = 10
+externalCoupled: found lock file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: removing data files written by master
+externalCoupled: reading data from "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.in"
+Region: bottomWater Courant Number mean: 0.0018117875 max: 0.0027183373
+Region: topAir Courant Number mean: 0.17155301 max: 0.17841086
+Region: heater Diffusion Number mean: 0.0041632011 max: 0.022821914
+Region: leftSolid Diffusion Number mean: 0.0041505258 max: 0.022821909
+Region: rightSolid Diffusion Number mean: 0.0041505258 max: 0.022821909
+deltaT = 0.011410956
+Time = 0.1
+
+
+Solving for fluid region bottomWater
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0023085611, Final residual = 1.6524201e-10, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.062672248, Final residual = 1.1072169e-09, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0024475612, Final residual = 2.0501003e-10, No Iterations 1
+DILUPBiCGStab:  Solving for h, Initial residual = 0.067151238, Final residual = 6.923506e-10, No Iterations 1
+Min/max T:299.99999 312.23084
+GAMG:  Solving for p_rgh, Initial residual = 0.021008275, Final residual = 6.9854437e-05, No Iterations 3
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 2.9647185e-10, global = -2.4325179e-11, cumulative = -8.0497135e-07
+GAMG:  Solving for p_rgh, Initial residual = 7.4975411e-05, Final residual = 5.3952588e-08, No Iterations 9
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 2.2390124e-13, global = -3.2566919e-14, cumulative = -8.0497138e-07
+
+Solving for fluid region topAir
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.076885693, Final residual = 1.141255e-11, No Iterations 3
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.16096364, Final residual = 1.9549894e-08, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.16233555, Final residual = 1.1157116e-08, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.053175934, Final residual = 2.2297173e-08, No Iterations 2
+Min/max T:299.99999 316
+GAMG:  Solving for p_rgh, Initial residual = 0.021677416, Final residual = 0.00013201375, No Iterations 5
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 2.6383668e-07, global = -8.6328985e-09, cumulative = -6.2667887e-07
+GAMG:  Solving for p_rgh, Initial residual = 0.009637828, Final residual = 5.2007774e-08, No Iterations 12
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 2.0666001e-10, global = 3.6087126e-11, cumulative = -6.2664279e-07
+
+Solving for solid region heater
+DICPCG:  Solving for h, Initial residual = 0.034928023, Final residual = 1.7586432e-08, No Iterations 2
+Min/max T:300 516
+
+Solving for solid region leftSolid
+DICPCG:  Solving for h, Initial residual = 0.10246628, Final residual = 1.0039346e-07, No Iterations 2
+Min/max T:300 300.00309
+
+Solving for solid region rightSolid
+DICPCG:  Solving for h, Initial residual = 0.13222862, Final residual = 2.7372622e-07, No Iterations 2
+Min/max T:300 300
+ExecutionTime = 0.43 s  ClockTime = 162 s
+
+externalCoupled: writing data to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.out"
+externalCoupled: removing lock file
+externalCoupled: waiting for lock file to appear "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: wait time = 1
+externalCoupled: wait time = 2
+externalCoupled: wait time = 3
+externalCoupled: wait time = 4
+externalCoupled: wait time = 5
+externalCoupled: wait time = 6
+externalCoupled: wait time = 7
+externalCoupled: wait time = 8
+externalCoupled: wait time = 9
+externalCoupled: wait time = 10
+externalCoupled: found lock file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: removing data files written by master
+externalCoupled: reading data from "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.in"
+Region: bottomWater Courant Number mean: 0.0018118333 max: 0.0027180708
+Region: topAir Courant Number mean: 0.17160536 max: 0.1795503
+Region: heater Diffusion Number mean: 0.0041632011 max: 0.022821914
+Region: leftSolid Diffusion Number mean: 0.0041505258 max: 0.022821909
+Region: rightSolid Diffusion Number mean: 0.0041505258 max: 0.022821909
+deltaT = 0.014285714
+Time = 0.114286
+
+
+Solving for fluid region bottomWater
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0027480985, Final residual = 3.0860289e-10, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.069437925, Final residual = 1.9193198e-09, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0028354391, Final residual = 3.6799555e-10, No Iterations 1
+DILUPBiCGStab:  Solving for h, Initial residual = 0.073447148, Final residual = 1.1853209e-09, No Iterations 1
+Min/max T:299.99999 313.76644
+GAMG:  Solving for p_rgh, Initial residual = 0.091105545, Final residual = 0.00037880585, No Iterations 3
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 2.255649e-09, global = -1.2344543e-10, cumulative = -8.0509482e-07
+GAMG:  Solving for p_rgh, Initial residual = 0.00042514189, Final residual = 5.6459473e-08, No Iterations 11
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 2.9921402e-13, global = -4.2759256e-14, cumulative = -8.0509487e-07
+
+Solving for fluid region topAir
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.088980987, Final residual = 7.272365e-11, No Iterations 3
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.19019262, Final residual = 5.7102147e-08, No Iterations 2
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.21676261, Final residual = 3.2006472e-08, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.059014032, Final residual = 2.9816858e-08, No Iterations 2
+Min/max T:299.99999 317
+GAMG:  Solving for p_rgh, Initial residual = 0.026061397, Final residual = 0.00016465823, No Iterations 5
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 4.9955684e-07, global = -3.1362828e-08, cumulative = -6.5800562e-07
+GAMG:  Solving for p_rgh, Initial residual = 0.014982646, Final residual = 7.7916904e-08, No Iterations 12
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 3.9952857e-10, global = 1.3992184e-10, cumulative = -6.5786569e-07
+
+Solving for solid region heater
+DICPCG:  Solving for h, Initial residual = 0.03854309, Final residual = 3.4949944e-08, No Iterations 2
+Min/max T:300 517
+
+Solving for solid region leftSolid
+DICPCG:  Solving for h, Initial residual = 0.11630432, Final residual = 2.1459233e-07, No Iterations 2
+Min/max T:300 300.00352
+
+Solving for solid region rightSolid
+DICPCG:  Solving for h, Initial residual = 0.14495974, Final residual = 4.8736633e-07, No Iterations 2
+Min/max T:300 300
+ExecutionTime = 0.45 s  ClockTime = 172 s
+
+externalCoupled: writing data to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.out"
+externalCoupled: removing lock file
+externalCoupled: waiting for lock file to appear "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: wait time = 1
+externalCoupled: wait time = 2
+externalCoupled: wait time = 3
+externalCoupled: wait time = 4
+externalCoupled: wait time = 5
+externalCoupled: wait time = 6
+externalCoupled: wait time = 7
+externalCoupled: wait time = 8
+externalCoupled: wait time = 9
+externalCoupled: wait time = 10
+externalCoupled: found lock file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: removing data files written by master
+externalCoupled: reading data from "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.in"
+Region: bottomWater Courant Number mean: 0.0022683471 max: 0.0034025781
+Region: topAir Courant Number mean: 0.2149232 max: 0.22653498
+Region: heater Diffusion Number mean: 0.0052120352 max: 0.028571432
+Region: leftSolid Diffusion Number mean: 0.0051961665 max: 0.028571426
+Region: rightSolid Diffusion Number mean: 0.0051961665 max: 0.028571426
+deltaT = 0.017142857
+Time = 0.131429
+
+
+Solving for fluid region bottomWater
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0027597373, Final residual = 4.4331891e-10, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.070173224, Final residual = 2.8403642e-09, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.002590646, Final residual = 4.8385466e-10, No Iterations 1
+DILUPBiCGStab:  Solving for h, Initial residual = 0.076480974, Final residual = 1.7752239e-09, No Iterations 1
+Min/max T:299.99999 315.67069
+GAMG:  Solving for p_rgh, Initial residual = 0.071410622, Final residual = 0.0002979219, No Iterations 3
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 2.1146599e-09, global = -1.1479137e-10, cumulative = -8.0520966e-07
+GAMG:  Solving for p_rgh, Initial residual = 0.00032787613, Final residual = 9.2894597e-08, No Iterations 10
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 6.0254841e-13, global = -8.4216019e-14, cumulative = -8.0520974e-07
+
+Solving for fluid region topAir
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.09707874, Final residual = 2.3095159e-10, No Iterations 3
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.21363208, Final residual = 3.3646968e-10, No Iterations 3
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.26524874, Final residual = 7.9406726e-08, No Iterations 2
+DILUPBiCGStab:  Solving for h, Initial residual = 0.061800846, Final residual = 2.2292887e-08, No Iterations 2
+Min/max T:299.99999 318
+GAMG:  Solving for p_rgh, Initial residual = 0.037986001, Final residual = 0.00020278597, No Iterations 5
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 8.443402e-07, global = -4.8821638e-08, cumulative = -7.0668733e-07
+GAMG:  Solving for p_rgh, Initial residual = 0.021740582, Final residual = 6.1955595e-08, No Iterations 13
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 5.3322638e-10, global = 2.543886e-10, cumulative = -7.0643294e-07
+
+Solving for solid region heater
+DICPCG:  Solving for h, Initial residual = 0.040315721, Final residual = 6.0693412e-08, No Iterations 2
+Min/max T:300 518
+
+Solving for solid region leftSolid
+DICPCG:  Solving for h, Initial residual = 0.12412689, Final residual = 3.9416078e-07, No Iterations 2
+Min/max T:300 300.00401
+
+Solving for solid region rightSolid
+DICPCG:  Solving for h, Initial residual = 0.15219239, Final residual = 8.0149442e-07, No Iterations 2
+Min/max T:300 300
+ExecutionTime = 0.47 s  ClockTime = 182 s
+
+externalCoupled: writing data to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.out"
+externalCoupled: removing lock file
+externalCoupled: waiting for lock file to appear "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: wait time = 1
+externalCoupled: wait time = 2
+externalCoupled: wait time = 3
+externalCoupled: wait time = 4
+externalCoupled: wait time = 5
+externalCoupled: wait time = 6
+externalCoupled: wait time = 7
+externalCoupled: wait time = 8
+externalCoupled: wait time = 9
+externalCoupled: wait time = 10
+externalCoupled: found lock file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: removing data files written by master
+externalCoupled: reading data from "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.in"
+Region: bottomWater Courant Number mean: 0.0027220903 max: 0.0040828798
+Region: topAir Courant Number mean: 0.25803829 max: 0.27437492
+Region: heater Diffusion Number mean: 0.0062544422 max: 0.034285718
+Region: leftSolid Diffusion Number mean: 0.0062353998 max: 0.034285711
+Region: rightSolid Diffusion Number mean: 0.0062353998 max: 0.034285711
+deltaT = 0.022857143
+Time = 0.154286
+
+
+Solving for fluid region bottomWater
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0032416472, Final residual = 9.1450255e-10, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.079451185, Final residual = 5.7568736e-09, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0027792761, Final residual = 1.0550111e-09, No Iterations 1
+DILUPBiCGStab:  Solving for h, Initial residual = 0.087299268, Final residual = 3.597249e-09, No Iterations 1
+Min/max T:299.99999 317.92775
+GAMG:  Solving for p_rgh, Initial residual = 0.094660277, Final residual = 0.00040019082, No Iterations 3
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 4.2003423e-09, global = -2.0729219e-10, cumulative = -8.0541704e-07
+GAMG:  Solving for p_rgh, Initial residual = 0.00046207571, Final residual = 5.7411123e-08, No Iterations 11
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 5.3411836e-13, global = -7.5220976e-14, cumulative = -8.0541711e-07
+
+Solving for fluid region topAir
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.11834577, Final residual = 9.5382705e-10, No Iterations 3
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.27065204, Final residual = 1.4801836e-09, No Iterations 3
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.3632525, Final residual = 1.1122534e-09, No Iterations 3
+DILUPBiCGStab:  Solving for h, Initial residual = 0.070754578, Final residual = 5.4285599e-08, No Iterations 2
+Min/max T:299.99999 319
+GAMG:  Solving for p_rgh, Initial residual = 0.06990825, Final residual = 0.00028325742, No Iterations 5
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 1.8776521e-06, global = -7.2483295e-08, cumulative = -7.7891624e-07
+GAMG:  Solving for p_rgh, Initial residual = 0.039454623, Final residual = 5.9337845e-08, No Iterations 14
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 9.1085258e-10, global = 5.11918e-10, cumulative = -7.7840432e-07
+
+Solving for solid region heater
+DICPCG:  Solving for h, Initial residual = 0.046262292, Final residual = 1.4645389e-07, No Iterations 2
+Min/max T:300 519
+
+Solving for solid region leftSolid
+DICPCG:  Solving for h, Initial residual = 0.14745586, Final residual = 9.9492176e-07, No Iterations 2
+Min/max T:300 300.00458
+
+Solving for solid region rightSolid
+DICPCG:  Solving for h, Initial residual = 0.17602434, Final residual = 1.7011447e-08, No Iterations 3
+Min/max T:300 300
+ExecutionTime = 0.49 s  ClockTime = 192 s
+
+externalCoupled: writing data to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.out"
+externalCoupled: removing lock file
+externalCoupled: waiting for lock file to appear "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: wait time = 1
+externalCoupled: wait time = 2
+externalCoupled: wait time = 3
+externalCoupled: wait time = 4
+externalCoupled: wait time = 5
+externalCoupled: wait time = 6
+externalCoupled: wait time = 7
+externalCoupled: wait time = 8
+externalCoupled: wait time = 9
+externalCoupled: wait time = 10
+externalCoupled: found lock file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: removing data files written by master
+externalCoupled: reading data from "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.in"
+Region: bottomWater Courant Number mean: 0.0036295635 max: 0.0054437254
+Region: topAir Courant Number mean: 0.34431478 max: 0.3707917
+Region: heater Diffusion Number mean: 0.0083392563 max: 0.045714291
+Region: leftSolid Diffusion Number mean: 0.0083138664 max: 0.045714281
+Region: rightSolid Diffusion Number mean: 0.0083138664 max: 0.045714281
+deltaT = 0.022857143
+Time = 0.177143
+
+
+Solving for fluid region bottomWater
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0028093406, Final residual = 7.7959126e-10, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.067124551, Final residual = 4.9188881e-09, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0020856593, Final residual = 8.3933457e-10, No Iterations 1
+DILUPBiCGStab:  Solving for h, Initial residual = 0.075269492, Final residual = 3.099387e-09, No Iterations 1
+Min/max T:299.99999 320.88352
+GAMG:  Solving for p_rgh, Initial residual = 0.013343854, Final residual = 4.51981e-05, No Iterations 3
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 4.1511581e-10, global = -3.4604337e-11, cumulative = -8.0545171e-07
+GAMG:  Solving for p_rgh, Initial residual = 5.1160181e-05, Final residual = 7.6884294e-08, No Iterations 8
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 6.9672402e-13, global = -1.006398e-13, cumulative = -8.0545182e-07
+
+Solving for fluid region topAir
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.1004083, Final residual = 9.9244977e-10, No Iterations 3
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.23131979, Final residual = 1.4234586e-09, No Iterations 3
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.33392223, Final residual = 7.4479219e-10, No Iterations 3
+DILUPBiCGStab:  Solving for h, Initial residual = 0.060742733, Final residual = 4.2904557e-08, No Iterations 2
+Min/max T:299.99999 320
+GAMG:  Solving for p_rgh, Initial residual = 0.077088042, Final residual = 0.00069832649, No Iterations 4
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 4.366088e-06, global = -1.2116869e-07, cumulative = -8.9957301e-07
+GAMG:  Solving for p_rgh, Initial residual = 0.041652453, Final residual = 9.6728853e-08, No Iterations 13
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 1.0719603e-09, global = 3.8626978e-10, cumulative = -8.9918674e-07
+
+Solving for solid region heater
+DICPCG:  Solving for h, Initial residual = 0.039612077, Final residual = 1.4304077e-07, No Iterations 2
+Min/max T:300 520
+
+Solving for solid region leftSolid
+DICPCG:  Solving for h, Initial residual = 0.12639047, Final residual = 9.772376e-07, No Iterations 2
+Min/max T:300 300.00511
+
+Solving for solid region rightSolid
+DICPCG:  Solving for h, Initial residual = 0.15580327, Final residual = 1.5995918e-08, No Iterations 3
+Min/max T:300 300
+ExecutionTime = 0.5 s  ClockTime = 202 s
+
+externalCoupled: writing data to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.out"
+externalCoupled: removing lock file
+externalCoupled: waiting for lock file to appear "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: wait time = 1
+externalCoupled: wait time = 2
+externalCoupled: wait time = 3
+externalCoupled: wait time = 4
+externalCoupled: wait time = 5
+externalCoupled: wait time = 6
+externalCoupled: wait time = 7
+externalCoupled: wait time = 8
+externalCoupled: wait time = 9
+externalCoupled: wait time = 10
+externalCoupled: found lock file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: removing data files written by master
+externalCoupled: reading data from "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.in"
+Region: bottomWater Courant Number mean: 0.0036296704 max: 0.0054436857
+Region: topAir Courant Number mean: 0.34460455 max: 0.37548694
+Region: heater Diffusion Number mean: 0.0083392563 max: 0.045714291
+Region: leftSolid Diffusion Number mean: 0.0083138664 max: 0.045714281
+Region: rightSolid Diffusion Number mean: 0.0083138664 max: 0.045714281
+deltaT = 0.022857143
+Time = 0.2
+
+
+Solving for fluid region bottomWater
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0027435104, Final residual = 7.5982417e-10, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.060640163, Final residual = 4.3627501e-09, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.001991105, Final residual = 7.820726e-10, No Iterations 1
+DILUPBiCGStab:  Solving for h, Initial residual = 0.065943925, Final residual = 2.7136932e-09, No Iterations 1
+Min/max T:299.99999 323.78707
+GAMG:  Solving for p_rgh, Initial residual = 0.01245884, Final residual = 4.3121026e-05, No Iterations 3
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 3.8687718e-10, global = -3.2074751e-11, cumulative = -8.0548389e-07
+GAMG:  Solving for p_rgh, Initial residual = 4.8299155e-05, Final residual = 7.3261834e-08, No Iterations 8
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 6.4901729e-13, global = -9.3762832e-14, cumulative = -8.0548398e-07
+
+Solving for fluid region topAir
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.087128133, Final residual = 8.7265601e-10, No Iterations 3
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.20249007, Final residual = 1.4420613e-09, No Iterations 3
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.3100015, Final residual = 6.5728318e-10, No Iterations 3
+DILUPBiCGStab:  Solving for h, Initial residual = 0.053628539, Final residual = 5.0421876e-08, No Iterations 2
+Min/max T:299.99999 321
+GAMG:  Solving for p_rgh, Initial residual = 0.081955658, Final residual = 0.00069842082, No Iterations 4
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 4.0685228e-06, global = -4.4978122e-08, cumulative = -9.4416486e-07
+GAMG:  Solving for p_rgh, Initial residual = 0.044405611, Final residual = 6.2647529e-08, No Iterations 14
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 8.8087719e-10, global = 3.7030591e-10, cumulative = -9.4379456e-07
+
+Solving for solid region heater
+DICPCG:  Solving for h, Initial residual = 0.0346311, Final residual = 1.4114037e-07, No Iterations 2
+Min/max T:300 521
+
+Solving for solid region leftSolid
+DICPCG:  Solving for h, Initial residual = 0.11112793, Final residual = 9.4820273e-07, No Iterations 2
+Min/max T:300 300.00561
+
+Solving for solid region rightSolid
+DICPCG:  Solving for h, Initial residual = 0.1417235, Final residual = 1.6534969e-08, No Iterations 3
+Min/max T:300 300
+ExecutionTime = 0.53 s  ClockTime = 212 s
+
+externalCoupled: writing data to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.out"
+externalCoupled: removing lock file
+externalCoupled: waiting for lock file to appear "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: wait time = 1
+externalCoupled: wait time = 2
+externalCoupled: wait time = 3
+externalCoupled: wait time = 4
+externalCoupled: wait time = 5
+externalCoupled: wait time = 6
+externalCoupled: wait time = 7
+externalCoupled: wait time = 8
+externalCoupled: wait time = 9
+externalCoupled: wait time = 10
+externalCoupled: found lock file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: removing data files written by master
+externalCoupled: reading data from "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.in"
+Region: bottomWater Courant Number mean: 0.0036297744 max: 0.0054437055
+Region: topAir Courant Number mean: 0.34490489 max: 0.37973992
+Region: heater Diffusion Number mean: 0.0083392563 max: 0.045714291
+Region: leftSolid Diffusion Number mean: 0.0083138664 max: 0.045714281
+Region: rightSolid Diffusion Number mean: 0.0083138664 max: 0.045714281
+deltaT = 0.025
+Time = 0.225
+
+
+Solving for fluid region bottomWater
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0029350338, Final residual = 9.6948184e-10, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.059766709, Final residual = 5.0728416e-09, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0020832944, Final residual = 9.9334502e-10, No Iterations 1
+DILUPBiCGStab:  Solving for h, Initial residual = 0.063698929, Final residual = 3.1333772e-09, No Iterations 1
+Min/max T:299.99999 326.63974
+GAMG:  Solving for p_rgh, Initial residual = 0.032674816, Final residual = 0.00013657137, No Iterations 3
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 1.4005854e-09, global = -7.7169343e-11, cumulative = -8.0556115e-07
+GAMG:  Solving for p_rgh, Initial residual = 0.0001475071, Final residual = 8.80825e-08, No Iterations 9
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 8.6792729e-13, global = -1.1846301e-13, cumulative = -8.0556127e-07
+
+Solving for fluid region topAir
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.085101654, Final residual = 6.1901925e-10, No Iterations 3
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.20463133, Final residual = 2.2331209e-09, No Iterations 3
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.3276976, Final residual = 1.1856983e-09, No Iterations 3
+DILUPBiCGStab:  Solving for h, Initial residual = 0.052584459, Final residual = 8.9613477e-10, No Iterations 3
+Min/max T:299.99999 322
+GAMG:  Solving for p_rgh, Initial residual = 0.098692038, Final residual = 0.00079294008, No Iterations 4
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 5.0291309e-06, global = -7.9801196e-08, cumulative = -1.0235958e-06
+GAMG:  Solving for p_rgh, Initial residual = 0.057171697, Final residual = 8.5694127e-08, No Iterations 14
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 1.1540644e-09, global = 5.2256313e-10, cumulative = -1.0230732e-06
+
+Solving for solid region heater
+DICPCG:  Solving for h, Initial residual = 0.033509562, Final residual = 1.8417915e-07, No Iterations 2
+Min/max T:300 522
+
+Solving for solid region leftSolid
+DICPCG:  Solving for h, Initial residual = 0.10956911, Final residual = 1.3436749e-08, No Iterations 3
+Min/max T:300 300.00611
+
+Solving for solid region rightSolid
+DICPCG:  Solving for h, Initial residual = 0.14367658, Final residual = 2.4722067e-08, No Iterations 3
+Min/max T:300 300
+ExecutionTime = 0.55 s  ClockTime = 224 s
+
+externalCoupled: writing data to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.out"
+externalCoupled: removing lock file
+externalCoupled: waiting for lock file to appear "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: wait time = 1
+externalCoupled: wait time = 2
+externalCoupled: wait time = 3
+externalCoupled: wait time = 4
+externalCoupled: wait time = 5
+externalCoupled: wait time = 6
+externalCoupled: wait time = 7
+externalCoupled: wait time = 8
+externalCoupled: wait time = 9
+externalCoupled: found lock file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: removing data files written by master
+externalCoupled: reading data from "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.in"
+Region: bottomWater Courant Number mean: 0.0039701827 max: 0.0059541688
+Region: topAir Courant Number mean: 0.37759441 max: 0.42135425
+Region: heater Diffusion Number mean: 0.0091210615 max: 0.050000006
+Region: leftSolid Diffusion Number mean: 0.0090932914 max: 0.049999995
+Region: rightSolid Diffusion Number mean: 0.0090932914 max: 0.049999995
+deltaT = 0.025
+Time = 0.25
+
+
+Solving for fluid region bottomWater
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0028060268, Final residual = 9.2123362e-10, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.053126631, Final residual = 4.5102837e-09, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0018870565, Final residual = 1.0900325e-09, No Iterations 1
+DILUPBiCGStab:  Solving for h, Initial residual = 0.056752195, Final residual = 2.7903025e-09, No Iterations 1
+Min/max T:299.99999 329.69917
+GAMG:  Solving for p_rgh, Initial residual = 0.010725419, Final residual = 3.7450494e-05, No Iterations 3
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 3.6567953e-10, global = -3.0623753e-11, cumulative = -8.055919e-07
+GAMG:  Solving for p_rgh, Initial residual = 4.210398e-05, Final residual = 6.3891127e-08, No Iterations 8
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 6.1715982e-13, global = -8.9404966e-14, cumulative = -8.0559198e-07
+
+Solving for fluid region topAir
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.075749666, Final residual = 6.8173067e-10, No Iterations 3
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.18303272, Final residual = 1.9181336e-09, No Iterations 3
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.30602101, Final residual = 1.2723153e-09, No Iterations 3
+DILUPBiCGStab:  Solving for h, Initial residual = 0.047615046, Final residual = 9.2501909e-10, No Iterations 3
+Min/max T:299.99999 323
+GAMG:  Solving for p_rgh, Initial residual = 0.1041537, Final residual = 0.00083839245, No Iterations 4
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 4.9593235e-06, global = -1.3760141e-07, cumulative = -1.1606746e-06
+GAMG:  Solving for p_rgh, Initial residual = 0.061971566, Final residual = 9.5528932e-08, No Iterations 14
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 1.2227433e-09, global = 5.8456221e-10, cumulative = -1.16009e-06
+
+Solving for solid region heater
+DICPCG:  Solving for h, Initial residual = 0.029860359, Final residual = 1.8277234e-07, No Iterations 2
+Min/max T:300 523
+
+Solving for solid region leftSolid
+DICPCG:  Solving for h, Initial residual = 0.099088467, Final residual = 1.2817836e-08, No Iterations 3
+Min/max T:300 300.00659
+
+Solving for solid region rightSolid
+DICPCG:  Solving for h, Initial residual = 0.13499362, Final residual = 2.7094988e-08, No Iterations 3
+Min/max T:300 300
+ExecutionTime = 0.56 s  ClockTime = 235 s
+
+externalCoupled: writing data to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.out"
+externalCoupled: removing lock file
+externalCoupled: waiting for lock file to appear "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: wait time = 1
+externalCoupled: wait time = 2
+externalCoupled: wait time = 3
+externalCoupled: wait time = 4
+externalCoupled: wait time = 5
+externalCoupled: wait time = 6
+externalCoupled: wait time = 7
+externalCoupled: wait time = 8
+externalCoupled: wait time = 9
+externalCoupled: found lock file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: removing data files written by master
+externalCoupled: reading data from "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.in"
+Region: bottomWater Courant Number mean: 0.0039702972 max: 0.0059543355
+Region: topAir Courant Number mean: 0.37800711 max: 0.42685481
+Region: heater Diffusion Number mean: 0.0091210615 max: 0.050000006
+Region: leftSolid Diffusion Number mean: 0.0090932914 max: 0.049999995
+Region: rightSolid Diffusion Number mean: 0.0090932914 max: 0.049999995
+deltaT = 0.025
+Time = 0.275
+
+
+Solving for fluid region bottomWater
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0027625031, Final residual = 9.049046e-10, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.048584294, Final residual = 4.095821e-09, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0018249783, Final residual = 1.1227982e-09, No Iterations 1
+DILUPBiCGStab:  Solving for h, Initial residual = 0.051105996, Final residual = 2.5116046e-09, No Iterations 1
+Min/max T:299.99999 332.69962
+GAMG:  Solving for p_rgh, Initial residual = 0.01011444, Final residual = 3.5653045e-05, No Iterations 3
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 3.4159706e-10, global = -2.8548822e-11, cumulative = -8.0562053e-07
+GAMG:  Solving for p_rgh, Initial residual = 3.9812932e-05, Final residual = 6.0743276e-08, No Iterations 8
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 5.7605105e-13, global = -8.3457198e-14, cumulative = -8.0562062e-07
+
+Solving for fluid region topAir
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.068141435, Final residual = 5.7186864e-10, No Iterations 3
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.16783629, Final residual = 1.5123878e-09, No Iterations 3
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.28789196, Final residual = 1.4619381e-09, No Iterations 3
+DILUPBiCGStab:  Solving for h, Initial residual = 0.043720935, Final residual = 9.9790118e-10, No Iterations 3
+Min/max T:299.99999 324
+GAMG:  Solving for p_rgh, Initial residual = 0.11079409, Final residual = 0.00092410123, No Iterations 4
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 5.1150822e-06, global = -1.2322554e-07, cumulative = -1.2833156e-06
+GAMG:  Solving for p_rgh, Initial residual = 0.067351125, Final residual = 7.1209742e-08, No Iterations 15
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 1.0960091e-09, global = 5.4737956e-10, cumulative = -1.2827682e-06
+
+Solving for solid region heater
+DICPCG:  Solving for h, Initial residual = 0.026927333, Final residual = 1.8180759e-07, No Iterations 2
+Min/max T:300 524
+
+Solving for solid region leftSolid
+DICPCG:  Solving for h, Initial residual = 0.090729155, Final residual = 1.2199847e-08, No Iterations 3
+Min/max T:300 300.00706
+
+Solving for solid region rightSolid
+DICPCG:  Solving for h, Initial residual = 0.14089482, Final residual = 3.0623276e-08, No Iterations 3
+Min/max T:300 300
+ExecutionTime = 0.59 s  ClockTime = 244 s
+
+externalCoupled: writing data to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.out"
+externalCoupled: removing lock file
+externalCoupled: waiting for lock file to appear "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: wait time = 1
+externalCoupled: wait time = 2
+externalCoupled: wait time = 3
+externalCoupled: wait time = 4
+externalCoupled: wait time = 5
+externalCoupled: wait time = 6
+externalCoupled: wait time = 7
+externalCoupled: wait time = 8
+externalCoupled: wait time = 9
+externalCoupled: wait time = 10
+externalCoupled: found lock file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: removing data files written by master
+externalCoupled: reading data from "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.in"
+Region: bottomWater Courant Number mean: 0.0039704093 max: 0.0059545437
+Region: topAir Courant Number mean: 0.37843198 max: 0.43536146
+Region: heater Diffusion Number mean: 0.0091210615 max: 0.050000006
+Region: leftSolid Diffusion Number mean: 0.0090932914 max: 0.049999995
+Region: rightSolid Diffusion Number mean: 0.0090932914 max: 0.049999995
+deltaT = 0.025
+Time = 0.3
+
+
+Solving for fluid region bottomWater
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0027228089, Final residual = 8.8957774e-10, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.044631491, Final residual = 3.752155e-09, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.001766955, Final residual = 1.1492683e-09, No Iterations 1
+DILUPBiCGStab:  Solving for h, Initial residual = 0.046441332, Final residual = 2.281472e-09, No Iterations 1
+Min/max T:299.99999 335.64279
+GAMG:  Solving for p_rgh, Initial residual = 0.0095875346, Final residual = 3.389158e-05, No Iterations 3
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 3.1886964e-10, global = -2.660604e-11, cumulative = -8.0564722e-07
+GAMG:  Solving for p_rgh, Initial residual = 3.7662478e-05, Final residual = 5.751905e-08, No Iterations 8
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 5.358422e-13, global = -7.7730807e-14, cumulative = -8.056473e-07
+
+Solving for fluid region topAir
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.061943318, Final residual = 3.9554461e-10, No Iterations 3
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.1550375, Final residual = 1.0382677e-09, No Iterations 3
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.27214354, Final residual = 1.9975509e-09, No Iterations 3
+DILUPBiCGStab:  Solving for h, Initial residual = 0.040625247, Final residual = 1.1268827e-09, No Iterations 3
+Min/max T:299.99999 325
+GAMG:  Solving for p_rgh, Initial residual = 0.11530629, Final residual = 0.0010274012, No Iterations 4
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 5.3584883e-06, global = -1.4525491e-07, cumulative = -1.4280231e-06
+GAMG:  Solving for p_rgh, Initial residual = 0.072715424, Final residual = 8.2291873e-08, No Iterations 15
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 1.1314783e-09, global = 5.8366525e-10, cumulative = -1.4274395e-06
+
+Solving for solid region heater
+DICPCG:  Solving for h, Initial residual = 0.024519161, Final residual = 1.8113741e-07, No Iterations 2
+Min/max T:300 525
+
+Solving for solid region leftSolid
+DICPCG:  Solving for h, Initial residual = 0.08384278, Final residual = 1.1582934e-08, No Iterations 3
+Min/max T:300 300.00752
+
+Solving for solid region rightSolid
+DICPCG:  Solving for h, Initial residual = 0.16679129, Final residual = 2.7622702e-08, No Iterations 3
+Min/max T:300 300
+ExecutionTime = 0.62 s  ClockTime = 254 s
+
+externalCoupled: writing data to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.out"
+externalCoupled: removing lock file
+externalCoupled: waiting for lock file to appear "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: wait time = 1
+externalCoupled: wait time = 2
+externalCoupled: wait time = 3
+externalCoupled: wait time = 4
+externalCoupled: wait time = 5
+externalCoupled: wait time = 6
+externalCoupled: wait time = 7
+externalCoupled: wait time = 8
+externalCoupled: wait time = 9
+externalCoupled: wait time = 10
+externalCoupled: wait time = 11
+externalCoupled: found lock file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: removing data files written by master
+externalCoupled: reading data from "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.in"
+Region: bottomWater Courant Number mean: 0.0039705204 max: 0.0059547866
+Region: topAir Courant Number mean: 0.37881465 max: 0.4430553
+Region: heater Diffusion Number mean: 0.0091210615 max: 0.050000006
+Region: leftSolid Diffusion Number mean: 0.0090932914 max: 0.049999995
+Region: rightSolid Diffusion Number mean: 0.0090932914 max: 0.049999995
+deltaT = 0.025
+Time = 0.325
+
+
+Solving for fluid region bottomWater
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0026878881, Final residual = 8.7615878e-10, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.041218876, Final residual = 3.46352e-09, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0017095521, Final residual = 1.1691755e-09, No Iterations 1
+DILUPBiCGStab:  Solving for h, Initial residual = 0.042525166, Final residual = 2.088363e-09, No Iterations 1
+Min/max T:299.99999 338.53028
+GAMG:  Solving for p_rgh, Initial residual = 0.0090624323, Final residual = 3.2223675e-05, No Iterations 3
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 2.9792822e-10, global = -2.484389e-11, cumulative = -8.0567214e-07
+GAMG:  Solving for p_rgh, Initial residual = 3.5670336e-05, Final residual = 5.4633142e-08, No Iterations 8
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 5.0038405e-13, global = -7.2567712e-14, cumulative = -8.0567222e-07
+
+Solving for fluid region topAir
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.056757601, Final residual = 3.807268e-10, No Iterations 3
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.14430327, Final residual = 1.6058148e-09, No Iterations 3
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.25887162, Final residual = 2.5774804e-09, No Iterations 3
+DILUPBiCGStab:  Solving for h, Initial residual = 0.03807106, Final residual = 1.3803319e-09, No Iterations 3
+Min/max T:299.99999 326
+GAMG:  Solving for p_rgh, Initial residual = 0.12021158, Final residual = 0.0011516464, No Iterations 4
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 5.7256889e-06, global = -1.6489486e-07, cumulative = -1.5923343e-06
+GAMG:  Solving for p_rgh, Initial residual = 0.078545538, Final residual = 9.2119332e-08, No Iterations 15
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 1.1727865e-09, global = 6.0015547e-10, cumulative = -1.5917342e-06
+
+Solving for solid region heater
+DICPCG:  Solving for h, Initial residual = 0.022507084, Final residual = 1.8068924e-07, No Iterations 2
+Min/max T:300 526
+
+Solving for solid region leftSolid
+DICPCG:  Solving for h, Initial residual = 0.07822509, Final residual = 1.1001176e-08, No Iterations 3
+Min/max T:300 300.00797
+
+Solving for solid region rightSolid
+DICPCG:  Solving for h, Initial residual = 0.19958614, Final residual = 2.2479496e-08, No Iterations 3
+Min/max T:300 300
+ExecutionTime = 0.64 s  ClockTime = 266 s
+
+externalCoupled: writing data to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.out"
+externalCoupled: removing lock file
+externalCoupled: waiting for lock file to appear "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: wait time = 1
+externalCoupled: wait time = 2
+externalCoupled: wait time = 3
+externalCoupled: wait time = 4
+externalCoupled: wait time = 5
+externalCoupled: wait time = 6
+externalCoupled: wait time = 7
+externalCoupled: wait time = 8
+externalCoupled: wait time = 9
+externalCoupled: found lock file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: removing data files written by master
+externalCoupled: reading data from "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.in"
+Region: bottomWater Courant Number mean: 0.0039706355 max: 0.0059550564
+Region: topAir Courant Number mean: 0.37920804 max: 0.44976103
+Region: heater Diffusion Number mean: 0.0091210615 max: 0.050000006
+Region: leftSolid Diffusion Number mean: 0.0090932914 max: 0.049999995
+Region: rightSolid Diffusion Number mean: 0.0090932914 max: 0.049999995
+deltaT = 0.025
+Time = 0.35
+
+
+Solving for fluid region bottomWater
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0026562409, Final residual = 8.6402662e-10, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.038256402, Final residual = 3.207637e-09, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0016572231, Final residual = 1.1823067e-09, No Iterations 1
+DILUPBiCGStab:  Solving for h, Initial residual = 0.039198395, Final residual = 1.9243955e-09, No Iterations 1
+Min/max T:299.99999 341.36369
+GAMG:  Solving for p_rgh, Initial residual = 0.0086624989, Final residual = 3.0603695e-05, No Iterations 3
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 2.7826572e-10, global = -2.3207163e-11, cumulative = -8.0569542e-07
+GAMG:  Solving for p_rgh, Initial residual = 3.3840192e-05, Final residual = 5.1812299e-08, No Iterations 8
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 4.6687812e-13, global = -6.7708845e-14, cumulative = -8.0569549e-07
+
+Solving for fluid region topAir
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.052367754, Final residual = 4.2943309e-10, No Iterations 3
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.13636483, Final residual = 2.1466806e-09, No Iterations 3
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.24804484, Final residual = 8.7955367e-10, No Iterations 3
+DILUPBiCGStab:  Solving for h, Initial residual = 0.035950907, Final residual = 1.7134389e-09, No Iterations 3
+Min/max T:299.99999 327
+GAMG:  Solving for p_rgh, Initial residual = 0.12713128, Final residual = 0.00056522773, No Iterations 5
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 2.7104503e-06, global = -1.2740219e-07, cumulative = -1.7191363e-06
+GAMG:  Solving for p_rgh, Initial residual = 0.084694407, Final residual = 7.5837423e-08, No Iterations 16
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 1.2471241e-09, global = 8.6428282e-10, cumulative = -1.7182721e-06
+
+Solving for solid region heater
+DICPCG:  Solving for h, Initial residual = 0.020801272, Final residual = 1.804609e-07, No Iterations 2
+Min/max T:300 527
+
+Solving for solid region leftSolid
+DICPCG:  Solving for h, Initial residual = 0.073557519, Final residual = 9.6196214e-07, No Iterations 2
+Min/max T:300 300.00841
+
+Solving for solid region rightSolid
+DICPCG:  Solving for h, Initial residual = 0.21811787, Final residual = 1.8840712e-08, No Iterations 3
+Min/max T:300 300
+ExecutionTime = 0.66 s  ClockTime = 275 s
+
+externalCoupled: writing data to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.out"
+externalCoupled: removing lock file
+externalCoupled: waiting for lock file to appear "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: wait time = 1
+externalCoupled: wait time = 2
+externalCoupled: wait time = 3
+externalCoupled: wait time = 4
+externalCoupled: wait time = 5
+externalCoupled: wait time = 6
+externalCoupled: wait time = 7
+externalCoupled: wait time = 8
+externalCoupled: wait time = 9
+externalCoupled: wait time = 10
+externalCoupled: found lock file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: removing data files written by master
+externalCoupled: reading data from "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.in"
+Region: bottomWater Courant Number mean: 0.0039707495 max: 0.0059553522
+Region: topAir Courant Number mean: 0.37965232 max: 0.4584045
+Region: heater Diffusion Number mean: 0.0091210615 max: 0.050000006
+Region: leftSolid Diffusion Number mean: 0.0090932914 max: 0.049999995
+Region: rightSolid Diffusion Number mean: 0.0090932914 max: 0.049999995
+deltaT = 0.025
+Time = 0.375
+
+
+Solving for fluid region bottomWater
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0026286001, Final residual = 8.5268408e-10, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.035642972, Final residual = 2.9880008e-09, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0016070484, Final residual = 1.1896399e-09, No Iterations 1
+DILUPBiCGStab:  Solving for h, Initial residual = 0.036340222, Final residual = 1.7835895e-09, No Iterations 1
+Min/max T:299.99999 344.14453
+GAMG:  Solving for p_rgh, Initial residual = 0.0082492476, Final residual = 2.9105111e-05, No Iterations 3
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 2.6044316e-10, global = -2.1754179e-11, cumulative = -8.0571725e-07
+GAMG:  Solving for p_rgh, Initial residual = 3.215077e-05, Final residual = 4.9193827e-08, No Iterations 8
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 4.3643147e-13, global = -6.3320611e-14, cumulative = -8.0571731e-07
+
+Solving for fluid region topAir
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.04871184, Final residual = 4.6017393e-10, No Iterations 3
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.12958789, Final residual = 2.2336626e-09, No Iterations 3
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.23897552, Final residual = 2.526268e-09, No Iterations 3
+DILUPBiCGStab:  Solving for h, Initial residual = 0.034143012, Final residual = 1.6149581e-09, No Iterations 3
+Min/max T:299.99999 328
+GAMG:  Solving for p_rgh, Initial residual = 0.13173808, Final residual = 0.00061738781, No Iterations 5
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 2.8789958e-06, global = -1.4376306e-07, cumulative = -1.8620351e-06
+GAMG:  Solving for p_rgh, Initial residual = 0.078172593, Final residual = 6.8658711e-08, No Iterations 16
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 1.2873815e-09, global = 9.3034166e-10, cumulative = -1.8611048e-06
+
+Solving for solid region heater
+DICPCG:  Solving for h, Initial residual = 0.01933714, Final residual = 1.8034928e-07, No Iterations 2
+Min/max T:300 528
+
+Solving for solid region leftSolid
+DICPCG:  Solving for h, Initial residual = 0.069618154, Final residual = 9.2073493e-07, No Iterations 2
+Min/max T:300 300.00886
+
+Solving for solid region rightSolid
+DICPCG:  Solving for h, Initial residual = 0.21246053, Final residual = 1.5983987e-08, No Iterations 3
+Min/max T:300 300
+ExecutionTime = 0.68 s  ClockTime = 285 s
+
+externalCoupled: writing data to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.out"
+externalCoupled: removing lock file
+externalCoupled: waiting for lock file to appear "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: wait time = 1
+externalCoupled: wait time = 2
+externalCoupled: wait time = 3
+externalCoupled: wait time = 4
+externalCoupled: wait time = 5
+externalCoupled: wait time = 6
+externalCoupled: wait time = 7
+externalCoupled: wait time = 8
+externalCoupled: wait time = 9
+externalCoupled: wait time = 10
+externalCoupled: found lock file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: removing data files written by master
+externalCoupled: reading data from "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.in"
+Region: bottomWater Courant Number mean: 0.0039708626 max: 0.0059556684
+Region: topAir Courant Number mean: 0.38006417 max: 0.46622164
+Region: heater Diffusion Number mean: 0.0091210615 max: 0.050000006
+Region: leftSolid Diffusion Number mean: 0.0090932914 max: 0.049999995
+Region: rightSolid Diffusion Number mean: 0.0090932914 max: 0.049999995
+deltaT = 0.025
+Time = 0.4
+
+
+Solving for fluid region bottomWater
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.002603825, Final residual = 8.4205228e-10, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.033348852, Final residual = 2.7915128e-09, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0015596259, Final residual = 1.1918705e-09, No Iterations 1
+DILUPBiCGStab:  Solving for h, Initial residual = 0.033859951, Final residual = 1.6614565e-09, No Iterations 1
+Min/max T:299.99999 346.87429
+GAMG:  Solving for p_rgh, Initial residual = 0.0077353611, Final residual = 2.7681299e-05, No Iterations 3
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 2.439668e-10, global = -2.0333766e-11, cumulative = -8.0573764e-07
+GAMG:  Solving for p_rgh, Initial residual = 3.0445094e-05, Final residual = 4.6864853e-08, No Iterations 8
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 4.0969793e-13, global = -5.9432054e-14, cumulative = -8.057377e-07
+
+Solving for fluid region topAir
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.045536467, Final residual = 4.6497061e-10, No Iterations 3
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.12386086, Final residual = 2.022557e-09, No Iterations 3
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.23077995, Final residual = 2.682972e-09, No Iterations 3
+DILUPBiCGStab:  Solving for h, Initial residual = 0.032581719, Final residual = 6.701669e-10, No Iterations 3
+Min/max T:299.99999 329
+GAMG:  Solving for p_rgh, Initial residual = 0.12496141, Final residual = 0.00060486579, No Iterations 5
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 3.009259e-06, global = -1.5591415e-07, cumulative = -2.0170189e-06
+GAMG:  Solving for p_rgh, Initial residual = 0.07058607, Final residual = 8.7777543e-08, No Iterations 15
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 1.468817e-09, global = 1.0092551e-09, cumulative = -2.0160097e-06
+
+Solving for solid region heater
+DICPCG:  Solving for h, Initial residual = 0.018067065, Final residual = 1.8032286e-07, No Iterations 2
+Min/max T:300 529
+
+Solving for solid region leftSolid
+DICPCG:  Solving for h, Initial residual = 0.066245901, Final residual = 8.8260551e-07, No Iterations 2
+Min/max T:300 300.00931
+
+Solving for solid region rightSolid
+DICPCG:  Solving for h, Initial residual = 0.20007329, Final residual = 1.4935718e-08, No Iterations 3
+Min/max T:300 300
+ExecutionTime = 0.71 s  ClockTime = 295 s
+
+externalCoupled: writing data to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.out"
+externalCoupled: removing lock file
+externalCoupled: waiting for lock file to appear "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: wait time = 1
+externalCoupled: wait time = 2
+externalCoupled: wait time = 3
+externalCoupled: wait time = 4
+externalCoupled: wait time = 5
+externalCoupled: wait time = 6
+externalCoupled: wait time = 7
+externalCoupled: wait time = 8
+externalCoupled: wait time = 9
+externalCoupled: wait time = 10
+externalCoupled: found lock file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: removing data files written by master
+externalCoupled: reading data from "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.in"
+Region: bottomWater Courant Number mean: 0.0039709741 max: 0.005956004
+Region: topAir Courant Number mean: 0.38042848 max: 0.47298715
+Region: heater Diffusion Number mean: 0.0091210615 max: 0.050000006
+Region: leftSolid Diffusion Number mean: 0.0090932914 max: 0.049999995
+Region: rightSolid Diffusion Number mean: 0.0090932914 max: 0.049999995
+deltaT = 0.025
+Time = 0.425
+
+
+Solving for fluid region bottomWater
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0025799464, Final residual = 8.318471e-10, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.03131859, Final residual = 2.61948e-09, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0015176446, Final residual = 1.1920914e-09, No Iterations 1
+DILUPBiCGStab:  Solving for h, Initial residual = 0.031688514, Final residual = 1.5545789e-09, No Iterations 1
+Min/max T:299.99999 349.55442
+GAMG:  Solving for p_rgh, Initial residual = 0.0073735387, Final residual = 2.6370202e-05, No Iterations 3
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 2.2907935e-10, global = -1.9153773e-11, cumulative = -8.0575686e-07
+GAMG:  Solving for p_rgh, Initial residual = 2.8946503e-05, Final residual = 9.575652e-08, No Iterations 7
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 8.2540545e-13, global = -1.1730107e-13, cumulative = -8.0575697e-07
+
+Solving for fluid region topAir
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.042728486, Final residual = 4.5120518e-10, No Iterations 3
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.11858976, Final residual = 1.7533117e-09, No Iterations 3
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.22433746, Final residual = 2.3321632e-09, No Iterations 3
+DILUPBiCGStab:  Solving for h, Initial residual = 0.031250159, Final residual = 7.3681959e-10, No Iterations 3
+Min/max T:299.99999 330
+GAMG:  Solving for p_rgh, Initial residual = 0.11244673, Final residual = 0.00054344121, No Iterations 5
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 3.1081442e-06, global = -1.6793168e-07, cumulative = -2.1839414e-06
+GAMG:  Solving for p_rgh, Initial residual = 0.063928346, Final residual = 7.7792418e-08, No Iterations 15
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 1.4815886e-09, global = 1.0471787e-09, cumulative = -2.1828942e-06
+
+Solving for solid region heater
+DICPCG:  Solving for h, Initial residual = 0.016955162, Final residual = 1.8035758e-07, No Iterations 2
+Min/max T:300 530
+
+Solving for solid region leftSolid
+DICPCG:  Solving for h, Initial residual = 0.063255351, Final residual = 8.4650085e-07, No Iterations 2
+Min/max T:300 300.00976
+
+Solving for solid region rightSolid
+DICPCG:  Solving for h, Initial residual = 0.19008603, Final residual = 1.6136346e-08, No Iterations 3
+Min/max T:300 300
+ExecutionTime = 0.73 s  ClockTime = 305 s
+
+externalCoupled: writing data to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.out"
+externalCoupled: removing lock file
+externalCoupled: waiting for lock file to appear "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: wait time = 1
+externalCoupled: wait time = 2
+externalCoupled: wait time = 3
+externalCoupled: wait time = 4
+externalCoupled: wait time = 5
+externalCoupled: wait time = 6
+externalCoupled: wait time = 7
+externalCoupled: wait time = 8
+externalCoupled: wait time = 9
+externalCoupled: wait time = 10
+externalCoupled: found lock file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: removing data files written by master
+externalCoupled: reading data from "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.in"
+Region: bottomWater Courant Number mean: 0.003971084 max: 0.005956355
+Region: topAir Courant Number mean: 0.3808437 max: 0.48008611
+Region: heater Diffusion Number mean: 0.0091210615 max: 0.050000006
+Region: leftSolid Diffusion Number mean: 0.0090932914 max: 0.049999995
+Region: rightSolid Diffusion Number mean: 0.0090932914 max: 0.049999995
+deltaT = 0.025
+Time = 0.45
+
+
+Solving for fluid region bottomWater
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0025581322, Final residual = 8.2222757e-10, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.029519004, Final residual = 2.463714e-09, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0014781705, Final residual = 1.1889616e-09, No Iterations 1
+DILUPBiCGStab:  Solving for h, Initial residual = 0.02977249, Final residual = 1.4603142e-09, No Iterations 1
+Min/max T:299.99999 352.18632
+GAMG:  Solving for p_rgh, Initial residual = 0.0070389597, Final residual = 2.5118297e-05, No Iterations 3
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 2.1521065e-10, global = -1.7958835e-11, cumulative = -8.0577493e-07
+GAMG:  Solving for p_rgh, Initial residual = 2.7531035e-05, Final residual = 9.1137306e-08, No Iterations 7
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 7.7506975e-13, global = -1.1006233e-13, cumulative = -8.0577504e-07
+
+Solving for fluid region topAir
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.040375017, Final residual = 9.9384436e-08, No Iterations 2
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.11411334, Final residual = 1.567457e-09, No Iterations 3
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.2182793, Final residual = 2.0889166e-09, No Iterations 3
+DILUPBiCGStab:  Solving for h, Initial residual = 0.030076446, Final residual = 7.5963941e-10, No Iterations 3
+Min/max T:299.99999 331
+GAMG:  Solving for p_rgh, Initial residual = 0.10143894, Final residual = 0.00048344235, No Iterations 5
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 3.1553795e-06, global = -1.7930281e-07, cumulative = -2.362197e-06
+GAMG:  Solving for p_rgh, Initial residual = 0.058095884, Final residual = 7.2518189e-08, No Iterations 15
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 1.5177318e-09, global = 1.0823465e-09, cumulative = -2.3611146e-06
+
+Solving for solid region heater
+DICPCG:  Solving for h, Initial residual = 0.015973873, Final residual = 1.8043481e-07, No Iterations 2
+Min/max T:300 531
+
+Solving for solid region leftSolid
+DICPCG:  Solving for h, Initial residual = 0.060579941, Final residual = 8.1280674e-07, No Iterations 2
+Min/max T:300 300.01021
+
+Solving for solid region rightSolid
+DICPCG:  Solving for h, Initial residual = 0.18173146, Final residual = 1.7620726e-08, No Iterations 3
+Min/max T:300 300.00001
+ExecutionTime = 0.75 s  ClockTime = 315 s
+
+externalCoupled: writing data to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.out"
+externalCoupled: removing lock file
+externalCoupled: waiting for lock file to appear "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: wait time = 1
+externalCoupled: wait time = 2
+externalCoupled: wait time = 3
+externalCoupled: wait time = 4
+externalCoupled: wait time = 5
+externalCoupled: wait time = 6
+externalCoupled: wait time = 7
+externalCoupled: wait time = 8
+externalCoupled: wait time = 9
+externalCoupled: wait time = 10
+externalCoupled: found lock file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: removing data files written by master
+externalCoupled: reading data from "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.in"
+Region: bottomWater Courant Number mean: 0.0039711926 max: 0.0059567212
+Region: topAir Courant Number mean: 0.38124632 max: 0.48778732
+Region: heater Diffusion Number mean: 0.0091210615 max: 0.050000006
+Region: leftSolid Diffusion Number mean: 0.0090932914 max: 0.049999995
+Region: rightSolid Diffusion Number mean: 0.0090932914 max: 0.049999995
+deltaT = 0.025
+Time = 0.475
+
+
+Solving for fluid region bottomWater
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0025382769, Final residual = 8.1321092e-10, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.027907507, Final residual = 2.3236472e-09, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0014423997, Final residual = 1.1834292e-09, No Iterations 1
+DILUPBiCGStab:  Solving for h, Initial residual = 0.028069965, Final residual = 1.3765895e-09, No Iterations 1
+Min/max T:299.99999 354.77134
+GAMG:  Solving for p_rgh, Initial residual = 0.00673672, Final residual = 2.3961777e-05, No Iterations 3
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 2.026016e-10, global = -1.6937193e-11, cumulative = -8.0579198e-07
+GAMG:  Solving for p_rgh, Initial residual = 2.6221469e-05, Final residual = 8.6830982e-08, No Iterations 7
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 7.2897051e-13, global = -1.0350494e-13, cumulative = -8.0579208e-07
+
+Solving for fluid region topAir
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.038225677, Final residual = 4.189795e-10, No Iterations 3
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.11040632, Final residual = 1.5993116e-09, No Iterations 3
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.21255165, Final residual = 1.9858424e-09, No Iterations 3
+DILUPBiCGStab:  Solving for h, Initial residual = 0.029044286, Final residual = 7.013752e-10, No Iterations 3
+Min/max T:300 332
+GAMG:  Solving for p_rgh, Initial residual = 0.091399759, Final residual = 0.00042640501, No Iterations 5
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 3.1588601e-06, global = -1.9066827e-07, cumulative = -2.5517829e-06
+GAMG:  Solving for p_rgh, Initial residual = 0.053314882, Final residual = 6.2097641e-08, No Iterations 15
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 1.5443541e-09, global = 1.1068222e-09, cumulative = -2.5506761e-06
+
+Solving for solid region heater
+DICPCG:  Solving for h, Initial residual = 0.015101688, Final residual = 1.8053988e-07, No Iterations 2
+Min/max T:300 532
+
+Solving for solid region leftSolid
+DICPCG:  Solving for h, Initial residual = 0.058198223, Final residual = 7.8198267e-07, No Iterations 2
+Min/max T:300 300.01067
+
+Solving for solid region rightSolid
+DICPCG:  Solving for h, Initial residual = 0.17405666, Final residual = 1.8518846e-08, No Iterations 3
+Min/max T:300 300.00001
+ExecutionTime = 0.77 s  ClockTime = 326 s
+
+externalCoupled: writing data to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.out"
+externalCoupled: removing lock file
+externalCoupled: waiting for lock file to appear "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: wait time = 1
+externalCoupled: wait time = 2
+externalCoupled: wait time = 3
+externalCoupled: wait time = 4
+externalCoupled: wait time = 5
+externalCoupled: wait time = 6
+externalCoupled: wait time = 7
+externalCoupled: wait time = 8
+externalCoupled: wait time = 9
+externalCoupled: wait time = 10
+externalCoupled: found lock file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: removing data files written by master
+externalCoupled: reading data from "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.in"
+Region: bottomWater Courant Number mean: 0.0039713 max: 0.0059570998
+Region: topAir Courant Number mean: 0.38162157 max: 0.49449105
+Region: heater Diffusion Number mean: 0.0091210615 max: 0.050000006
+Region: leftSolid Diffusion Number mean: 0.0090932914 max: 0.049999995
+Region: rightSolid Diffusion Number mean: 0.0090932914 max: 0.049999995
+deltaT = 0.025
+Time = 0.5
+
+
+Solving for fluid region bottomWater
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0025202313, Final residual = 8.0463436e-10, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.026461792, Final residual = 2.1956288e-09, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0014104687, Final residual = 1.1758275e-09, No Iterations 1
+DILUPBiCGStab:  Solving for h, Initial residual = 0.026547626, Final residual = 1.3017577e-09, No Iterations 1
+Min/max T:299.99999 357.3108
+GAMG:  Solving for p_rgh, Initial residual = 0.0064616686, Final residual = 2.2846324e-05, No Iterations 3
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 1.9073224e-10, global = -1.5893354e-11, cumulative = -8.0580798e-07
+GAMG:  Solving for p_rgh, Initial residual = 2.4976066e-05, Final residual = 8.2662716e-08, No Iterations 7
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (bottomWater): sum local = 6.8541561e-13, global = -9.7264075e-14, cumulative = -8.0580807e-07
+
+Solving for fluid region topAir
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.036278284, Final residual = 4.4553645e-10, No Iterations 3
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.10706692, Final residual = 1.6985632e-09, No Iterations 3
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.20725836, Final residual = 2.007956e-09, No Iterations 3
+DILUPBiCGStab:  Solving for h, Initial residual = 0.028136633, Final residual = 6.5604005e-10, No Iterations 3
+Min/max T:300 333
+GAMG:  Solving for p_rgh, Initial residual = 0.084004335, Final residual = 0.00037309064, No Iterations 5
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 3.113712e-06, global = -2.0234768e-07, cumulative = -2.7530238e-06
+GAMG:  Solving for p_rgh, Initial residual = 0.049214087, Final residual = 9.9250379e-08, No Iterations 14
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors (topAir): sum local = 1.8788613e-09, global = 1.2484785e-09, cumulative = -2.7517753e-06
+
+Solving for solid region heater
+DICPCG:  Solving for h, Initial residual = 0.014321571, Final residual = 1.8066117e-07, No Iterations 2
+Min/max T:300 533
+
+Solving for solid region leftSolid
+DICPCG:  Solving for h, Initial residual = 0.056075287, Final residual = 7.5411847e-07, No Iterations 2
+Min/max T:300 300.01113
+
+Solving for solid region rightSolid
+DICPCG:  Solving for h, Initial residual = 0.16672544, Final residual = 1.8851075e-08, No Iterations 3
+Min/max T:300 300.00001
+ExecutionTime = 0.8 s  ClockTime = 336 s
+
+externalCoupled: writing data to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.out"
+externalCoupled: removing lock file
+externalCoupled: waiting for lock file to appear "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: wait time = 1
+externalCoupled: wait time = 2
+externalCoupled: wait time = 3
+externalCoupled: wait time = 4
+externalCoupled: wait time = 5
+externalCoupled: wait time = 6
+externalCoupled: wait time = 7
+externalCoupled: wait time = 8
+externalCoupled: wait time = 9
+externalCoupled: wait time = 10
+externalCoupled: found lock file "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/OpenFOAM.lock"
+externalCoupled: removing data files written by master
+externalCoupled: reading data from "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalCoupledHeater/comms/heater_topAir/coupleGroup/T.in"
+externalCoupled: removing data files written by master
+externalCoupled: removing data files written by slave
+externalCoupled: lock file status=done
+End
+
+Finalising parallel run

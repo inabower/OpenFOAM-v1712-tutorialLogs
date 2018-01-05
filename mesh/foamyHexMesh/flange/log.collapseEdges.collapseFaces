@@ -1,0 +1,1979 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1712                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v1712
+Arch   : "LSB;label=32;scalar=64"
+Exec   : collapseEdges -latestTime -collapseFaces
+Date   : Jan 05 2018
+Time   : 07:03:43
+Host   : "inabower-PC"
+PID    : 29839
+I/O    : uncollated
+Case   : /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/flange
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 100
+
+Reading collapseDict
+
+Time = 100
+Read faceSet indirectPatchFaces with 12641 faces
+Merging:
+    edges with length less than 1e-06 metres
+    edges split by a point with edges in line to within 180 degrees
+    Minimum edge length reduction factor = 0.5
+
+Face collapsing is on
+    Initial face length factor = 0.5
+Control mesh quality = on
+    Minimum edge length reduction factor = 0.5
+    Minimum face area reduction factor = 0.5
+    Maximum number of collapse iterations = 10
+    Maximum number of edge/face reduction factor smoothing iterations = 2
+    Maximum number of times a point can contribute to bad faces across 
+    collapse iterations = 3
+Selectively disabling wanted collapses until resulting quality satisfies constraints in system/meshQualityDict
+
+
+Outer Iteration = 0
+
+    "Edge Filter Factor": min = 1e-06 av = 1e-06 max = 1e-06
+        578416 / 578416 elements used
+
+    Inner iteration = 0
+
+        Collapsing 0 small edges
+        Collapsing 0 in line edges
+
+Checking faces in error :
+    non-orthogonality >  45 degrees                        : 27
+    faces with face pyramid volume <     0                 : 0
+    faces with face-decomposition tet quality < 1e-30      : 2
+    faces with concavity >  80 degrees                     : 0
+    faces with skewness >  10 (internal) or  50 (boundary) : 0
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 3
+    faces with face twist < 0.001                          : 0
+    faces on cells with determinant < 0.001                : 0
+
+    Number of bad faces     : 32
+    Number of marked points : 123
+
+Outer Iteration = 1
+
+    "Edge Filter Factor": min = 5e-07 av = 9.993929226e-07 max = 1e-06
+        578416 / 578416 elements used
+
+    Inner iteration = 0
+
+        Collapsing 0 small edges
+        Collapsing 0 in line edges
+
+Checking faces in error :
+    non-orthogonality >  45 degrees                        : 27
+    faces with face pyramid volume <     0                 : 0
+    faces with face-decomposition tet quality < 1e-30      : 2
+    faces with concavity >  80 degrees                     : 0
+    faces with skewness >  10 (internal) or  50 (boundary) : 0
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 3
+    faces with face twist < 0.001                          : 0
+    faces on cells with determinant < 0.001                : 0
+
+    Number of bad faces     : 32
+    Number of marked points : 123
+Merging:
+    edges with length less than 1e-06 metres
+    edges split by a point with edges in line to within 180 degrees
+    Minimum edge length reduction factor = 0.5
+
+Face collapsing is on
+    Initial face length factor = 0.5
+Control mesh quality = on
+    Minimum edge length reduction factor = 0.5
+    Minimum face area reduction factor = 0.5
+    Maximum number of collapse iterations = 10
+    Maximum number of edge/face reduction factor smoothing iterations = 2
+    Maximum number of times a point can contribute to bad faces across 
+    collapse iterations = 3
+Selectively disabling wanted collapses until resulting quality satisfies constraints in system/meshQualityDict
+
+
+Checking faces in error :
+    non-orthogonality >  45 degrees                        : 27
+    faces with face pyramid volume <     0                 : 0
+    faces with face-decomposition tet quality < 1e-30      : 2
+    faces with concavity >  80 degrees                     : 0
+    faces with skewness >  10 (internal) or  50 (boundary) : 0
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 3
+    faces with face twist < 0.001                          : 0
+    faces on cells with determinant < 0.001                : 0
+
+Outer Iteration = 0
+
+    "Edge Filter Factor": min = 1e-06 av = 1e-06 max = 1e-06
+        578416 / 578416 elements used
+    "Face Filter Factor": min = 0.5 av = 0.5 max = 0.5
+        340037 / 340037 elements used
+
+    Inner iteration = 0
+
+        Collapsing 184468 faces (to point = 10075, to edge = 174393)
+            Uncollapsed edges = 5403 / 578416
+            Uncollapsed edges = 13 / 578416
+            Uncollapsed edges = 0 / 578416
+
+        Collapsing 245892 edges after synchronisation and PointEdgeWave
+            Number of points : 285948
+            Not visited      : 0
+            Not collapsed    : 24567
+            Collapsed        : 261381
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 1
+
+        Collapsing 10490 faces (to point = 88, to edge = 10402)
+            Uncollapsed edges = 4213 / 181267
+            Uncollapsed edges = 24 / 181267
+            Uncollapsed edges = 0 / 181267
+
+        Collapsing 7806 edges after synchronisation and PointEdgeWave
+            Number of points : 72603
+            Not visited      : 0
+            Not collapsed    : 60654
+            Collapsed        : 11949
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 2
+
+        Collapsing 5558 faces (to point = 42, to edge = 5516)
+            Uncollapsed edges = 3976 / 166452
+            Uncollapsed edges = 12 / 166452
+            Uncollapsed edges = 0 / 166452
+
+        Collapsing 2218 edges after synchronisation and PointEdgeWave
+            Number of points : 65006
+            Not visited      : 0
+            Not collapsed    : 61299
+            Collapsed        : 3707
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 3
+
+        Collapsing 4383 faces (to point = 32, to edge = 4351)
+            Uncollapsed edges = 3957 / 162250
+            Uncollapsed edges = 8 / 162250
+            Uncollapsed edges = 0 / 162250
+
+        Collapsing 764 edges after synchronisation and PointEdgeWave
+            Number of points : 62825
+            Not visited      : 0
+            Not collapsed    : 61476
+            Collapsed        : 1349
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 4
+
+        Collapsing 4057 faces (to point = 33, to edge = 4024)
+            Uncollapsed edges = 3886 / 160753
+            Uncollapsed edges = 13 / 160753
+            Uncollapsed edges = 0 / 160753
+
+        Collapsing 404 edges after synchronisation and PointEdgeWave
+            Number of points : 62069
+            Not visited      : 0
+            Not collapsed    : 61334
+            Collapsed        : 735
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 5
+
+        Collapsing 3934 faces (to point = 33, to edge = 3901)
+            Uncollapsed edges = 3913 / 159932
+            Uncollapsed edges = 13 / 159932
+            Uncollapsed edges = 0 / 159932
+
+        Collapsing 233 edges after synchronisation and PointEdgeWave
+            Number of points : 61668
+            Not visited      : 0
+            Not collapsed    : 61231
+            Collapsed        : 437
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 6
+
+        Collapsing 3886 faces (to point = 33, to edge = 3853)
+            Uncollapsed edges = 3928 / 159462
+            Uncollapsed edges = 13 / 159462
+            Uncollapsed edges = 0 / 159462
+
+        Collapsing 153 edges after synchronisation and PointEdgeWave
+            Number of points : 61437
+            Not visited      : 0
+            Not collapsed    : 61133
+            Collapsed        : 304
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 7
+
+        Collapsing 3853 faces (to point = 32, to edge = 3821)
+            Uncollapsed edges = 3942 / 159139
+            Uncollapsed edges = 13 / 159139
+            Uncollapsed edges = 0 / 159139
+
+        Collapsing 101 edges after synchronisation and PointEdgeWave
+            Number of points : 61284
+            Not visited      : 0
+            Not collapsed    : 61083
+            Collapsed        : 201
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 8
+
+        Collapsing 3840 faces (to point = 32, to edge = 3808)
+            Uncollapsed edges = 3948 / 158924
+            Uncollapsed edges = 13 / 158924
+            Uncollapsed edges = 0 / 158924
+
+        Collapsing 83 edges after synchronisation and PointEdgeWave
+            Number of points : 61183
+            Not visited      : 0
+            Not collapsed    : 61019
+            Collapsed        : 164
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 9
+
+        Collapsing 3822 faces (to point = 32, to edge = 3790)
+            Uncollapsed edges = 3927 / 158742
+            Uncollapsed edges = 13 / 158742
+            Uncollapsed edges = 0 / 158742
+
+        Collapsing 90 edges after synchronisation and PointEdgeWave
+            Number of points : 61100
+            Not visited      : 0
+            Not collapsed    : 60940
+            Collapsed        : 160
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 0
+
+        Collapsing 7 small edges
+        Collapsing 13429 in line edges
+            Uncollapsed edges = 1 / 158559
+            Uncollapsed edges = 0 / 158559
+
+        Collapsing 13435 edges after synchronisation and PointEdgeWave
+            Number of points : 61011
+            Not visited      : 0
+            Not collapsed    : 36696
+            Collapsed        : 24315
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 1
+
+        Collapsing 1 small edges
+        Collapsing 0 in line edges
+            Uncollapsed edges = 1 / 145113
+            Uncollapsed edges = 0 / 145113
+
+        Collapsing 0 edges after synchronisation and PointEdgeWave
+
+Checking faces in error :
+    non-orthogonality >  45 degrees                        : 5163
+    faces with face pyramid volume <     0                 : 114
+    faces with face-decomposition tet quality < 1e-30      : 2869
+    faces with concavity >  80 degrees                     : 32
+    faces with skewness >  10 (internal) or  50 (boundary) : 0
+    faces with interpolation weights (0..1)  <  0.02       : 10
+    faces with volume ratio of neighbour cells <  0.01     : 25
+    faces with face twist < 0.001                          : 0
+    faces on cells with determinant < 0.001                : 111
+
+    Number of bad faces     : 8324
+    Number of marked points : 12476
+
+Outer Iteration = 1
+
+    "Edge Filter Factor": min = 5e-07 av = 9.229701996e-07 max = 1e-06
+        578416 / 578416 elements used
+    "Face Filter Factor": min = 0.25 av = 0.4050138992 max = 0.5
+        340037 / 340037 elements used
+
+    Inner iteration = 0
+
+        Collapsing 171456 faces (to point = 10075, to edge = 161381)
+            Uncollapsed edges = 296 / 578416
+            Uncollapsed edges = 0 / 578416
+
+        Collapsing 230642 edges after synchronisation and PointEdgeWave
+            Number of points : 285948
+            Not visited      : 0
+            Not collapsed    : 26349
+            Collapsed        : 259599
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 1
+
+        Collapsing 5120 faces (to point = 8, to edge = 5112)
+            Uncollapsed edges = 307 / 201127
+            Uncollapsed edges = 0 / 201127
+
+        Collapsing 5195 edges after synchronisation and PointEdgeWave
+            Number of points : 83195
+            Not visited      : 0
+            Not collapsed    : 73887
+            Collapsed        : 9308
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 2
+
+        Collapsing 1222 faces (to point = 2, to edge = 1220)
+            Uncollapsed edges = 310 / 190632
+            Uncollapsed edges = 0 / 190632
+
+        Collapsing 1031 edges after synchronisation and PointEdgeWave
+            Number of points : 78013
+            Not visited      : 0
+            Not collapsed    : 76081
+            Collapsed        : 1932
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 3
+
+        Collapsing 523 faces (to point = 1, to edge = 522)
+            Uncollapsed edges = 321 / 188591
+            Uncollapsed edges = 0 / 188591
+
+        Collapsing 240 edges after synchronisation and PointEdgeWave
+            Number of points : 76983
+            Not visited      : 0
+            Not collapsed    : 76527
+            Collapsed        : 456
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 4
+
+        Collapsing 376 faces (to point = 1, to edge = 375)
+            Uncollapsed edges = 326 / 188112
+            Uncollapsed edges = 0 / 188112
+
+        Collapsing 64 edges after synchronisation and PointEdgeWave
+            Number of points : 76743
+            Not visited      : 0
+            Not collapsed    : 76618
+            Collapsed        : 125
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 5
+
+        Collapsing 355 faces (to point = 1, to edge = 354)
+            Uncollapsed edges = 327 / 187984
+            Uncollapsed edges = 0 / 187984
+
+        Collapsing 39 edges after synchronisation and PointEdgeWave
+            Number of points : 76679
+            Not visited      : 0
+            Not collapsed    : 76601
+            Collapsed        : 78
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 6
+
+        Collapsing 355 faces (to point = 1, to edge = 354)
+            Uncollapsed edges = 331 / 187907
+            Uncollapsed edges = 0 / 187907
+
+        Collapsing 34 edges after synchronisation and PointEdgeWave
+            Number of points : 76640
+            Not visited      : 0
+            Not collapsed    : 76573
+            Collapsed        : 67
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 7
+
+        Collapsing 347 faces (to point = 1, to edge = 346)
+            Uncollapsed edges = 331 / 187836
+            Uncollapsed edges = 0 / 187836
+
+        Collapsing 28 edges after synchronisation and PointEdgeWave
+            Number of points : 76606
+            Not visited      : 0
+            Not collapsed    : 76550
+            Collapsed        : 56
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 8
+
+        Collapsing 348 faces (to point = 1, to edge = 347)
+            Uncollapsed edges = 334 / 187781
+            Uncollapsed edges = 0 / 187781
+
+        Collapsing 24 edges after synchronisation and PointEdgeWave
+            Number of points : 76578
+            Not visited      : 0
+            Not collapsed    : 76530
+            Collapsed        : 48
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 9
+
+        Collapsing 339 faces (to point = 1, to edge = 338)
+            Uncollapsed edges = 334 / 187731
+            Uncollapsed edges = 0 / 187731
+
+        Collapsing 17 edges after synchronisation and PointEdgeWave
+            Number of points : 76554
+            Not visited      : 0
+            Not collapsed    : 76521
+            Collapsed        : 33
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 10
+
+        Collapsing 334 faces (to point = 1, to edge = 333)
+            Uncollapsed edges = 334 / 187696
+            Uncollapsed edges = 0 / 187696
+
+        Collapsing 11 edges after synchronisation and PointEdgeWave
+            Number of points : 76537
+            Not visited      : 0
+            Not collapsed    : 76515
+            Collapsed        : 22
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 11
+
+        Collapsing 332 faces (to point = 1, to edge = 331)
+            Uncollapsed edges = 334 / 187673
+            Uncollapsed edges = 0 / 187673
+
+        Collapsing 9 edges after synchronisation and PointEdgeWave
+            Number of points : 76526
+            Not visited      : 0
+            Not collapsed    : 76508
+            Collapsed        : 18
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 12
+
+        Collapsing 336 faces (to point = 1, to edge = 335)
+            Uncollapsed edges = 336 / 187655
+            Uncollapsed edges = 0 / 187655
+
+        Collapsing 11 edges after synchronisation and PointEdgeWave
+            Number of points : 76517
+            Not visited      : 0
+            Not collapsed    : 76495
+            Collapsed        : 22
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 0
+
+        Collapsing 0 small edges
+        Collapsing 15813 in line edges
+            Uncollapsed edges = 0 / 187631
+
+        Collapsing 15813 edges after synchronisation and PointEdgeWave
+            Number of points : 76506
+            Not visited      : 0
+            Not collapsed    : 47672
+            Collapsed        : 28834
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 1
+
+        Collapsing 0 small edges
+        Collapsing 0 in line edges
+
+Checking faces in error :
+    non-orthogonality >  45 degrees                        : 462
+    faces with face pyramid volume <     0                 : 5
+    faces with face-decomposition tet quality < 1e-30      : 533
+    faces with concavity >  80 degrees                     : 14
+    faces with skewness >  10 (internal) or  50 (boundary) : 0
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 3
+    faces with face twist < 0.001                          : 0
+    faces on cells with determinant < 0.001                : 2
+
+    Number of bad faces     : 1019
+    Number of marked points : 3189
+
+Outer Iteration = 2
+
+    "Edge Filter Factor": min = 2.5e-07 av = 8.8219877e-07 max = 1e-06
+        578416 / 578416 elements used
+    "Face Filter Factor": min = 0.125 av = 0.3871071533 max = 0.5
+        340037 / 340037 elements used
+
+    Inner iteration = 0
+
+        Collapsing 167456 faces (to point = 10071, to edge = 157385)
+            Uncollapsed edges = 223 / 578416
+            Uncollapsed edges = 0 / 578416
+
+        Collapsing 225220 edges after synchronisation and PointEdgeWave
+            Number of points : 285948
+            Not visited      : 0
+            Not collapsed    : 29100
+            Collapsed        : 256848
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 1
+
+        Collapsing 4946 faces (to point = 4, to edge = 4942)
+            Uncollapsed edges = 217 / 209868
+            Uncollapsed edges = 0 / 209868
+
+        Collapsing 5075 edges after synchronisation and PointEdgeWave
+            Number of points : 87666
+            Not visited      : 0
+            Not collapsed    : 78435
+            Collapsed        : 9231
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 2
+
+        Collapsing 1048 faces (to point = 1, to edge = 1047)
+            Uncollapsed edges = 219 / 199568
+            Uncollapsed edges = 0 / 199568
+
+        Collapsing 923 edges after synchronisation and PointEdgeWave
+            Number of points : 82602
+            Not visited      : 0
+            Not collapsed    : 80853
+            Collapsed        : 1749
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 3
+
+        Collapsing 393 faces (to point = 1, to edge = 392)
+            Uncollapsed edges = 224 / 197714
+            Uncollapsed edges = 0 / 197714
+
+        Collapsing 203 edges after synchronisation and PointEdgeWave
+            Number of points : 81680
+            Not visited      : 0
+            Not collapsed    : 81295
+            Collapsed        : 385
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 4
+
+        Collapsing 260 faces (to point = 0, to edge = 260)
+            Uncollapsed edges = 223 / 197312
+            Uncollapsed edges = 0 / 197312
+
+        Collapsing 57 edges after synchronisation and PointEdgeWave
+            Number of points : 81478
+            Not visited      : 0
+            Not collapsed    : 81370
+            Collapsed        : 108
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 5
+
+        Collapsing 233 faces (to point = 0, to edge = 233)
+            Uncollapsed edges = 228 / 197204
+            Uncollapsed edges = 0 / 197204
+
+        Collapsing 16 edges after synchronisation and PointEdgeWave
+            Number of points : 81421
+            Not visited      : 0
+            Not collapsed    : 81389
+            Collapsed        : 32
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 6
+
+        Collapsing 231 faces (to point = 0, to edge = 231)
+            Uncollapsed edges = 229 / 197171
+            Uncollapsed edges = 0 / 197171
+
+        Collapsing 13 edges after synchronisation and PointEdgeWave
+            Number of points : 81405
+            Not visited      : 0
+            Not collapsed    : 81379
+            Collapsed        : 26
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 7
+
+        Collapsing 227 faces (to point = 0, to edge = 227)
+            Uncollapsed edges = 229 / 197145
+            Uncollapsed edges = 0 / 197145
+
+        Collapsing 9 edges after synchronisation and PointEdgeWave
+            Number of points : 81392
+            Not visited      : 0
+            Not collapsed    : 81374
+            Collapsed        : 18
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 8
+
+        Collapsing 227 faces (to point = 0, to edge = 227)
+            Uncollapsed edges = 229 / 197126
+            Uncollapsed edges = 0 / 197126
+
+        Collapsing 9 edges after synchronisation and PointEdgeWave
+            Number of points : 81383
+            Not visited      : 0
+            Not collapsed    : 81365
+            Collapsed        : 18
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 0
+
+        Collapsing 0 small edges
+        Collapsing 16037 in line edges
+            Uncollapsed edges = 0 / 197108
+
+        Collapsing 16037 edges after synchronisation and PointEdgeWave
+            Number of points : 81374
+            Not visited      : 0
+            Not collapsed    : 52071
+            Collapsed        : 29303
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 1
+
+        Collapsing 0 small edges
+        Collapsing 0 in line edges
+
+Checking faces in error :
+    non-orthogonality >  45 degrees                        : 120
+    faces with face pyramid volume <     0                 : 3
+    faces with face-decomposition tet quality < 1e-30      : 118
+    faces with concavity >  80 degrees                     : 3
+    faces with skewness >  10 (internal) or  50 (boundary) : 0
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 1
+    faces with face twist < 0.001                          : 0
+    faces on cells with determinant < 0.001                : 0
+
+    Number of bad faces     : 245
+    Number of marked points : 862
+
+Outer Iteration = 3
+
+    "Edge Filter Factor": min = 1.976292363e-10 av = 8.547158607e-07 max = 1e-06
+        552202 / 578416 elements used
+    "Face Filter Factor": min = 0.0001730218583 av = 0.3839071436 max = 0.5
+        338714 / 340037 elements used
+
+    Inner iteration = 0
+
+        Collapsing 165805 faces (to point = 10023, to edge = 155782)
+            Uncollapsed edges = 178 / 578416
+            Uncollapsed edges = 0 / 578416
+
+        Collapsing 223234 edges after synchronisation and PointEdgeWave
+            Number of points : 285948
+            Not visited      : 0
+            Not collapsed    : 30691
+            Collapsed        : 255257
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 1
+
+        Collapsing 4853 faces (to point = 3, to edge = 4850)
+            Uncollapsed edges = 192 / 213199
+            Uncollapsed edges = 0 / 213199
+
+        Collapsing 5006 edges after synchronisation and PointEdgeWave
+            Number of points : 89349
+            Not visited      : 0
+            Not collapsed    : 80174
+            Collapsed        : 9175
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 2
+
+        Collapsing 1016 faces (to point = 1, to edge = 1015)
+            Uncollapsed edges = 196 / 203028
+            Uncollapsed edges = 0 / 203028
+
+        Collapsing 920 edges after synchronisation and PointEdgeWave
+            Number of points : 84352
+            Not visited      : 0
+            Not collapsed    : 82604
+            Collapsed        : 1748
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 3
+
+        Collapsing 361 faces (to point = 0, to edge = 361)
+            Uncollapsed edges = 201 / 201186
+            Uncollapsed edges = 0 / 201186
+
+        Collapsing 195 edges after synchronisation and PointEdgeWave
+            Number of points : 83433
+            Not visited      : 0
+            Not collapsed    : 83061
+            Collapsed        : 372
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 4
+
+        Collapsing 235 faces (to point = 0, to edge = 235)
+            Uncollapsed edges = 199 / 200799
+            Uncollapsed edges = 0 / 200799
+
+        Collapsing 59 edges after synchronisation and PointEdgeWave
+            Number of points : 83238
+            Not visited      : 0
+            Not collapsed    : 83126
+            Collapsed        : 112
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 5
+
+        Collapsing 208 faces (to point = 0, to edge = 208)
+            Uncollapsed edges = 204 / 200685
+            Uncollapsed edges = 0 / 200685
+
+        Collapsing 19 edges after synchronisation and PointEdgeWave
+            Number of points : 83179
+            Not visited      : 0
+            Not collapsed    : 83141
+            Collapsed        : 38
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 6
+
+        Collapsing 204 faces (to point = 0, to edge = 204)
+            Uncollapsed edges = 205 / 200647
+            Uncollapsed edges = 0 / 200647
+
+        Collapsing 14 edges after synchronisation and PointEdgeWave
+            Number of points : 83160
+            Not visited      : 0
+            Not collapsed    : 83132
+            Collapsed        : 28
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 7
+
+        Collapsing 199 faces (to point = 0, to edge = 199)
+            Uncollapsed edges = 205 / 200619
+            Uncollapsed edges = 0 / 200619
+
+        Collapsing 9 edges after synchronisation and PointEdgeWave
+            Number of points : 83146
+            Not visited      : 0
+            Not collapsed    : 83128
+            Collapsed        : 18
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 8
+
+        Collapsing 199 faces (to point = 0, to edge = 199)
+            Uncollapsed edges = 205 / 200600
+            Uncollapsed edges = 0 / 200600
+
+        Collapsing 9 edges after synchronisation and PointEdgeWave
+            Number of points : 83137
+            Not visited      : 0
+            Not collapsed    : 83119
+            Collapsed        : 18
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 0
+
+        Collapsing 0 small edges
+        Collapsing 15934 in line edges
+            Uncollapsed edges = 0 / 200582
+
+        Collapsing 15934 edges after synchronisation and PointEdgeWave
+            Number of points : 83128
+            Not visited      : 0
+            Not collapsed    : 54012
+            Collapsed        : 29116
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 1
+
+        Collapsing 0 small edges
+        Collapsing 0 in line edges
+
+Checking faces in error :
+    non-orthogonality >  45 degrees                        : 53
+    faces with face pyramid volume <     0                 : 0
+    faces with face-decomposition tet quality < 1e-30      : 52
+    faces with concavity >  80 degrees                     : 3
+    faces with skewness >  10 (internal) or  50 (boundary) : 0
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 3
+    faces with face twist < 0.001                          : 0
+    faces on cells with determinant < 0.001                : 0
+
+    Number of bad faces     : 111
+    Number of marked points : 416
+
+Outer Iteration = 4
+
+    "Edge Filter Factor": min = 1.363529295e-10 av = 8.285432154e-07 max = 1e-06
+        508234 / 578416 elements used
+    "Face Filter Factor": min = 0.000162411062 av = 0.3830656163 max = 0.5
+        337954 / 340037 elements used
+
+    Inner iteration = 0
+
+        Collapsing 165266 faces (to point = 10010, to edge = 155256)
+            Uncollapsed edges = 178 / 578416
+            Uncollapsed edges = 0 / 578416
+
+        Collapsing 222541 edges after synchronisation and PointEdgeWave
+            Number of points : 285948
+            Not visited      : 0
+            Not collapsed    : 31327
+            Collapsed        : 254621
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 1
+
+        Collapsing 4800 faces (to point = 4, to edge = 4796)
+            Uncollapsed edges = 190 / 214354
+            Uncollapsed edges = 0 / 214354
+
+        Collapsing 4967 edges after synchronisation and PointEdgeWave
+            Number of points : 89948
+            Not visited      : 0
+            Not collapsed    : 80846
+            Collapsed        : 9102
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 2
+
+        Collapsing 1013 faces (to point = 1, to edge = 1012)
+            Uncollapsed edges = 192 / 204286
+            Uncollapsed edges = 0 / 204286
+
+        Collapsing 918 edges after synchronisation and PointEdgeWave
+            Number of points : 84992
+            Not visited      : 0
+            Not collapsed    : 83249
+            Collapsed        : 1743
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 3
+
+        Collapsing 364 faces (to point = 0, to edge = 364)
+            Uncollapsed edges = 199 / 202439
+            Uncollapsed edges = 0 / 202439
+
+        Collapsing 201 edges after synchronisation and PointEdgeWave
+            Number of points : 84075
+            Not visited      : 0
+            Not collapsed    : 83691
+            Collapsed        : 384
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 4
+
+        Collapsing 231 faces (to point = 0, to edge = 231)
+            Uncollapsed edges = 198 / 202038
+            Uncollapsed edges = 0 / 202038
+
+        Collapsing 57 edges after synchronisation and PointEdgeWave
+            Number of points : 83874
+            Not visited      : 0
+            Not collapsed    : 83766
+            Collapsed        : 108
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 5
+
+        Collapsing 206 faces (to point = 0, to edge = 206)
+            Uncollapsed edges = 202 / 201928
+            Uncollapsed edges = 0 / 201928
+
+        Collapsing 20 edges after synchronisation and PointEdgeWave
+            Number of points : 83817
+            Not visited      : 0
+            Not collapsed    : 83777
+            Collapsed        : 40
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 6
+
+        Collapsing 202 faces (to point = 0, to edge = 202)
+            Uncollapsed edges = 203 / 201888
+            Uncollapsed edges = 0 / 201888
+
+        Collapsing 15 edges after synchronisation and PointEdgeWave
+            Number of points : 83797
+            Not visited      : 0
+            Not collapsed    : 83767
+            Collapsed        : 30
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 7
+
+        Collapsing 197 faces (to point = 0, to edge = 197)
+            Uncollapsed edges = 203 / 201858
+            Uncollapsed edges = 0 / 201858
+
+        Collapsing 10 edges after synchronisation and PointEdgeWave
+            Number of points : 83782
+            Not visited      : 0
+            Not collapsed    : 83762
+            Collapsed        : 20
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 8
+
+        Collapsing 197 faces (to point = 0, to edge = 197)
+            Uncollapsed edges = 203 / 201837
+            Uncollapsed edges = 0 / 201837
+
+        Collapsing 10 edges after synchronisation and PointEdgeWave
+            Number of points : 83772
+            Not visited      : 0
+            Not collapsed    : 83752
+            Collapsed        : 20
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 0
+
+        Collapsing 0 small edges
+        Collapsing 15887 in line edges
+            Uncollapsed edges = 0 / 201817
+
+        Collapsing 15887 edges after synchronisation and PointEdgeWave
+            Number of points : 83762
+            Not visited      : 0
+            Not collapsed    : 54723
+            Collapsed        : 29039
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 1
+
+        Collapsing 0 small edges
+        Collapsing 0 in line edges
+
+Checking faces in error :
+    non-orthogonality >  45 degrees                        : 35
+    faces with face pyramid volume <     0                 : 0
+    faces with face-decomposition tet quality < 1e-30      : 17
+    faces with concavity >  80 degrees                     : 1
+    faces with skewness >  10 (internal) or  50 (boundary) : 0
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 3
+    faces with face twist < 0.001                          : 0
+    faces on cells with determinant < 0.001                : 0
+
+    Number of bad faces     : 56
+    Number of marked points : 211
+
+Outer Iteration = 5
+
+    "Edge Filter Factor": min = 9.922808797e-12 av = 8.060191922e-07 max = 9.999999996e-07
+        466897 / 578416 elements used
+    "Face Filter Factor": min = 0.0001773045833 av = 0.3828315831 max = 0.5
+        337646 / 340037 elements used
+
+    Inner iteration = 0
+
+        Collapsing 165063 faces (to point = 10005, to edge = 155058)
+            Uncollapsed edges = 178 / 578416
+            Uncollapsed edges = 0 / 578416
+
+        Collapsing 222264 edges after synchronisation and PointEdgeWave
+            Number of points : 285948
+            Not visited      : 0
+            Not collapsed    : 31579
+            Collapsed        : 254369
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 1
+
+        Collapsing 4796 faces (to point = 4, to edge = 4792)
+            Uncollapsed edges = 189 / 214808
+            Uncollapsed edges = 0 / 214808
+
+        Collapsing 4965 edges after synchronisation and PointEdgeWave
+            Number of points : 90181
+            Not visited      : 0
+            Not collapsed    : 81088
+            Collapsed        : 9093
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 2
+
+        Collapsing 1001 faces (to point = 1, to edge = 1000)
+            Uncollapsed edges = 191 / 204742
+            Uncollapsed edges = 0 / 204742
+
+        Collapsing 906 edges after synchronisation and PointEdgeWave
+            Number of points : 85227
+            Not visited      : 0
+            Not collapsed    : 83504
+            Collapsed        : 1723
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 3
+
+        Collapsing 360 faces (to point = 0, to edge = 360)
+            Uncollapsed edges = 196 / 202919
+            Uncollapsed edges = 0 / 202919
+
+        Collapsing 200 edges after synchronisation and PointEdgeWave
+            Number of points : 84322
+            Not visited      : 0
+            Not collapsed    : 83940
+            Collapsed        : 382
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 4
+
+        Collapsing 226 faces (to point = 0, to edge = 226)
+            Uncollapsed edges = 194 / 202519
+            Uncollapsed edges = 0 / 202519
+
+        Collapsing 56 edges after synchronisation and PointEdgeWave
+            Number of points : 84122
+            Not visited      : 0
+            Not collapsed    : 84016
+            Collapsed        : 106
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 5
+
+        Collapsing 201 faces (to point = 0, to edge = 201)
+            Uncollapsed edges = 199 / 202411
+            Uncollapsed edges = 0 / 202411
+
+        Collapsing 18 edges after synchronisation and PointEdgeWave
+            Number of points : 84066
+            Not visited      : 0
+            Not collapsed    : 84030
+            Collapsed        : 36
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 6
+
+        Collapsing 197 faces (to point = 0, to edge = 197)
+            Uncollapsed edges = 200 / 202375
+            Uncollapsed edges = 0 / 202375
+
+        Collapsing 13 edges after synchronisation and PointEdgeWave
+            Number of points : 84048
+            Not visited      : 0
+            Not collapsed    : 84022
+            Collapsed        : 26
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 7
+
+        Collapsing 191 faces (to point = 0, to edge = 191)
+            Uncollapsed edges = 200 / 202349
+            Uncollapsed edges = 0 / 202349
+
+        Collapsing 7 edges after synchronisation and PointEdgeWave
+            Number of points : 84035
+            Not visited      : 0
+            Not collapsed    : 84021
+            Collapsed        : 14
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 8
+
+        Collapsing 192 faces (to point = 0, to edge = 192)
+            Uncollapsed edges = 200 / 202334
+            Uncollapsed edges = 0 / 202334
+
+        Collapsing 8 edges after synchronisation and PointEdgeWave
+            Number of points : 84028
+            Not visited      : 0
+            Not collapsed    : 84012
+            Collapsed        : 16
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 0
+
+        Collapsing 0 small edges
+        Collapsing 15869 in line edges
+            Uncollapsed edges = 0 / 202318
+
+        Collapsing 15869 edges after synchronisation and PointEdgeWave
+            Number of points : 84020
+            Not visited      : 0
+            Not collapsed    : 55017
+            Collapsed        : 29003
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 1
+
+        Collapsing 0 small edges
+        Collapsing 0 in line edges
+
+Checking faces in error :
+    non-orthogonality >  45 degrees                        : 19
+    faces with face pyramid volume <     0                 : 0
+    faces with face-decomposition tet quality < 1e-30      : 6
+    faces with concavity >  80 degrees                     : 0
+    faces with skewness >  10 (internal) or  50 (boundary) : 0
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 3
+    faces with face twist < 0.001                          : 0
+    faces on cells with determinant < 0.001                : 0
+
+    Number of bad faces     : 28
+    Number of marked points : 107
+
+Outer Iteration = 6
+
+    "Edge Filter Factor": min = 9.426029328e-11 av = 7.869930535e-07 max = 9.999999958e-07
+        429247 / 578416 elements used
+    "Face Filter Factor": min = 6.658850704e-05 av = 0.3828183683 max = 0.5
+        337554 / 340037 elements used
+
+    Inner iteration = 0
+
+        Collapsing 165024 faces (to point = 10004, to edge = 155020)
+            Uncollapsed edges = 178 / 578416
+            Uncollapsed edges = 0 / 578416
+
+        Collapsing 222215 edges after synchronisation and PointEdgeWave
+            Number of points : 285948
+            Not visited      : 0
+            Not collapsed    : 31635
+            Collapsed        : 254313
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 1
+
+        Collapsing 4786 faces (to point = 4, to edge = 4782)
+            Uncollapsed edges = 189 / 214893
+            Uncollapsed edges = 0 / 214893
+
+        Collapsing 4954 edges after synchronisation and PointEdgeWave
+            Number of points : 90226
+            Not visited      : 0
+            Not collapsed    : 81150
+            Collapsed        : 9076
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 2
+
+        Collapsing 1000 faces (to point = 1, to edge = 999)
+            Uncollapsed edges = 191 / 204850
+            Uncollapsed edges = 0 / 204850
+
+        Collapsing 905 edges after synchronisation and PointEdgeWave
+            Number of points : 85283
+            Not visited      : 0
+            Not collapsed    : 83562
+            Collapsed        : 1721
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 3
+
+        Collapsing 357 faces (to point = 0, to edge = 357)
+            Uncollapsed edges = 196 / 203031
+            Uncollapsed edges = 0 / 203031
+
+        Collapsing 197 edges after synchronisation and PointEdgeWave
+            Number of points : 84379
+            Not visited      : 0
+            Not collapsed    : 84002
+            Collapsed        : 377
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 4
+
+        Collapsing 224 faces (to point = 0, to edge = 224)
+            Uncollapsed edges = 194 / 202637
+            Uncollapsed edges = 0 / 202637
+
+        Collapsing 53 edges after synchronisation and PointEdgeWave
+            Number of points : 84182
+            Not visited      : 0
+            Not collapsed    : 84081
+            Collapsed        : 101
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 5
+
+        Collapsing 199 faces (to point = 0, to edge = 199)
+            Uncollapsed edges = 199 / 202534
+            Uncollapsed edges = 0 / 202534
+
+        Collapsing 16 edges after synchronisation and PointEdgeWave
+            Number of points : 84129
+            Not visited      : 0
+            Not collapsed    : 84097
+            Collapsed        : 32
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 6
+
+        Collapsing 195 faces (to point = 0, to edge = 195)
+            Uncollapsed edges = 200 / 202502
+            Uncollapsed edges = 0 / 202502
+
+        Collapsing 11 edges after synchronisation and PointEdgeWave
+            Number of points : 84113
+            Not visited      : 0
+            Not collapsed    : 84091
+            Collapsed        : 22
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 7
+
+        Collapsing 191 faces (to point = 0, to edge = 191)
+            Uncollapsed edges = 200 / 202480
+            Uncollapsed edges = 0 / 202480
+
+        Collapsing 7 edges after synchronisation and PointEdgeWave
+            Number of points : 84102
+            Not visited      : 0
+            Not collapsed    : 84088
+            Collapsed        : 14
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 8
+
+        Collapsing 192 faces (to point = 0, to edge = 192)
+            Uncollapsed edges = 200 / 202465
+            Uncollapsed edges = 0 / 202465
+
+        Collapsing 8 edges after synchronisation and PointEdgeWave
+            Number of points : 84095
+            Not visited      : 0
+            Not collapsed    : 84079
+            Collapsed        : 16
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 0
+
+        Collapsing 0 small edges
+        Collapsing 15866 in line edges
+            Uncollapsed edges = 0 / 202449
+
+        Collapsing 15866 edges after synchronisation and PointEdgeWave
+            Number of points : 84087
+            Not visited      : 0
+            Not collapsed    : 55089
+            Collapsed        : 28998
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 1
+
+        Collapsing 0 small edges
+        Collapsing 0 in line edges
+
+Checking faces in error :
+    non-orthogonality >  45 degrees                        : 17
+    faces with face pyramid volume <     0                 : 0
+    faces with face-decomposition tet quality < 1e-30      : 2
+    faces with concavity >  80 degrees                     : 0
+    faces with skewness >  10 (internal) or  50 (boundary) : 0
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 3
+    faces with face twist < 0.001                          : 0
+    faces on cells with determinant < 0.001                : 0
+
+    Number of bad faces     : 22
+    Number of marked points : 86
+
+Outer Iteration = 7
+
+    "Edge Filter Factor": min = 2.25109102e-12 av = 7.698686301e-07 max = 9.999999749e-07
+        394854 / 578416 elements used
+    "Face Filter Factor": min = 2.392746949e-05 av = 0.3828390879 max = 0.5
+        337518 / 340037 elements used
+
+    Inner iteration = 0
+
+        Collapsing 165015 faces (to point = 10003, to edge = 155012)
+            Uncollapsed edges = 178 / 578416
+            Uncollapsed edges = 0 / 578416
+
+        Collapsing 222206 edges after synchronisation and PointEdgeWave
+            Number of points : 285948
+            Not visited      : 0
+            Not collapsed    : 31646
+            Collapsed        : 254302
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 1
+
+        Collapsing 4788 faces (to point = 4, to edge = 4784)
+            Uncollapsed edges = 189 / 214910
+            Uncollapsed edges = 0 / 214910
+
+        Collapsing 4957 edges after synchronisation and PointEdgeWave
+            Number of points : 90234
+            Not visited      : 0
+            Not collapsed    : 81152
+            Collapsed        : 9082
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 2
+
+        Collapsing 1000 faces (to point = 1, to edge = 999)
+            Uncollapsed edges = 191 / 204860
+            Uncollapsed edges = 0 / 204860
+
+        Collapsing 905 edges after synchronisation and PointEdgeWave
+            Number of points : 85288
+            Not visited      : 0
+            Not collapsed    : 83567
+            Collapsed        : 1721
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 3
+
+        Collapsing 357 faces (to point = 0, to edge = 357)
+            Uncollapsed edges = 196 / 203041
+            Uncollapsed edges = 0 / 203041
+
+        Collapsing 197 edges after synchronisation and PointEdgeWave
+            Number of points : 84384
+            Not visited      : 0
+            Not collapsed    : 84007
+            Collapsed        : 377
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 4
+
+        Collapsing 224 faces (to point = 0, to edge = 224)
+            Uncollapsed edges = 194 / 202647
+            Uncollapsed edges = 0 / 202647
+
+        Collapsing 53 edges after synchronisation and PointEdgeWave
+            Number of points : 84187
+            Not visited      : 0
+            Not collapsed    : 84086
+            Collapsed        : 101
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 5
+
+        Collapsing 199 faces (to point = 0, to edge = 199)
+            Uncollapsed edges = 199 / 202544
+            Uncollapsed edges = 0 / 202544
+
+        Collapsing 16 edges after synchronisation and PointEdgeWave
+            Number of points : 84134
+            Not visited      : 0
+            Not collapsed    : 84102
+            Collapsed        : 32
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 6
+
+        Collapsing 195 faces (to point = 0, to edge = 195)
+            Uncollapsed edges = 200 / 202512
+            Uncollapsed edges = 0 / 202512
+
+        Collapsing 11 edges after synchronisation and PointEdgeWave
+            Number of points : 84118
+            Not visited      : 0
+            Not collapsed    : 84096
+            Collapsed        : 22
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 7
+
+        Collapsing 191 faces (to point = 0, to edge = 191)
+            Uncollapsed edges = 200 / 202490
+            Uncollapsed edges = 0 / 202490
+
+        Collapsing 7 edges after synchronisation and PointEdgeWave
+            Number of points : 84107
+            Not visited      : 0
+            Not collapsed    : 84093
+            Collapsed        : 14
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 8
+
+        Collapsing 192 faces (to point = 0, to edge = 192)
+            Uncollapsed edges = 200 / 202475
+            Uncollapsed edges = 0 / 202475
+
+        Collapsing 8 edges after synchronisation and PointEdgeWave
+            Number of points : 84100
+            Not visited      : 0
+            Not collapsed    : 84084
+            Collapsed        : 16
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 0
+
+        Collapsing 0 small edges
+        Collapsing 15865 in line edges
+            Uncollapsed edges = 0 / 202459
+
+        Collapsing 15865 edges after synchronisation and PointEdgeWave
+            Number of points : 84092
+            Not visited      : 0
+            Not collapsed    : 55096
+            Collapsed        : 28996
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 1
+
+        Collapsing 0 small edges
+        Collapsing 0 in line edges
+
+Checking faces in error :
+    non-orthogonality >  45 degrees                        : 17
+    faces with face pyramid volume <     0                 : 0
+    faces with face-decomposition tet quality < 1e-30      : 2
+    faces with concavity >  80 degrees                     : 0
+    faces with skewness >  10 (internal) or  50 (boundary) : 0
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 3
+    faces with face twist < 0.001                          : 0
+    faces on cells with determinant < 0.001                : 0
+
+    Number of bad faces     : 22
+    Number of marked points : 86
+
+Outer Iteration = 8
+
+    "Edge Filter Factor": min = 1.34604811e-11 av = 7.552930557e-07 max = 9.999998909e-07
+        362847 / 578416 elements used
+    "Face Filter Factor": min = 2.181365412e-05 av = 0.3828444765 max = 0.5
+        337503 / 340037 elements used
+
+    Inner iteration = 0
+
+        Collapsing 165008 faces (to point = 10002, to edge = 155006)
+            Uncollapsed edges = 178 / 578416
+            Uncollapsed edges = 0 / 578416
+
+        Collapsing 222199 edges after synchronisation and PointEdgeWave
+            Number of points : 285948
+            Not visited      : 0
+            Not collapsed    : 31654
+            Collapsed        : 254294
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 1
+
+        Collapsing 4788 faces (to point = 4, to edge = 4784)
+            Uncollapsed edges = 189 / 214920
+            Uncollapsed edges = 0 / 214920
+
+        Collapsing 4957 edges after synchronisation and PointEdgeWave
+            Number of points : 90239
+            Not visited      : 0
+            Not collapsed    : 81157
+            Collapsed        : 9082
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 2
+
+        Collapsing 999 faces (to point = 1, to edge = 998)
+            Uncollapsed edges = 191 / 204872
+            Uncollapsed edges = 0 / 204872
+
+        Collapsing 904 edges after synchronisation and PointEdgeWave
+            Number of points : 85293
+            Not visited      : 0
+            Not collapsed    : 83574
+            Collapsed        : 1719
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 3
+
+        Collapsing 357 faces (to point = 0, to edge = 357)
+            Uncollapsed edges = 196 / 203055
+            Uncollapsed edges = 0 / 203055
+
+        Collapsing 197 edges after synchronisation and PointEdgeWave
+            Number of points : 84390
+            Not visited      : 0
+            Not collapsed    : 84013
+            Collapsed        : 377
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 4
+
+        Collapsing 224 faces (to point = 0, to edge = 224)
+            Uncollapsed edges = 194 / 202661
+            Uncollapsed edges = 0 / 202661
+
+        Collapsing 53 edges after synchronisation and PointEdgeWave
+            Number of points : 84193
+            Not visited      : 0
+            Not collapsed    : 84092
+            Collapsed        : 101
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 5
+
+        Collapsing 199 faces (to point = 0, to edge = 199)
+            Uncollapsed edges = 199 / 202558
+            Uncollapsed edges = 0 / 202558
+
+        Collapsing 16 edges after synchronisation and PointEdgeWave
+            Number of points : 84140
+            Not visited      : 0
+            Not collapsed    : 84108
+            Collapsed        : 32
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 6
+
+        Collapsing 195 faces (to point = 0, to edge = 195)
+            Uncollapsed edges = 200 / 202526
+            Uncollapsed edges = 0 / 202526
+
+        Collapsing 11 edges after synchronisation and PointEdgeWave
+            Number of points : 84124
+            Not visited      : 0
+            Not collapsed    : 84102
+            Collapsed        : 22
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 7
+
+        Collapsing 191 faces (to point = 0, to edge = 191)
+            Uncollapsed edges = 200 / 202504
+            Uncollapsed edges = 0 / 202504
+
+        Collapsing 7 edges after synchronisation and PointEdgeWave
+            Number of points : 84113
+            Not visited      : 0
+            Not collapsed    : 84099
+            Collapsed        : 14
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 8
+
+        Collapsing 192 faces (to point = 0, to edge = 192)
+            Uncollapsed edges = 200 / 202489
+            Uncollapsed edges = 0 / 202489
+
+        Collapsing 8 edges after synchronisation and PointEdgeWave
+            Number of points : 84106
+            Not visited      : 0
+            Not collapsed    : 84090
+            Collapsed        : 16
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 0
+
+        Collapsing 0 small edges
+        Collapsing 15864 in line edges
+            Uncollapsed edges = 0 / 202473
+
+        Collapsing 15864 edges after synchronisation and PointEdgeWave
+            Number of points : 84098
+            Not visited      : 0
+            Not collapsed    : 55104
+            Collapsed        : 28994
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 1
+
+        Collapsing 0 small edges
+        Collapsing 0 in line edges
+
+Checking faces in error :
+    non-orthogonality >  45 degrees                        : 17
+    faces with face pyramid volume <     0                 : 0
+    faces with face-decomposition tet quality < 1e-30      : 2
+    faces with concavity >  80 degrees                     : 0
+    faces with skewness >  10 (internal) or  50 (boundary) : 0
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 3
+    faces with face twist < 0.001                          : 0
+    faces on cells with determinant < 0.001                : 0
+
+    Number of bad faces     : 22
+    Number of marked points : 86
+
+Outer Iteration = 9
+
+    "Edge Filter Factor": min = 9.498906864e-12 av = 7.413023739e-07 max = 9.999996282e-07
+        333481 / 578416 elements used
+    "Face Filter Factor": min = 2.170786501e-05 av = 0.3828380719 max = 0.5
+        337493 / 340037 elements used
+
+    Inner iteration = 0
+
+        Collapsing 165003 faces (to point = 10002, to edge = 155001)
+            Uncollapsed edges = 178 / 578416
+            Uncollapsed edges = 0 / 578416
+
+        Collapsing 222194 edges after synchronisation and PointEdgeWave
+            Number of points : 285948
+            Not visited      : 0
+            Not collapsed    : 31659
+            Collapsed        : 254289
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 1
+
+        Collapsing 4788 faces (to point = 4, to edge = 4784)
+            Uncollapsed edges = 189 / 214928
+            Uncollapsed edges = 0 / 214928
+
+        Collapsing 4957 edges after synchronisation and PointEdgeWave
+            Number of points : 90243
+            Not visited      : 0
+            Not collapsed    : 81161
+            Collapsed        : 9082
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 2
+
+        Collapsing 999 faces (to point = 1, to edge = 998)
+            Uncollapsed edges = 191 / 204880
+            Uncollapsed edges = 0 / 204880
+
+        Collapsing 904 edges after synchronisation and PointEdgeWave
+            Number of points : 85297
+            Not visited      : 0
+            Not collapsed    : 83578
+            Collapsed        : 1719
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 3
+
+        Collapsing 357 faces (to point = 0, to edge = 357)
+            Uncollapsed edges = 196 / 203063
+            Uncollapsed edges = 0 / 203063
+
+        Collapsing 197 edges after synchronisation and PointEdgeWave
+            Number of points : 84394
+            Not visited      : 0
+            Not collapsed    : 84017
+            Collapsed        : 377
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 4
+
+        Collapsing 224 faces (to point = 0, to edge = 224)
+            Uncollapsed edges = 194 / 202669
+            Uncollapsed edges = 0 / 202669
+
+        Collapsing 53 edges after synchronisation and PointEdgeWave
+            Number of points : 84197
+            Not visited      : 0
+            Not collapsed    : 84096
+            Collapsed        : 101
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 5
+
+        Collapsing 199 faces (to point = 0, to edge = 199)
+            Uncollapsed edges = 199 / 202566
+            Uncollapsed edges = 0 / 202566
+
+        Collapsing 16 edges after synchronisation and PointEdgeWave
+            Number of points : 84144
+            Not visited      : 0
+            Not collapsed    : 84112
+            Collapsed        : 32
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 6
+
+        Collapsing 195 faces (to point = 0, to edge = 195)
+            Uncollapsed edges = 200 / 202534
+            Uncollapsed edges = 0 / 202534
+
+        Collapsing 11 edges after synchronisation and PointEdgeWave
+            Number of points : 84128
+            Not visited      : 0
+            Not collapsed    : 84106
+            Collapsed        : 22
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 7
+
+        Collapsing 191 faces (to point = 0, to edge = 191)
+            Uncollapsed edges = 200 / 202512
+            Uncollapsed edges = 0 / 202512
+
+        Collapsing 7 edges after synchronisation and PointEdgeWave
+            Number of points : 84117
+            Not visited      : 0
+            Not collapsed    : 84103
+            Collapsed        : 14
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 8
+
+        Collapsing 192 faces (to point = 0, to edge = 192)
+            Uncollapsed edges = 200 / 202497
+            Uncollapsed edges = 0 / 202497
+
+        Collapsing 8 edges after synchronisation and PointEdgeWave
+            Number of points : 84110
+            Not visited      : 0
+            Not collapsed    : 84094
+            Collapsed        : 16
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 0
+
+        Collapsing 0 small edges
+        Collapsing 15864 in line edges
+            Uncollapsed edges = 0 / 202481
+
+        Collapsing 15864 edges after synchronisation and PointEdgeWave
+            Number of points : 84102
+            Not visited      : 0
+            Not collapsed    : 55108
+            Collapsed        : 28994
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 1
+
+        Collapsing 0 small edges
+        Collapsing 0 in line edges
+
+Checking faces in error :
+    non-orthogonality >  45 degrees                        : 17
+    faces with face pyramid volume <     0                 : 0
+    faces with face-decomposition tet quality < 1e-30      : 2
+    faces with concavity >  80 degrees                     : 0
+    faces with skewness >  10 (internal) or  50 (boundary) : 0
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 3
+    faces with face twist < 0.001                          : 0
+    faces on cells with determinant < 0.001                : 0
+
+    Number of bad faces     : 22
+    Number of marked points : 86
+
+Writing collapsed mesh to time 101
+
+
+ExecutionTime = 102.2 s  ClockTime = 102 s
+
+End
+

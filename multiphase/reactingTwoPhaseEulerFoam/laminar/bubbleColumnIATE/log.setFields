@@ -1,0 +1,43 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1712                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v1712
+Arch   : "LSB;label=32;scalar=64"
+Exec   : setFields
+Date   : Jan 05 2018
+Time   : 01:00:40
+Host   : "inabower-PC"
+PID    : 11836
+I/O    : uncollated
+Case   : /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/multiphase/reactingTwoPhaseEulerFoam/laminar/bubbleColumnIATE
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+Reading setFieldsDict
+
+Setting field default values
+--> FOAM Warning : 
+    From function bool setCellFieldType(const Foam::word&, const Foam::fvMesh&, const labelList&, Foam::Istream&) [with Type = double; Foam::labelList = Foam::List<int>]
+    in file setFields.C at line 123
+    Field alpha1 not found
+
+Setting field region values
+    Adding cells with center within boxes 1((0 0 -0.1) (0.15 0.701 0.1))
+--> FOAM Warning : 
+    From function bool setCellFieldType(const Foam::word&, const Foam::fvMesh&, const labelList&, Foam::Istream&) [with Type = double; Foam::labelList = Foam::List<int>]
+    in file setFields.C at line 123
+    Field alphaair not found
+
+End
+

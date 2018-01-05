@@ -1,0 +1,48 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1712                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v1712
+Arch   : "LSB;label=32;scalar=64"
+Exec   : topoSet -region cabin -dict system/topoSetDictRegister
+Date   : Jan 05 2018
+Time   : 17:49:20
+Host   : "inabower-PC"
+PID    : 11229
+I/O    : uncollated
+Case   : /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/windshieldCondensation
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create polyMesh cabin for time = 0
+
+Reading topoSetDict
+
+Time = 0
+    mesh not changed.
+Created faceSet f1
+    Applying source boxToFace
+    Adding faces with centre within boxes 1((-0.126 0.08665 0.2565) (0.02 0.090665 0.446))
+    faceSet f1 now size 70
+Created faceZoneSet f1Zone
+    Applying source setAndNormalToFaceZone
+    Adding all faces from faceSet f1 ...
+    faceZoneSet f1Zone now size 70
+Created cellZoneSet c1
+    Applying source faceToCell
+    Adding cells according to faceSet f1Zone ...
+    cellZoneSet c1 now size 70
+Created cellZoneSet c1Zone
+    Applying source setToCellZone
+    Adding all cells from cellSet c1 ...
+    cellZoneSet c1Zone now size 70
+End
+

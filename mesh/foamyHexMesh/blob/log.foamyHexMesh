@@ -1,0 +1,3222 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1712                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v1712
+Arch   : "LSB;label=32;scalar=64"
+Exec   : foamyHexMesh
+Date   : Jan 05 2018
+Time   : 06:56:48
+Host   : "inabower-PC"
+PID    : 29788
+I/O    : uncollated
+Case   : /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/blob
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+
+Reading geometryToConformTo
+
+    blob
+
+Testing for locationInMesh (0.1 0.1 0.2)
+    is inside surface blob.stl
+    Checking blob.stl
+        Index = 0
+        Offset = 0
+        has 0 baffles out of 3072 triangles
+    Sum of all the surface normals (if near zero, surface is probably closed):
+    Note: Does not include baffle surfaces in calculation
+        Sum = (5.87276176763e-19 4.6982094141e-19 1.98770398289e-19)
+        mag(Sum) = 7.77904040366e-19
+Reading cellShapeControlMesh from 0
+
+Cell Aspect Ratio Control
+    Ratio     : 1
+    Direction : (1 0 0)
+
+Shape Control : blob
+    Selecting cellSizeAndAlignmentControl searchableSurfaceControl
+    Master settings:
+        Selecting cellSizeFunction uniform
+        Selecting surfaceCellSizeFunction uniformValue
+
+    There are 1 region control functions
+
+Conforming to feature points
+    Circulating edges is: off
+    Guarding feature points is: off
+    Snapping to feature points is: off
+    Specialising feature points is: off
+
+Selecting initialPointsMethod autoDensity
+
+Selecting relaxationModel adaptiveLinear
+
+Selecting faceAreaWeightModel piecewiseLinearRamp
+Inserting points from blob (searchableSurfaceControl)
+    Force insertion is off
+    Got initial vertices list of size 1538
+    Clipped minimum size
+    Check sizes
+    Inserted 1538/1538
+Inserting points from blob (searchableSurfaceControl)
+    Force insertion is off
+    Inserted extra points 0/0
+Maximum number of refinement iterations : 0
+
+Smoothing alignments
+Iteration 0, Residual = 0
+Iteration 1, Residual = 0.208793548778
+Iteration 2, Residual = 0.102839545369
+Iteration 3, Residual = 0.0556788368773
+Iteration 4, Residual = 0.0410160357963
+Iteration 5, Residual = 0.0377305692776
+Iteration 6, Residual = 0.0327198953011
+Iteration 7, Residual = 0.028977992824
+Iteration 8, Residual = 0.0316140336719
+Iteration 9, Residual = 0.0262555051976
+Iteration 10, Residual = 0.027548734129
+Iteration 11, Residual = 0.0290477188795
+Iteration 12, Residual = 0.0267265866988
+Iteration 13, Residual = 0.0266900766027
+Iteration 14, Residual = 0.0315643486307
+Iteration 15, Residual = 0.0209475804703
+Iteration 16, Residual = 0.0297247599232
+Iteration 17, Residual = 0.0313672915101
+Iteration 18, Residual = 0.0320248372472
+Iteration 19, Residual = 0.029352753095
+Iteration 20, Residual = 0.0328156989633
+Iteration 21, Residual = 0.0325750700751
+Iteration 22, Residual = 0.0329060226575
+Iteration 23, Residual = 0.0275119045267
+Iteration 24, Residual = 0.0374156112492
+Iteration 25, Residual = 0.0398050773517
+Iteration 26, Residual = 0.0313605095943
+Iteration 27, Residual = 0.0323920990669
+Iteration 28, Residual = 0.0337804441749
+Iteration 29, Residual = 0.0234829332203
+Iteration 30, Residual = 0.0276512783934
+Iteration 31, Residual = 0.0320773604645
+Iteration 32, Residual = 0.0417519791921
+Iteration 33, Residual = 0.0262704613688
+Iteration 34, Residual = 0.0310955420023
+Iteration 35, Residual = 0.0353554679049
+Iteration 36, Residual = 0.0385095965176
+Iteration 37, Residual = 0.0301975725551
+Iteration 38, Residual = 0.0311917259475
+Iteration 39, Residual = 0.0310512152663
+Iteration 40, Residual = 0.0361185281529
+Iteration 41, Residual = 0.0386255621819
+Iteration 42, Residual = 0.0341948328294
+Iteration 43, Residual = 0.0231160114695
+Iteration 44, Residual = 0.0289797697411
+Iteration 45, Residual = 0.0360629943645
+Iteration 46, Residual = 0.0318053267206
+Iteration 47, Residual = 0.0310096643974
+Iteration 48, Residual = 0.0331401871674
+Iteration 49, Residual = 0.0334733628984
+Iteration 50, Residual = 0.0327986024647
+Iteration 51, Residual = 0.0310893736385
+Iteration 52, Residual = 0.0369781874635
+Iteration 53, Residual = 0.0296180391329
+Iteration 54, Residual = 0.0332308922291
+Iteration 55, Residual = 0.0325525817227
+Iteration 56, Residual = 0.0340643486166
+Iteration 57, Residual = 0.0402208228889
+Iteration 58, Residual = 0.025135103516
+Iteration 59, Residual = 0.0329159120464
+Iteration 60, Residual = 0.0292104702589
+Iteration 61, Residual = 0.0296462413623
+Iteration 62, Residual = 0.0311262019808
+Iteration 63, Residual = 0.0285146976085
+Iteration 64, Residual = 0.026822845709
+Iteration 65, Residual = 0.0291070261791
+Iteration 66, Residual = 0.0332598826648
+Iteration 67, Residual = 0.0300384052065
+Iteration 68, Residual = 0.033049824748
+Iteration 69, Residual = 0.0302370513222
+Iteration 70, Residual = 0.0347546011841
+Iteration 71, Residual = 0.0356845243772
+Iteration 72, Residual = 0.0331111707361
+Iteration 73, Residual = 0.0394235693677
+Iteration 74, Residual = 0.0348408836442
+Iteration 75, Residual = 0.0380854200736
+Iteration 76, Residual = 0.0432139771404
+Iteration 77, Residual = 0.0401003623167
+Iteration 78, Residual = 0.0320013100929
+Iteration 79, Residual = 0.0457457443946
+Iteration 80, Residual = 0.0319566400835
+Iteration 81, Residual = 0.037041579327
+Iteration 82, Residual = 0.0331295837264
+Iteration 83, Residual = 0.0398426677807
+Iteration 84, Residual = 0.0357504748481
+Iteration 85, Residual = 0.0420019180094
+Iteration 86, Residual = 0.0404865678254
+Iteration 87, Residual = 0.0361899521575
+Iteration 88, Residual = 0.0388239833622
+Iteration 89, Residual = 0.0390134226545
+Iteration 90, Residual = 0.0345935021713
+Iteration 91, Residual = 0.0332159033191
+Iteration 92, Residual = 0.0319107281946
+Iteration 93, Residual = 0.0385965032976
+Iteration 94, Residual = 0.0347777624543
+Iteration 95, Residual = 0.0317285723853
+Iteration 96, Residual = 0.0354699057703
+Iteration 97, Residual = 0.0406063844365
+Iteration 98, Residual = 0.0382590901897
+Iteration 99, Residual = 0.0355982033951
+Background cell size and alignment mesh:
+     
+    	# Mesh Statistics
+         # Proc	    0	  Sum	Average
+         Cells	 5903	 5903	 5903
+         Edges	 8976	 8976	 8976
+         Faces	13342	13342	13342
+         Points	 1538	 1538	 1538
+Size (Min/Max) = 0.1 0.1
+Triangulation is valid
+Writing cellShapeControlMesh
+
+Sorting faces, owner and neighbour into upper triangular order
+Creating patches
+Creating mesh
+Adding patches
+Mesh created
+
+Inserting initial points
+
+    autoDensity
+        3272 points placed
+        5687 locations queried
+        0.575347283278 success rate
+        1 levels of recursion (maximum)
+    3272 points to insert...
+    3272 points inserted, failed to insert 0 (0 %)
+
+Inserting feature points
+    Inserted 0 feature vertices
+
+Calculating target cell alignment and size
+Triangulation is fully contained in the cell size mesh
+
+Rebuilding surface conformation for more iterations
+    Vertices marked as being near a boundary: 1017 (estimated)
+    Vertices marked as being near a boundary: 760 (after dual surface intersection)
+
+Initial conformation
+    Number of vertices 3272
+    Number of surface hits 724
+    Number of edge hits 0
+    Reinserted 1448 vertices out of 1448
+
+Stopping iterations when: 
+    total number of hits drops below 0.001 of initial hits (0)
+ or 
+    maximum number of iterations (15) is reached
+
+Conformation iteration 0
+    Number of vertices 4720
+    Number of surface hits 179
+    Number of edge hits 0
+    Reinserted 358 vertices out of 358
+
+Conformation iteration 1
+    Number of vertices 5078
+    Number of surface hits 79
+    Number of edge hits 0
+    Reinserted 158 vertices out of 158
+
+Conformation iteration 2
+    Number of vertices 5236
+    Number of surface hits 31
+    Number of edge hits 0
+    Reinserted 62 vertices out of 62
+
+Conformation iteration 3
+    Number of vertices 5298
+    Number of surface hits 8
+    Number of edge hits 0
+    Reinserted 16 vertices out of 16
+
+Conformation iteration 4
+    Number of vertices 5314
+    Number of surface hits 1
+    Number of edge hits 0
+    Reinserted 2 vertices out of 2
+
+Conformation iteration 5
+    Number of vertices 5316
+    Number of surface hits 0
+    Number of edge hits 0
+
+Total hits (0) less than number of failed insertions (0), stopping iterations
+
+Storing surface conformation
+    Stored 2044 vertices
+
+Triangulation is fully contained in the cell size mesh
+
+Time = 1
+
+Relaxation = 1
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    2465 points to insert...
+    2465 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 2044 vertices out of 2044
+
+Total displacement = (-0.221108560441 -0.0490423682581 -0.688180326161)
+Total distance = 92.2122455632
+
+
+ExecutionTime = 1.16 s  ClockTime = 1 s
+
+
+Time = 2
+
+Relaxation = 0.9875
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    2427 points to insert...
+    2427 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 2044 vertices out of 2044
+
+Total displacement = (-0.146569688794 -0.165213361193 -0.14146345893)
+Total distance = 91.4528317419
+
+
+ExecutionTime = 1.26 s  ClockTime = 1 s
+
+
+Time = 3
+
+Relaxation = 0.975
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    2290 points to insert...
+    2290 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 2044 vertices out of 2044
+
+Total displacement = (-0.525224791083 -0.0328466734613 -0.761144554442)
+Total distance = 88.185766327
+
+
+ExecutionTime = 1.34 s  ClockTime = 1 s
+
+
+Time = 4
+
+Relaxation = 0.9625
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    2277 points to insert...
+    2277 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 2044 vertices out of 2044
+
+Total displacement = (0.392787930999 -0.112618124307 -0.688069376176)
+Total distance = 86.9095484916
+
+
+ExecutionTime = 1.42 s  ClockTime = 1 s
+
+
+Time = 5
+
+Relaxation = 0.95
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    2164 points to insert...
+    2164 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 2044 vertices out of 2044
+
+Total displacement = (0.0608006280341 -0.21382253251 -0.896936548582)
+Total distance = 86.5852310959
+
+
+ExecutionTime = 1.49 s  ClockTime = 1 s
+
+
+Time = 6
+
+Relaxation = 0.9375
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    2158 points to insert...
+    2158 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 2044 vertices out of 2044
+
+Total displacement = (0.112725970136 -0.0739415769857 -0.908070246217)
+Total distance = 86.5276906117
+
+
+ExecutionTime = 1.57 s  ClockTime = 1 s
+
+
+Time = 7
+
+Relaxation = 0.925
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    2078 points to insert...
+    2078 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 2044 vertices out of 2044
+
+Total displacement = (-0.430521969667 0.108055879067 -0.750473804092)
+Total distance = 84.6550261024
+
+
+ExecutionTime = 1.65 s  ClockTime = 1 s
+
+
+Time = 8
+
+Relaxation = 0.9125
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    2074 points to insert...
+    2074 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 2044 vertices out of 2044
+
+Total displacement = (-0.0827941687677 0.430572516196 -0.417734878065)
+Total distance = 84.4663101152
+
+
+ExecutionTime = 1.73 s  ClockTime = 1 s
+
+
+Time = 9
+
+Relaxation = 0.9
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    2090 points to insert...
+    2090 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 2044 vertices out of 2044
+
+Total displacement = (-0.409746896625 0.131284810808 -0.917118517308)
+Total distance = 86.475994507
+
+
+ExecutionTime = 1.8 s  ClockTime = 1 s
+
+
+Time = 10
+
+Relaxation = 0.8875
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    2046 points to insert...
+    2046 points inserted, failed to insert 0 (0 %)
+
+Rebuilding surface conformation for more iterations
+    Vertices marked as being near a boundary: 760 (estimated)
+    Vertices marked as being near a boundary: 584 (after dual surface intersection)
+
+Initial conformation
+    Number of vertices 2046
+    Number of surface hits 638
+    Number of edge hits 0
+    Reinserted 1276 vertices out of 1276
+
+Stopping iterations when: 
+    total number of hits drops below 0.001 of initial hits (0)
+ or 
+    maximum number of iterations (15) is reached
+
+Conformation iteration 0
+    Number of vertices 3322
+    Number of surface hits 159
+    Number of edge hits 0
+    Reinserted 318 vertices out of 318
+
+Conformation iteration 1
+    Number of vertices 3640
+    Number of surface hits 84
+    Number of edge hits 0
+    Reinserted 168 vertices out of 168
+
+Conformation iteration 2
+    Number of vertices 3808
+    Number of surface hits 28
+    Number of edge hits 0
+    Reinserted 56 vertices out of 56
+
+Conformation iteration 3
+    Number of vertices 3864
+    Number of surface hits 8
+    Number of edge hits 0
+    Reinserted 16 vertices out of 16
+
+Conformation iteration 4
+    Number of vertices 3880
+    Number of surface hits 1
+    Number of edge hits 0
+    Reinserted 2 vertices out of 2
+
+Conformation iteration 5
+    Number of vertices 3882
+    Number of surface hits 0
+    Number of edge hits 0
+
+Total hits (0) less than number of failed insertions (0), stopping iterations
+
+Storing surface conformation
+    Stored 1836 vertices
+
+
+Total displacement = (-0.536495578818 -0.248502123699 -0.658951763163)
+Total distance = 87.7512394474
+
+
+ExecutionTime = 2.49 s  ClockTime = 2 s
+
+
+Time = 11
+
+Relaxation = 0.875
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    2005 points to insert...
+    2005 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1836 vertices out of 1836
+
+Total displacement = (-0.180969956561 -0.193244032477 -0.665522016603)
+Total distance = 88.5851650325
+
+
+ExecutionTime = 2.56 s  ClockTime = 2 s
+
+
+Time = 12
+
+Relaxation = 0.8625
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1984 points to insert...
+    1984 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1836 vertices out of 1836
+
+Total displacement = (0.485619640115 -0.145434934587 -0.56447032721)
+Total distance = 86.7810004379
+
+
+ExecutionTime = 2.65 s  ClockTime = 2 s
+
+
+Time = 13
+
+Relaxation = 0.85
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1990 points to insert...
+    1990 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1836 vertices out of 1836
+
+Total displacement = (0.169116853443 0.221680870471 -0.256949640613)
+Total distance = 86.6783370532
+
+
+ExecutionTime = 2.73 s  ClockTime = 2 s
+
+
+Time = 14
+
+Relaxation = 0.8375
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1952 points to insert...
+    1952 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1836 vertices out of 1836
+
+Total displacement = (-0.047608669643 0.183724053181 -0.412255669798)
+Total distance = 84.9664714962
+
+
+ExecutionTime = 2.81 s  ClockTime = 2 s
+
+
+Time = 15
+
+Relaxation = 0.825
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1962 points to insert...
+    1962 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1836 vertices out of 1836
+
+Total displacement = (-0.0709302695069 0.17207039356 -0.306581338116)
+Total distance = 84.8094091318
+
+
+ExecutionTime = 2.91 s  ClockTime = 3 s
+
+
+Time = 16
+
+Relaxation = 0.8125
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1925 points to insert...
+    1925 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1836 vertices out of 1836
+
+Total displacement = (-0.081582968216 -0.345303306587 -0.591404970759)
+Total distance = 84.5123982346
+
+
+ExecutionTime = 3 s  ClockTime = 3 s
+
+
+Time = 17
+
+Relaxation = 0.8
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1908 points to insert...
+    1908 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1836 vertices out of 1836
+
+Total displacement = (0.164628264665 0.0255360939615 -0.9699414815)
+Total distance = 83.2217381385
+
+
+ExecutionTime = 3.08 s  ClockTime = 3 s
+
+
+Time = 18
+
+Relaxation = 0.7875
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1895 points to insert...
+    1895 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1836 vertices out of 1836
+
+Total displacement = (0.508156830355 -0.492622746462 -0.689869762506)
+Total distance = 83.7933530411
+
+
+ExecutionTime = 3.15 s  ClockTime = 3 s
+
+
+Time = 19
+
+Relaxation = 0.775
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1887 points to insert...
+    1887 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1836 vertices out of 1836
+
+Total displacement = (0.0570714570695 0.10078165788 -0.544575718615)
+Total distance = 85.3515078667
+
+
+ExecutionTime = 3.24 s  ClockTime = 3 s
+
+
+Time = 20
+
+Relaxation = 0.7625
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1864 points to insert...
+    1864 points inserted, failed to insert 0 (0 %)
+
+Rebuilding surface conformation for more iterations
+    Vertices marked as being near a boundary: 792 (estimated)
+    Vertices marked as being near a boundary: 593 (after dual surface intersection)
+
+Initial conformation
+    Number of vertices 1864
+    Number of surface hits 640
+    Number of edge hits 0
+    Reinserted 1280 vertices out of 1280
+
+Stopping iterations when: 
+    total number of hits drops below 0.001 of initial hits (0)
+ or 
+    maximum number of iterations (15) is reached
+
+Conformation iteration 0
+    Number of vertices 3144
+    Number of surface hits 144
+    Number of edge hits 0
+    Reinserted 288 vertices out of 288
+
+Conformation iteration 1
+    Number of vertices 3432
+    Number of surface hits 87
+    Number of edge hits 0
+    Reinserted 174 vertices out of 174
+
+Conformation iteration 2
+    Number of vertices 3606
+    Number of surface hits 35
+    Number of edge hits 0
+    Reinserted 70 vertices out of 70
+
+Conformation iteration 3
+    Number of vertices 3676
+    Number of surface hits 11
+    Number of edge hits 0
+    Reinserted 22 vertices out of 22
+
+Conformation iteration 4
+    Number of vertices 3698
+    Number of surface hits 1
+    Number of edge hits 0
+    Reinserted 2 vertices out of 2
+
+Conformation iteration 5
+    Number of vertices 3700
+    Number of surface hits 0
+    Number of edge hits 0
+
+Total hits (0) less than number of failed insertions (0), stopping iterations
+
+Storing surface conformation
+    Stored 1836 vertices
+
+
+Total displacement = (-0.167518994504 0.096494909348 -0.488508458469)
+Total distance = 86.1742029038
+
+
+ExecutionTime = 4.03 s  ClockTime = 4 s
+
+
+Time = 21
+
+Relaxation = 0.75
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1849 points to insert...
+    1849 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1836 vertices out of 1836
+
+Total displacement = (-0.127789074975 -0.315141764046 -0.698241971501)
+Total distance = 87.0280998207
+
+
+ExecutionTime = 4.12 s  ClockTime = 4 s
+
+
+Time = 22
+
+Relaxation = 0.7375
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1846 points to insert...
+    1846 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1836 vertices out of 1836
+
+Total displacement = (-0.0696920080988 -0.25157229789 -0.7125460238)
+Total distance = 85.4127334781
+
+
+ExecutionTime = 4.22 s  ClockTime = 4 s
+
+
+Time = 23
+
+Relaxation = 0.725
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1854 points to insert...
+    1854 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1836 vertices out of 1836
+
+Total displacement = (0.143755818301 -0.51904382538 -0.502827044751)
+Total distance = 85.5228307207
+
+
+ExecutionTime = 4.32 s  ClockTime = 4 s
+
+
+Time = 24
+
+Relaxation = 0.7125
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1821 points to insert...
+    1821 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1836 vertices out of 1836
+
+Total displacement = (-0.192449252792 -0.45452732353 -0.433986074721)
+Total distance = 83.9484156272
+
+
+ExecutionTime = 4.42 s  ClockTime = 4 s
+
+
+Time = 25
+
+Relaxation = 0.7
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1790 points to insert...
+    1790 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1836 vertices out of 1836
+
+Total displacement = (-0.177289588926 -0.262518971199 -0.272545190098)
+Total distance = 82.1220515073
+
+
+ExecutionTime = 4.48 s  ClockTime = 4 s
+
+
+Time = 26
+
+Relaxation = 0.6875
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1796 points to insert...
+    1796 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1836 vertices out of 1836
+
+Total displacement = (-0.276160168498 -0.143802175498 -0.0954862228192)
+Total distance = 83.5195577591
+
+
+ExecutionTime = 4.56 s  ClockTime = 4 s
+
+
+Time = 27
+
+Relaxation = 0.675
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1770 points to insert...
+    1770 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1836 vertices out of 1836
+
+Total displacement = (-0.295607036103 -0.267072209441 -0.521309897882)
+Total distance = 84.4661741975
+
+
+ExecutionTime = 4.63 s  ClockTime = 4 s
+
+
+Time = 28
+
+Relaxation = 0.6625
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1758 points to insert...
+    1758 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1836 vertices out of 1836
+
+Total displacement = (-0.195125678292 -0.245134327911 -0.42459259347)
+Total distance = 83.5265286503
+
+
+ExecutionTime = 4.7 s  ClockTime = 4 s
+
+
+Time = 29
+
+Relaxation = 0.65
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1763 points to insert...
+    1763 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1836 vertices out of 1836
+
+Total displacement = (0.0779856706107 -0.493092365255 -0.550455034955)
+Total distance = 83.2475828377
+
+
+ExecutionTime = 4.76 s  ClockTime = 4 s
+
+
+Time = 30
+
+Relaxation = 0.6375
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1726 points to insert...
+    1726 points inserted, failed to insert 0 (0 %)
+
+Rebuilding surface conformation for more iterations
+    Vertices marked as being near a boundary: 787 (estimated)
+    Vertices marked as being near a boundary: 594 (after dual surface intersection)
+
+Initial conformation
+    Number of vertices 1726
+    Number of surface hits 648
+    Number of edge hits 0
+    Reinserted 1296 vertices out of 1296
+
+Stopping iterations when: 
+    total number of hits drops below 0.001 of initial hits (0)
+ or 
+    maximum number of iterations (15) is reached
+
+Conformation iteration 0
+    Number of vertices 3022
+    Number of surface hits 135
+    Number of edge hits 0
+    Reinserted 270 vertices out of 270
+
+Conformation iteration 1
+    Number of vertices 3292
+    Number of surface hits 81
+    Number of edge hits 0
+    Reinserted 162 vertices out of 162
+
+Conformation iteration 2
+    Number of vertices 3454
+    Number of surface hits 36
+    Number of edge hits 0
+    Reinserted 72 vertices out of 72
+
+Conformation iteration 3
+    Number of vertices 3526
+    Number of surface hits 5
+    Number of edge hits 0
+    Reinserted 10 vertices out of 10
+
+Conformation iteration 4
+    Number of vertices 3536
+    Number of surface hits 1
+    Number of edge hits 0
+    Reinserted 2 vertices out of 2
+
+Conformation iteration 5
+    Number of vertices 3538
+    Number of surface hits 0
+    Number of edge hits 0
+
+Total hits (0) less than number of failed insertions (0), stopping iterations
+
+Storing surface conformation
+    Stored 1812 vertices
+
+
+Total displacement = (-0.142675514335 -0.447007890764 -0.625023414212)
+Total distance = 82.9220417133
+
+
+ExecutionTime = 5.42 s  ClockTime = 5 s
+
+
+Time = 31
+
+Relaxation = 0.625
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1703 points to insert...
+    1703 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1812 vertices out of 1812
+
+Total displacement = (-0.251512301947 -0.00302275716628 -0.53720085463)
+Total distance = 83.6289700575
+
+
+ExecutionTime = 5.48 s  ClockTime = 5 s
+
+
+Time = 32
+
+Relaxation = 0.6125
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1675 points to insert...
+    1675 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1812 vertices out of 1812
+
+Total displacement = (-0.0611695346159 -0.237902088678 -0.793838871029)
+Total distance = 85.5690022156
+
+
+ExecutionTime = 5.55 s  ClockTime = 5 s
+
+
+Time = 33
+
+Relaxation = 0.6
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1674 points to insert...
+    1674 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1812 vertices out of 1812
+
+Total displacement = (-0.083803653355 0.0077302159148 -0.901205311682)
+Total distance = 85.2688109689
+
+
+ExecutionTime = 5.62 s  ClockTime = 5 s
+
+
+Time = 34
+
+Relaxation = 0.5875
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1659 points to insert...
+    1659 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1812 vertices out of 1812
+
+Total displacement = (0.213013985663 -0.355357133925 -0.818719438065)
+Total distance = 83.0994603024
+
+
+ExecutionTime = 5.68 s  ClockTime = 5 s
+
+
+Time = 35
+
+Relaxation = 0.575
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1617 points to insert...
+    1617 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1812 vertices out of 1812
+
+Total displacement = (-0.243652684458 -0.281879097449 -0.861847856748)
+Total distance = 81.3494329041
+
+
+ExecutionTime = 5.75 s  ClockTime = 5 s
+
+
+Time = 36
+
+Relaxation = 0.5625
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1616 points to insert...
+    1616 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1812 vertices out of 1812
+
+Total displacement = (-0.00880011961856 -0.334536088839 -0.609887102168)
+Total distance = 81.3618886075
+
+
+ExecutionTime = 5.82 s  ClockTime = 5 s
+
+
+Time = 37
+
+Relaxation = 0.55
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1621 points to insert...
+    1621 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1812 vertices out of 1812
+
+Total displacement = (-0.160831339583 0.142385545616 -0.604099122188)
+Total distance = 84.2442393082
+
+
+ExecutionTime = 5.88 s  ClockTime = 6 s
+
+
+Time = 38
+
+Relaxation = 0.5375
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1591 points to insert...
+    1591 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1812 vertices out of 1812
+
+Total displacement = (-0.0467521571748 -0.268250793636 -0.496313416675)
+Total distance = 87.7372930219
+
+
+ExecutionTime = 5.95 s  ClockTime = 6 s
+
+
+Time = 39
+
+Relaxation = 0.525
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1601 points to insert...
+    1601 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1812 vertices out of 1812
+
+Total displacement = (-0.227061011225 -0.0113248827679 -0.433023059335)
+Total distance = 86.2534490812
+
+
+ExecutionTime = 6.01 s  ClockTime = 6 s
+
+
+Time = 40
+
+Relaxation = 0.5125
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1582 points to insert...
+    1582 points inserted, failed to insert 0 (0 %)
+
+Rebuilding surface conformation for more iterations
+    Vertices marked as being near a boundary: 744 (estimated)
+    Vertices marked as being near a boundary: 565 (after dual surface intersection)
+
+Initial conformation
+    Number of vertices 1582
+    Number of surface hits 609
+    Number of edge hits 0
+    Reinserted 1218 vertices out of 1218
+
+Stopping iterations when: 
+    total number of hits drops below 0.001 of initial hits (0)
+ or 
+    maximum number of iterations (15) is reached
+
+Conformation iteration 0
+    Number of vertices 2800
+    Number of surface hits 130
+    Number of edge hits 0
+    Reinserted 260 vertices out of 260
+
+Conformation iteration 1
+    Number of vertices 3060
+    Number of surface hits 82
+    Number of edge hits 0
+    Reinserted 164 vertices out of 164
+
+Conformation iteration 2
+    Number of vertices 3224
+    Number of surface hits 37
+    Number of edge hits 0
+    Reinserted 74 vertices out of 74
+
+Conformation iteration 3
+    Number of vertices 3298
+    Number of surface hits 10
+    Number of edge hits 0
+    Reinserted 20 vertices out of 20
+
+Conformation iteration 4
+    Number of vertices 3318
+    Number of surface hits 4
+    Number of edge hits 0
+    Reinserted 8 vertices out of 8
+
+Conformation iteration 5
+    Number of vertices 3326
+    Number of surface hits 1
+    Number of edge hits 0
+    Reinserted 2 vertices out of 2
+
+Conformation iteration 6
+    Number of vertices 3328
+    Number of surface hits 0
+    Number of edge hits 0
+
+Total hits (0) less than number of failed insertions (0), stopping iterations
+
+Storing surface conformation
+    Stored 1746 vertices
+
+
+Total displacement = (0.164961697002 -0.18443660616 -0.51026059125)
+Total distance = 83.7876327879
+
+
+ExecutionTime = 6.72 s  ClockTime = 6 s
+
+
+Time = 41
+
+Relaxation = 0.5
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1568 points to insert...
+    1568 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1746 vertices out of 1746
+
+Total displacement = (0.0659194312062 -0.054988365717 -0.323906631777)
+Total distance = 81.1072756233
+
+
+ExecutionTime = 6.78 s  ClockTime = 6 s
+
+
+Time = 42
+
+Relaxation = 0.4875
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1572 points to insert...
+    1572 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1746 vertices out of 1746
+
+Total displacement = (-0.0947250562293 0.0588576890673 -0.194627500704)
+Total distance = 80.5903749652
+
+
+ExecutionTime = 6.83 s  ClockTime = 6 s
+
+
+Time = 43
+
+Relaxation = 0.475
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1584 points to insert...
+    1584 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1746 vertices out of 1746
+
+Total displacement = (-0.255761046603 0.0632288016357 -0.13828560841)
+Total distance = 83.1094629697
+
+
+ExecutionTime = 6.89 s  ClockTime = 7 s
+
+
+Time = 44
+
+Relaxation = 0.4625
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1564 points to insert...
+    1564 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1746 vertices out of 1746
+
+Total displacement = (-0.10973133478 0.0429625163631 -0.064748458161)
+Total distance = 84.0155895448
+
+
+ExecutionTime = 6.95 s  ClockTime = 7 s
+
+
+Time = 45
+
+Relaxation = 0.45
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1565 points to insert...
+    1565 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1746 vertices out of 1746
+
+Total displacement = (-0.115706119791 0.014453812198 -0.12537694452)
+Total distance = 82.7591739931
+
+
+ExecutionTime = 7.01 s  ClockTime = 7 s
+
+
+Time = 46
+
+Relaxation = 0.4375
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1564 points to insert...
+    1564 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1746 vertices out of 1746
+
+Total displacement = (0.0173527355158 0.176256764317 0.021228207258)
+Total distance = 83.9402275533
+
+
+ExecutionTime = 7.07 s  ClockTime = 7 s
+
+
+Time = 47
+
+Relaxation = 0.425
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1559 points to insert...
+    1559 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1746 vertices out of 1746
+
+Total displacement = (-0.113605433567 0.145913194513 -0.175064776514)
+Total distance = 84.6996360235
+
+
+ExecutionTime = 7.12 s  ClockTime = 7 s
+
+
+Time = 48
+
+Relaxation = 0.4125
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1558 points to insert...
+    1558 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1746 vertices out of 1746
+
+Total displacement = (-0.195726021939 0.0335500294748 0.0241652915938)
+Total distance = 84.2683957226
+
+
+ExecutionTime = 7.18 s  ClockTime = 7 s
+
+
+Time = 49
+
+Relaxation = 0.4
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1555 points to insert...
+    1555 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1746 vertices out of 1746
+
+Total displacement = (-0.0311456943932 0.181642653315 -0.198645068333)
+Total distance = 83.0755231895
+
+
+ExecutionTime = 7.24 s  ClockTime = 7 s
+
+
+Time = 50
+
+Relaxation = 0.3875
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1553 points to insert...
+    1553 points inserted, failed to insert 0 (0 %)
+
+Rebuilding surface conformation for more iterations
+    Vertices marked as being near a boundary: 740 (estimated)
+    Vertices marked as being near a boundary: 553 (after dual surface intersection)
+
+Initial conformation
+    Number of vertices 1553
+    Number of surface hits 604
+    Number of edge hits 0
+    Reinserted 1208 vertices out of 1208
+
+Stopping iterations when: 
+    total number of hits drops below 0.001 of initial hits (0)
+ or 
+    maximum number of iterations (15) is reached
+
+Conformation iteration 0
+    Number of vertices 2761
+    Number of surface hits 129
+    Number of edge hits 0
+    Reinserted 258 vertices out of 258
+
+Conformation iteration 1
+    Number of vertices 3019
+    Number of surface hits 81
+    Number of edge hits 0
+    Reinserted 162 vertices out of 162
+
+Conformation iteration 2
+    Number of vertices 3181
+    Number of surface hits 30
+    Number of edge hits 0
+    Reinserted 60 vertices out of 60
+
+Conformation iteration 3
+    Number of vertices 3241
+    Number of surface hits 12
+    Number of edge hits 0
+    Reinserted 24 vertices out of 24
+
+Conformation iteration 4
+    Number of vertices 3265
+    Number of surface hits 4
+    Number of edge hits 0
+    Reinserted 8 vertices out of 8
+
+Conformation iteration 5
+    Number of vertices 3273
+    Number of surface hits 0
+    Number of edge hits 0
+
+Total hits (0) less than number of failed insertions (0), stopping iterations
+
+Storing surface conformation
+    Stored 1720 vertices
+
+
+Total displacement = (-0.204174147726 0.125265828385 -0.0499964626746)
+Total distance = 80.7834754307
+
+
+ExecutionTime = 7.87 s  ClockTime = 8 s
+
+
+Time = 51
+
+Relaxation = 0.375
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1555 points to insert...
+    1555 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1720 vertices out of 1720
+
+Total displacement = (-0.204561357586 0.317884936374 -0.411895884286)
+Total distance = 78.1216319846
+
+
+ExecutionTime = 7.93 s  ClockTime = 8 s
+
+
+Time = 52
+
+Relaxation = 0.3625
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1559 points to insert...
+    1559 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1720 vertices out of 1720
+
+Total displacement = (-0.139406733346 0.412169992711 -0.504247884571)
+Total distance = 73.3066205744
+
+
+ExecutionTime = 8 s  ClockTime = 8 s
+
+
+Time = 53
+
+Relaxation = 0.35
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1559 points to insert...
+    1559 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1720 vertices out of 1720
+
+Total displacement = (-0.0677019799151 0.372045006098 -0.349028156325)
+Total distance = 67.8207426075
+
+
+ExecutionTime = 8.06 s  ClockTime = 8 s
+
+
+Time = 54
+
+Relaxation = 0.3375
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1558 points to insert...
+    1558 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1720 vertices out of 1720
+
+Total displacement = (-0.0528977879666 0.454697406938 -0.326900819801)
+Total distance = 59.8802686341
+
+
+ExecutionTime = 8.11 s  ClockTime = 8 s
+
+
+Time = 55
+
+Relaxation = 0.325
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1560 points to insert...
+    1560 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1720 vertices out of 1720
+
+Total displacement = (-0.158009360116 0.27791018398 -0.249503510492)
+Total distance = 51.1046709684
+
+
+ExecutionTime = 8.18 s  ClockTime = 8 s
+
+
+Time = 56
+
+Relaxation = 0.3125
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1560 points to insert...
+    1560 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1720 vertices out of 1720
+
+Total displacement = (-0.181946764317 0.326489921713 -0.261474570152)
+Total distance = 41.5944183838
+
+
+ExecutionTime = 8.24 s  ClockTime = 8 s
+
+
+Time = 57
+
+Relaxation = 0.3
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1560 points to insert...
+    1560 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1720 vertices out of 1720
+
+Total displacement = (-0.141958326853 0.309954111926 -0.227721549532)
+Total distance = 31.5840901604
+
+
+ExecutionTime = 8.3 s  ClockTime = 8 s
+
+
+Time = 58
+
+Relaxation = 0.2875
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1562 points to insert...
+    1562 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1720 vertices out of 1720
+
+Total displacement = (-0.078439647096 0.349345186719 -0.275574828026)
+Total distance = 22.4549039104
+
+
+ExecutionTime = 8.38 s  ClockTime = 8 s
+
+
+Time = 59
+
+Relaxation = 0.275
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1561 points to insert...
+    1561 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1720 vertices out of 1720
+
+Total displacement = (-0.123074949411 0.280746969036 -0.250821436563)
+Total distance = 14.8740297483
+
+
+ExecutionTime = 8.46 s  ClockTime = 8 s
+
+
+Time = 60
+
+Relaxation = 0.2625
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1562 points to insert...
+    1562 points inserted, failed to insert 0 (0 %)
+
+Rebuilding surface conformation for more iterations
+    Vertices marked as being near a boundary: 745 (estimated)
+    Vertices marked as being near a boundary: 550 (after dual surface intersection)
+
+Initial conformation
+    Number of vertices 1562
+    Number of surface hits 601
+    Number of edge hits 0
+    Reinserted 1202 vertices out of 1202
+
+Stopping iterations when: 
+    total number of hits drops below 0.001 of initial hits (0)
+ or 
+    maximum number of iterations (15) is reached
+
+Conformation iteration 0
+    Number of vertices 2764
+    Number of surface hits 137
+    Number of edge hits 0
+    Reinserted 274 vertices out of 274
+
+Conformation iteration 1
+    Number of vertices 3038
+    Number of surface hits 78
+    Number of edge hits 0
+    Reinserted 156 vertices out of 156
+
+Conformation iteration 2
+    Number of vertices 3194
+    Number of surface hits 34
+    Number of edge hits 0
+    Reinserted 68 vertices out of 68
+
+Conformation iteration 3
+    Number of vertices 3262
+    Number of surface hits 8
+    Number of edge hits 0
+    Reinserted 16 vertices out of 16
+
+Conformation iteration 4
+    Number of vertices 3278
+    Number of surface hits 2
+    Number of edge hits 0
+    Reinserted 4 vertices out of 4
+
+Conformation iteration 5
+    Number of vertices 3282
+    Number of surface hits 0
+    Number of edge hits 0
+
+Total hits (0) less than number of failed insertions (0), stopping iterations
+
+Storing surface conformation
+    Stored 1720 vertices
+
+
+Total displacement = (-0.0270501723354 0.337733060201 -0.236930265607)
+Total distance = 9.32186933378
+
+
+ExecutionTime = 9.14 s  ClockTime = 9 s
+
+
+Time = 61
+
+Relaxation = 0.25
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1561 points to insert...
+    1561 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1720 vertices out of 1720
+
+Total displacement = (-0.396333012793 0.467048869767 -0.565177591906)
+Total distance = 10.6521779077
+
+
+ExecutionTime = 9.21 s  ClockTime = 9 s
+
+
+Time = 62
+
+Relaxation = 0.2375
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1560 points to insert...
+    1560 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1720 vertices out of 1720
+
+Total displacement = (-0.451646752012 0.390581306143 -0.545454591192)
+Total distance = 6.62508188507
+
+
+ExecutionTime = 9.3 s  ClockTime = 9 s
+
+
+Time = 63
+
+Relaxation = 0.225
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1561 points to insert...
+    1561 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1720 vertices out of 1720
+
+Total displacement = (-0.541923145765 0.315847812936 -0.426100108376)
+Total distance = 5.70356829893
+
+
+ExecutionTime = 9.38 s  ClockTime = 9 s
+
+
+Time = 64
+
+Relaxation = 0.2125
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1563 points to insert...
+    1563 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1720 vertices out of 1720
+
+Total displacement = (-0.353855940202 0.327956496768 -0.561208260683)
+Total distance = 5.28674895292
+
+
+ExecutionTime = 9.46 s  ClockTime = 9 s
+
+
+Time = 65
+
+Relaxation = 0.2
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1564 points to insert...
+    1564 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1720 vertices out of 1720
+
+Total displacement = (-0.331610116124 0.332426272647 -0.466879045819)
+Total distance = 4.87254040224
+
+
+ExecutionTime = 9.56 s  ClockTime = 9 s
+
+
+Time = 66
+
+Relaxation = 0.1875
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1564 points to insert...
+    1564 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1720 vertices out of 1720
+
+Total displacement = (-0.305496090252 0.284687279645 -0.458923138008)
+Total distance = 4.36018289061
+
+
+ExecutionTime = 9.64 s  ClockTime = 9 s
+
+
+Time = 67
+
+Relaxation = 0.175
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1563 points to insert...
+    1563 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1720 vertices out of 1720
+
+Total displacement = (-0.215857885718 0.344076026072 -0.413418176011)
+Total distance = 3.76937372423
+
+
+ExecutionTime = 9.73 s  ClockTime = 9 s
+
+
+Time = 68
+
+Relaxation = 0.1625
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1564 points to insert...
+    1564 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1720 vertices out of 1720
+
+Total displacement = (-0.220739183667 0.319640929248 -0.412167029221)
+Total distance = 3.6104467665
+
+
+ExecutionTime = 9.8 s  ClockTime = 10 s
+
+
+Time = 69
+
+Relaxation = 0.15
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1565 points to insert...
+    1565 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1720 vertices out of 1720
+
+Total displacement = (-0.187150501034 0.357429233277 -0.468472251631)
+Total distance = 3.34683656595
+
+
+ExecutionTime = 9.9 s  ClockTime = 10 s
+
+
+Time = 70
+
+Relaxation = 0.1375
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1564 points to insert...
+    1564 points inserted, failed to insert 0 (0 %)
+
+Rebuilding surface conformation for more iterations
+    Vertices marked as being near a boundary: 731 (estimated)
+    Vertices marked as being near a boundary: 550 (after dual surface intersection)
+
+Initial conformation
+    Number of vertices 1564
+    Number of surface hits 607
+    Number of edge hits 0
+    Reinserted 1214 vertices out of 1214
+
+Stopping iterations when: 
+    total number of hits drops below 0.001 of initial hits (0)
+ or 
+    maximum number of iterations (15) is reached
+
+Conformation iteration 0
+    Number of vertices 2778
+    Number of surface hits 126
+    Number of edge hits 0
+    Reinserted 252 vertices out of 252
+
+Conformation iteration 1
+    Number of vertices 3030
+    Number of surface hits 69
+    Number of edge hits 0
+    Reinserted 138 vertices out of 138
+
+Conformation iteration 2
+    Number of vertices 3168
+    Number of surface hits 29
+    Number of edge hits 0
+    Reinserted 58 vertices out of 58
+
+Conformation iteration 3
+    Number of vertices 3226
+    Number of surface hits 6
+    Number of edge hits 0
+    Reinserted 12 vertices out of 12
+
+Conformation iteration 4
+    Number of vertices 3238
+    Number of surface hits 0
+    Number of edge hits 0
+
+Total hits (0) less than number of failed insertions (0), stopping iterations
+
+Storing surface conformation
+    Stored 1674 vertices
+
+
+Total displacement = (-0.0738849658712 0.341068728467 -0.4260816998)
+Total distance = 3.47574048887
+
+
+ExecutionTime = 10.53 s  ClockTime = 10 s
+
+
+Time = 71
+
+Relaxation = 0.125
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1561 points to insert...
+    1561 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1674 vertices out of 1674
+
+Total displacement = (0.261733704249 0.276216011268 -0.500910201044)
+Total distance = 7.5737808531
+
+
+ExecutionTime = 10.61 s  ClockTime = 10 s
+
+
+Time = 72
+
+Relaxation = 0.1125
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1561 points to insert...
+    1561 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1674 vertices out of 1674
+
+Total displacement = (0.240921345283 0.281309414735 -0.403328312923)
+Total distance = 6.3178044712
+
+
+ExecutionTime = 10.69 s  ClockTime = 10 s
+
+
+Time = 73
+
+Relaxation = 0.1
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1561 points to insert...
+    1561 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1674 vertices out of 1674
+
+Total displacement = (0.340273367912 0.332555127827 -0.433997056538)
+Total distance = 5.68968630103
+
+
+ExecutionTime = 10.75 s  ClockTime = 10 s
+
+
+Time = 74
+
+Relaxation = 0.0875
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1560 points to insert...
+    1560 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1674 vertices out of 1674
+
+Total displacement = (0.418312495121 0.219773228964 -0.317723468989)
+Total distance = 5.20753521528
+
+
+ExecutionTime = 10.83 s  ClockTime = 11 s
+
+
+Time = 75
+
+Relaxation = 0.075
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1560 points to insert...
+    1560 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1674 vertices out of 1674
+
+Total displacement = (0.441084598923 0.0833463188964 -0.304388363717)
+Total distance = 5.06622402536
+
+
+ExecutionTime = 10.89 s  ClockTime = 11 s
+
+
+Time = 76
+
+Relaxation = 0.0625
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1561 points to insert...
+    1561 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1674 vertices out of 1674
+
+Total displacement = (0.458911847644 0.100855238852 -0.362353118227)
+Total distance = 4.73711262876
+
+
+ExecutionTime = 10.95 s  ClockTime = 11 s
+
+
+Time = 77
+
+Relaxation = 0.05
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1561 points to insert...
+    1561 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1674 vertices out of 1674
+
+Total displacement = (0.402308781698 0.117684192486 -0.365518284414)
+Total distance = 4.53775309566
+
+
+ExecutionTime = 11.01 s  ClockTime = 11 s
+
+
+Time = 78
+
+Relaxation = 0.0375
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1561 points to insert...
+    1561 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1674 vertices out of 1674
+
+Total displacement = (0.391913578548 0.11008339899 -0.340605085894)
+Total distance = 4.32512841895
+
+
+ExecutionTime = 11.07 s  ClockTime = 11 s
+
+
+Time = 79
+
+Relaxation = 0.025
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1561 points to insert...
+    1561 points inserted, failed to insert 0 (0 %)
+
+Reinserting stored surface conformation
+    Reinserted 1674 vertices out of 1674
+
+Total displacement = (0.319745943123 0.13167958046 -0.392317297629)
+Total distance = 4.24497474817
+
+
+ExecutionTime = 11.14 s  ClockTime = 11 s
+
+
+Time = 80
+
+Relaxation = 0.0125
+
+Calculating target cell alignment and size
+
+Determining vertex displacements
+Limit displacements
+Sum displacements
+0 internal points are outside the domain. They will not be inserted.
+Clearing triangulation
+Inserted 0 fixed points
+
+Inserting displaced tessellation
+
+Inserting feature points
+    Inserted 0 feature vertices
+    1561 points to insert...
+    1561 points inserted, failed to insert 0 (0 %)
+
+Rebuilding surface conformation for more iterations
+    Vertices marked as being near a boundary: 721 (estimated)
+    Vertices marked as being near a boundary: 544 (after dual surface intersection)
+
+Initial conformation
+    Number of vertices 1561
+    Number of surface hits 590
+    Number of edge hits 0
+    Reinserted 1180 vertices out of 1180
+
+Stopping iterations when: 
+    total number of hits drops below 0.001 of initial hits (0)
+ or 
+    maximum number of iterations (15) is reached
+
+Conformation iteration 0
+    Number of vertices 2741
+    Number of surface hits 144
+    Number of edge hits 0
+    Reinserted 288 vertices out of 288
+
+Conformation iteration 1
+    Number of vertices 3029
+    Number of surface hits 84
+    Number of edge hits 0
+    Reinserted 168 vertices out of 168
+
+Conformation iteration 2
+    Number of vertices 3197
+    Number of surface hits 39
+    Number of edge hits 0
+    Reinserted 78 vertices out of 78
+
+Conformation iteration 3
+    Number of vertices 3275
+    Number of surface hits 7
+    Number of edge hits 0
+    Reinserted 14 vertices out of 14
+
+Conformation iteration 4
+    Number of vertices 3289
+    Number of surface hits 1
+    Number of edge hits 0
+    Reinserted 2 vertices out of 2
+
+Conformation iteration 5
+    Number of vertices 3291
+    Number of surface hits 0
+    Number of edge hits 0
+
+Total hits (0) less than number of failed insertions (0), stopping iterations
+
+Storing surface conformation
+    Stored 1730 vertices
+
+
+Writing internalDelaunayVertices to "80"
+
+Calculating target cell alignment and size
+
+Merging identical points
+mergeIdenticalDualVertices:
+    zero-length edges     : 7
+
+mergeIdenticalDualVertices:
+    zero-length edges     : 0
+
+    Merged 7 points 
+
+Sorting faces, owner and neighbour into upper triangular order
+
+Removing unused cells
+    Removing 865 unused cell labels
+
+Removing unused points
+    Removing 332 unused points
+
+Writing polyMesh to "80"
+    Reordering points into internal/external
+    Number of internal points: 12904
+    Number of external points: 18886
+    Constructing mesh
+    Adding patches to mesh
+    Adding zones to mesh
+    Add pointZones
+        Adding 12904 points of type internal
+        Adding 5982 points of type surface
+        Adding 0 points of type featureEdge
+        Adding 0 points of type featurePoint
+        Adding 0 points of type constrained
+    Adding indirect patch faces set
+
+Filtering edges on polyMesh
+
+Merging:
+    edges with length less than 1e-06 metres
+    edges split by a point with edges in line to within 180 degrees
+    Minimum edge length reduction factor = 0.5
+
+Face collapsing is on
+    Initial face length factor = 0.5
+Control mesh quality = on
+    Minimum edge length reduction factor = 0.5
+    Minimum face area reduction factor = 0.5
+    Maximum number of collapse iterations = 10
+    Maximum number of edge/face reduction factor smoothing iterations = 2
+    Maximum number of times a point can contribute to bad faces across 
+    collapse iterations = 3
+Selectively disabling wanted collapses until resulting quality satisfies constraints in system/meshQualityDict
+
+
+Outer Iteration = 0
+
+    "Edge Filter Factor": min = 1e-06 av = 1e-06 max = 1e-06
+        36914 / 36914 elements used
+
+    Inner iteration = 0
+
+        Collapsing 33 small edges
+        Collapsing 0 in line edges
+            Uncollapsed edges = 0 / 36914
+
+        Collapsing 33 edges after synchronisation and PointEdgeWave
+            Number of points : 18886
+            Not visited      : 0
+            Not collapsed    : 18824
+            Collapsed        : 62
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 1
+
+        Collapsing 0 small edges
+        Collapsing 3 in line edges
+            Uncollapsed edges = 0 / 36862
+
+        Collapsing 3 edges after synchronisation and PointEdgeWave
+            Number of points : 18854
+            Not visited      : 0
+            Not collapsed    : 18848
+            Collapsed        : 6
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 2
+
+        Collapsing 0 small edges
+        Collapsing 0 in line edges
+
+Checking faces in error :
+    non-orthogonality >  65 degrees                        : 0
+    faces with face pyramid volume < 1e-20                 : 0
+    faces with face-decomposition tet quality < 1e-30      : 0
+    faces with concavity >  80 degrees                     : 0
+    faces with skewness >  10 (internal) or  50 (boundary) : 0
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 0
+    faces with face twist < 0.001                          : 0
+    faces on cells with determinant < 0.001                : 0
+
+    Number of bad faces     : 0
+    Number of marked points : 0
+
+Written filtered mesh to "80"
+
+Writing cellShapeControlMesh
+
+Sorting faces, owner and neighbour into upper triangular order
+Creating patches
+Creating mesh
+Adding patches
+Mesh created
+
+Writing tetDualMesh
+
+Sorting faces, owner and neighbour into upper triangular order
+Creating patches
+Creating mesh
+Adding patches
+Mesh created
+
+Total displacement = (0.337368077629 0.149145984282 -0.323365522185)
+Total distance = 4.15254662465
+
+
+ExecutionTime = 12.21 s  ClockTime = 12 s
+
+
+End
+

@@ -1,0 +1,159 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1712                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v1712
+Arch   : "LSB;label=32;scalar=64"
+Exec   : decomposePar -force
+Date   : Jan 05 2018
+Time   : 08:43:28
+Host   : "inabower-PC"
+PID    : 30676
+I/O    : uncollated
+Case   : /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+
+
+Decomposing mesh region0
+
+Removing 8 existing processor directories
+Create mesh
+
+Calculating distribution of cells
+Selecting decompositionMethod hierarchical [8]
+
+Finished decomposition in 0.63 s
+
+Calculating original mesh data
+
+Distributing cells to processors
+
+Distributing faces to processors
+
+Distributing points to processors
+
+Constructing processor meshes
+
+Processor 0
+    Number of cells = 90253
+    Number of faces shared with processor 1 = 5130
+    Number of faces shared with processor 2 = 3837
+    Number of faces shared with processor 3 = 3
+    Number of faces shared with processor 4 = 1391
+    Number of faces shared with processor 5 = 146
+    Number of faces shared with processor 6 = 159
+    Number of processor patches = 6
+    Number of processor faces = 10666
+    Number of boundary faces = 18058
+
+Processor 1
+    Number of cells = 90253
+    Number of faces shared with processor 0 = 5130
+    Number of faces shared with processor 2 = 9
+    Number of faces shared with processor 3 = 3761
+    Number of faces shared with processor 5 = 1317
+    Number of faces shared with processor 7 = 15
+    Number of processor patches = 5
+    Number of processor faces = 10232
+    Number of boundary faces = 19564
+
+Processor 2
+    Number of cells = 90254
+    Number of faces shared with processor 0 = 3837
+    Number of faces shared with processor 1 = 9
+    Number of faces shared with processor 3 = 4813
+    Number of faces shared with processor 6 = 1334
+    Number of faces shared with processor 7 = 5
+    Number of processor patches = 5
+    Number of processor faces = 9998
+    Number of boundary faces = 19413
+
+Processor 3
+    Number of cells = 90254
+    Number of faces shared with processor 0 = 3
+    Number of faces shared with processor 1 = 3761
+    Number of faces shared with processor 2 = 4813
+    Number of faces shared with processor 5 = 2
+    Number of faces shared with processor 6 = 31
+    Number of faces shared with processor 7 = 1403
+    Number of processor patches = 6
+    Number of processor faces = 10013
+    Number of boundary faces = 18379
+
+Processor 4
+    Number of cells = 90254
+    Number of faces shared with processor 0 = 1391
+    Number of faces shared with processor 5 = 3877
+    Number of faces shared with processor 6 = 4524
+    Number of processor patches = 3
+    Number of processor faces = 9792
+    Number of boundary faces = 16106
+
+Processor 5
+    Number of cells = 90254
+    Number of faces shared with processor 0 = 146
+    Number of faces shared with processor 1 = 1317
+    Number of faces shared with processor 3 = 2
+    Number of faces shared with processor 4 = 3877
+    Number of faces shared with processor 7 = 4556
+    Number of processor patches = 5
+    Number of processor faces = 9898
+    Number of boundary faces = 15963
+
+Processor 6
+    Number of cells = 90254
+    Number of faces shared with processor 0 = 159
+    Number of faces shared with processor 2 = 1334
+    Number of faces shared with processor 3 = 31
+    Number of faces shared with processor 4 = 4524
+    Number of faces shared with processor 7 = 4189
+    Number of processor patches = 5
+    Number of processor faces = 10237
+    Number of boundary faces = 15991
+
+Processor 7
+    Number of cells = 90254
+    Number of faces shared with processor 1 = 15
+    Number of faces shared with processor 2 = 5
+    Number of faces shared with processor 3 = 1403
+    Number of faces shared with processor 5 = 4556
+    Number of faces shared with processor 6 = 4189
+    Number of processor patches = 5
+    Number of processor faces = 10168
+    Number of boundary faces = 15293
+
+Number of processor faces = 40502
+Max number of cells = 90254 (0.000276997% above average 90253.8)
+Max number of processor patches = 6 (20% above average 5)
+Max number of faces between processors = 10666 (5.33801% above average 10125.5)
+
+Time = 0
+--> FOAM Warning : 
+    From function const Foam::HashTable<Foam::List<int> >& Foam::polyBoundaryMesh::groupPatchIDs() const
+    in file meshes/polyMesh/polyBoundaryMesh/polyBoundaryMesh.C at line 444
+    Removing patchGroup 'baffles' which clashes with patch 9 of the same name.
+AMI: Creating addressing and weights between 27883 source faces and 27883 target faces
+AMI: Patch source sum(weights) min/max/average = 1, 1.14742, 1.00004
+AMI: Patch target sum(weights) min/max/average = 1, 1.14742, 1.00004
+
+Processor 0: field transfer
+Processor 1: field transfer
+Processor 2: field transfer
+Processor 3: field transfer
+Processor 4: field transfer
+Processor 5: field transfer
+Processor 6: field transfer
+Processor 7: field transfer
+
+End
+

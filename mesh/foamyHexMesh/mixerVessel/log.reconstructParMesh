@@ -1,0 +1,157 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1712                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v1712
+Arch   : "LSB;label=32;scalar=64"
+Exec   : reconstructParMesh -latestTime
+Date   : Jan 05 2018
+Time   : 08:43:01
+Host   : "inabower-PC"
+PID    : 30662
+I/O    : uncollated
+Case   : /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+This is an experimental tool which tries to merge individual processor
+meshes back into one master mesh. Use it if the original master mesh has
+been deleted or if the processor meshes have been modified (topology change).
+This tool will write the resulting mesh to a new time step and construct
+xxxxProcAddressing files in the processor meshes so reconstructPar can be
+used to regenerate the fields on the master mesh.
+
+Not well tested & use at your own risk!
+
+Merge tolerance : 1e-07
+Write tolerance : 1e-10
+Doing geometric matching on correct procBoundaries only.
+This assumes a correct decomposition.
+Found 8 processor directories
+
+Reading database "mixerVessel/processor0"
+Reading database "mixerVessel/processor1"
+Reading database "mixerVessel/processor2"
+Reading database "mixerVessel/processor3"
+Reading database "mixerVessel/processor4"
+Reading database "mixerVessel/processor5"
+Reading database "mixerVessel/processor6"
+Reading database "mixerVessel/processor7"
+Time = 101
+
+Reading points from "mixerVessel/processor0" for time = 101
+
+Reading points from "mixerVessel/processor1" for time = 101
+
+Reading points from "mixerVessel/processor2" for time = 101
+
+Reading points from "mixerVessel/processor3" for time = 101
+
+Reading points from "mixerVessel/processor4" for time = 101
+
+Reading points from "mixerVessel/processor5" for time = 101
+
+Reading points from "mixerVessel/processor6" for time = 101
+
+Reading points from "mixerVessel/processor7" for time = 101
+
+Overall mesh bounding box  : (-0.2650615194 -0.2652876175 -0.1013487313) (0.2652946513 0.2652958505 1.299999952)
+Relative tolerance         : 1e-07
+Absolute matching distance : 1.589520247e-07
+
+Merging mesh 0 with 1
+Merging mesh 2 with 3
+Merging mesh 4 with 5
+Merging mesh 6 with 7
+Merging mesh 0 with 2
+Merging mesh 4 with 6
+Merging mesh 0 with 4
+Reading mesh to add from "mixerVessel/processor0" for time = 101
+
+
+Reading mesh to add from "mixerVessel/processor1" for time = 101
+
+
+Reading mesh to add from "mixerVessel/processor2" for time = 101
+
+
+Reading mesh to add from "mixerVessel/processor3" for time = 101
+
+
+Reading mesh to add from "mixerVessel/processor4" for time = 101
+
+
+Reading mesh to add from "mixerVessel/processor5" for time = 101
+
+
+Reading mesh to add from "mixerVessel/processor6" for time = 101
+
+
+Reading mesh to add from "mixerVessel/processor7" for time = 101
+
+
+mergeSharedPoints : detected 0 points that are to be merged.
+
+Writing merged mesh to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/101"
+
+Reconstructing the addressing from the processor meshes to the newly reconstructed mesh
+
+Reading processor 0 mesh from "mixerVessel/processor0"
+Writing pointProcAddressing to "mixerVessel/processor0/101/polyMesh"
+Writing faceProcAddressing to "mixerVessel/processor0/101/polyMesh"
+Writing cellProcAddressing to "mixerVessel/processor0/101/polyMesh"
+Writing boundaryProcAddressing to "mixerVessel/processor0/101/polyMesh"
+
+Reading processor 1 mesh from "mixerVessel/processor1"
+Writing pointProcAddressing to "mixerVessel/processor1/101/polyMesh"
+Writing faceProcAddressing to "mixerVessel/processor1/101/polyMesh"
+Writing cellProcAddressing to "mixerVessel/processor1/101/polyMesh"
+Writing boundaryProcAddressing to "mixerVessel/processor1/101/polyMesh"
+
+Reading processor 2 mesh from "mixerVessel/processor2"
+Writing pointProcAddressing to "mixerVessel/processor2/101/polyMesh"
+Writing faceProcAddressing to "mixerVessel/processor2/101/polyMesh"
+Writing cellProcAddressing to "mixerVessel/processor2/101/polyMesh"
+Writing boundaryProcAddressing to "mixerVessel/processor2/101/polyMesh"
+
+Reading processor 3 mesh from "mixerVessel/processor3"
+Writing pointProcAddressing to "mixerVessel/processor3/101/polyMesh"
+Writing faceProcAddressing to "mixerVessel/processor3/101/polyMesh"
+Writing cellProcAddressing to "mixerVessel/processor3/101/polyMesh"
+Writing boundaryProcAddressing to "mixerVessel/processor3/101/polyMesh"
+
+Reading processor 4 mesh from "mixerVessel/processor4"
+Writing pointProcAddressing to "mixerVessel/processor4/101/polyMesh"
+Writing faceProcAddressing to "mixerVessel/processor4/101/polyMesh"
+Writing cellProcAddressing to "mixerVessel/processor4/101/polyMesh"
+Writing boundaryProcAddressing to "mixerVessel/processor4/101/polyMesh"
+
+Reading processor 5 mesh from "mixerVessel/processor5"
+Writing pointProcAddressing to "mixerVessel/processor5/101/polyMesh"
+Writing faceProcAddressing to "mixerVessel/processor5/101/polyMesh"
+Writing cellProcAddressing to "mixerVessel/processor5/101/polyMesh"
+Writing boundaryProcAddressing to "mixerVessel/processor5/101/polyMesh"
+
+Reading processor 6 mesh from "mixerVessel/processor6"
+Writing pointProcAddressing to "mixerVessel/processor6/101/polyMesh"
+Writing faceProcAddressing to "mixerVessel/processor6/101/polyMesh"
+Writing cellProcAddressing to "mixerVessel/processor6/101/polyMesh"
+Writing boundaryProcAddressing to "mixerVessel/processor6/101/polyMesh"
+
+Reading processor 7 mesh from "mixerVessel/processor7"
+Writing pointProcAddressing to "mixerVessel/processor7/101/polyMesh"
+Writing faceProcAddressing to "mixerVessel/processor7/101/polyMesh"
+Writing cellProcAddressing to "mixerVessel/processor7/101/polyMesh"
+Writing boundaryProcAddressing to "mixerVessel/processor7/101/polyMesh"
+
+
+End
+

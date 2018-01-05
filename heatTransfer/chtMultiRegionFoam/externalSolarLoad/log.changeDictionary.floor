@@ -1,0 +1,147 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1712                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v1712
+Arch   : "LSB;label=32;scalar=64"
+Exec   : changeDictionary -region floor -subDict dictionaryReplacement
+Date   : Jan 05 2018
+Time   : 17:46:35
+Host   : "inabower-PC"
+PID    : 11138
+I/O    : uncollated
+Case   : /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/externalSolarLoad
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh floor for time = 0
+
+Read dictionary changeDictionaryDict with replacements for dictionaries 
+2
+(
+boundary
+T
+)
+
+Reading polyMesh/boundary file to extract patch names
+Loaded dictionary boundary with entries 
+8
+(
+maxY
+minX
+maxX
+minY
+minZ
+floor_to_domain3
+floor_to_air
+floor_to_solid
+)
+
+Extracted patch groups:
+    group wall with patches 
+4
+(
+minZ
+floor_to_domain3
+floor_to_air
+floor_to_solid
+)
+
+Replacing entries in dictionary boundary
+Special handling of boundary as polyMesh/boundary file.
+Merging entries from 1(floor_to_domain3)
+fieldDict:
+{
+    maxY
+    {
+        type            patch;
+        nFaces          30;
+        startFace       1740;
+    }
+    minX
+    {
+        type            patch;
+        nFaces          30;
+        startFace       1770;
+    }
+    maxX
+    {
+        type            patch;
+        nFaces          30;
+        startFace       1800;
+    }
+    minY
+    {
+        type            patch;
+        nFaces          30;
+        startFace       1830;
+    }
+    minZ
+    {
+        type            wall;
+        inGroups        1 ( wall );
+        nFaces          900;
+        startFace       1860;
+    }
+    floor_to_domain3
+    {
+        type            patch;
+        inGroups        1 ( wall );
+        nFaces          16;
+        startFace       2760;
+        sampleMode      nearestPatchFace;
+        sampleRegion    domain3;
+        samplePatch     domain3_to_floor;
+    }
+    floor_to_air
+    {
+        type            mappedWall;
+        inGroups        1 ( wall );
+        nFaces          864;
+        startFace       2776;
+        sampleMode      nearestPatchFace;
+        sampleRegion    air;
+        samplePatch     air_to_floor;
+    }
+    floor_to_solid
+    {
+        type            mappedWall;
+        inGroups        1 ( wall );
+        nFaces          20;
+        startFace       3640;
+        sampleMode      nearestPatchFace;
+        sampleRegion    solid;
+        samplePatch     solid_to_floor;
+    }
+}
+
+Writing modified boundary
+Replacing entries in dictionary T
+Loading dictionary T
+Loaded dictionary T with entries 
+3
+(
+dimensions
+internalField
+boundaryField
+)
+
+Merging entries from 
+2
+(
+internalField
+boundaryField
+)
+
+Writing modified fieldDict T
+
+End
+

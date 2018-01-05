@@ -1,0 +1,128 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1712                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v1712
+Arch   : "LSB;label=32;scalar=64"
+Exec   : redistributePar -parallel -overwrite -region leftSolid
+Date   : Jan 05 2018
+Time   : 17:43:00
+Host   : "inabower-PC"
+PID    : 10693
+I/O    : uncollated
+Case   : /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/snappyMultiRegionHeater
+nProcs : 6
+Hosts  :
+(
+    (inabower-PC 6)
+)
+Pstream initialized with:
+    floatTransfer      : 0
+    nProcsSimpleSum    : 0
+    commsType          : nonBlocking
+    polling iterations : 0
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+--> FOAM Warning : 
+    From function int main(int, char**)
+    in file redistributePar.C at line 2308
+    Detected floating point exception trapping (FOAM_SIGFPE). This might give
+    problems when mapping fields. Switch it off in case of problems.
+Creating time directories on all processors
+
+Create time
+
+Create undecomposed database
+
+Using mesh subdirectory "leftSolid/polyMesh"
+
+Setting time to that of master or undecomposed case : 0
+Checking for mesh in "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/snappyMultiRegionHeater/processor0/constant/leftSolid/polyMesh/faces"
+
+Per processor mesh availability:
+    6{1}
+
+    Boundary definition OK.
+Merge tolerance : 1e-06
+Write tolerance : 1e-07
+Overall meshes bounding box : (-0.1 -5.783117e-19 -0.05) (-0.0133333 0.008 0.05)
+Relative tolerance          : 1e-06
+Absolute matching distance  : 1.325712e-07
+
+Selecting decompositionMethod scotch [4]
+From time 0 have objects:
+9
+(
+U
+rho
+k
+p_rgh
+cellToRegion
+alphat
+p
+T
+epsilon
+)
+
+After distribution:
+
+Processor 0
+    Number of cells = 260
+    Number of faces shared with processor 1 = 30
+    Number of faces shared with processor 3 = 20
+    Number of processor patches = 2
+    Number of processor faces = 50
+    Number of boundary faces = 306
+
+Processor 1
+    Number of cells = 260
+    Number of faces shared with processor 0 = 30
+    Number of faces shared with processor 2 = 28
+    Number of processor patches = 2
+    Number of processor faces = 58
+    Number of boundary faces = 302
+
+Processor 2
+    Number of cells = 260
+    Number of faces shared with processor 1 = 28
+    Number of faces shared with processor 3 = 26
+    Number of processor patches = 2
+    Number of processor faces = 54
+    Number of boundary faces = 310
+
+Processor 3
+    Number of cells = 260
+    Number of faces shared with processor 0 = 20
+    Number of faces shared with processor 2 = 26
+    Number of processor patches = 2
+    Number of processor faces = 46
+    Number of boundary faces = 306
+
+Processor 4
+    Number of cells = 0
+    Number of processor patches = 0
+    Number of processor faces = 0
+    Number of boundary faces = 0
+
+Processor 5
+    Number of cells = 0
+    Number of processor patches = 0
+    Number of processor faces = 0
+    Number of boundary faces = 0
+
+Number of processor faces = 104
+Max number of cells = 260 (50% above average 173.3333)
+Max number of processor patches = 2 (50% above average 1.333333)
+Max number of faces between processors = 58 (67.30769% above average 34.66667)
+
+Written redistributed mesh to "constant"
+
+End
+
+Finalising parallel run

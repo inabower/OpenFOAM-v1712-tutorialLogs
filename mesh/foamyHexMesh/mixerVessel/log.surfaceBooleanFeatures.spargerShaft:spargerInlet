@@ -1,0 +1,81 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1712                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v1712
+Arch   : "LSB;label=32;scalar=64"
+Exec   : surfaceBooleanFeatures intersection spargerShaft.stl spargerInlet.stl -perturb
+Date   : Jan 05 2018
+Time   : 07:05:34
+Host   : "inabower-PC"
+PID    : 29873
+I/O    : uncollated
+Case   : /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Reading surface spargerShaft.stl
+spargerShaft.stl statistics:
+Triangles    : 720 in 1 region(s)
+Vertices     : 396
+Bounding Box : (-0.01999999955 -0.01999999955 -0.200000003) (0.01999999955 0.01999999955 -0.009999999776)
+
+Reading surface spargerInlet.stl
+spargerInlet.stl statistics:
+Triangles    : 288 in 2 region(s)
+Vertices     : 146
+Bounding Box : (-0.1000000015 -0.1000000015 -0.02999999933) (0.1000000015 0.1000000015 0)
+
+Surface triangles 720 number of zones (orientation or non-manifold):1
+Surface triangles 288 number of zones (orientation or non-manifold):1
+Determining intersections of 1116 edges with surface of 288 triangles
+Determined intersections:
+    edges               : 1116
+    non-degenerate cuts : 72
+    degenerate cuts     : 0
+
+Determining intersections of 432 edges with surface of 720 triangles
+Determined intersections:
+    edges               : 432
+    non-degenerate cuts : 36
+    degenerate cuts     : 0
+
+points      : 108
+edges       : 104
+boundingBox : (-0.01999999955 -0.01999999955 -0.02999999933) (0.01999999955 0.01999999955 -0.02999999933)
+point classification :
+    convex feature points          :        0
+    concave feature points         :        0
+    mixed feature points           :        0
+    other (non-feature) points     :      108
+edge classification :
+    external (convex angle) edges  :      104
+    internal (concave angle) edges :        0
+    flat region edges              :        0
+    open edges                     :        0
+    multiply connected edges       :        0
+
+Writing extendedEdgeMesh components to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/spargerShaft_spargerInlet_intersection"
+Writing 0 convex feature points to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/spargerShaft_spargerInlet_intersection_convexFeaturePts.obj"
+Writing 0 concave feature points to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/spargerShaft_spargerInlet_intersection_concaveFeaturePts.obj"
+Writing 0 mixed feature points to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/spargerShaft_spargerInlet_intersection_mixedFeaturePts.obj"
+Writing 0 mixed feature point structure to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/spargerShaft_spargerInlet_intersection_mixedFeaturePtsStructure.obj"
+Writing 104 external edges to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/spargerShaft_spargerInlet_intersection_externalEdges.obj"
+Writing 0 internal edges to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/spargerShaft_spargerInlet_intersection_internalEdges.obj"
+Writing 0 flat edges to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/spargerShaft_spargerInlet_intersection_flatEdges.obj"
+Writing 0 open edges to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/spargerShaft_spargerInlet_intersection_openEdges.obj"
+Writing 0 multiple edges to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/spargerShaft_spargerInlet_intersection_multipleEdges.obj"
+Writing 0 region edges to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/spargerShaft_spargerInlet_intersection_regionEdges.obj"
+Writing 104 edge directions to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/spargerShaft_spargerInlet_intersection_edgeDirections.obj"
+
+Writing featureEdgeMesh to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/triSurface/spargerShaft_spargerInlet_intersection.eMesh"
+End
+

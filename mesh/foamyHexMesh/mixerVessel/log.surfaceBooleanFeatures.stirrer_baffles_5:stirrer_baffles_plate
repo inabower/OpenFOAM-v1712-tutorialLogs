@@ -1,0 +1,73 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1712                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v1712
+Arch   : "LSB;label=32;scalar=64"
+Exec   : surfaceBooleanFeatures intersection stirrer_baffles_5.obj stirrer_baffles_plate.obj -surf1Baffle -surf2Baffle
+Date   : Jan 05 2018
+Time   : 07:05:34
+Host   : "inabower-PC"
+PID    : 29898
+I/O    : uncollated
+Case   : /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Reading surface stirrer_baffles_5.obj
+stirrer_baffles_5.obj statistics:
+Triangles    : 8 in 1 region(s)
+Vertices     : 9
+Bounding Box : (0.0562916 0.0325 0.05) (0.142894 0.0825 0.11)
+
+Reading surface stirrer_baffles_plate.obj
+stirrer_baffles_plate.obj statistics:
+Triangles    : 36 in 1 region(s)
+Vertices     : 37
+Bounding Box : (-0.1 -0.1 0.08) (0.1 0.1 0.08)
+
+Surface triangles 8 number of zones (orientation or non-manifold):1
+Surface triangles 36 number of zones (orientation or non-manifold):1
+Constructing CGAL surface ...
+Constructing CGAL tree ...
+Constructing CGAL surface ...
+Constructing CGAL tree ...
+points      : 9
+edges       : 4
+boundingBox : (0.0562916 0.0325 0.08) (0.08660250212 0.04999999545 0.08)
+point classification :
+    convex feature points          :        0
+    concave feature points         :        0
+    mixed feature points           :        0
+    other (non-feature) points     :        9
+edge classification :
+    external (convex angle) edges  :        0
+    internal (concave angle) edges :        0
+    flat region edges              :        0
+    open edges                     :        0
+    multiply connected edges       :        4
+
+Writing extendedEdgeMesh components to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/stirrer_baffles_5_stirrer_baffles_plate_intersection"
+Writing 0 convex feature points to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/stirrer_baffles_5_stirrer_baffles_plate_intersection_convexFeaturePts.obj"
+Writing 0 concave feature points to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/stirrer_baffles_5_stirrer_baffles_plate_intersection_concaveFeaturePts.obj"
+Writing 0 mixed feature points to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/stirrer_baffles_5_stirrer_baffles_plate_intersection_mixedFeaturePts.obj"
+Writing 0 mixed feature point structure to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/stirrer_baffles_5_stirrer_baffles_plate_intersection_mixedFeaturePtsStructure.obj"
+Writing 0 external edges to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/stirrer_baffles_5_stirrer_baffles_plate_intersection_externalEdges.obj"
+Writing 0 internal edges to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/stirrer_baffles_5_stirrer_baffles_plate_intersection_internalEdges.obj"
+Writing 0 flat edges to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/stirrer_baffles_5_stirrer_baffles_plate_intersection_flatEdges.obj"
+Writing 0 open edges to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/stirrer_baffles_5_stirrer_baffles_plate_intersection_openEdges.obj"
+Writing 4 multiple edges to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/stirrer_baffles_5_stirrer_baffles_plate_intersection_multipleEdges.obj"
+Writing 0 region edges to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/stirrer_baffles_5_stirrer_baffles_plate_intersection_regionEdges.obj"
+Writing 4 edge directions to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/extendedFeatureEdgeMesh/stirrer_baffles_5_stirrer_baffles_plate_intersection_edgeDirections.obj"
+
+Writing featureEdgeMesh to "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/mixerVessel/constant/triSurface/stirrer_baffles_5_stirrer_baffles_plate_intersection.eMesh"
+End
+

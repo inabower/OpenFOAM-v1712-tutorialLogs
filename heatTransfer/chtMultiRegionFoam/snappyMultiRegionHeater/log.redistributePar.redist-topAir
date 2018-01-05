@@ -1,0 +1,146 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1712                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v1712
+Arch   : "LSB;label=32;scalar=64"
+Exec   : redistributePar -parallel -overwrite -region topAir
+Date   : Jan 05 2018
+Time   : 17:43:00
+Host   : "inabower-PC"
+PID    : 10665
+I/O    : uncollated
+Case   : /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/snappyMultiRegionHeater
+nProcs : 6
+Hosts  :
+(
+    (inabower-PC 6)
+)
+Pstream initialized with:
+    floatTransfer      : 0
+    nProcsSimpleSum    : 0
+    commsType          : nonBlocking
+    polling iterations : 0
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+--> FOAM Warning : 
+    From function int main(int, char**)
+    in file redistributePar.C at line 2308
+    Detected floating point exception trapping (FOAM_SIGFPE). This might give
+    problems when mapping fields. Switch it off in case of problems.
+Creating time directories on all processors
+
+Create time
+
+Create undecomposed database
+
+Using mesh subdirectory "topAir/polyMesh"
+
+Setting time to that of master or undecomposed case : 0
+Checking for mesh in "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/snappyMultiRegionHeater/processor0/constant/topAir/polyMesh/faces"
+
+Per processor mesh availability:
+    6{1}
+
+    Boundary definition OK.
+Merge tolerance : 1e-06
+Write tolerance : 1e-07
+Overall meshes bounding box : (-0.1 0.008 -0.05) (0.1 0.04 0.05)
+Relative tolerance          : 1e-06
+Absolute matching distance  : 2.258849e-07
+
+Selecting decompositionMethod scotch [4]
+From time 0 have objects:
+9
+(
+U
+rho
+k
+p_rgh
+cellToRegion
+alphat
+p
+T
+epsilon
+)
+
+--> FOAM Warning : 
+    From function Foam::fixedValueFvPatchField<Type>::fixedValueFvPatchField(const Foam::fixedValueFvPatchField<Type>&, const Foam::fvPatch&, const Foam::DimensionedField<Type, Foam::volMesh>&, const Foam::fvPatchFieldMapper&) [with Type = Foam::Vector<double>]
+    in file fields/fvPatchFields/basic/fixedValue/fixedValueFvPatchField.C at line 79
+    On field U patch maxY patchField fixedValue : mapper does not map all values.
+    To avoid this warning fully specify the mapping in derived patch fields.
+--> FOAM Warning : 
+    From function Foam::fixedValueFvPatchField<Type>::fixedValueFvPatchField(const Foam::fixedValueFvPatchField<Type>&, const Foam::fvPatch&, const Foam::DimensionedField<Type, Foam::volMesh>&, const Foam::fvPatchFieldMapper&) [with Type = Foam::Vector<double>]
+    in file fields/fvPatchFields/basic/fixedValue/fixedValueFvPatchField.C at line 79
+    On field U patch minZ patchField fixedValue : mapper does not map all values.
+    To avoid this warning fully specify the mapping in derived patch fields.
+--> FOAM Warning : 
+    From function Foam::fixedValueFvPatchField<Type>::fixedValueFvPatchField(const Foam::fixedValueFvPatchField<Type>&, const Foam::fvPatch&, const Foam::DimensionedField<Type, Foam::volMesh>&, const Foam::fvPatchFieldMapper&) [with Type = Foam::Vector<double>]
+    in file fields/fvPatchFields/basic/fixedValue/fixedValueFvPatchField.C at line 79
+    On field U patch maxZ patchField fixedValue : mapper does not map all values.
+    To avoid this warning fully specify the mapping in derived patch fields.
+--> FOAM Warning : 
+    From function Foam::fixedValueFvPatchField<Type>::fixedValueFvPatchField(const Foam::fixedValueFvPatchField<Type>&, const Foam::fvPatch&, const Foam::DimensionedField<Type, Foam::volMesh>&, const Foam::fvPatchFieldMapper&) [with Type = Foam::Vector<double>]
+    in file fields/fvPatchFields/basic/fixedValue/fixedValueFvPatchField.C at line 79
+    On field U patch topAir_to_rightSolid patchField fixedValue : mapper does not map all values.
+    To avoid this warning fully specify the mapping in derived patch fields.
+After distribution:
+
+Processor 0
+    Number of cells = 832
+    Number of faces shared with processor 1 = 79
+    Number of processor patches = 1
+    Number of processor faces = 79
+    Number of boundary faces = 553
+
+Processor 1
+    Number of cells = 818
+    Number of faces shared with processor 0 = 79
+    Number of faces shared with processor 3 = 70
+    Number of processor patches = 2
+    Number of processor faces = 149
+    Number of boundary faces = 477
+
+Processor 2
+    Number of cells = 825
+    Number of faces shared with processor 3 = 77
+    Number of processor patches = 1
+    Number of processor faces = 77
+    Number of boundary faces = 550
+
+Processor 3
+    Number of cells = 825
+    Number of faces shared with processor 1 = 70
+    Number of faces shared with processor 2 = 77
+    Number of processor patches = 2
+    Number of processor faces = 147
+    Number of boundary faces = 480
+
+Processor 4
+    Number of cells = 0
+    Number of processor patches = 0
+    Number of processor faces = 0
+    Number of boundary faces = 0
+
+Processor 5
+    Number of cells = 0
+    Number of processor patches = 0
+    Number of processor faces = 0
+    Number of boundary faces = 0
+
+Number of processor faces = 226
+Max number of cells = 832 (51.27273% above average 550)
+Max number of processor patches = 2 (100% above average 1)
+Max number of faces between processors = 149 (97.78761% above average 75.33333)
+
+Written redistributed mesh to "constant"
+
+End
+
+Finalising parallel run

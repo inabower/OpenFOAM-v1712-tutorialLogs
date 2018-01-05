@@ -1,0 +1,47 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1712                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v1712
+Arch   : "LSB;label=32;scalar=64"
+Exec   : topoSet
+Date   : Jan 05 2018
+Time   : 06:50:00
+Host   : "inabower-PC"
+PID    : 29435
+I/O    : uncollated
+Case   : /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/windshieldDefrost
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create polyMesh for time = 0
+
+Reading topoSetDict
+
+Time = 0
+    mesh not changed.
+Created cellSet c0
+    Applying source boxToCell
+    Adding cells with center within boxes 1((-100 -100 -100) (100 0.1 0.25))
+    cellSet c0 now size 2610
+Read set cellSet c0 with size 2610
+    Applying source boxToCell
+    Adding cells with center within boxes 1((-100 -100 0.45) (100 0.1 100))
+    cellSet c0 now size 5220
+Read set cellSet c0 with size 5220
+    Applying source boxToCell
+    Adding cells with center within boxes 1((-100 0.05 0.33) (100 0.1 0.38))
+    cellSet c0 now size 5360
+Read set cellSet c0 with size 5360
+    Inverting cellSet
+    cellSet c0 now size 287640
+End
+

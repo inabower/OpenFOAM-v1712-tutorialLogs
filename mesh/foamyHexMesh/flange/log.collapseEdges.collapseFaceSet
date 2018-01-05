@@ -1,0 +1,261 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1712                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v1712
+Arch   : "LSB;label=32;scalar=64"
+Exec   : collapseEdges -latestTime -collapseFaceSet indirectPatchFaces
+Date   : Jan 05 2018
+Time   : 07:05:25
+Host   : "inabower-PC"
+PID    : 29845
+I/O    : uncollated
+Case   : /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/mesh/foamyHexMesh/flange
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 101
+
+Reading collapseDict
+
+Time = 101
+Read faceSet indirectPatchFaces with 217 faces
+Merging:
+    edges with length less than 1e-06 metres
+    edges split by a point with edges in line to within 180 degrees
+    Minimum edge length reduction factor = 0.5
+
+Face collapsing is on
+    Initial face length factor = 0.5
+Control mesh quality = on
+    Minimum edge length reduction factor = 0.5
+    Minimum face area reduction factor = 0.5
+    Maximum number of collapse iterations = 10
+    Maximum number of edge/face reduction factor smoothing iterations = 2
+    Maximum number of times a point can contribute to bad faces across 
+    collapse iterations = 3
+Selectively disabling wanted collapses until resulting quality satisfies constraints in system/meshQualityDict
+
+
+Outer Iteration = 0
+
+    "Edge Filter Factor": min = 1e-06 av = 1e-06 max = 1e-06
+        186617 / 186617 elements used
+
+    Inner iteration = 0
+
+        Collapsing 0 small edges
+        Collapsing 0 in line edges
+
+Checking faces in error :
+    non-orthogonality >  45 degrees                        : 17
+    faces with face pyramid volume <     0                 : 0
+    faces with face-decomposition tet quality < 1e-30      : 2
+    faces with concavity >  80 degrees                     : 0
+    faces with skewness >  10 (internal) or  50 (boundary) : 0
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 3
+    faces with face twist < 0.001                          : 0
+    faces on cells with determinant < 0.001                : 0
+
+    Number of bad faces     : 22
+    Number of marked points : 86
+
+Outer Iteration = 1
+
+    "Edge Filter Factor": min = 5e-07 av = 9.986940076e-07 max = 1e-06
+        186617 / 186617 elements used
+
+    Inner iteration = 0
+
+        Collapsing 0 small edges
+        Collapsing 0 in line edges
+
+Checking faces in error :
+    non-orthogonality >  45 degrees                        : 17
+    faces with face pyramid volume <     0                 : 0
+    faces with face-decomposition tet quality < 1e-30      : 2
+    faces with concavity >  80 degrees                     : 0
+    faces with skewness >  10 (internal) or  50 (boundary) : 0
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 3
+    faces with face twist < 0.001                          : 0
+    faces on cells with determinant < 0.001                : 0
+
+    Number of bad faces     : 22
+    Number of marked points : 86
+Merging:
+    edges with length less than 1e-06 metres
+    edges split by a point with edges in line to within 180 degrees
+    Minimum edge length reduction factor = 0.5
+
+Face collapsing is on
+    Initial face length factor = 0.5
+Control mesh quality = on
+    Minimum edge length reduction factor = 0.5
+    Minimum face area reduction factor = 0.5
+    Maximum number of collapse iterations = 10
+    Maximum number of edge/face reduction factor smoothing iterations = 2
+    Maximum number of times a point can contribute to bad faces across 
+    collapse iterations = 3
+Selectively disabling wanted collapses until resulting quality satisfies constraints in system/meshQualityDict
+
+
+Checking faces in error :
+    non-orthogonality >  45 degrees                        : 17
+    faces with face pyramid volume <     0                 : 0
+    faces with face-decomposition tet quality < 1e-30      : 2
+    faces with concavity >  80 degrees                     : 0
+    faces with skewness >  10 (internal) or  50 (boundary) : 0
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 3
+    faces with face twist < 0.001                          : 0
+    faces on cells with determinant < 0.001                : 0
+
+Outer Iteration = 0
+
+    "Edge Filter Factor": min = 1e-06 av = 1e-06 max = 1e-06
+        186617 / 186617 elements used
+    "Face Filter Factor": min = 0.5 av = 0.5 max = 0.5
+        217 / 165948 elements used
+
+    Inner iteration = 0
+
+        Collapsing 210 faces (to point = 10, to edge = 200)
+            Uncollapsed edges = 0 / 186617
+
+        Collapsing 207 edges after synchronisation and PointEdgeWave
+            Number of points : 68238
+            Not visited      : 0
+            Not collapsed    : 67908
+            Collapsed        : 330
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 1
+
+        Collapsing 1 faces (to point = 0, to edge = 1)
+            Uncollapsed edges = 0 / 186199
+
+        Collapsing 1 edges after synchronisation and PointEdgeWave
+            Number of points : 68043
+            Not visited      : 0
+            Not collapsed    : 68041
+            Collapsed        : 2
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 2
+
+        Collapsing 0 faces (to point = 0, to edge = 0)
+
+    Inner iteration = 0
+
+        Collapsing 0 small edges
+        Collapsing 57 in line edges
+            Uncollapsed edges = 0 / 186197
+
+        Collapsing 57 edges after synchronisation and PointEdgeWave
+            Number of points : 68042
+            Not visited      : 0
+            Not collapsed    : 67931
+            Collapsed        : 111
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 1
+
+        Collapsing 0 small edges
+        Collapsing 0 in line edges
+
+Checking faces in error :
+    non-orthogonality >  45 degrees                        : 18
+    faces with face pyramid volume <     0                 : 0
+    faces with face-decomposition tet quality < 1e-30      : 5
+    faces with concavity >  80 degrees                     : 0
+    faces with skewness >  10 (internal) or  50 (boundary) : 0
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 4
+    faces with face twist < 0.001                          : 0
+    faces on cells with determinant < 0.001                : 0
+
+    Number of bad faces     : 27
+    Number of marked points : 92
+
+Outer Iteration = 1
+
+    "Edge Filter Factor": min = 5e-07 av = 9.984736631e-07 max = 1e-06
+        186617 / 186617 elements used
+    "Face Filter Factor": min = 0.5 av = 0.5 max = 0.5
+        132 / 165948 elements used
+
+    Inner iteration = 0
+
+        Collapsing 128 faces (to point = 6, to edge = 122)
+            Uncollapsed edges = 0 / 186617
+
+        Collapsing 115 edges after synchronisation and PointEdgeWave
+            Number of points : 68238
+            Not visited      : 0
+            Not collapsed    : 68044
+            Collapsed        : 194
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 1
+
+        Collapsing 0 faces (to point = 0, to edge = 0)
+
+    Inner iteration = 0
+
+        Collapsing 0 small edges
+        Collapsing 36 in line edges
+            Uncollapsed edges = 0 / 186375
+
+        Collapsing 36 edges after synchronisation and PointEdgeWave
+            Number of points : 68130
+            Not visited      : 0
+            Not collapsed    : 68061
+            Collapsed        : 69
+
+        Collapsing 0 cells
+        Apply changes to the current mesh
+
+    Inner iteration = 1
+
+        Collapsing 0 small edges
+        Collapsing 0 in line edges
+
+Checking faces in error :
+    non-orthogonality >  45 degrees                        : 15
+    faces with face pyramid volume <     0                 : 0
+    faces with face-decomposition tet quality < 1e-30      : 2
+    faces with concavity >  80 degrees                     : 0
+    faces with skewness >  10 (internal) or  50 (boundary) : 0
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 3
+    faces with face twist < 0.001                          : 0
+    faces on cells with determinant < 0.001                : 0
+
+    Number of bad faces     : 20
+    Number of marked points : 78
+
+Writing collapsed mesh to time 102
+
+
+ExecutionTime = 5.45 s  ClockTime = 6 s
+
+End
+

@@ -1,0 +1,13 @@
+Running blockMesh on /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/multiRegionHeater
+Running topoSet on /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/multiRegionHeater
+Restore 0/ from 0.orig/
+Running splitMeshRegions on /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/multiRegionHeater
+Running changeDictionary on /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/multiRegionHeater
+Running changeDictionary on /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/multiRegionHeater
+Running changeDictionary on /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/multiRegionHeater
+Running changeDictionary on /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/multiRegionHeater
+Running changeDictionary on /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/multiRegionHeater
+
+Use paraFoam -touch-all to create files for paraview post-processing
+
+End

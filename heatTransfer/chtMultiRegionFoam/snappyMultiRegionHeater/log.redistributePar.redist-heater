@@ -1,0 +1,135 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1712                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v1712
+Arch   : "LSB;label=32;scalar=64"
+Exec   : redistributePar -parallel -overwrite -region heater
+Date   : Jan 05 2018
+Time   : 17:43:00
+Host   : "inabower-PC"
+PID    : 10679
+I/O    : uncollated
+Case   : /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/snappyMultiRegionHeater
+nProcs : 6
+Hosts  :
+(
+    (inabower-PC 6)
+)
+Pstream initialized with:
+    floatTransfer      : 0
+    nProcsSimpleSum    : 0
+    commsType          : nonBlocking
+    polling iterations : 0
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+--> FOAM Warning : 
+    From function int main(int, char**)
+    in file redistributePar.C at line 2308
+    Detected floating point exception trapping (FOAM_SIGFPE). This might give
+    problems when mapping fields. Switch it off in case of problems.
+Creating time directories on all processors
+
+Create time
+
+Create undecomposed database
+
+Using mesh subdirectory "heater/polyMesh"
+
+Setting time to that of master or undecomposed case : 0
+Checking for mesh in "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/snappyMultiRegionHeater/processor0/constant/heater/polyMesh/faces"
+
+Per processor mesh availability:
+    6{1}
+
+    Boundary definition OK.
+Merge tolerance : 1e-06
+Write tolerance : 1e-07
+Overall meshes bounding box : (-0.0133333 -0.04 -0.05) (0.0133333 0.008 0.05)
+Relative tolerance          : 1e-06
+Absolute matching distance  : 1.140838e-07
+
+Selecting decompositionMethod simple [1] (region heater)
+From time 0 have objects:
+9
+(
+U
+rho
+k
+p_rgh
+cellToRegion
+alphat
+p
+T
+epsilon
+)
+
+--> FOAM Warning : 
+    From function Foam::fixedValueFvPatchField<Type>::fixedValueFvPatchField(const Foam::fixedValueFvPatchField<Type>&, const Foam::fvPatch&, const Foam::DimensionedField<Type, Foam::volMesh>&, const Foam::fvPatchFieldMapper&) [with Type = double]
+    in file fields/fvPatchFields/basic/fixedValue/fixedValueFvPatchField.C at line 79
+    On field T patch minY patchField fixedValue : mapper does not map all values.
+    To avoid this warning fully specify the mapping in derived patch fields.
+--> FOAM Warning : 
+    From function Foam::fixedValueFvPatchField<Type>::fixedValueFvPatchField(const Foam::fixedValueFvPatchField<Type>&, const Foam::fvPatch&, const Foam::DimensionedField<Type, Foam::volMesh>&, const Foam::fvPatchFieldMapper&) [with Type = double]
+    in file fields/fvPatchFields/basic/fixedValue/fixedValueFvPatchField.C at line 79
+    On field T patch minY patchField fixedValue : mapper does not map all values.
+    To avoid this warning fully specify the mapping in derived patch fields.
+After distribution:
+
+Processor 0
+    Number of cells = 640
+    Number of processor patches = 0
+    Number of processor faces = 0
+    Number of boundary faces = 672
+
+Processor 1
+    Number of cells = 0
+    Number of processor patches = 0
+    Number of processor faces = 0
+    Number of boundary faces = 0
+
+Processor 2
+    Number of cells = 0
+    Number of processor patches = 0
+    Number of processor faces = 0
+    Number of boundary faces = 0
+
+Processor 3
+    Number of cells = 0
+    Number of processor patches = 0
+    Number of processor faces = 0
+    Number of boundary faces = 0
+
+Processor 4
+    Number of cells = 0
+    Number of processor patches = 0
+    Number of processor faces = 0
+    Number of boundary faces = 0
+
+Processor 5
+    Number of cells = 0
+    Number of processor patches = 0
+    Number of processor faces = 0
+    Number of boundary faces = 0
+
+Number of processor faces = 0
+Max number of cells = 640 (500% above average 106.6667)
+Max number of processor patches = 0 (-100% above average 1)
+Max number of faces between processors = 0 (-100% above average 1)
+
+Setting caseName to "snappyMultiRegionHeater" to write reconstructed mesh and fields.
+Restoring caseName to "snappyMultiRegionHeater/processor0"
+Written redistributed mesh to "constant"
+
+Writing procAddressing files to "constant"
+Setting caseName to "snappyMultiRegionHeater" to write reconstructed refinement data.
+Restoring caseName to "snappyMultiRegionHeater/processor0"
+End
+
+Finalising parallel run

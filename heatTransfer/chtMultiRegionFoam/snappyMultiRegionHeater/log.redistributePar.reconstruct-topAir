@@ -1,0 +1,239 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1712                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v1712
+Arch   : "LSB;label=32;scalar=64"
+Exec   : redistributePar -parallel -reconstruct -region topAir
+Date   : Jan 05 2018
+Time   : 17:46:32
+Host   : "inabower-PC"
+PID    : 11077
+I/O    : uncollated
+Case   : /media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/snappyMultiRegionHeater
+nProcs : 4
+Hosts  :
+(
+    (inabower-PC 4)
+)
+Pstream initialized with:
+    floatTransfer      : 0
+    nProcsSimpleSum    : 0
+    commsType          : nonBlocking
+    polling iterations : 0
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+--> FOAM Warning : 
+    From function int main(int, char**)
+    in file redistributePar.C at line 2308
+    Detected floating point exception trapping (FOAM_SIGFPE). This might give
+    problems when mapping fields. Switch it off in case of problems.
+Reconstructing case (like reconstructParMesh)
+
+--> FOAM Warning : 
+    From function int main(int, char**)
+    in file redistributePar.C at line 2340
+    Working in decompose or reconstruction mode automatically implies -overwrite
+
+Creating time directories on all processors
+
+Create time
+
+Create undecomposed database
+
+Using mesh subdirectory "topAir/polyMesh"
+
+
+Pass1 : reconstructing mesh and addressing
+
+Time = 15
+
+Checking for mesh in "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/snappyMultiRegionHeater/processor0/constant/topAir/polyMesh/faces"
+
+Per processor mesh availability:
+    4{1}
+
+loading mesh from "constant"
+    Boundary definition OK.
+Merge tolerance : 1e-06
+Write tolerance : 1e-07
+Overall meshes bounding box : (-0.1 0.008 -0.05) (0.1 0.04 0.05)
+Relative tolerance          : 1e-06
+Absolute matching distance  : 2.258849e-07
+
+Reconstructing mesh for time "constant"
+After distribution:
+
+Processor 0
+    Number of cells = 3300
+    Number of processor patches = 0
+    Number of processor faces = 0
+    Number of boundary faces = 2060
+
+Processor 1
+    Number of cells = 0
+    Number of processor patches = 0
+    Number of processor faces = 0
+    Number of boundary faces = 0
+
+Processor 2
+    Number of cells = 0
+    Number of processor patches = 0
+    Number of processor faces = 0
+    Number of boundary faces = 0
+
+Processor 3
+    Number of cells = 0
+    Number of processor patches = 0
+    Number of processor faces = 0
+    Number of boundary faces = 0
+
+Number of processor faces = 0
+Max number of cells = 3300 (300% above average 825)
+Max number of processor patches = 0 (-100% above average 1)
+Max number of faces between processors = 0 (-100% above average 1)
+
+Setting caseName to "snappyMultiRegionHeater" to write reconstructed mesh and fields.
+Restoring caseName to "snappyMultiRegionHeater/processor0"
+Written redistributed mesh to "constant"
+
+Writing procAddressing files to "constant"
+Setting caseName to "snappyMultiRegionHeater" to write reconstructed refinement data.
+Restoring caseName to "snappyMultiRegionHeater/processor0"
+Time = 30
+
+Checking for mesh in "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/snappyMultiRegionHeater/processor0/constant/topAir/polyMesh/faces"
+
+Per processor mesh availability:
+    4{1}
+
+Time = 45
+
+Checking for mesh in "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/snappyMultiRegionHeater/processor0/constant/topAir/polyMesh/faces"
+
+Per processor mesh availability:
+    4{1}
+
+Time = 60
+
+Checking for mesh in "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/snappyMultiRegionHeater/processor0/constant/topAir/polyMesh/faces"
+
+Per processor mesh availability:
+    4{1}
+
+Time = 75
+
+Checking for mesh in "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/snappyMultiRegionHeater/processor0/constant/topAir/polyMesh/faces"
+
+Per processor mesh availability:
+    4{1}
+
+
+Pass2 : reconstructing fields
+
+Time = 15
+
+Reading undecomposed mesh (on master)
+Reading local, decomposed mesh
+    Boundary definition OK.
+Reading addressing from procXXXAddressing at "constant"
+
+Time = 15
+
+    Reconstructing volScalarFields
+
+        p
+        T
+        p_rgh
+        rho
+
+    Reconstructing volVectorFields
+
+        U
+
+    Reconstructing surfaceScalarFields
+
+        phi
+
+Detected additional non-decomposed files in "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/snappyMultiRegionHeater/processor0/15/uniform"
+Time = 30
+
+    Reconstructing volScalarFields
+
+        p
+        T
+        p_rgh
+        rho
+
+    Reconstructing volVectorFields
+
+        U
+
+    Reconstructing surfaceScalarFields
+
+        phi
+
+Detected additional non-decomposed files in "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/snappyMultiRegionHeater/processor0/30/uniform"
+Time = 45
+
+    Reconstructing volScalarFields
+
+        p
+        T
+        p_rgh
+        rho
+
+    Reconstructing volVectorFields
+
+        U
+
+    Reconstructing surfaceScalarFields
+
+        phi
+
+Detected additional non-decomposed files in "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/snappyMultiRegionHeater/processor0/45/uniform"
+Time = 60
+
+    Reconstructing volScalarFields
+
+        p
+        T
+        p_rgh
+        rho
+
+    Reconstructing volVectorFields
+
+        U
+
+    Reconstructing surfaceScalarFields
+
+        phi
+
+Detected additional non-decomposed files in "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/snappyMultiRegionHeater/processor0/60/uniform"
+Time = 75
+
+    Reconstructing volScalarFields
+
+        p
+        T
+        p_rgh
+        rho
+
+    Reconstructing volVectorFields
+
+        U
+
+    Reconstructing surfaceScalarFields
+
+        phi
+
+Detected additional non-decomposed files in "/media/inabower/3C9455F89455B55C/inabower/tutorials-v1712/heatTransfer/chtMultiRegionFoam/snappyMultiRegionHeater/processor0/75/uniform"
+End
+
+Finalising parallel run
